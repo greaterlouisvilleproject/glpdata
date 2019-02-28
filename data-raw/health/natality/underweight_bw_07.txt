@@ -1,0 +1,558 @@
+"Notes"	"Year"	"Year Code"	"County"	"County Code"	"Bridged Race"	"Bridged Race Code"	Births
+	"2007"	"2007"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	726
+	"2007"	"2007"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	327
+	"2007"	"2007"	"Duval County, FL"	"12031"	"Black or African American"	"2054-5"	683
+	"2007"	"2007"	"Duval County, FL"	"12031"	"White"	"2106-3"	504
+	"2007"	"2007"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	569
+	"2007"	"2007"	"Marion County, IN"	"18097"	"White"	"2106-3"	665
+	"2007"	"2007"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	399
+	"2007"	"2007"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	515
+	"2007"	"2007"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	157
+	"2007"	"2007"	"Kent County, MI"	"26081"	"White"	"2106-3"	443
+	"2007"	"2007"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	411
+	"2007"	"2007"	"Jackson County, MO"	"29095"	"White"	"2106-3"	383
+	"2007"	"2007"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	554
+	"2007"	"2007"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	500
+	"2007"	"2007"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	440
+	"2007"	"2007"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	118
+	"2007"	"2007"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	195
+	"2007"	"2007"	"Douglas County, NE"	"31055"	"White"	"2106-3"	330
+	"2007"	"2007"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	301
+	"2007"	"2007"	"Guilford County, NC"	"37081"	"White"	"2106-3"	212
+	"2007"	"2007"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	641
+	"2007"	"2007"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	400
+	"2007"	"2007"	"Wake County, NC"	"37183"	"Black or African American"	"2054-5"	377
+	"2007"	"2007"	"Wake County, NC"	"37183"	"White"	"2106-3"	436
+	"2007"	"2007"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	630
+	"2007"	"2007"	"Franklin County, OH"	"39049"	"White"	"2106-3"	860
+	"2007"	"2007"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	582
+	"2007"	"2007"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	530
+	"2007"	"2007"	"Montgomery County, OH"	"39113"	"Black or African American"	"2054-5"	224
+	"2007"	"2007"	"Montgomery County, OH"	"39113"	"White"	"2106-3"	372
+	"2007"	"2007"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	334
+	"2007"	"2007"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	521
+	"2007"	"2007"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	189
+	"2007"	"2007"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	426
+	"2007"	"2007"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	206
+	"2007"	"2007"	"Greenville County, SC"	"45045"	"White"	"2106-3"	290
+	"2007"	"2007"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	411
+	"2007"	"2007"	"Davidson County, TN"	"47037"	"White"	"2106-3"	362
+	"2007"	"2007"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	77
+	"2007"	"2007"	"Knox County, TN"	"47093"	"White"	"2106-3"	357
+	"2007"	"2007"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1274
+	"2007"	"2007"	"Shelby County, TN"	"47157"	"White"	"2106-3"	269
+	"2007"	"2007"	"Richmond city, VA"	"51760"	"Black or African American"	"2054-5"	313
+	"2007"	"2007"	"Richmond city, VA"	"51760"	"White"	"2106-3"	67
+	"2008"	"2008"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	718
+	"2008"	"2008"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	380
+	"2008"	"2008"	"Duval County, FL"	"12031"	"Black or African American"	"2054-5"	593
+	"2008"	"2008"	"Duval County, FL"	"12031"	"White"	"2106-3"	516
+	"2008"	"2008"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	616
+	"2008"	"2008"	"Marion County, IN"	"18097"	"White"	"2106-3"	651
+	"2008"	"2008"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	423
+	"2008"	"2008"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	505
+	"2008"	"2008"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	155
+	"2008"	"2008"	"Kent County, MI"	"26081"	"White"	"2106-3"	400
+	"2008"	"2008"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	365
+	"2008"	"2008"	"Jackson County, MO"	"29095"	"White"	"2106-3"	385
+	"2008"	"2008"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	462
+	"2008"	"2008"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	489
+	"2008"	"2008"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	507
+	"2008"	"2008"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	136
+	"2008"	"2008"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	168
+	"2008"	"2008"	"Douglas County, NE"	"31055"	"White"	"2106-3"	339
+	"2008"	"2008"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	308
+	"2008"	"2008"	"Guilford County, NC"	"37081"	"White"	"2106-3"	185
+	"2008"	"2008"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	683
+	"2008"	"2008"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	395
+	"2008"	"2008"	"Wake County, NC"	"37183"	"Black or African American"	"2054-5"	367
+	"2008"	"2008"	"Wake County, NC"	"37183"	"White"	"2106-3"	475
+	"2008"	"2008"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	700
+	"2008"	"2008"	"Franklin County, OH"	"39049"	"White"	"2106-3"	821
+	"2008"	"2008"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	583
+	"2008"	"2008"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	500
+	"2008"	"2008"	"Montgomery County, OH"	"39113"	"Black or African American"	"2054-5"	290
+	"2008"	"2008"	"Montgomery County, OH"	"39113"	"White"	"2106-3"	311
+	"2008"	"2008"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	334
+	"2008"	"2008"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	523
+	"2008"	"2008"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	202
+	"2008"	"2008"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	433
+	"2008"	"2008"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	209
+	"2008"	"2008"	"Greenville County, SC"	"45045"	"White"	"2106-3"	302
+	"2008"	"2008"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	379
+	"2008"	"2008"	"Davidson County, TN"	"47037"	"White"	"2106-3"	355
+	"2008"	"2008"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	74
+	"2008"	"2008"	"Knox County, TN"	"47093"	"White"	"2106-3"	381
+	"2008"	"2008"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1237
+	"2008"	"2008"	"Shelby County, TN"	"47157"	"White"	"2106-3"	291
+	"2008"	"2008"	"Richmond city, VA"	"51760"	"Black or African American"	"2054-5"	288
+	"2008"	"2008"	"Richmond city, VA"	"51760"	"White"	"2106-3"	79
+	"2009"	"2009"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	704
+	"2009"	"2009"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	374
+	"2009"	"2009"	"Duval County, FL"	"12031"	"Black or African American"	"2054-5"	625
+	"2009"	"2009"	"Duval County, FL"	"12031"	"White"	"2106-3"	497
+	"2009"	"2009"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	591
+	"2009"	"2009"	"Marion County, IN"	"18097"	"White"	"2106-3"	674
+	"2009"	"2009"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	371
+	"2009"	"2009"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	481
+	"2009"	"2009"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	155
+	"2009"	"2009"	"Kent County, MI"	"26081"	"White"	"2106-3"	389
+	"2009"	"2009"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	409
+	"2009"	"2009"	"Jackson County, MO"	"29095"	"White"	"2106-3"	374
+	"2009"	"2009"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	525
+	"2009"	"2009"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	385
+	"2009"	"2009"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	445
+	"2009"	"2009"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	165
+	"2009"	"2009"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	179
+	"2009"	"2009"	"Douglas County, NE"	"31055"	"White"	"2106-3"	354
+	"2009"	"2009"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	307
+	"2009"	"2009"	"Guilford County, NC"	"37081"	"White"	"2106-3"	205
+	"2009"	"2009"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	643
+	"2009"	"2009"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	406
+	"2009"	"2009"	"Wake County, NC"	"37183"	"Black or African American"	"2054-5"	385
+	"2009"	"2009"	"Wake County, NC"	"37183"	"White"	"2106-3"	443
+	"2009"	"2009"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	643
+	"2009"	"2009"	"Franklin County, OH"	"39049"	"White"	"2106-3"	787
+	"2009"	"2009"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	559
+	"2009"	"2009"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	510
+	"2009"	"2009"	"Montgomery County, OH"	"39113"	"Black or African American"	"2054-5"	280
+	"2009"	"2009"	"Montgomery County, OH"	"39113"	"White"	"2106-3"	387
+	"2009"	"2009"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	343
+	"2009"	"2009"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	557
+	"2009"	"2009"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	184
+	"2009"	"2009"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	451
+	"2009"	"2009"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	244
+	"2009"	"2009"	"Greenville County, SC"	"45045"	"White"	"2106-3"	413
+	"2009"	"2009"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	382
+	"2009"	"2009"	"Davidson County, TN"	"47037"	"White"	"2106-3"	357
+	"2009"	"2009"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	94
+	"2009"	"2009"	"Knox County, TN"	"47093"	"White"	"2106-3"	313
+	"2009"	"2009"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1219
+	"2009"	"2009"	"Shelby County, TN"	"47157"	"White"	"2106-3"	248
+	"2009"	"2009"	"Richmond city, VA"	"51760"	"Black or African American"	"2054-5"	264
+	"2009"	"2009"	"Richmond city, VA"	"51760"	"White"	"2106-3"	60
+	"2010"	"2010"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	611
+	"2010"	"2010"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	324
+	"2010"	"2010"	"Duval County, FL"	"12031"	"Black or African American"	"2054-5"	600
+	"2010"	"2010"	"Duval County, FL"	"12031"	"White"	"2106-3"	435
+	"2010"	"2010"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	580
+	"2010"	"2010"	"Marion County, IN"	"18097"	"White"	"2106-3"	640
+	"2010"	"2010"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	385
+	"2010"	"2010"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	511
+	"2010"	"2010"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	166
+	"2010"	"2010"	"Kent County, MI"	"26081"	"White"	"2106-3"	378
+	"2010"	"2010"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	325
+	"2010"	"2010"	"Jackson County, MO"	"29095"	"White"	"2106-3"	369
+	"2010"	"2010"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	483
+	"2010"	"2010"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	433
+	"2010"	"2010"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	438
+	"2010"	"2010"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	119
+	"2010"	"2010"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	176
+	"2010"	"2010"	"Douglas County, NE"	"31055"	"White"	"2106-3"	385
+	"2010"	"2010"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	293
+	"2010"	"2010"	"Guilford County, NC"	"37081"	"White"	"2106-3"	165
+	"2010"	"2010"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	643
+	"2010"	"2010"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	439
+	"2010"	"2010"	"Wake County, NC"	"37183"	"Black or African American"	"2054-5"	345
+	"2010"	"2010"	"Wake County, NC"	"37183"	"White"	"2106-3"	442
+	"2010"	"2010"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	622
+	"2010"	"2010"	"Franklin County, OH"	"39049"	"White"	"2106-3"	829
+	"2010"	"2010"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	492
+	"2010"	"2010"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	460
+	"2010"	"2010"	"Montgomery County, OH"	"39113"	"Black or African American"	"2054-5"	248
+	"2010"	"2010"	"Montgomery County, OH"	"39113"	"White"	"2106-3"	355
+	"2010"	"2010"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	317
+	"2010"	"2010"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	519
+	"2010"	"2010"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	186
+	"2010"	"2010"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	426
+	"2010"	"2010"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	192
+	"2010"	"2010"	"Greenville County, SC"	"45045"	"White"	"2106-3"	265
+	"2010"	"2010"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	369
+	"2010"	"2010"	"Davidson County, TN"	"47037"	"White"	"2106-3"	334
+	"2010"	"2010"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	86
+	"2010"	"2010"	"Knox County, TN"	"47093"	"White"	"2106-3"	337
+	"2010"	"2010"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1162
+	"2010"	"2010"	"Shelby County, TN"	"47157"	"White"	"2106-3"	262
+	"2010"	"2010"	"Richmond city, VA"	"51760"	"Black or African American"	"2054-5"	252
+	"2010"	"2010"	"Richmond city, VA"	"51760"	"White"	"2106-3"	62
+	"2011"	"2011"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	583
+	"2011"	"2011"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	304
+	"2011"	"2011"	"Duval County, FL"	"12031"	"Black or African American"	"2054-5"	575
+	"2011"	"2011"	"Duval County, FL"	"12031"	"White"	"2106-3"	390
+	"2011"	"2011"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	534
+	"2011"	"2011"	"Marion County, IN"	"18097"	"White"	"2106-3"	598
+	"2011"	"2011"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	350
+	"2011"	"2011"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	484
+	"2011"	"2011"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	188
+	"2011"	"2011"	"Kent County, MI"	"26081"	"White"	"2106-3"	376
+	"2011"	"2011"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	359
+	"2011"	"2011"	"Jackson County, MO"	"29095"	"White"	"2106-3"	335
+	"2011"	"2011"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	512
+	"2011"	"2011"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	440
+	"2011"	"2011"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	463
+	"2011"	"2011"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	124
+	"2011"	"2011"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	153
+	"2011"	"2011"	"Douglas County, NE"	"31055"	"White"	"2106-3"	335
+	"2011"	"2011"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	299
+	"2011"	"2011"	"Guilford County, NC"	"37081"	"White"	"2106-3"	195
+	"2011"	"2011"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	629
+	"2011"	"2011"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	370
+	"2011"	"2011"	"Wake County, NC"	"37183"	"Black or African American"	"2054-5"	376
+	"2011"	"2011"	"Wake County, NC"	"37183"	"White"	"2106-3"	427
+	"2011"	"2011"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	625
+	"2011"	"2011"	"Franklin County, OH"	"39049"	"White"	"2106-3"	825
+	"2011"	"2011"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	552
+	"2011"	"2011"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	508
+	"2011"	"2011"	"Montgomery County, OH"	"39113"	"Black or African American"	"2054-5"	233
+	"2011"	"2011"	"Montgomery County, OH"	"39113"	"White"	"2106-3"	338
+	"2011"	"2011"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	320
+	"2011"	"2011"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	509
+	"2011"	"2011"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	209
+	"2011"	"2011"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	450
+	"2011"	"2011"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	183
+	"2011"	"2011"	"Greenville County, SC"	"45045"	"White"	"2106-3"	289
+	"2011"	"2011"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	349
+	"2011"	"2011"	"Davidson County, TN"	"47037"	"White"	"2106-3"	345
+	"2011"	"2011"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	68
+	"2011"	"2011"	"Knox County, TN"	"47093"	"White"	"2106-3"	340
+	"2011"	"2011"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1169
+	"2011"	"2011"	"Shelby County, TN"	"47157"	"White"	"2106-3"	248
+	"2011"	"2011"	"Richmond city, VA"	"51760"	"Black or African American"	"2054-5"	269
+	"2011"	"2011"	"Richmond city, VA"	"51760"	"White"	"2106-3"	59
+	"2012"	"2012"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	638
+	"2012"	"2012"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	281
+	"2012"	"2012"	"Duval County, FL"	"12031"	"Black or African American"	"2054-5"	608
+	"2012"	"2012"	"Duval County, FL"	"12031"	"White"	"2106-3"	445
+	"2012"	"2012"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	553
+	"2012"	"2012"	"Marion County, IN"	"18097"	"White"	"2106-3"	573
+	"2012"	"2012"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	336
+	"2012"	"2012"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	455
+	"2012"	"2012"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	182
+	"2012"	"2012"	"Kent County, MI"	"26081"	"White"	"2106-3"	400
+	"2012"	"2012"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	339
+	"2012"	"2012"	"Jackson County, MO"	"29095"	"White"	"2106-3"	352
+	"2012"	"2012"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	484
+	"2012"	"2012"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	409
+	"2012"	"2012"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	381
+	"2012"	"2012"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	122
+	"2012"	"2012"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	163
+	"2012"	"2012"	"Douglas County, NE"	"31055"	"White"	"2106-3"	329
+	"2012"	"2012"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	323
+	"2012"	"2012"	"Guilford County, NC"	"37081"	"White"	"2106-3"	159
+	"2012"	"2012"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	595
+	"2012"	"2012"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	425
+	"2012"	"2012"	"Wake County, NC"	"37183"	"Black or African American"	"2054-5"	317
+	"2012"	"2012"	"Wake County, NC"	"37183"	"White"	"2106-3"	474
+	"2012"	"2012"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	651
+	"2012"	"2012"	"Franklin County, OH"	"39049"	"White"	"2106-3"	782
+	"2012"	"2012"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	526
+	"2012"	"2012"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	468
+	"2012"	"2012"	"Montgomery County, OH"	"39113"	"Black or African American"	"2054-5"	259
+	"2012"	"2012"	"Montgomery County, OH"	"39113"	"White"	"2106-3"	366
+	"2012"	"2012"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	292
+	"2012"	"2012"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	438
+	"2012"	"2012"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	198
+	"2012"	"2012"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	480
+	"2012"	"2012"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	172
+	"2012"	"2012"	"Greenville County, SC"	"45045"	"White"	"2106-3"	256
+	"2012"	"2012"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	384
+	"2012"	"2012"	"Davidson County, TN"	"47037"	"White"	"2106-3"	385
+	"2012"	"2012"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	48
+	"2012"	"2012"	"Knox County, TN"	"47093"	"White"	"2106-3"	340
+	"2012"	"2012"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1221
+	"2012"	"2012"	"Shelby County, TN"	"47157"	"White"	"2106-3"	306
+	"2012"	"2012"	"Richmond city, VA"	"51760"	"Black or African American"	"2054-5"	245
+	"2012"	"2012"	"Richmond city, VA"	"51760"	"White"	"2106-3"	57
+	"2013"	"2013"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	566
+	"2013"	"2013"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	321
+	"2013"	"2013"	"Duval County, FL"	"12031"	"Black or African American"	"2054-5"	565
+	"2013"	"2013"	"Duval County, FL"	"12031"	"White"	"2106-3"	433
+	"2013"	"2013"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	571
+	"2013"	"2013"	"Marion County, IN"	"18097"	"White"	"2106-3"	552
+	"2013"	"2013"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	346
+	"2013"	"2013"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	492
+	"2013"	"2013"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	164
+	"2013"	"2013"	"Kent County, MI"	"26081"	"White"	"2106-3"	452
+	"2013"	"2013"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	355
+	"2013"	"2013"	"Jackson County, MO"	"29095"	"White"	"2106-3"	333
+	"2013"	"2013"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	501
+	"2013"	"2013"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	441
+	"2013"	"2013"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	412
+	"2013"	"2013"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	131
+	"2013"	"2013"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	150
+	"2013"	"2013"	"Douglas County, NE"	"31055"	"White"	"2106-3"	337
+	"2013"	"2013"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	290
+	"2013"	"2013"	"Guilford County, NC"	"37081"	"White"	"2106-3"	193
+	"2013"	"2013"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	584
+	"2013"	"2013"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	343
+	"2013"	"2013"	"Wake County, NC"	"37183"	"Black or African American"	"2054-5"	354
+	"2013"	"2013"	"Wake County, NC"	"37183"	"White"	"2106-3"	431
+	"2013"	"2013"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	677
+	"2013"	"2013"	"Franklin County, OH"	"39049"	"White"	"2106-3"	831
+	"2013"	"2013"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	454
+	"2013"	"2013"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	446
+	"2013"	"2013"	"Montgomery County, OH"	"39113"	"Black or African American"	"2054-5"	255
+	"2013"	"2013"	"Montgomery County, OH"	"39113"	"White"	"2106-3"	340
+	"2013"	"2013"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	283
+	"2013"	"2013"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	489
+	"2013"	"2013"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	170
+	"2013"	"2013"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	438
+	"2013"	"2013"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	153
+	"2013"	"2013"	"Greenville County, SC"	"45045"	"White"	"2106-3"	256
+	"2013"	"2013"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	376
+	"2013"	"2013"	"Davidson County, TN"	"47037"	"White"	"2106-3"	349
+	"2013"	"2013"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	74
+	"2013"	"2013"	"Knox County, TN"	"47093"	"White"	"2106-3"	320
+	"2013"	"2013"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1236
+	"2013"	"2013"	"Shelby County, TN"	"47157"	"White"	"2106-3"	248
+	"2013"	"2013"	"Richmond city, VA"	"51760"	"Black or African American"	"2054-5"	223
+	"2013"	"2013"	"Richmond city, VA"	"51760"	"White"	"2106-3"	56
+	"2014"	"2014"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	635
+	"2014"	"2014"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	310
+	"2014"	"2014"	"Duval County, FL"	"12031"	"Black or African American"	"2054-5"	558
+	"2014"	"2014"	"Duval County, FL"	"12031"	"White"	"2106-3"	450
+	"2014"	"2014"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	612
+	"2014"	"2014"	"Marion County, IN"	"18097"	"White"	"2106-3"	509
+	"2014"	"2014"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	345
+	"2014"	"2014"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	488
+	"2014"	"2014"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	169
+	"2014"	"2014"	"Kent County, MI"	"26081"	"White"	"2106-3"	436
+	"2014"	"2014"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	386
+	"2014"	"2014"	"Jackson County, MO"	"29095"	"White"	"2106-3"	387
+	"2014"	"2014"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	531
+	"2014"	"2014"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	447
+	"2014"	"2014"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	397
+	"2014"	"2014"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	136
+	"2014"	"2014"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	147
+	"2014"	"2014"	"Douglas County, NE"	"31055"	"White"	"2106-3"	324
+	"2014"	"2014"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	335
+	"2014"	"2014"	"Guilford County, NC"	"37081"	"White"	"2106-3"	160
+	"2014"	"2014"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	616
+	"2014"	"2014"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	376
+	"2014"	"2014"	"Wake County, NC"	"37183"	"Black or African American"	"2054-5"	359
+	"2014"	"2014"	"Wake County, NC"	"37183"	"White"	"2106-3"	463
+	"2014"	"2014"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	689
+	"2014"	"2014"	"Franklin County, OH"	"39049"	"White"	"2106-3"	760
+	"2014"	"2014"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	511
+	"2014"	"2014"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	435
+	"2014"	"2014"	"Montgomery County, OH"	"39113"	"Black or African American"	"2054-5"	208
+	"2014"	"2014"	"Montgomery County, OH"	"39113"	"White"	"2106-3"	353
+	"2014"	"2014"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	299
+	"2014"	"2014"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	482
+	"2014"	"2014"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	193
+	"2014"	"2014"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	386
+	"2014"	"2014"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	197
+	"2014"	"2014"	"Greenville County, SC"	"45045"	"White"	"2106-3"	248
+	"2014"	"2014"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	414
+	"2014"	"2014"	"Davidson County, TN"	"47037"	"White"	"2106-3"	375
+	"2014"	"2014"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	80
+	"2014"	"2014"	"Knox County, TN"	"47093"	"White"	"2106-3"	312
+	"2014"	"2014"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1175
+	"2014"	"2014"	"Shelby County, TN"	"47157"	"White"	"2106-3"	269
+	"2014"	"2014"	"Richmond city, VA"	"51760"	"Black or African American"	"2054-5"	221
+	"2014"	"2014"	"Richmond city, VA"	"51760"	"White"	"2106-3"	63
+	"2015"	"2015"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	622
+	"2015"	"2015"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	287
+	"2015"	"2015"	"Duval County, FL"	"12031"	"Black or African American"	"2054-5"	642
+	"2015"	"2015"	"Duval County, FL"	"12031"	"White"	"2106-3"	466
+	"2015"	"2015"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	588
+	"2015"	"2015"	"Marion County, IN"	"18097"	"White"	"2106-3"	536
+	"2015"	"2015"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	340
+	"2015"	"2015"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	469
+	"2015"	"2015"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	174
+	"2015"	"2015"	"Kent County, MI"	"26081"	"White"	"2106-3"	386
+	"2015"	"2015"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	376
+	"2015"	"2015"	"Jackson County, MO"	"29095"	"White"	"2106-3"	350
+	"2015"	"2015"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	539
+	"2015"	"2015"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	453
+	"2015"	"2015"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	408
+	"2015"	"2015"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	135
+	"2015"	"2015"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	200
+	"2015"	"2015"	"Douglas County, NE"	"31055"	"White"	"2106-3"	381
+	"2015"	"2015"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	324
+	"2015"	"2015"	"Guilford County, NC"	"37081"	"White"	"2106-3"	162
+	"2015"	"2015"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	678
+	"2015"	"2015"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	355
+	"2015"	"2015"	"Wake County, NC"	"37183"	"Black or African American"	"2054-5"	347
+	"2015"	"2015"	"Wake County, NC"	"37183"	"White"	"2106-3"	407
+	"2015"	"2015"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	631
+	"2015"	"2015"	"Franklin County, OH"	"39049"	"White"	"2106-3"	808
+	"2015"	"2015"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	504
+	"2015"	"2015"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	416
+	"2015"	"2015"	"Montgomery County, OH"	"39113"	"Black or African American"	"2054-5"	243
+	"2015"	"2015"	"Montgomery County, OH"	"39113"	"White"	"2106-3"	351
+	"2015"	"2015"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	324
+	"2015"	"2015"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	460
+	"2015"	"2015"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	165
+	"2015"	"2015"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	389
+	"2015"	"2015"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	172
+	"2015"	"2015"	"Greenville County, SC"	"45045"	"White"	"2106-3"	277
+	"2015"	"2015"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	411
+	"2015"	"2015"	"Davidson County, TN"	"47037"	"White"	"2106-3"	353
+	"2015"	"2015"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	81
+	"2015"	"2015"	"Knox County, TN"	"47093"	"White"	"2106-3"	324
+	"2015"	"2015"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1213
+	"2015"	"2015"	"Shelby County, TN"	"47157"	"White"	"2106-3"	233
+	"2015"	"2015"	"Richmond city, VA"	"51760"	"Black or African American"	"2054-5"	269
+	"2015"	"2015"	"Richmond city, VA"	"51760"	"White"	"2106-3"	57
+	"2016"	"2016"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	604
+	"2016"	"2016"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	329
+	"2016"	"2016"	"Duval County, FL"	"12031"	"Black or African American"	"2054-5"	698
+	"2016"	"2016"	"Duval County, FL"	"12031"	"White"	"2106-3"	453
+	"2016"	"2016"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	572
+	"2016"	"2016"	"Marion County, IN"	"18097"	"White"	"2106-3"	537
+	"2016"	"2016"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	402
+	"2016"	"2016"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	485
+	"2016"	"2016"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	172
+	"2016"	"2016"	"Kent County, MI"	"26081"	"White"	"2106-3"	385
+	"2016"	"2016"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	386
+	"2016"	"2016"	"Jackson County, MO"	"29095"	"White"	"2106-3"	373
+	"2016"	"2016"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	528
+	"2016"	"2016"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	461
+	"2016"	"2016"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	411
+	"2016"	"2016"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	127
+	"2016"	"2016"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	186
+	"2016"	"2016"	"Douglas County, NE"	"31055"	"White"	"2106-3"	332
+	"2016"	"2016"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	321
+	"2016"	"2016"	"Guilford County, NC"	"37081"	"White"	"2106-3"	153
+	"2016"	"2016"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	661
+	"2016"	"2016"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	399
+	"2016"	"2016"	"Wake County, NC"	"37183"	"Black or African American"	"2054-5"	360
+	"2016"	"2016"	"Wake County, NC"	"37183"	"White"	"2106-3"	424
+	"2016"	"2016"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	712
+	"2016"	"2016"	"Franklin County, OH"	"39049"	"White"	"2106-3"	779
+	"2016"	"2016"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	507
+	"2016"	"2016"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	438
+	"2016"	"2016"	"Montgomery County, OH"	"39113"	"Black or African American"	"2054-5"	240
+	"2016"	"2016"	"Montgomery County, OH"	"39113"	"White"	"2106-3"	351
+	"2016"	"2016"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	305
+	"2016"	"2016"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	449
+	"2016"	"2016"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	219
+	"2016"	"2016"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	358
+	"2016"	"2016"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	165
+	"2016"	"2016"	"Greenville County, SC"	"45045"	"White"	"2106-3"	260
+	"2016"	"2016"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	337
+	"2016"	"2016"	"Davidson County, TN"	"47037"	"White"	"2106-3"	347
+	"2016"	"2016"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	69
+	"2016"	"2016"	"Knox County, TN"	"47093"	"White"	"2106-3"	313
+	"2016"	"2016"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1132
+	"2016"	"2016"	"Shelby County, TN"	"47157"	"White"	"2106-3"	247
+	"2016"	"2016"	"Richmond city, VA"	"51760"	"Black or African American"	"2054-5"	249
+	"2016"	"2016"	"Richmond city, VA"	"51760"	"White"	"2106-3"	59
+	"2017"	"2017"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	646
+	"2017"	"2017"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	316
+	"2017"	"2017"	"Duval County, FL"	"12031"	"Black or African American"	"2054-5"	707
+	"2017"	"2017"	"Duval County, FL"	"12031"	"White"	"2106-3"	406
+	"2017"	"2017"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	649
+	"2017"	"2017"	"Marion County, IN"	"18097"	"White"	"2106-3"	556
+	"2017"	"2017"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	330
+	"2017"	"2017"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	429
+	"2017"	"2017"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	176
+	"2017"	"2017"	"Kent County, MI"	"26081"	"White"	"2106-3"	378
+	"2017"	"2017"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	389
+	"2017"	"2017"	"Jackson County, MO"	"29095"	"White"	"2106-3"	356
+	"2017"	"2017"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	586
+	"2017"	"2017"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	416
+	"2017"	"2017"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	387
+	"2017"	"2017"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	105
+	"2017"	"2017"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	186
+	"2017"	"2017"	"Douglas County, NE"	"31055"	"White"	"2106-3"	350
+	"2017"	"2017"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	380
+	"2017"	"2017"	"Guilford County, NC"	"37081"	"White"	"2106-3"	173
+	"2017"	"2017"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	655
+	"2017"	"2017"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	400
+	"2017"	"2017"	"Wake County, NC"	"37183"	"Black or African American"	"2054-5"	345
+	"2017"	"2017"	"Wake County, NC"	"37183"	"White"	"2106-3"	424
+	"2017"	"2017"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	689
+	"2017"	"2017"	"Franklin County, OH"	"39049"	"White"	"2106-3"	764
+	"2017"	"2017"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	510
+	"2017"	"2017"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	430
+	"2017"	"2017"	"Montgomery County, OH"	"39113"	"Black or African American"	"2054-5"	287
+	"2017"	"2017"	"Montgomery County, OH"	"39113"	"White"	"2106-3"	328
+	"2017"	"2017"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	287
+	"2017"	"2017"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	434
+	"2017"	"2017"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	203
+	"2017"	"2017"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	353
+	"2017"	"2017"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	199
+	"2017"	"2017"	"Greenville County, SC"	"45045"	"White"	"2106-3"	280
+	"2017"	"2017"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	401
+	"2017"	"2017"	"Davidson County, TN"	"47037"	"White"	"2106-3"	337
+	"2017"	"2017"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	89
+	"2017"	"2017"	"Knox County, TN"	"47093"	"White"	"2106-3"	277
+	"2017"	"2017"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1183
+	"2017"	"2017"	"Shelby County, TN"	"47157"	"White"	"2106-3"	228
+	"2017"	"2017"	"Richmond city, VA"	"51760"	"Black or African American"	"2054-5"	253
+	"2017"	"2017"	"Richmond city, VA"	"51760"	"White"	"2106-3"	57
+"---"
+"Dataset: Natality, 2007-2017"
+"Query Parameters:"
+"Title:"
+"Age of Mother 9: All"
+"Birthplace: All"
+"Birth Weight 12: 499 grams or less, 500 - 999 grams, 1000 - 1499 grams, 1500 - 1999 grams, 2000 - 2499 grams"
+"Bridged Race: Black or African American, White"
+"Chronic Hypertension: All"
+"Delivery Method: All"
+"Diabetes: All"
+"Eclampsia: All"
+"Education: All"
+"Expanded Hispanic Origin: All"
+"Gender: All"
+"Hispanic Origin: Not Hispanic or Latino"
+"Live Birth Order: All"
+"LMP Gestational Age 11: All"
+"Marital Status: All"
+"Medical Attendant: All"
+"Month: All"
+"Month Prenatal Care Began: All"
+"OE Gestational Age 11: All"
+"Plurality or Multiple Birth: All"
+"Pregnancy-associated Hypertension: All"
+"Single Race: All"
+"States: Jefferson County, AL (01073), Duval County, FL (12031), Marion County, IN (18097), Jefferson County, KY (21111), Kent"
+"County, MI (26081), Jackson County, MO (29095), St. Louis County, MO (29189), St. Louis city, MO (29510), Douglas County, NE"
+"(31055), Guilford County, NC (37081), Mecklenburg County, NC (37119), Wake County, NC (37183), Franklin County, OH (39049),"
+"Hamilton County, OH (39061), Montgomery County, OH (39113), Oklahoma County, OK (40109), Tulsa County, OK (40143), Greenville"
+"County, SC (45045), Davidson County, TN (47037), Knox County, TN (47093), Shelby County, TN (47157), Richmond city, VA (51760)"
+"Tobacco Use: All"
+"Weekday: All"
+"Year: All, 2007 to 2017"
+"Group By: Year, County, Bridged Race"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 1,000"
+"Population Option: No populations shown because rates were not selected."
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/Natality.html for more information."
+"---"
+"Query Date: Jan 4, 2019 4:56:54 PM"
+"---"
+"Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention"
+"(CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics, Natality public-use data 2007-2017, on CDC"
+"WONDER Online Database, October 2018. Accessed at http://wonder.cdc.gov/natality-current.html on Jan 4, 2019 4:56:54 PM"
+"---"
+Caveats:
+"1. Each birth record represents one living baby."
+"2. County-level data are shown only for counties with populations of 100,000 persons or more. Within each state, data for all"
+"counties with fewer than 100,000 persons are combined together under the label ""Unidentified Counties."""
+"3. As a result of population changes the following counties do not have data available for all years.<br/> Before 2014 the data"
+"for the following counties was recoded to the ""Unidentified Counties"" category within the state of the county because they did"
+"not meet minimum population standards. Houston County, AL (01069); Navajo County, AZ (04017); Faulkner County, AR (05045);"
+"Saline County, AR (05125); Bartow County, GA (13015); Carroll County, GA (13045); Columbia County, GA (13073); Coweta County, GA"
+"(13077); Douglas County, GA (13097); Fayette County, GA (13113); Forsyth County, GA (13117); Lowndes County, GA (13185);"
+"Paulding County, GA (13223); Whitfield County, GA (13313); Bonneville County, ID (16019); DeKalb County, IL (17037); Kendall"
+"County, IL (17093); Clark County, IN (18019); Douglas County, KS (20045); Boone County, KY (21015); Hardin County, KY (21093);"
+"Warren County, KY (21227); Ascension Parish, LA (22005); Bossier Parish, LA (22015); Livingston Parish, LA (22063); Cecil"
+"County, MD (24015); St. Mary's County, MD (24037); Scott County, MN (27139); Wright County, MN (27171); Franklin County, MO"
+"(29071); Missoula County, MT (30063); Sandoval County, NM (35043); Tompkins County, NY (36109); Brunswick County, NC (37019);"
+"Craven County, NC (37049); Harnett County, NC (37085); Henderson County, NC (37089); Miami County, OH (39109); Canadian County,"
+"OK (40017); Adams County, PA (42001); Dorchester County, SC (45035); Pennington County, SD (46103); Wilson County, TN (47189);"
+"Comal County, TX (48091); Guadalupe County, TX (48187); Hays County, TX (48209); Kaufman County, TX (48257); Parker County, TX"
+"(48367); Cache County, UT (49005); Washington County, UT (49053); Spotsylvania County, VA (51177); Stafford County, VA (51179);"
+"Cowlitz County, WA (53015); Berkeley County, WV (54003); Fond du Lac County, WI (55039); Walworth County, WI (55127). <br/>"
+"After 2013 the data for the following counties was recoded to the ""Unidentified Counties"" category within the state of the"
+"county because they did not meet minimum population standards. Cape May County, NJ (34009); Portsmouth city, VA (51740)."
+"4. Data for some counties in New York and Virginia have been revised for 2014 births based on updated residence population. More"
+"information: http://wonder.cdc.gov/wonder/help/Natality.html#county_2014."
+"5. The independent city of St. Louis, Missouri (FIPS code 29510) is reported separately from St. Louis County (FIPS code 29189)."

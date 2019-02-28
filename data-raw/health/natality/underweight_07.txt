@@ -1,0 +1,316 @@
+"Notes"	"Year"	"Year Code"	"County"	"County Code"	Births
+	"2007"	"2007"	"Jefferson County, AL"	"01073"	1121
+	"2007"	"2007"	"Duval County, FL"	"12031"	1331
+	"2007"	"2007"	"Marion County, IN"	"18097"	1449
+	"2007"	"2007"	"Jefferson County, KY"	"21111"	998
+	"2007"	"2007"	"Kent County, MI"	"26081"	708
+	"2007"	"2007"	"Jackson County, MO"	"29095"	894
+	"2007"	"2007"	"St. Louis County, MO"	"29189"	1146
+	"2007"	"2007"	"St. Louis city, MO"	"29510"	590
+	"2007"	"2007"	"Douglas County, NE"	"31055"	663
+	"2007"	"2007"	"Guilford County, NC"	"37081"	617
+	"2007"	"2007"	"Mecklenburg County, NC"	"37119"	1370
+	"2007"	"2007"	"Wake County, NC"	"37183"	1021
+	"2007"	"2007"	"Franklin County, OH"	"39049"	1762
+	"2007"	"2007"	"Hamilton County, OH"	"39061"	1222
+	"2007"	"2007"	"Montgomery County, OH"	"39113"	627
+	"2007"	"2007"	"Oklahoma County, OK"	"40109"	1076
+	"2007"	"2007"	"Tulsa County, OK"	"40143"	804
+	"2007"	"2007"	"Greenville County, SC"	"45045"	580
+	"2007"	"2007"	"Davidson County, TN"	"47037"	933
+	"2007"	"2007"	"Knox County, TN"	"47093"	473
+	"2007"	"2007"	"Shelby County, TN"	"47157"	1695
+	"2007"	"2007"	"Richmond city, VA"	"51760"	409
+	"2008"	"2008"	"Jefferson County, AL"	"01073"	1174
+	"2008"	"2008"	"Duval County, FL"	"12031"	1247
+	"2008"	"2008"	"Marion County, IN"	"18097"	1448
+	"2008"	"2008"	"Jefferson County, KY"	"21111"	1017
+	"2008"	"2008"	"Kent County, MI"	"26081"	667
+	"2008"	"2008"	"Jackson County, MO"	"29095"	879
+	"2008"	"2008"	"St. Louis County, MO"	"29189"	1049
+	"2008"	"2008"	"St. Louis city, MO"	"29510"	674
+	"2008"	"2008"	"Douglas County, NE"	"31055"	657
+	"2008"	"2008"	"Guilford County, NC"	"37081"	593
+	"2008"	"2008"	"Mecklenburg County, NC"	"37119"	1392
+	"2008"	"2008"	"Wake County, NC"	"37183"	1048
+	"2008"	"2008"	"Franklin County, OH"	"39049"	1753
+	"2008"	"2008"	"Hamilton County, OH"	"39061"	1200
+	"2008"	"2008"	"Montgomery County, OH"	"39113"	625
+	"2008"	"2008"	"Oklahoma County, OK"	"40109"	1112
+	"2008"	"2008"	"Tulsa County, OK"	"40143"	839
+	"2008"	"2008"	"Greenville County, SC"	"45045"	587
+	"2008"	"2008"	"Davidson County, TN"	"47037"	881
+	"2008"	"2008"	"Knox County, TN"	"47093"	488
+	"2008"	"2008"	"Shelby County, TN"	"47157"	1653
+	"2008"	"2008"	"Richmond city, VA"	"51760"	393
+	"2009"	"2009"	"Jefferson County, AL"	"01073"	1143
+	"2009"	"2009"	"Duval County, FL"	"12031"	1285
+	"2009"	"2009"	"Marion County, IN"	"18097"	1482
+	"2009"	"2009"	"Jefferson County, KY"	"21111"	938
+	"2009"	"2009"	"Kent County, MI"	"26081"	649
+	"2009"	"2009"	"Jackson County, MO"	"29095"	905
+	"2009"	"2009"	"St. Louis County, MO"	"29189"	985
+	"2009"	"2009"	"St. Louis city, MO"	"29510"	639
+	"2009"	"2009"	"Douglas County, NE"	"31055"	705
+	"2009"	"2009"	"Guilford County, NC"	"37081"	587
+	"2009"	"2009"	"Mecklenburg County, NC"	"37119"	1356
+	"2009"	"2009"	"Wake County, NC"	"37183"	1030
+	"2009"	"2009"	"Franklin County, OH"	"39049"	1653
+	"2009"	"2009"	"Hamilton County, OH"	"39061"	1136
+	"2009"	"2009"	"Montgomery County, OH"	"39113"	695
+	"2009"	"2009"	"Oklahoma County, OK"	"40109"	1160
+	"2009"	"2009"	"Tulsa County, OK"	"40143"	844
+	"2009"	"2009"	"Greenville County, SC"	"45045"	748
+	"2009"	"2009"	"Davidson County, TN"	"47037"	888
+	"2009"	"2009"	"Knox County, TN"	"47093"	445
+	"2009"	"2009"	"Shelby County, TN"	"47157"	1603
+	"2009"	"2009"	"Richmond city, VA"	"51760"	355
+	"2010"	"2010"	"Jefferson County, AL"	"01073"	998
+	"2010"	"2010"	"Duval County, FL"	"12031"	1171
+	"2010"	"2010"	"Marion County, IN"	"18097"	1403
+	"2010"	"2010"	"Jefferson County, KY"	"21111"	972
+	"2010"	"2010"	"Kent County, MI"	"26081"	654
+	"2010"	"2010"	"Jackson County, MO"	"29095"	795
+	"2010"	"2010"	"St. Louis County, MO"	"29189"	1005
+	"2010"	"2010"	"St. Louis city, MO"	"29510"	597
+	"2010"	"2010"	"Douglas County, NE"	"31055"	689
+	"2010"	"2010"	"Guilford County, NC"	"37081"	562
+	"2010"	"2010"	"Mecklenburg County, NC"	"37119"	1340
+	"2010"	"2010"	"Wake County, NC"	"37183"	1018
+	"2010"	"2010"	"Franklin County, OH"	"39049"	1676
+	"2010"	"2010"	"Hamilton County, OH"	"39061"	1043
+	"2010"	"2010"	"Montgomery County, OH"	"39113"	634
+	"2010"	"2010"	"Oklahoma County, OK"	"40109"	1095
+	"2010"	"2010"	"Tulsa County, OK"	"40143"	809
+	"2010"	"2010"	"Greenville County, SC"	"45045"	508
+	"2010"	"2010"	"Davidson County, TN"	"47037"	825
+	"2010"	"2010"	"Knox County, TN"	"47093"	452
+	"2010"	"2010"	"Shelby County, TN"	"47157"	1526
+	"2010"	"2010"	"Richmond city, VA"	"51760"	336
+	"2011"	"2011"	"Jefferson County, AL"	"01073"	956
+	"2011"	"2011"	"Duval County, FL"	"12031"	1118
+	"2011"	"2011"	"Marion County, IN"	"18097"	1330
+	"2011"	"2011"	"Jefferson County, KY"	"21111"	918
+	"2011"	"2011"	"Kent County, MI"	"26081"	688
+	"2011"	"2011"	"Jackson County, MO"	"29095"	794
+	"2011"	"2011"	"St. Louis County, MO"	"29189"	1041
+	"2011"	"2011"	"St. Louis city, MO"	"29510"	620
+	"2011"	"2011"	"Douglas County, NE"	"31055"	625
+	"2011"	"2011"	"Guilford County, NC"	"37081"	587
+	"2011"	"2011"	"Mecklenburg County, NC"	"37119"	1289
+	"2011"	"2011"	"Wake County, NC"	"37183"	1023
+	"2011"	"2011"	"Franklin County, OH"	"39049"	1677
+	"2011"	"2011"	"Hamilton County, OH"	"39061"	1141
+	"2011"	"2011"	"Montgomery County, OH"	"39113"	598
+	"2011"	"2011"	"Oklahoma County, OK"	"40109"	1078
+	"2011"	"2011"	"Tulsa County, OK"	"40143"	842
+	"2011"	"2011"	"Greenville County, SC"	"45045"	533
+	"2011"	"2011"	"Davidson County, TN"	"47037"	833
+	"2011"	"2011"	"Knox County, TN"	"47093"	443
+	"2011"	"2011"	"Shelby County, TN"	"47157"	1539
+	"2011"	"2011"	"Richmond city, VA"	"51760"	357
+	"2012"	"2012"	"Jefferson County, AL"	"01073"	971
+	"2012"	"2012"	"Duval County, FL"	"12031"	1221
+	"2012"	"2012"	"Marion County, IN"	"18097"	1290
+	"2012"	"2012"	"Jefferson County, KY"	"21111"	861
+	"2012"	"2012"	"Kent County, MI"	"26081"	693
+	"2012"	"2012"	"Jackson County, MO"	"29095"	788
+	"2012"	"2012"	"St. Louis County, MO"	"29189"	972
+	"2012"	"2012"	"St. Louis city, MO"	"29510"	543
+	"2012"	"2012"	"Douglas County, NE"	"31055"	632
+	"2012"	"2012"	"Guilford County, NC"	"37081"	570
+	"2012"	"2012"	"Mecklenburg County, NC"	"37119"	1355
+	"2012"	"2012"	"Wake County, NC"	"37183"	1011
+	"2012"	"2012"	"Franklin County, OH"	"39049"	1678
+	"2012"	"2012"	"Hamilton County, OH"	"39061"	1084
+	"2012"	"2012"	"Montgomery County, OH"	"39113"	657
+	"2012"	"2012"	"Oklahoma County, OK"	"40109"	959
+	"2012"	"2012"	"Tulsa County, OK"	"40143"	889
+	"2012"	"2012"	"Greenville County, SC"	"45045"	483
+	"2012"	"2012"	"Davidson County, TN"	"47037"	902
+	"2012"	"2012"	"Knox County, TN"	"47093"	427
+	"2012"	"2012"	"Shelby County, TN"	"47157"	1645
+	"2012"	"2012"	"Richmond city, VA"	"51760"	330
+	"2013"	"2013"	"Jefferson County, AL"	"01073"	945
+	"2013"	"2013"	"Duval County, FL"	"12031"	1153
+	"2013"	"2013"	"Marion County, IN"	"18097"	1310
+	"2013"	"2013"	"Jefferson County, KY"	"21111"	915
+	"2013"	"2013"	"Kent County, MI"	"26081"	734
+	"2013"	"2013"	"Jackson County, MO"	"29095"	796
+	"2013"	"2013"	"St. Louis County, MO"	"29189"	1018
+	"2013"	"2013"	"St. Louis city, MO"	"29510"	571
+	"2013"	"2013"	"Douglas County, NE"	"31055"	627
+	"2013"	"2013"	"Guilford County, NC"	"37081"	576
+	"2013"	"2013"	"Mecklenburg County, NC"	"37119"	1230
+	"2013"	"2013"	"Wake County, NC"	"37183"	981
+	"2013"	"2013"	"Franklin County, OH"	"39049"	1725
+	"2013"	"2013"	"Hamilton County, OH"	"39061"	988
+	"2013"	"2013"	"Montgomery County, OH"	"39113"	631
+	"2013"	"2013"	"Oklahoma County, OK"	"40109"	1017
+	"2013"	"2013"	"Tulsa County, OK"	"40143"	790
+	"2013"	"2013"	"Greenville County, SC"	"45045"	488
+	"2013"	"2013"	"Davidson County, TN"	"47037"	869
+	"2013"	"2013"	"Knox County, TN"	"47093"	431
+	"2013"	"2013"	"Shelby County, TN"	"47157"	1612
+	"2013"	"2013"	"Richmond city, VA"	"51760"	299
+	"2014"	"2014"	"Jefferson County, AL"	"01073"	999
+	"2014"	"2014"	"Duval County, FL"	"12031"	1176
+	"2014"	"2014"	"Marion County, IN"	"18097"	1300
+	"2014"	"2014"	"Jefferson County, KY"	"21111"	904
+	"2014"	"2014"	"Kent County, MI"	"26081"	726
+	"2014"	"2014"	"Jackson County, MO"	"29095"	880
+	"2014"	"2014"	"St. Louis County, MO"	"29189"	1066
+	"2014"	"2014"	"St. Louis city, MO"	"29510"	571
+	"2014"	"2014"	"Douglas County, NE"	"31055"	615
+	"2014"	"2014"	"Guilford County, NC"	"37081"	589
+	"2014"	"2014"	"Mecklenburg County, NC"	"37119"	1296
+	"2014"	"2014"	"Wake County, NC"	"37183"	1014
+	"2014"	"2014"	"Franklin County, OH"	"39049"	1694
+	"2014"	"2014"	"Hamilton County, OH"	"39061"	1036
+	"2014"	"2014"	"Montgomery County, OH"	"39113"	597
+	"2014"	"2014"	"Oklahoma County, OK"	"40109"	1060
+	"2014"	"2014"	"Tulsa County, OK"	"40143"	769
+	"2014"	"2014"	"Greenville County, SC"	"45045"	518
+	"2014"	"2014"	"Davidson County, TN"	"47037"	917
+	"2014"	"2014"	"Knox County, TN"	"47093"	434
+	"2014"	"2014"	"Shelby County, TN"	"47157"	1559
+	"2014"	"2014"	"Richmond city, VA"	"51760"	311
+	"2015"	"2015"	"Jefferson County, AL"	"01073"	983
+	"2015"	"2015"	"Duval County, FL"	"12031"	1301
+	"2015"	"2015"	"Marion County, IN"	"18097"	1335
+	"2015"	"2015"	"Jefferson County, KY"	"21111"	894
+	"2015"	"2015"	"Kent County, MI"	"26081"	695
+	"2015"	"2015"	"Jackson County, MO"	"29095"	825
+	"2015"	"2015"	"St. Louis County, MO"	"29189"	1095
+	"2015"	"2015"	"St. Louis city, MO"	"29510"	583
+	"2015"	"2015"	"Douglas County, NE"	"31055"	727
+	"2015"	"2015"	"Guilford County, NC"	"37081"	607
+	"2015"	"2015"	"Mecklenburg County, NC"	"37119"	1367
+	"2015"	"2015"	"Wake County, NC"	"37183"	973
+	"2015"	"2015"	"Franklin County, OH"	"39049"	1705
+	"2015"	"2015"	"Hamilton County, OH"	"39061"	1006
+	"2015"	"2015"	"Montgomery County, OH"	"39113"	637
+	"2015"	"2015"	"Oklahoma County, OK"	"40109"	1086
+	"2015"	"2015"	"Tulsa County, OK"	"40143"	758
+	"2015"	"2015"	"Greenville County, SC"	"45045"	536
+	"2015"	"2015"	"Davidson County, TN"	"47037"	902
+	"2015"	"2015"	"Knox County, TN"	"47093"	459
+	"2015"	"2015"	"Shelby County, TN"	"47157"	1578
+	"2015"	"2015"	"Richmond city, VA"	"51760"	357
+	"2016"	"2016"	"Jefferson County, AL"	"01073"	1010
+	"2016"	"2016"	"Duval County, FL"	"12031"	1326
+	"2016"	"2016"	"Marion County, IN"	"18097"	1314
+	"2016"	"2016"	"Jefferson County, KY"	"21111"	988
+	"2016"	"2016"	"Kent County, MI"	"26081"	674
+	"2016"	"2016"	"Jackson County, MO"	"29095"	880
+	"2016"	"2016"	"St. Louis County, MO"	"29189"	1100
+	"2016"	"2016"	"St. Louis city, MO"	"29510"	580
+	"2016"	"2016"	"Douglas County, NE"	"31055"	685
+	"2016"	"2016"	"Guilford County, NC"	"37081"	570
+	"2016"	"2016"	"Mecklenburg County, NC"	"37119"	1423
+	"2016"	"2016"	"Wake County, NC"	"37183"	1028
+	"2016"	"2016"	"Franklin County, OH"	"39049"	1761
+	"2016"	"2016"	"Hamilton County, OH"	"39061"	1056
+	"2016"	"2016"	"Montgomery County, OH"	"39113"	626
+	"2016"	"2016"	"Oklahoma County, OK"	"40109"	1064
+	"2016"	"2016"	"Tulsa County, OK"	"40143"	762
+	"2016"	"2016"	"Greenville County, SC"	"45045"	515
+	"2016"	"2016"	"Davidson County, TN"	"47037"	819
+	"2016"	"2016"	"Knox County, TN"	"47093"	408
+	"2016"	"2016"	"Shelby County, TN"	"47157"	1542
+	"2016"	"2016"	"Richmond city, VA"	"51760"	336
+	"2017"	"2017"	"Jefferson County, AL"	"01073"	1030
+	"2017"	"2017"	"Duval County, FL"	"12031"	1310
+	"2017"	"2017"	"Marion County, IN"	"18097"	1434
+	"2017"	"2017"	"Jefferson County, KY"	"21111"	903
+	"2017"	"2017"	"Kent County, MI"	"26081"	693
+	"2017"	"2017"	"Jackson County, MO"	"29095"	865
+	"2017"	"2017"	"St. Louis County, MO"	"29189"	1125
+	"2017"	"2017"	"St. Louis city, MO"	"29510"	531
+	"2017"	"2017"	"Douglas County, NE"	"31055"	699
+	"2017"	"2017"	"Guilford County, NC"	"37081"	644
+	"2017"	"2017"	"Mecklenburg County, NC"	"37119"	1422
+	"2017"	"2017"	"Wake County, NC"	"37183"	1014
+	"2017"	"2017"	"Franklin County, OH"	"39049"	1725
+	"2017"	"2017"	"Hamilton County, OH"	"39061"	1037
+	"2017"	"2017"	"Montgomery County, OH"	"39113"	662
+	"2017"	"2017"	"Oklahoma County, OK"	"40109"	1027
+	"2017"	"2017"	"Tulsa County, OK"	"40143"	749
+	"2017"	"2017"	"Greenville County, SC"	"45045"	559
+	"2017"	"2017"	"Davidson County, TN"	"47037"	920
+	"2017"	"2017"	"Knox County, TN"	"47093"	418
+	"2017"	"2017"	"Shelby County, TN"	"47157"	1547
+	"2017"	"2017"	"Richmond city, VA"	"51760"	346
+"---"
+"Dataset: Natality, 2007-2017"
+"Query Parameters:"
+"Title:"
+"Age of Mother 9: All"
+"Birthplace: All"
+"Birth Weight 12: 499 grams or less, 500 - 999 grams, 1000 - 1499 grams, 1500 - 1999 grams, 2000 - 2499 grams"
+"Bridged Race: All"
+"Chronic Hypertension: All"
+"Delivery Method: All"
+"Diabetes: All"
+"Eclampsia: All"
+"Education: All"
+"Expanded Hispanic Origin: All"
+"Gender: All"
+"Hispanic Origin: All"
+"Live Birth Order: All"
+"LMP Gestational Age 11: All"
+"Marital Status: All"
+"Medical Attendant: All"
+"Month: All"
+"Month Prenatal Care Began: All"
+"OE Gestational Age 11: All"
+"Plurality or Multiple Birth: All"
+"Pregnancy-associated Hypertension: All"
+"Single Race: All"
+"States: Jefferson County, AL (01073), Duval County, FL (12031), Marion County, IN (18097), Jefferson County, KY (21111), Kent"
+"County, MI (26081), Jackson County, MO (29095), St. Louis County, MO (29189), St. Louis city, MO (29510), Douglas County, NE"
+"(31055), Guilford County, NC (37081), Mecklenburg County, NC (37119), Wake County, NC (37183), Franklin County, OH (39049),"
+"Hamilton County, OH (39061), Montgomery County, OH (39113), Oklahoma County, OK (40109), Tulsa County, OK (40143), Greenville"
+"County, SC (45045), Davidson County, TN (47037), Knox County, TN (47093), Shelby County, TN (47157), Richmond city, VA (51760)"
+"Tobacco Use: All"
+"Weekday: All"
+"Year: All, 2007 to 2017"
+"Group By: Year, County"
+"Show Totals: False"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 1,000"
+"Population Option: No populations shown because rates were not selected."
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/Natality.html for more information."
+"---"
+"Query Date: Jan 4, 2019 4:27:22 PM"
+"---"
+"Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention"
+"(CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics, Natality public-use data 2007-2017, on CDC"
+"WONDER Online Database, October 2018. Accessed at http://wonder.cdc.gov/natality-current.html on Jan 4, 2019 4:27:22 PM"
+"---"
+Caveats:
+"1. Each birth record represents one living baby."
+"2. County-level data are shown only for counties with populations of 100,000 persons or more. Within each state, data for all"
+"counties with fewer than 100,000 persons are combined together under the label ""Unidentified Counties."""
+"3. As a result of population changes the following counties do not have data available for all years.<br/> Before 2014 the data"
+"for the following counties was recoded to the ""Unidentified Counties"" category within the state of the county because they did"
+"not meet minimum population standards. Houston County, AL (01069); Navajo County, AZ (04017); Faulkner County, AR (05045);"
+"Saline County, AR (05125); Bartow County, GA (13015); Carroll County, GA (13045); Columbia County, GA (13073); Coweta County, GA"
+"(13077); Douglas County, GA (13097); Fayette County, GA (13113); Forsyth County, GA (13117); Lowndes County, GA (13185);"
+"Paulding County, GA (13223); Whitfield County, GA (13313); Bonneville County, ID (16019); DeKalb County, IL (17037); Kendall"
+"County, IL (17093); Clark County, IN (18019); Douglas County, KS (20045); Boone County, KY (21015); Hardin County, KY (21093);"
+"Warren County, KY (21227); Ascension Parish, LA (22005); Bossier Parish, LA (22015); Livingston Parish, LA (22063); Cecil"
+"County, MD (24015); St. Mary's County, MD (24037); Scott County, MN (27139); Wright County, MN (27171); Franklin County, MO"
+"(29071); Missoula County, MT (30063); Sandoval County, NM (35043); Tompkins County, NY (36109); Brunswick County, NC (37019);"
+"Craven County, NC (37049); Harnett County, NC (37085); Henderson County, NC (37089); Miami County, OH (39109); Canadian County,"
+"OK (40017); Adams County, PA (42001); Dorchester County, SC (45035); Pennington County, SD (46103); Wilson County, TN (47189);"
+"Comal County, TX (48091); Guadalupe County, TX (48187); Hays County, TX (48209); Kaufman County, TX (48257); Parker County, TX"
+"(48367); Cache County, UT (49005); Washington County, UT (49053); Spotsylvania County, VA (51177); Stafford County, VA (51179);"
+"Cowlitz County, WA (53015); Berkeley County, WV (54003); Fond du Lac County, WI (55039); Walworth County, WI (55127). <br/>"
+"After 2013 the data for the following counties was recoded to the ""Unidentified Counties"" category within the state of the"
+"county because they did not meet minimum population standards. Cape May County, NJ (34009); Portsmouth city, VA (51740)."
+"4. Data for some counties in New York and Virginia have been revised for 2014 births based on updated residence population. More"
+"information: http://wonder.cdc.gov/wonder/help/Natality.html#county_2014."
+"5. The independent city of St. Louis, Missouri (FIPS code 29510) is reported separately from St. Louis County (FIPS code 29189)."

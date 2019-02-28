@@ -1,0 +1,147 @@
+"Notes"	"Year"	"Year Code"	"County"	"County Code"	Births
+	"2003"	"2003"	"Jefferson County, AL"	"01073"	469
+	"2003"	"2003"	"Duval County, FL"	"12031"	824
+	"2003"	"2003"	"Marion County, IN"	"18097"	1780
+	"2003"	"2003"	"Jefferson County, KY"	"21111"	476
+	"2003"	"2003"	"Kent County, MI"	"26081"	1311
+	"2003"	"2003"	"Jackson County, MO"	"29095"	1218
+	"2003"	"2003"	"St. Louis County, MO"	"29189"	377
+	"2003"	"2003"	"St. Louis city, MO"	"29510"	191
+	"2003"	"2003"	"Douglas County, NE"	"31055"	1248
+	"2003"	"2003"	"Guilford County, NC"	"37081"	670
+	"2003"	"2003"	"Mecklenburg County, NC"	"37119"	2019
+	"2003"	"2003"	"Wake County, NC"	"37183"	1692
+	"2003"	"2003"	"Franklin County, OH"	"39049"	1073
+	"2003"	"2003"	"Hamilton County, OH"	"39061"	334
+	"2003"	"2003"	"Montgomery County, OH"	"39113"	192
+	"2003"	"2003"	"Oklahoma County, OK"	"40109"	2202
+	"2003"	"2003"	"Tulsa County, OK"	"40143"	1365
+	"2003"	"2003"	"Greenville County, SC"	"45045"	603
+	"2003"	"2003"	"Davidson County, TN"	"47037"	1294
+	"2003"	"2003"	"Knox County, TN"	"47093"	183
+	"2003"	"2003"	"Shelby County, TN"	"47157"	964
+	"2003"	"2003"	"Richmond city, VA"	"51760"	269
+	"2004"	"2004"	"Jefferson County, AL"	"01073"	562
+	"2004"	"2004"	"Duval County, FL"	"12031"	910
+	"2004"	"2004"	"Marion County, IN"	"18097"	1956
+	"2004"	"2004"	"Jefferson County, KY"	"21111"	528
+	"2004"	"2004"	"Kent County, MI"	"26081"	1288
+	"2004"	"2004"	"Jackson County, MO"	"29095"	1377
+	"2004"	"2004"	"St. Louis County, MO"	"29189"	399
+	"2004"	"2004"	"St. Louis city, MO"	"29510"	200
+	"2004"	"2004"	"Douglas County, NE"	"31055"	1323
+	"2004"	"2004"	"Guilford County, NC"	"37081"	704
+	"2004"	"2004"	"Mecklenburg County, NC"	"37119"	2320
+	"2004"	"2004"	"Wake County, NC"	"37183"	1827
+	"2004"	"2004"	"Franklin County, OH"	"39049"	1142
+	"2004"	"2004"	"Hamilton County, OH"	"39061"	400
+	"2004"	"2004"	"Montgomery County, OH"	"39113"	219
+	"2004"	"2004"	"Oklahoma County, OK"	"40109"	2347
+	"2004"	"2004"	"Tulsa County, OK"	"40143"	1374
+	"2004"	"2004"	"Greenville County, SC"	"45045"	711
+	"2004"	"2004"	"Davidson County, TN"	"47037"	1446
+	"2004"	"2004"	"Knox County, TN"	"47093"	215
+	"2004"	"2004"	"Shelby County, TN"	"47157"	1207
+	"2004"	"2004"	"Richmond city, VA"	"51760"	268
+	"2005"	"2005"	"Jefferson County, AL"	"01073"	656
+	"2005"	"2005"	"Duval County, FL"	"12031"	1145
+	"2005"	"2005"	"Marion County, IN"	"18097"	2194
+	"2005"	"2005"	"Jefferson County, KY"	"21111"	599
+	"2005"	"2005"	"Kent County, MI"	"26081"	1467
+	"2005"	"2005"	"Jackson County, MO"	"29095"	1494
+	"2005"	"2005"	"St. Louis County, MO"	"29189"	452
+	"2005"	"2005"	"St. Louis city, MO"	"29510"	213
+	"2005"	"2005"	"Douglas County, NE"	"31055"	1642
+	"2005"	"2005"	"Guilford County, NC"	"37081"	823
+	"2005"	"2005"	"Mecklenburg County, NC"	"37119"	2633
+	"2005"	"2005"	"Wake County, NC"	"37183"	2216
+	"2005"	"2005"	"Franklin County, OH"	"39049"	1299
+	"2005"	"2005"	"Hamilton County, OH"	"39061"	470
+	"2005"	"2005"	"Montgomery County, OH"	"39113"	253
+	"2005"	"2005"	"Oklahoma County, OK"	"40109"	2506
+	"2005"	"2005"	"Tulsa County, OK"	"40143"	1486
+	"2005"	"2005"	"Greenville County, SC"	"45045"	839
+	"2005"	"2005"	"Davidson County, TN"	"47037"	1715
+	"2005"	"2005"	"Knox County, TN"	"47093"	268
+	"2005"	"2005"	"Shelby County, TN"	"47157"	1475
+	"2005"	"2005"	"Richmond city, VA"	"51760"	311
+	"2006"	"2006"	"Jefferson County, AL"	"01073"	765
+	"2006"	"2006"	"Duval County, FL"	"12031"	1320
+	"2006"	"2006"	"Marion County, IN"	"18097"	2429
+	"2006"	"2006"	"Jefferson County, KY"	"21111"	696
+	"2006"	"2006"	"Kent County, MI"	"26081"	1530
+	"2006"	"2006"	"Jackson County, MO"	"29095"	1474
+	"2006"	"2006"	"St. Louis County, MO"	"29189"	480
+	"2006"	"2006"	"St. Louis city, MO"	"29510"	232
+	"2006"	"2006"	"Douglas County, NE"	"31055"	1599
+	"2006"	"2006"	"Guilford County, NC"	"37081"	876
+	"2006"	"2006"	"Mecklenburg County, NC"	"37119"	3053
+	"2006"	"2006"	"Wake County, NC"	"37183"	2399
+	"2006"	"2006"	"Franklin County, OH"	"39049"	1410
+	"2006"	"2006"	"Hamilton County, OH"	"39061"	538
+	"2006"	"2006"	"Montgomery County, OH"	"39113"	243
+	"2006"	"2006"	"Oklahoma County, OK"	"40109"	2684
+	"2006"	"2006"	"Tulsa County, OK"	"40143"	1789
+	"2006"	"2006"	"Greenville County, SC"	"45045"	898
+	"2006"	"2006"	"Davidson County, TN"	"47037"	1957
+	"2006"	"2006"	"Knox County, TN"	"47093"	334
+	"2006"	"2006"	"Shelby County, TN"	"47157"	1685
+	"2006"	"2006"	"Richmond city, VA"	"51760"	362
+"---"
+"Dataset: Natality, 2003-2006"
+"Query Parameters:"
+"Title:"
+"Age of Mother 9: All"
+"Anemia: All"
+"Birthplace: All"
+"Birth Weight 12: 499 grams or less, 500 - 999 grams, 1000 - 1499 grams, 1500 - 1999 grams, 2000 - 2499 grams, 2500 - 2999 grams,"
+"3000 - 3499 grams, 3500 - 3999 grams, 4000 - 4499 grams, 4500 - 4999 grams, 5000 - 8165 grams"
+"Bridged Race: All"
+"Cardiac Disease: All"
+"Chronic Hypertension: All"
+"Delivery Method: All"
+"Diabetes: All"
+"Eclampsia: All"
+"Education: All"
+"Expanded Hispanic Origin: All"
+"Gender: All"
+"Hispanic Origin: Hispanic or Latino"
+"Hydramnios / Oligohydramnios: All"
+"Incompetent Cervix: All"
+"Live Birth Order: All"
+"LMP Gestational Age 11: All"
+"Lung Disease: All"
+"Marital Status: All"
+"Medical Attendant: All"
+"Month: All"
+"Month Prenatal Care Began: All"
+"Plurality or Multiple Birth: All"
+"Pregnancy-associated Hypertension: All"
+"States: Jefferson County, AL (01073), Duval County, FL (12031), Marion County, IN (18097), Jefferson County, KY (21111), Kent"
+"County, MI (26081), Jackson County, MO (29095), St. Louis County, MO (29189), St. Louis city, MO (29510), Douglas County, NE"
+"(31055), Guilford County, NC (37081), Mecklenburg County, NC (37119), Wake County, NC (37183), Franklin County, OH (39049),"
+"Hamilton County, OH (39061), Montgomery County, OH (39113), Oklahoma County, OK (40109), Tulsa County, OK (40143), Greenville"
+"County, SC (45045), Davidson County, TN (47037), Knox County, TN (47093), Shelby County, TN (47157), Richmond city, VA (51760)"
+"Tobacco Use: All"
+"Weekday: All"
+"Year: All, 2003 to 2006"
+"Group By: Year, County"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 1,000"
+"Population Option: No populations shown because rates were not selected."
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/Natality.html for more information."
+"---"
+"Query Date: Jan 4, 2019 4:42:12 PM"
+"---"
+"Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention"
+"(CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics, Natality public-use data 2003-2006, on CDC"
+"WONDER Online Database, March 2009. Accessed at http://wonder.cdc.gov/natality-v2006.html on Jan 4, 2019 4:42:12 PM"
+"---"
+Caveats:
+"1. Each birth record represents one living baby."
+"2. County-level data are shown only for counties with populations of 100,000 persons or more. Data for all counties with fewer"
+"than 100,000 persons within a state are combined together under the label ""Unidentified Counties."""
+"3. The independent city of St. Louis, Missouri (FIPS code 29510) is reported separately from St. Louis county (FIPS code 29189)."

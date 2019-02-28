@@ -1,0 +1,484 @@
+"Notes"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate	Age Adjusted Rate
+	"Jefferson County, AL"	"01073"	"1999"	"1999"	42	662845	6.3	6.3
+	"Jefferson County, AL"	"01073"	"2000"	"2000"	67	662047	10.1	10.1
+	"Jefferson County, AL"	"01073"	"2001"	"2001"	67	660197	10.1	10.1
+	"Jefferson County, AL"	"01073"	"2002"	"2002"	64	657518	9.7	9.7
+	"Jefferson County, AL"	"01073"	"2003"	"2003"	78	657513	11.9	11.9
+	"Jefferson County, AL"	"01073"	"2004"	"2004"	75	656023	11.4	11.3
+	"Jefferson County, AL"	"01073"	"2005"	"2005"	69	654919	10.5	10.7
+	"Jefferson County, AL"	"01073"	"2006"	"2006"	96	655893	14.6	14.7
+	"Jefferson County, AL"	"01073"	"2007"	"2007"	106	655163	16.2	15.9
+	"Jefferson County, AL"	"01073"	"2008"	"2008"	95	656510	14.5	14.1
+	"Jefferson County, AL"	"01073"	"2009"	"2009"	134	658441	20.4	19.9
+	"Jefferson County, AL"	"01073"	"2010"	"2010"	77	658466	11.7	11.7
+	"Jefferson County, AL"	"01073"	"2011"	"2011"	121	658931	18.4	18.7
+	"Jefferson County, AL"	"01073"	"2012"	"2012"	115	660009	17.4	18.0
+	"Jefferson County, AL"	"01073"	"2013"	"2013"	127	659479	19.3	19.4
+	"Jefferson County, AL"	"01073"	"2014"	"2014"	217	660793	32.8	32.8
+	"Jefferson County, AL"	"01073"	"2015"	"2015"	187	660367	28.3	29.5
+	"Jefferson County, AL"	"01073"	"2016"	"2016"	256	659521	38.8	38.2
+	"Jefferson County, AL"	"01073"	"2017"	"2017"	278	659197	42.2	41.7
+	"Duval County, FL"	"12031"	"1999"	"1999"	69	773150	8.9	9.0
+	"Duval County, FL"	"12031"	"2000"	"2000"	81	778879	10.4	10.3
+	"Duval County, FL"	"12031"	"2001"	"2001"	107	790681	13.5	13.3
+	"Duval County, FL"	"12031"	"2002"	"2002"	121	800532	15.1	14.8
+	"Duval County, FL"	"12031"	"2003"	"2003"	135	809633	16.7	16.2
+	"Duval County, FL"	"12031"	"2004"	"2004"	114	820070	13.9	13.7
+	"Duval County, FL"	"12031"	"2005"	"2005"	112	828988	13.5	13.2
+	"Duval County, FL"	"12031"	"2006"	"2006"	162	842098	19.2	18.7
+	"Duval County, FL"	"12031"	"2007"	"2007"	147	851033	17.3	16.9
+	"Duval County, FL"	"12031"	"2008"	"2008"	112	855437	13.1	12.8
+	"Duval County, FL"	"12031"	"2009"	"2009"	140	859795	16.3	16.0
+	"Duval County, FL"	"12031"	"2010"	"2010"	150	864263	17.4	16.4
+	"Duval County, FL"	"12031"	"2011"	"2011"	152	870709	17.5	16.8
+	"Duval County, FL"	"12031"	"2012"	"2012"	169	879602	19.2	18.6
+	"Duval County, FL"	"12031"	"2013"	"2013"	145	885855	16.4	16.0
+	"Duval County, FL"	"12031"	"2014"	"2014"	153	897698	17.0	16.1
+	"Duval County, FL"	"12031"	"2015"	"2015"	177	913010	19.4	19.2
+	"Duval County, FL"	"12031"	"2016"	"2016"	411	926255	44.4	44.1
+	"Duval County, FL"	"12031"	"2017"	"2017"	452	937934	48.2	47.6
+	"Marion County, IN"	"18097"	"1999"	"1999"	53	857461	6.2	6.3
+	"Marion County, IN"	"18097"	"2000"	"2000"	65	860454	7.6	7.5
+	"Marion County, IN"	"18097"	"2001"	"2001"	73	865662	8.4	8.3
+	"Marion County, IN"	"18097"	"2002"	"2002"	85	866210	9.8	9.8
+	"Marion County, IN"	"18097"	"2003"	"2003"	91	868576	10.5	10.4
+	"Marion County, IN"	"18097"	"2004"	"2004"	105	870378	12.1	11.8
+	"Marion County, IN"	"18097"	"2005"	"2005"	98	873310	11.2	11.2
+	"Marion County, IN"	"18097"	"2006"	"2006"	119	878515	13.5	13.5
+	"Marion County, IN"	"18097"	"2007"	"2007"	131	883591	14.8	14.4
+	"Marion County, IN"	"18097"	"2008"	"2008"	153	889504	17.2	17.2
+	"Marion County, IN"	"18097"	"2009"	"2009"	145	898394	16.1	16.0
+	"Marion County, IN"	"18097"	"2010"	"2010"	163	903393	18.0	17.6
+	"Marion County, IN"	"18097"	"2011"	"2011"	164	911296	18.0	17.7
+	"Marion County, IN"	"18097"	"2012"	"2012"	195	918977	21.2	21.1
+	"Marion County, IN"	"18097"	"2013"	"2013"	212	928281	22.8	23.0
+	"Marion County, IN"	"18097"	"2014"	"2014"	250	934243	26.8	26.6
+	"Marion County, IN"	"18097"	"2015"	"2015"	257	939020	27.4	27.2
+	"Marion County, IN"	"18097"	"2016"	"2016"	326	941229	34.6	34.1
+	"Marion County, IN"	"18097"	"2017"	"2017"	374	950082	39.4	39.8
+	"Jefferson County, KY"	"21111"	"1999"	"1999"	40	691879	5.8	5.7
+	"Jefferson County, KY"	"21111"	"2000"	"2000"	54	693604	7.8	7.6
+	"Jefferson County, KY"	"21111"	"2001"	"2001"	61	697159	8.7	8.7
+	"Jefferson County, KY"	"21111"	"2002"	"2002"	61	699810	8.7	8.6
+	"Jefferson County, KY"	"21111"	"2003"	"2003"	92	703970	13.1	12.9
+	"Jefferson County, KY"	"21111"	"2004"	"2004"	77	706828	10.9	10.7
+	"Jefferson County, KY"	"21111"	"2005"	"2005"	83	710018	11.7	11.7
+	"Jefferson County, KY"	"21111"	"2006"	"2006"	103	715149	14.4	14.3
+	"Jefferson County, KY"	"21111"	"2007"	"2007"	97	723040	13.4	13.3
+	"Jefferson County, KY"	"21111"	"2008"	"2008"	95	730194	13.0	12.9
+	"Jefferson County, KY"	"21111"	"2009"	"2009"	86	736705	11.7	11.6
+	"Jefferson County, KY"	"21111"	"2010"	"2010"	119	741096	16.1	15.4
+	"Jefferson County, KY"	"21111"	"2011"	"2011"	150	746906	20.1	20.3
+	"Jefferson County, KY"	"21111"	"2012"	"2012"	186	750828	24.8	25.2
+	"Jefferson County, KY"	"21111"	"2013"	"2013"	191	756832	25.2	25.0
+	"Jefferson County, KY"	"21111"	"2014"	"2014"	195	760026	25.7	25.8
+	"Jefferson County, KY"	"21111"	"2015"	"2015"	222	763623	29.1	29.3
+	"Jefferson County, KY"	"21111"	"2016"	"2016"	355	765352	46.4	48.8
+	"Jefferson County, KY"	"21111"	"2017"	"2017"	377	771158	48.9	50.6
+	"Kent County, MI"	"26081"	"1999"	"1999"	24	568731	4.2	4.3
+	"Kent County, MI"	"26081"	"2000"	"2000"	33	574335	5.7	5.8
+	"Kent County, MI"	"26081"	"2001"	"2001"	29	581224	5.0	5.1
+	"Kent County, MI"	"26081"	"2002"	"2002"	31	584940	5.3	5.5
+	"Kent County, MI"	"26081"	"2003"	"2003"	43	587790	7.3	7.3
+	"Kent County, MI"	"26081"	"2004"	"2004"	41	589554	7.0	7.0
+	"Kent County, MI"	"26081"	"2005"	"2005"	52	592210	8.8	8.9
+	"Kent County, MI"	"26081"	"2006"	"2006"	56	595191	9.4	9.3
+	"Kent County, MI"	"26081"	"2007"	"2007"	63	598077	10.5	10.4
+	"Kent County, MI"	"26081"	"2008"	"2008"	60	599234	10.0	9.7
+	"Kent County, MI"	"26081"	"2009"	"2009"	65	601437	10.8	11.0
+	"Kent County, MI"	"26081"	"2010"	"2010"	57	602622	9.5	9.8
+	"Kent County, MI"	"26081"	"2011"	"2011"	60	608453	9.9	10.2
+	"Kent County, MI"	"26081"	"2012"	"2012"	69	614462	11.2	11.4
+	"Kent County, MI"	"26081"	"2013"	"2013"	70	621700	11.3	11.9
+	"Kent County, MI"	"26081"	"2014"	"2014"	61	629237	9.7	9.6
+	"Kent County, MI"	"26081"	"2015"	"2015"	103	636369	16.2	16.1
+	"Kent County, MI"	"26081"	"2016"	"2016"	81	642173	12.6	12.4
+	"Kent County, MI"	"26081"	"2017"	"2017"	129	648594	19.9	20.1
+	"Jackson County, MO"	"29095"	"1999"	"1999"	47	654073	7.2	7.2
+	"Jackson County, MO"	"29095"	"2000"	"2000"	52	654880	7.9	7.8
+	"Jackson County, MO"	"29095"	"2001"	"2001"	58	657012	8.8	8.8
+	"Jackson County, MO"	"29095"	"2002"	"2002"	64	658765	9.7	9.8
+	"Jackson County, MO"	"29095"	"2003"	"2003"	63	658914	9.6	9.5
+	"Jackson County, MO"	"29095"	"2004"	"2004"	79	658307	12.0	12.0
+	"Jackson County, MO"	"29095"	"2005"	"2005"	78	658592	11.8	11.5
+	"Jackson County, MO"	"29095"	"2006"	"2006"	93	660539	14.1	13.7
+	"Jackson County, MO"	"29095"	"2007"	"2007"	94	662995	14.2	14.1
+	"Jackson County, MO"	"29095"	"2008"	"2008"	82	665427	12.3	12.1
+	"Jackson County, MO"	"29095"	"2009"	"2009"	103	670763	15.4	15.1
+	"Jackson County, MO"	"29095"	"2010"	"2010"	118	674158	17.5	16.9
+	"Jackson County, MO"	"29095"	"2011"	"2011"	102	676360	15.1	14.9
+	"Jackson County, MO"	"29095"	"2012"	"2012"	111	677377	16.4	16.0
+	"Jackson County, MO"	"29095"	"2013"	"2013"	120	679996	17.6	16.3
+	"Jackson County, MO"	"29095"	"2014"	"2014"	117	683191	17.1	17.1
+	"Jackson County, MO"	"29095"	"2015"	"2015"	133	687623	19.3	18.4
+	"Jackson County, MO"	"29095"	"2016"	"2016"	124	691801	17.9	17.6
+	"Jackson County, MO"	"29095"	"2017"	"2017"	132	698895	18.9	18.1
+	"St. Louis County, MO"	"29189"	"1999"	"1999"	58	1016040	5.7	5.7
+	"St. Louis County, MO"	"29189"	"2000"	"2000"	53	1016315	5.2	5.3
+	"St. Louis County, MO"	"29189"	"2001"	"2001"	52	1016243	5.1	5.1
+	"St. Louis County, MO"	"29189"	"2002"	"2002"	72	1014359	7.1	7.1
+	"St. Louis County, MO"	"29189"	"2003"	"2003"	80	1011678	7.9	7.9
+	"St. Louis County, MO"	"29189"	"2004"	"2004"	89	1007813	8.8	9.1
+	"St. Louis County, MO"	"29189"	"2005"	"2005"	89	1004109	8.9	9.0
+	"St. Louis County, MO"	"29189"	"2006"	"2006"	116	1002050	11.6	11.8
+	"St. Louis County, MO"	"29189"	"2007"	"2007"	88	999389	8.8	9.0
+	"St. Louis County, MO"	"29189"	"2008"	"2008"	108	998331	10.8	11.2
+	"St. Louis County, MO"	"29189"	"2009"	"2009"	128	998618	12.8	13.1
+	"St. Louis County, MO"	"29189"	"2010"	"2010"	151	998954	15.1	15.9
+	"St. Louis County, MO"	"29189"	"2011"	"2011"	163	998692	16.3	17.2
+	"St. Louis County, MO"	"29189"	"2012"	"2012"	152	1000438	15.2	15.7
+	"St. Louis County, MO"	"29189"	"2013"	"2013"	178	1001444	17.8	19.1
+	"St. Louis County, MO"	"29189"	"2014"	"2014"	190	1001876	19.0	20.2
+	"St. Louis County, MO"	"29189"	"2015"	"2015"	168	1003362	16.7	18.2
+	"St. Louis County, MO"	"29189"	"2016"	"2016"	270	998581	27.0	30.2
+	"St. Louis County, MO"	"29189"	"2017"	"2017"	295	996726	29.6	31.9
+	"St. Louis city, MO"	"29510"	"1999"	"1999"	44	350156	12.6	13.3
+	"St. Louis city, MO"	"29510"	"2000"	"2000"	48	348189	13.8	14.5
+	"St. Louis city, MO"	"29510"	"2001"	"2001"	41	343243	11.9	12.4
+	"St. Louis city, MO"	"29510"	"2002"	"2002"	51	338457	15.1	15.4
+	"St. Louis city, MO"	"29510"	"2003"	"2003"	63	334893	18.8	19.3
+	"St. Louis city, MO"	"29510"	"2004"	"2004"	55	330988	16.6	16.8
+	"St. Louis city, MO"	"29510"	"2005"	"2005"	48	324945	14.8	14.9
+	"St. Louis city, MO"	"29510"	"2006"	"2006"	80	320131	25.0	24.7
+	"St. Louis city, MO"	"29510"	"2007"	"2007"	62	317959	19.5	19.6
+	"St. Louis city, MO"	"29510"	"2008"	"2008"	60	317955	18.9	19.0
+	"St. Louis city, MO"	"29510"	"2009"	"2009"	71	318842	22.3	21.9
+	"St. Louis city, MO"	"29510"	"2010"	"2010"	78	319294	24.4	23.9
+	"St. Louis city, MO"	"29510"	"2011"	"2011"	92	318069	28.9	27.9
+	"St. Louis city, MO"	"29510"	"2012"	"2012"	70	318172	22.0	20.7
+	"St. Louis city, MO"	"29510"	"2013"	"2013"	97	318416	30.5	30.2
+	"St. Louis city, MO"	"29510"	"2014"	"2014"	122	317419	38.4	35.0
+	"St. Louis city, MO"	"29510"	"2015"	"2015"	108	315685	34.2	31.5
+	"St. Louis city, MO"	"29510"	"2016"	"2016"	201	311404	64.5	61.3
+	"St. Louis city, MO"	"29510"	"2017"	"2017"	216	308626	70.0	67.6
+	"Douglas County, NE"	"31055"	"1999"	"1999"	17	460798	Unreliable	Unreliable
+	"Douglas County, NE"	"31055"	"2000"	"2000"	17	463585	Unreliable	Unreliable
+	"Douglas County, NE"	"31055"	"2001"	"2001"	29	468125	6.2	6.1
+	"Douglas County, NE"	"31055"	"2002"	"2002"	23	471866	4.9	4.9
+	"Douglas County, NE"	"31055"	"2003"	"2003"	17	476701	Unreliable	Unreliable
+	"Douglas County, NE"	"31055"	"2004"	"2004"	28	482075	5.8	6.0
+	"Douglas County, NE"	"31055"	"2005"	"2005"	40	488114	8.2	8.4
+	"Douglas County, NE"	"31055"	"2006"	"2006"	39	493757	7.9	8.2
+	"Douglas County, NE"	"31055"	"2007"	"2007"	37	498743	7.4	7.8
+	"Douglas County, NE"	"31055"	"2008"	"2008"	35	504547	6.9	6.9
+	"Douglas County, NE"	"31055"	"2009"	"2009"	44	511902	8.6	9.0
+	"Douglas County, NE"	"31055"	"2010"	"2010"	50	517110	9.7	9.9
+	"Douglas County, NE"	"31055"	"2011"	"2011"	56	524861	10.7	10.1
+	"Douglas County, NE"	"31055"	"2012"	"2012"	60	531265	11.3	11.5
+	"Douglas County, NE"	"31055"	"2013"	"2013"	39	537256	7.3	7.1
+	"Douglas County, NE"	"31055"	"2014"	"2014"	53	543244	9.8	10.0
+	"Douglas County, NE"	"31055"	"2015"	"2015"	49	550064	8.9	8.8
+	"Douglas County, NE"	"31055"	"2016"	"2016"	46	554995	8.3	8.3
+	"Douglas County, NE"	"31055"	"2017"	"2017"	68	561620	12.1	12.0
+	"Guilford County, NC"	"37081"	"1999"	"1999"	23	416459	5.5	5.4
+	"Guilford County, NC"	"37081"	"2000"	"2000"	31	421048	7.4	7.2
+	"Guilford County, NC"	"37081"	"2001"	"2001"	35	428381	8.2	8.1
+	"Guilford County, NC"	"37081"	"2002"	"2002"	32	432068	7.4	7.3
+	"Guilford County, NC"	"37081"	"2003"	"2003"	33	436327	7.6	7.4
+	"Guilford County, NC"	"37081"	"2004"	"2004"	44	440597	10.0	9.8
+	"Guilford County, NC"	"37081"	"2005"	"2005"	49	448192	10.9	10.6
+	"Guilford County, NC"	"37081"	"2006"	"2006"	51	458792	11.1	10.8
+	"Guilford County, NC"	"37081"	"2007"	"2007"	52	468466	11.1	11.0
+	"Guilford County, NC"	"37081"	"2008"	"2008"	38	477809	8.0	7.9
+	"Guilford County, NC"	"37081"	"2009"	"2009"	53	484180	10.9	10.7
+	"Guilford County, NC"	"37081"	"2010"	"2010"	37	488406	7.6	7.5
+	"Guilford County, NC"	"37081"	"2011"	"2011"	54	495279	10.9	10.8
+	"Guilford County, NC"	"37081"	"2012"	"2012"	58	500879	11.6	11.5
+	"Guilford County, NC"	"37081"	"2013"	"2013"	39	506610	7.7	7.8
+	"Guilford County, NC"	"37081"	"2014"	"2014"	53	512119	10.3	10.5
+	"Guilford County, NC"	"37081"	"2015"	"2015"	66	517600	12.8	12.4
+	"Guilford County, NC"	"37081"	"2016"	"2016"	101	521330	19.4	19.2
+	"Guilford County, NC"	"37081"	"2017"	"2017"	129	526953	24.5	24.9
+	"Mecklenburg County, NC"	"37119"	"1999"	"1999"	32	682071	4.7	4.8
+	"Mecklenburg County, NC"	"37119"	"2000"	"2000"	38	695454	5.5	5.3
+	"Mecklenburg County, NC"	"37119"	"2001"	"2001"	32	720171	4.4	4.3
+	"Mecklenburg County, NC"	"37119"	"2002"	"2002"	46	736422	6.2	6.1
+	"Mecklenburg County, NC"	"37119"	"2003"	"2003"	48	753991	6.4	5.9
+	"Mecklenburg County, NC"	"37119"	"2004"	"2004"	54	772949	7.0	6.9
+	"Mecklenburg County, NC"	"37119"	"2005"	"2005"	71	798701	8.9	8.9
+	"Mecklenburg County, NC"	"37119"	"2006"	"2006"	65	831507	7.8	7.7
+	"Mecklenburg County, NC"	"37119"	"2007"	"2007"	60	862177	7.0	6.8
+	"Mecklenburg County, NC"	"37119"	"2008"	"2008"	72	887991	8.1	7.7
+	"Mecklenburg County, NC"	"37119"	"2009"	"2009"	58	908704	6.4	6.1
+	"Mecklenburg County, NC"	"37119"	"2010"	"2010"	67	919628	7.3	7.1
+	"Mecklenburg County, NC"	"37119"	"2011"	"2011"	82	944373	8.7	8.5
+	"Mecklenburg County, NC"	"37119"	"2012"	"2012"	93	969031	9.6	9.4
+	"Mecklenburg County, NC"	"37119"	"2013"	"2013"	68	990977	6.9	6.5
+	"Mecklenburg County, NC"	"37119"	"2014"	"2014"	113	1012539	11.2	10.4
+	"Mecklenburg County, NC"	"37119"	"2015"	"2015"	115	1034070	11.1	10.8
+	"Mecklenburg County, NC"	"37119"	"2016"	"2016"	173	1054835	16.4	15.9
+	"Mecklenburg County, NC"	"37119"	"2017"	"2017"	205	1076837	19.0	18.3
+	"Wake County, NC"	"37183"	"1999"	"1999"	29	612728	4.7	4.6
+	"Wake County, NC"	"37183"	"2000"	"2000"	32	627846	5.1	5.1
+	"Wake County, NC"	"37183"	"2001"	"2001"	30	656819	4.6	4.7
+	"Wake County, NC"	"37183"	"2002"	"2002"	35	676392	5.2	4.8
+	"Wake County, NC"	"37183"	"2003"	"2003"	45	695746	6.5	6.5
+	"Wake County, NC"	"37183"	"2004"	"2004"	38	716336	5.3	5.0
+	"Wake County, NC"	"37183"	"2005"	"2005"	62	746048	8.3	8.2
+	"Wake County, NC"	"37183"	"2006"	"2006"	55	784038	7.0	6.8
+	"Wake County, NC"	"37183"	"2007"	"2007"	61	821607	7.4	7.2
+	"Wake County, NC"	"37183"	"2008"	"2008"	71	856492	8.3	8.2
+	"Wake County, NC"	"37183"	"2009"	"2009"	52	883624	5.9	5.8
+	"Wake County, NC"	"37183"	"2010"	"2010"	58	900993	6.4	6.2
+	"Wake County, NC"	"37183"	"2011"	"2011"	59	929780	6.3	6.0
+	"Wake County, NC"	"37183"	"2012"	"2012"	58	952151	6.1	5.7
+	"Wake County, NC"	"37183"	"2013"	"2013"	74	974289	7.6	7.2
+	"Wake County, NC"	"37183"	"2014"	"2014"	88	998691	8.8	8.5
+	"Wake County, NC"	"37183"	"2015"	"2015"	89	1024198	8.7	8.5
+	"Wake County, NC"	"37183"	"2016"	"2016"	135	1046791	12.9	12.8
+	"Wake County, NC"	"37183"	"2017"	"2017"	153	1072203	14.3	13.6
+	"Franklin County, OH"	"39049"	"1999"	"1999"	57	1061223	5.4	5.5
+	"Franklin County, OH"	"39049"	"2000"	"2000"	56	1068978	5.2	5.4
+	"Franklin County, OH"	"39049"	"2001"	"2001"	72	1082938	6.6	6.6
+	"Franklin County, OH"	"39049"	"2002"	"2002"	105	1088693	9.6	9.6
+	"Franklin County, OH"	"39049"	"2003"	"2003"	82	1095250	7.5	7.5
+	"Franklin County, OH"	"39049"	"2004"	"2004"	107	1099603	9.7	9.6
+	"Franklin County, OH"	"39049"	"2005"	"2005"	160	1105497	14.5	14.0
+	"Franklin County, OH"	"39049"	"2006"	"2006"	188	1115924	16.8	16.6
+	"Franklin County, OH"	"39049"	"2007"	"2007"	216	1127174	19.2	18.8
+	"Franklin County, OH"	"39049"	"2008"	"2008"	205	1141183	18.0	17.9
+	"Franklin County, OH"	"39049"	"2009"	"2009"	135	1155408	11.7	11.5
+	"Franklin County, OH"	"39049"	"2010"	"2010"	242	1163414	20.8	20.3
+	"Franklin County, OH"	"39049"	"2011"	"2011"	250	1178799	21.2	20.7
+	"Franklin County, OH"	"39049"	"2012"	"2012"	242	1195537	20.2	20.1
+	"Franklin County, OH"	"39049"	"2013"	"2013"	228	1212263	18.8	18.5
+	"Franklin County, OH"	"39049"	"2014"	"2014"	238	1231393	19.3	18.6
+	"Franklin County, OH"	"39049"	"2015"	"2015"	322	1251722	25.7	24.7
+	"Franklin County, OH"	"39049"	"2016"	"2016"	356	1264518	28.2	27.4
+	"Franklin County, OH"	"39049"	"2017"	"2017"	469	1291981	36.3	35.3
+	"Hamilton County, OH"	"39061"	"1999"	"1999"	52	849917	6.1	6.2
+	"Hamilton County, OH"	"39061"	"2000"	"2000"	56	845303	6.6	6.7
+	"Hamilton County, OH"	"39061"	"2001"	"2001"	71	840335	8.4	8.5
+	"Hamilton County, OH"	"39061"	"2002"	"2002"	88	832390	10.6	10.6
+	"Hamilton County, OH"	"39061"	"2003"	"2003"	82	825139	9.9	10.0
+	"Hamilton County, OH"	"39061"	"2004"	"2004"	104	817306	12.7	12.5
+	"Hamilton County, OH"	"39061"	"2005"	"2005"	113	810352	13.9	13.7
+	"Hamilton County, OH"	"39061"	"2006"	"2006"	128	804913	15.9	15.9
+	"Hamilton County, OH"	"39061"	"2007"	"2007"	118	801815	14.7	14.5
+	"Hamilton County, OH"	"39061"	"2008"	"2008"	133	799840	16.6	16.5
+	"Hamilton County, OH"	"39061"	"2009"	"2009"	91	802149	11.3	11.5
+	"Hamilton County, OH"	"39061"	"2010"	"2010"	132	802374	16.5	16.3
+	"Hamilton County, OH"	"39061"	"2011"	"2011"	185	800362	23.1	23.5
+	"Hamilton County, OH"	"39061"	"2012"	"2012"	186	802038	23.2	23.9
+	"Hamilton County, OH"	"39061"	"2013"	"2013"	246	804520	30.6	30.5
+	"Hamilton County, OH"	"39061"	"2014"	"2014"	264	806631	32.7	34.1
+	"Hamilton County, OH"	"39061"	"2015"	"2015"	363	807598	44.9	46.2
+	"Hamilton County, OH"	"39061"	"2016"	"2016"	342	809099	42.3	43.4
+	"Hamilton County, OH"	"39061"	"2017"	"2017"	468	813822	57.5	59.2
+	"Montgomery County, OH"	"39113"	"1999"	"1999"	75	561944	13.3	13.5
+	"Montgomery County, OH"	"39113"	"2000"	"2000"	69	559062	12.3	12.5
+	"Montgomery County, OH"	"39113"	"2001"	"2001"	82	555536	14.8	15.1
+	"Montgomery County, OH"	"39113"	"2002"	"2002"	124	553170	22.4	22.8
+	"Montgomery County, OH"	"39113"	"2003"	"2003"	57	551742	10.3	10.6
+	"Montgomery County, OH"	"39113"	"2004"	"2004"	145	549713	26.4	26.6
+	"Montgomery County, OH"	"39113"	"2005"	"2005"	139	546979	25.4	25.6
+	"Montgomery County, OH"	"39113"	"2006"	"2006"	152	543620	28.0	28.1
+	"Montgomery County, OH"	"39113"	"2007"	"2007"	147	540667	27.2	27.9
+	"Montgomery County, OH"	"39113"	"2008"	"2008"	169	537664	31.4	32.1
+	"Montgomery County, OH"	"39113"	"2009"	"2009"	107	535294	20.0	20.7
+	"Montgomery County, OH"	"39113"	"2010"	"2010"	135	535153	25.2	25.9
+	"Montgomery County, OH"	"39113"	"2011"	"2011"	135	537602	25.1	25.2
+	"Montgomery County, OH"	"39113"	"2012"	"2012"	175	534325	32.8	33.4
+	"Montgomery County, OH"	"39113"	"2013"	"2013"	220	535846	41.1	43.5
+	"Montgomery County, OH"	"39113"	"2014"	"2014"	270	533116	50.6	54.0
+	"Montgomery County, OH"	"39113"	"2015"	"2015"	266	532258	50.0	54.3
+	"Montgomery County, OH"	"39113"	"2016"	"2016"	332	531239	62.5	67.4
+	"Montgomery County, OH"	"39113"	"2017"	"2017"	541	531542	101.8	110.2
+	"Oklahoma County, OK"	"40109"	"1999"	"1999"	39	657182	5.9	6.1
+	"Oklahoma County, OK"	"40109"	"2000"	"2000"	65	660448	9.8	10.0
+	"Oklahoma County, OK"	"40109"	"2001"	"2001"	57	664836	8.6	8.6
+	"Oklahoma County, OK"	"40109"	"2002"	"2002"	47	671120	7.0	7.3
+	"Oklahoma County, OK"	"40109"	"2003"	"2003"	80	674571	11.9	12.2
+	"Oklahoma County, OK"	"40109"	"2004"	"2004"	103	677742	15.2	15.5
+	"Oklahoma County, OK"	"40109"	"2005"	"2005"	90	683299	13.2	13.5
+	"Oklahoma County, OK"	"40109"	"2006"	"2006"	114	690153	16.5	16.8
+	"Oklahoma County, OK"	"40109"	"2007"	"2007"	144	695706	20.7	21.3
+	"Oklahoma County, OK"	"40109"	"2008"	"2008"	112	701484	16.0	15.8
+	"Oklahoma County, OK"	"40109"	"2009"	"2009"	120	711595	16.9	16.8
+	"Oklahoma County, OK"	"40109"	"2010"	"2010"	155	718633	21.6	21.2
+	"Oklahoma County, OK"	"40109"	"2011"	"2011"	142	732371	19.4	19.8
+	"Oklahoma County, OK"	"40109"	"2012"	"2012"	185	741781	24.9	25.5
+	"Oklahoma County, OK"	"40109"	"2013"	"2013"	174	755245	23.0	23.1
+	"Oklahoma County, OK"	"40109"	"2014"	"2014"	170	766215	22.2	22.4
+	"Oklahoma County, OK"	"40109"	"2015"	"2015"	146	776864	18.8	19.4
+	"Oklahoma County, OK"	"40109"	"2016"	"2016"	172	782970	22.0	22.7
+	"Oklahoma County, OK"	"40109"	"2017"	"2017"	176	787958	22.3	21.8
+	"Tulsa County, OK"	"40143"	"1999"	"1999"	32	561682	5.7	5.7
+	"Tulsa County, OK"	"40143"	"2000"	"2000"	56	563299	9.9	10.0
+	"Tulsa County, OK"	"40143"	"2001"	"2001"	55	566175	9.7	9.7
+	"Tulsa County, OK"	"40143"	"2002"	"2002"	60	569170	10.5	10.7
+	"Tulsa County, OK"	"40143"	"2003"	"2003"	107	568406	18.8	18.9
+	"Tulsa County, OK"	"40143"	"2004"	"2004"	109	566140	19.3	19.3
+	"Tulsa County, OK"	"40143"	"2005"	"2005"	131	568199	23.1	23.1
+	"Tulsa County, OK"	"40143"	"2006"	"2006"	129	575014	22.4	22.6
+	"Tulsa County, OK"	"40143"	"2007"	"2007"	148	582094	25.4	25.5
+	"Tulsa County, OK"	"40143"	"2008"	"2008"	126	588510	21.4	21.3
+	"Tulsa County, OK"	"40143"	"2009"	"2009"	146	597748	24.4	24.1
+	"Tulsa County, OK"	"40143"	"2010"	"2010"	142	603403	23.5	23.7
+	"Tulsa County, OK"	"40143"	"2011"	"2011"	114	610599	18.7	18.9
+	"Tulsa County, OK"	"40143"	"2012"	"2012"	121	613816	19.7	19.5
+	"Tulsa County, OK"	"40143"	"2013"	"2013"	122	622409	19.6	19.3
+	"Tulsa County, OK"	"40143"	"2014"	"2014"	123	629598	19.5	18.6
+	"Tulsa County, OK"	"40143"	"2015"	"2015"	117	639242	18.3	18.0
+	"Tulsa County, OK"	"40143"	"2016"	"2016"	135	642940	21.0	21.2
+	"Tulsa County, OK"	"40143"	"2017"	"2017"	136	646266	21.0	21.4
+	"Greenville County, SC"	"45045"	"1999"	"1999"	25	374851	6.7	6.6
+	"Greenville County, SC"	"45045"	"2000"	"2000"	49	379616	12.9	12.7
+	"Greenville County, SC"	"45045"	"2001"	"2001"	45	385780	11.7	11.5
+	"Greenville County, SC"	"45045"	"2002"	"2002"	34	390197	8.7	8.7
+	"Greenville County, SC"	"45045"	"2003"	"2003"	42	394242	10.7	10.6
+	"Greenville County, SC"	"45045"	"2004"	"2004"	38	399319	9.5	9.2
+	"Greenville County, SC"	"45045"	"2005"	"2005"	73	405608	18.0	17.2
+	"Greenville County, SC"	"45045"	"2006"	"2006"	84	415957	20.2	19.3
+	"Greenville County, SC"	"45045"	"2007"	"2007"	82	427970	19.2	18.3
+	"Greenville County, SC"	"45045"	"2008"	"2008"	79	438742	18.0	17.4
+	"Greenville County, SC"	"45045"	"2009"	"2009"	71	446655	15.9	15.3
+	"Greenville County, SC"	"45045"	"2010"	"2010"	78	451225	17.3	16.7
+	"Greenville County, SC"	"45045"	"2011"	"2011"	72	461299	15.6	15.5
+	"Greenville County, SC"	"45045"	"2012"	"2012"	78	467605	16.7	16.8
+	"Greenville County, SC"	"45045"	"2013"	"2013"	70	474266	14.8	14.3
+	"Greenville County, SC"	"45045"	"2014"	"2014"	83	482752	17.2	16.8
+	"Greenville County, SC"	"45045"	"2015"	"2015"	109	491863	22.2	22.6
+	"Greenville County, SC"	"45045"	"2016"	"2016"	97	498766	19.4	19.2
+	"Greenville County, SC"	"45045"	"2017"	"2017"	111	506837	21.9	21.8
+	"Davidson County, TN"	"47037"	"1999"	"1999"	55	567251	9.7	9.5
+	"Davidson County, TN"	"47037"	"2000"	"2000"	44	569891	7.7	7.5
+	"Davidson County, TN"	"47037"	"2001"	"2001"	85	574119	14.8	14.4
+	"Davidson County, TN"	"47037"	"2002"	"2002"	67	574215	11.7	11.5
+	"Davidson County, TN"	"47037"	"2003"	"2003"	77	577231	13.3	13.1
+	"Davidson County, TN"	"47037"	"2004"	"2004"	95	583013	16.3	15.8
+	"Davidson County, TN"	"47037"	"2005"	"2005"	96	589787	16.3	15.9
+	"Davidson County, TN"	"47037"	"2006"	"2006"	105	597597	17.6	16.8
+	"Davidson County, TN"	"47037"	"2007"	"2007"	93	605031	15.4	14.9
+	"Davidson County, TN"	"47037"	"2008"	"2008"	83	612649	13.5	13.1
+	"Davidson County, TN"	"47037"	"2009"	"2009"	115	621008	18.5	18.1
+	"Davidson County, TN"	"47037"	"2010"	"2010"	106	626681	16.9	15.8
+	"Davidson County, TN"	"47037"	"2011"	"2011"	108	635475	17.0	16.7
+	"Davidson County, TN"	"47037"	"2012"	"2012"	118	648295	18.2	17.6
+	"Davidson County, TN"	"47037"	"2013"	"2013"	133	658602	20.2	18.9
+	"Davidson County, TN"	"47037"	"2014"	"2014"	133	668347	19.9	19.1
+	"Davidson County, TN"	"47037"	"2015"	"2015"	166	678889	24.5	23.6
+	"Davidson County, TN"	"47037"	"2016"	"2016"	231	684410	33.8	32.1
+	"Davidson County, TN"	"47037"	"2017"	"2017"	242	691243	35.0	33.1
+	"Knox County, TN"	"47093"	"1999"	"1999"	23	380010	6.1	5.9
+	"Knox County, TN"	"47093"	"2000"	"2000"	36	382032	9.4	9.2
+	"Knox County, TN"	"47093"	"2001"	"2001"	49	385823	12.7	12.5
+	"Knox County, TN"	"47093"	"2002"	"2002"	63	389443	16.2	16.2
+	"Knox County, TN"	"47093"	"2003"	"2003"	80	394263	20.3	20.3
+	"Knox County, TN"	"47093"	"2004"	"2004"	95	398307	23.9	23.2
+	"Knox County, TN"	"47093"	"2005"	"2005"	97	404234	24.0	23.5
+	"Knox County, TN"	"47093"	"2006"	"2006"	99	411785	24.0	23.3
+	"Knox County, TN"	"47093"	"2007"	"2007"	100	419096	23.9	23.1
+	"Knox County, TN"	"47093"	"2008"	"2008"	100	425276	23.5	22.8
+	"Knox County, TN"	"47093"	"2009"	"2009"	69	429475	16.1	15.8
+	"Knox County, TN"	"47093"	"2010"	"2010"	98	432226	22.7	22.6
+	"Knox County, TN"	"47093"	"2011"	"2011"	88	436929	20.1	20.0
+	"Knox County, TN"	"47093"	"2012"	"2012"	98	441311	22.2	22.7
+	"Knox County, TN"	"47093"	"2013"	"2013"	105	444622	23.6	23.2
+	"Knox County, TN"	"47093"	"2014"	"2014"	137	448644	30.5	29.8
+	"Knox County, TN"	"47093"	"2015"	"2015"	158	451324	35.0	34.9
+	"Knox County, TN"	"47093"	"2016"	"2016"	189	456132	41.4	40.9
+	"Knox County, TN"	"47093"	"2017"	"2017"	259	461860	56.1	54.6
+	"Shelby County, TN"	"47157"	"1999"	"1999"	62	893826	6.9	7.1
+	"Shelby County, TN"	"47157"	"2000"	"2000"	67	897472	7.5	7.6
+	"Shelby County, TN"	"47157"	"2001"	"2001"	63	899345	7.0	7.1
+	"Shelby County, TN"	"47157"	"2002"	"2002"	53	902634	5.9	5.9
+	"Shelby County, TN"	"47157"	"2003"	"2003"	50	906733	5.5	5.8
+	"Shelby County, TN"	"47157"	"2004"	"2004"	76	909643	8.4	8.5
+	"Shelby County, TN"	"47157"	"2005"	"2005"	106	913201	11.6	11.6
+	"Shelby County, TN"	"47157"	"2006"	"2006"	115	920106	12.5	12.5
+	"Shelby County, TN"	"47157"	"2007"	"2007"	125	921119	13.6	13.2
+	"Shelby County, TN"	"47157"	"2008"	"2008"	111	920685	12.1	11.5
+	"Shelby County, TN"	"47157"	"2009"	"2009"	133	922541	14.4	14.0
+	"Shelby County, TN"	"47157"	"2010"	"2010"	140	927644	15.1	14.8
+	"Shelby County, TN"	"47157"	"2011"	"2011"	102	935088	10.9	10.7
+	"Shelby County, TN"	"47157"	"2012"	"2012"	137	940764	14.6	14.3
+	"Shelby County, TN"	"47157"	"2013"	"2013"	141	939465	15.0	14.5
+	"Shelby County, TN"	"47157"	"2014"	"2014"	152	938803	16.2	16.1
+	"Shelby County, TN"	"47157"	"2015"	"2015"	197	938069	21.0	20.9
+	"Shelby County, TN"	"47157"	"2016"	"2016"	203	934603	21.7	21.3
+	"Shelby County, TN"	"47157"	"2017"	"2017"	211	936961	22.5	22.9
+	"Richmond city, VA"	"51760"	"1999"	"1999"	42	199145	21.1	20.9
+	"Richmond city, VA"	"51760"	"2000"	"2000"	38	197790	19.2	19.3
+	"Richmond city, VA"	"51760"	"2001"	"2001"	39	197575	19.7	19.5
+	"Richmond city, VA"	"51760"	"2002"	"2002"	31	197513	15.7	15.7
+	"Richmond city, VA"	"51760"	"2003"	"2003"	40	197306	20.3	20.5
+	"Richmond city, VA"	"51760"	"2004"	"2004"	37	196878	18.8	18.7
+	"Richmond city, VA"	"51760"	"2005"	"2005"	32	197465	16.2	16.1
+	"Richmond city, VA"	"51760"	"2006"	"2006"	29	198618	14.6	14.9
+	"Richmond city, VA"	"51760"	"2007"	"2007"	42	200201	21.0	20.6
+	"Richmond city, VA"	"51760"	"2008"	"2008"	26	202254	12.9	13.3
+	"Richmond city, VA"	"51760"	"2009"	"2009"	25	203678	12.3	13.0
+	"Richmond city, VA"	"51760"	"2010"	"2010"	19	204214	Unreliable	Unreliable
+	"Richmond city, VA"	"51760"	"2011"	"2011"	35	205533	17.0	15.8
+	"Richmond city, VA"	"51760"	"2012"	"2012"	30	210309	14.3	15.8
+	"Richmond city, VA"	"51760"	"2013"	"2013"	30	214114	14.0	13.7
+	"Richmond city, VA"	"51760"	"2014"	"2014"	53	217853	24.3	23.6
+	"Richmond city, VA"	"51760"	"2015"	"2015"	50	220289	22.7	21.0
+	"Richmond city, VA"	"51760"	"2016"	"2016"	70	223170	31.4	30.4
+	"Richmond city, VA"	"51760"	"2017"	"2017"	82	227032	36.1	36.7
+"---"
+"Dataset: Underlying Cause of Death, 1999-2017"
+"Query Parameters:"
+"Title:"
+"2013 Urbanization: All"
+"Autopsy: All"
+"Drug/Alcohol Induced Causes: Drug-induced causes"
+"Gender: All"
+"Hispanic Origin: All"
+"Place of Death: All"
+"Race: All"
+"States: Jefferson County, AL (01073), Duval County, FL (12031), Marion County, IN (18097), Jefferson County, KY (21111), Kent"
+"County, MI (26081), Jackson County, MO (29095), St. Louis County, MO (29189), St. Louis city, MO (29510), Douglas County, NE"
+"(31055), Guilford County, NC (37081), Mecklenburg County, NC (37119), Wake County, NC (37183), Franklin County, OH (39049),"
+"Hamilton County, OH (39061), Montgomery County, OH (39113), Oklahoma County, OK (40109), Tulsa County, OK (40143), Greenville"
+"County, SC (45045), Davidson County, TN (47037), Knox County, TN (47093), Shelby County, TN (47157), Richmond city, VA (51760)"
+"Ten-Year Age Groups: All"
+"Weekday: All"
+"Year/Month: All"
+"Group By: County, Year"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Standard Population: 2000 U.S. Std. Population"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Jan 10, 2019 1:05:15 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2017 on CDC WONDER Online Database, released December, 2018. Data are from the Multiple Cause of Death Files, 1999-2017, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Jan 10, 2019 1:05:15 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Deaths and population estimates are reported separately for St. Louis City (FIPS code 29510) and county (FIPS code 29189)."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The populations used to calculate standard age-adjusted rates are documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2000 Standard Population."
+"5. The method used to calculate age-adjusted rates is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Age-Adjusted Rates."
+"6. Deaths for persons of unknown age are included in counts and crude rates, but are not included in age-adjusted rates."
+"7. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the Vintage 2017"
+"postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The population figures for"
+"year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal series released by NCHS"
+"on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26, 2014. The"
+"population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012 postcensal"
+"series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010 are April 1"
+"Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident population, from"
+"the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population figures for 2000 are"
+"April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1 estimates. Population"
+"figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population figures for years 2001 -"
+"2009 differ slightly from previously published reports, due to use of the population estimates which were available at the time"
+"of release."
+"8. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."
