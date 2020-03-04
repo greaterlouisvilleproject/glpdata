@@ -1,13 +1,15 @@
-library(tidyverse)
+library(tidyr)
+library(readr)
+library(dplyr)
+library(stringr)
 library(magrittr)
 library(glptools)
 
 path <- "data-raw/qop/migration/"
 
 #Age
-
-in_mig <- acs_time(path %+% "B07001", starting_year = 2006)
-out_mig <- acs_time(path %+% "B07401", starting_year = 2007)
+in_mig <- acs_time(path %p% "B07001", starting_year = 2006)
+out_mig <- acs_time(path %p% "B07401", starting_year = 2007)
 
 in_mig %<>%
   mutate(
@@ -70,8 +72,8 @@ mig_age %<>%
 
 
 #Education
-in_mig <- acs_time(path %+% "B07009")
-out_mig <- acs_time(path %+% "B07409", starting_year = 2007)
+in_mig <- acs_time(path %p% "B07009")
+out_mig <- acs_time(path %p% "B07409", starting_year = 2007)
 
 in_mig %<>%
   mutate(
@@ -111,9 +113,24 @@ mig_edu %<>%
     net_mig_grad = in_mig_grad - out_mig_grad,
     net_mig_bach_plus = in_mig_bach_plus - out_mig_bach_plus)
 
-mig <- bind_df(mig_total, mig_age, mig_edu)
+migration_county <- bind_df(mig_total, mig_age, mig_edu)
 
-usethis::use_data(mig, overwrite = TRUE)
+migration_county %<>%
+  mutate(sex = "total", race = "total") %>%
+  organize()
 
-rm(in_mig, out_mig, mig, mig_age, mig_edu, mig_total, path)
+# MSA
+migration_msa_1yr <- acs_time(path %p% "PEPTCOMP", geog = "MSA", starting_year = 2011)
+
+migration_msa_1yr %<>%
+  transmute(
+    MSA,
+    year,
+    sex = "total",
+    race = "total",
+    net_migration = `Annual Estimates of the Components of Population Change - July 1, 2010 to July 1, 2011 - Net Migration - Total`)
+
+update_sysdata(migration_county, migration_msa_1yr)
+
+rm(in_mig, out_mig, mig_age, mig_edu, mig_total, path)
 

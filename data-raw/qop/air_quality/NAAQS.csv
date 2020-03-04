@@ -1,0 +1,12 @@
+pollutant,standard,limit,unit,form,variable
+Carbon monoxide,8 hour,9,ppm,cannot be exceeded more than once per year,second_max_value
+Carbon monoxide,1 hour,35,ppm,cannot be exceeded more than once per year,second_max_value
+Lead,rolling 3 month average,0.15,micrograms/m3,cannot be exceeded more than once per year,second_max_value
+Nitrogen dioxide,annual,100,ppb,"98th percentile of 1-hour daily maximum concentrations, averaged over 3 years",ninety_eighth_percentile
+Nitrogen dioxide,1 hour,53,ppb,annual mean,arithmetic_mean
+Ozone,8 hour,0.07,ppm,"Annual fourth-highest daily maximum 8-hour concentration, averaged over 3 years",fourth_max_value
+PM2.5,annual,12,micrograms/m3,"annual mean, averaged over 3 years",arithmetic_mean
+PM2.5,24 hour,35,micrograms/m3,"98th percentile, averaged over 3 years",ninety_eighth_percentile
+PM10,24 hour,150,micrograms/m3,Not to be exceeded more than once per year on average over 3 years,second_max_value
+Sulfur dioxide,1 hour,75,ppb,"99th percentile of 1-hour daily maximum concentrations, averaged over 3 years",ninety_ninth_percentile
+Sulfur dioxide,3 hour,0.5,ppm,cannot be exceeded more than once per year,second_max_value
