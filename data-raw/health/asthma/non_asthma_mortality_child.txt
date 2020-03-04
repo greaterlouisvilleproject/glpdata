@@ -1,0 +1,530 @@
+"Notes"	"Year"	"Year Code"	"County"	"County Code"	Deaths	Population	Crude Rate
+	"1999"	"1999"	"Jefferson County, AL"	"01073"	175	164351	106.5
+	"1999"	"1999"	"Duval County, FL"	"12031"	194	205259	94.5
+	"1999"	"1999"	"Marion County, IN"	"18097"	224	220878	101.4
+	"1999"	"1999"	"Jefferson County, KY"	"21111"	118	168670	70.0
+	"1999"	"1999"	"Kent County, MI"	"26081"	110	160780	68.4
+	"1999"	"1999"	"Jackson County, MO"	"29095"	132	169423	77.9
+	"1999"	"1999"	"St. Louis County, MO"	"29189"	160	257018	62.3
+	"1999"	"1999"	"St. Louis city, MO"	"29510"	128	90910	140.8
+	"1999"	"1999"	"Douglas County, NE"	"31055"	82	123186	66.6
+	"1999"	"1999"	"Guilford County, NC"	"37081"	78	98088	79.5
+	"1999"	"1999"	"Mecklenburg County, NC"	"37119"	108	170027	63.5
+	"1999"	"1999"	"Wake County, NC"	"37183"	94	152397	61.7
+	"1999"	"1999"	"Franklin County, OH"	"39049"	230	266569	86.3
+	"1999"	"1999"	"Hamilton County, OH"	"39061"	172	220188	78.1
+	"1999"	"1999"	"Montgomery County, OH"	"39113"	76	139170	54.6
+	"1999"	"1999"	"Oklahoma County, OK"	"40109"	175	169285	103.4
+	"1999"	"1999"	"Tulsa County, OK"	"40143"	113	148275	76.2
+	"1999"	"1999"	"Greenville County, SC"	"45045"	57	92459	61.6
+	"1999"	"1999"	"Davidson County, TN"	"47037"	126	125998	100.0
+	"1999"	"1999"	"Knox County, TN"	"47093"	49	84602	57.9
+	"1999"	"1999"	"Shelby County, TN"	"47157"	276	252038	109.5
+	"1999"	"1999"	"Richmond city, VA"	"51760"	59	43639	135.2
+	"2000"	"2000"	"Jefferson County, AL"	"01073"	161	164240	98.0
+	"2000"	"2000"	"Duval County, FL"	"12031"	185	204991	90.2
+	"2000"	"2000"	"Marion County, IN"	"18097"	216	221749	97.4
+	"2000"	"2000"	"Jefferson County, KY"	"21111"	118	168271	70.1
+	"2000"	"2000"	"Kent County, MI"	"26081"	121	162259	74.6
+	"2000"	"2000"	"Jackson County, MO"	"29095"	101	168766	59.8
+	"2000"	"2000"	"St. Louis County, MO"	"29189"	134	255991	52.3
+	"2000"	"2000"	"St. Louis city, MO"	"29510"	106	89657	118.2
+	"2000"	"2000"	"Douglas County, NE"	"31055"	99	123221	80.3
+	"2000"	"2000"	"Guilford County, NC"	"37081"	67	99839	67.1
+	"2000"	"2000"	"Mecklenburg County, NC"	"37119"	143	174249	82.1
+	"2000"	"2000"	"Wake County, NC"	"37183"	108	157597	68.5
+	"2000"	"2000"	"Franklin County, OH"	"39049"	204	268321	76.0
+	"2000"	"2000"	"Hamilton County, OH"	"39061"	178	218174	81.6
+	"2000"	"2000"	"Montgomery County, OH"	"39113"	102	137979	73.9
+	"2000"	"2000"	"Oklahoma County, OK"	"40109"	170	169018	100.6
+	"2000"	"2000"	"Tulsa County, OK"	"40143"	116	147949	78.4
+	"2000"	"2000"	"Greenville County, SC"	"45045"	47	93384	50.3
+	"2000"	"2000"	"Davidson County, TN"	"47037"	149	126447	117.8
+	"2000"	"2000"	"Knox County, TN"	"47093"	47	85093	55.2
+	"2000"	"2000"	"Shelby County, TN"	"47157"	276	253270	109.0
+	"2000"	"2000"	"Richmond city, VA"	"51760"	54	43178	125.1
+	"2001"	"2001"	"Jefferson County, AL"	"01073"	176	162768	108.1
+	"2001"	"2001"	"Duval County, FL"	"12031"	197	205937	95.7
+	"2001"	"2001"	"Marion County, IN"	"18097"	173	222424	77.8
+	"2001"	"2001"	"Jefferson County, KY"	"21111"	92	168202	54.7
+	"2001"	"2001"	"Kent County, MI"	"26081"	116	163264	71.1
+	"2001"	"2001"	"Jackson County, MO"	"29095"	141	168037	83.9
+	"2001"	"2001"	"St. Louis County, MO"	"29189"	159	253841	62.6
+	"2001"	"2001"	"St. Louis city, MO"	"29510"	111	86941	127.7
+	"2001"	"2001"	"Douglas County, NE"	"31055"	87	124018	70.2
+	"2001"	"2001"	"Guilford County, NC"	"37081"	75	101907	73.6
+	"2001"	"2001"	"Mecklenburg County, NC"	"37119"	135	181247	74.5
+	"2001"	"2001"	"Wake County, NC"	"37183"	88	166130	53.0
+	"2001"	"2001"	"Franklin County, OH"	"39049"	192	270971	70.9
+	"2001"	"2001"	"Hamilton County, OH"	"39061"	169	214842	78.7
+	"2001"	"2001"	"Montgomery County, OH"	"39113"	102	136374	74.8
+	"2001"	"2001"	"Oklahoma County, OK"	"40109"	145	168977	85.8
+	"2001"	"2001"	"Tulsa County, OK"	"40143"	105	147907	71.0
+	"2001"	"2001"	"Greenville County, SC"	"45045"	58	94766	61.2
+	"2001"	"2001"	"Davidson County, TN"	"47037"	117	126748	92.3
+	"2001"	"2001"	"Knox County, TN"	"47093"	45	85497	52.6
+	"2001"	"2001"	"Shelby County, TN"	"47157"	257	252722	101.7
+	"2001"	"2001"	"Richmond city, VA"	"51760"	72	42977	167.5
+	"2002"	"2002"	"Jefferson County, AL"	"01073"	153	161162	94.9
+	"2002"	"2002"	"Duval County, FL"	"12031"	160	206873	77.3
+	"2002"	"2002"	"Marion County, IN"	"18097"	181	221880	81.6
+	"2002"	"2002"	"Jefferson County, KY"	"21111"	122	168615	72.4
+	"2002"	"2002"	"Kent County, MI"	"26081"	118	163326	72.2
+	"2002"	"2002"	"Jackson County, MO"	"29095"	128	167840	76.3
+	"2002"	"2002"	"St. Louis County, MO"	"29189"	163	251936	64.7
+	"2002"	"2002"	"St. Louis city, MO"	"29510"	109	84509	129.0
+	"2002"	"2002"	"Douglas County, NE"	"31055"	102	125019	81.6
+	"2002"	"2002"	"Guilford County, NC"	"37081"	74	102887	71.9
+	"2002"	"2002"	"Mecklenburg County, NC"	"37119"	139	186676	74.5
+	"2002"	"2002"	"Wake County, NC"	"37183"	89	172271	51.7
+	"2002"	"2002"	"Franklin County, OH"	"39049"	214	271169	78.9
+	"2002"	"2002"	"Hamilton County, OH"	"39061"	160	210792	75.9
+	"2002"	"2002"	"Montgomery County, OH"	"39113"	97	135126	71.8
+	"2002"	"2002"	"Oklahoma County, OK"	"40109"	128	170242	75.2
+	"2002"	"2002"	"Tulsa County, OK"	"40143"	120	148132	81.0
+	"2002"	"2002"	"Greenville County, SC"	"45045"	65	95770	67.9
+	"2002"	"2002"	"Davidson County, TN"	"47037"	127	126976	100.0
+	"2002"	"2002"	"Knox County, TN"	"47093"	56	86122	65.0
+	"2002"	"2002"	"Shelby County, TN"	"47157"	284	253109	112.2
+	"2002"	"2002"	"Richmond city, VA"	"51760"	65	43083	150.9
+	"2003"	"2003"	"Jefferson County, AL"	"01073"	146	159863	91.3
+	"2003"	"2003"	"Duval County, FL"	"12031"	174	207700	83.8
+	"2003"	"2003"	"Marion County, IN"	"18097"	189	221648	85.3
+	"2003"	"2003"	"Jefferson County, KY"	"21111"	102	169073	60.3
+	"2003"	"2003"	"Kent County, MI"	"26081"	126	162713	77.4
+	"2003"	"2003"	"Jackson County, MO"	"29095"	115	167145	68.8
+	"2003"	"2003"	"St. Louis County, MO"	"29189"	152	249293	61.0
+	"2003"	"2003"	"St. Louis city, MO"	"29510"	91	82663	110.1
+	"2003"	"2003"	"Douglas County, NE"	"31055"	82	125731	65.2
+	"2003"	"2003"	"Guilford County, NC"	"37081"	63	104370	60.4
+	"2003"	"2003"	"Mecklenburg County, NC"	"37119"	124	192481	64.4
+	"2003"	"2003"	"Wake County, NC"	"37183"	100	178834	55.9
+	"2003"	"2003"	"Franklin County, OH"	"39049"	219	271141	80.8
+	"2003"	"2003"	"Hamilton County, OH"	"39061"	156	206834	75.4
+	"2003"	"2003"	"Montgomery County, OH"	"39113"	92	133695	68.8
+	"2003"	"2003"	"Oklahoma County, OK"	"40109"	159	170343	93.3
+	"2003"	"2003"	"Tulsa County, OK"	"40143"	116	147006	78.9
+	"2003"	"2003"	"Greenville County, SC"	"45045"	45	96459	46.7
+	"2003"	"2003"	"Davidson County, TN"	"47037"	95	127756	74.4
+	"2003"	"2003"	"Knox County, TN"	"47093"	61	86973	70.1
+	"2003"	"2003"	"Shelby County, TN"	"47157"	289	253411	114.0
+	"2003"	"2003"	"Richmond city, VA"	"51760"	65	42473	153.0
+	"2004"	"2004"	"Jefferson County, AL"	"01073"	140	158683	88.2
+	"2004"	"2004"	"Duval County, FL"	"12031"	195	208226	93.6
+	"2004"	"2004"	"Marion County, IN"	"18097"	196	221939	88.3
+	"2004"	"2004"	"Jefferson County, KY"	"21111"	95	168943	56.2
+	"2004"	"2004"	"Kent County, MI"	"26081"	118	162174	72.8
+	"2004"	"2004"	"Jackson County, MO"	"29095"	135	166281	81.2
+	"2004"	"2004"	"St. Louis County, MO"	"29189"	156	246756	63.2
+	"2004"	"2004"	"St. Louis city, MO"	"29510"	89	80378	110.7
+	"2004"	"2004"	"Douglas County, NE"	"31055"	85	127134	66.9
+	"2004"	"2004"	"Guilford County, NC"	"37081"	77	105169	73.2
+	"2004"	"2004"	"Mecklenburg County, NC"	"37119"	157	197889	79.3
+	"2004"	"2004"	"Wake County, NC"	"37183"	114	184680	61.7
+	"2004"	"2004"	"Franklin County, OH"	"39049"	209	271419	77.0
+	"2004"	"2004"	"Hamilton County, OH"	"39061"	176	203002	86.7
+	"2004"	"2004"	"Montgomery County, OH"	"39113"	78	132099	59.0
+	"2004"	"2004"	"Oklahoma County, OK"	"40109"	167	169967	98.3
+	"2004"	"2004"	"Tulsa County, OK"	"40143"	100	145353	68.8
+	"2004"	"2004"	"Greenville County, SC"	"45045"	63	97762	64.4
+	"2004"	"2004"	"Davidson County, TN"	"47037"	91	128855	70.6
+	"2004"	"2004"	"Knox County, TN"	"47093"	39	87484	44.6
+	"2004"	"2004"	"Shelby County, TN"	"47157"	258	252780	102.1
+	"2004"	"2004"	"Richmond city, VA"	"51760"	45	41823	107.6
+	"2005"	"2005"	"Jefferson County, AL"	"01073"	164	157789	103.9
+	"2005"	"2005"	"Duval County, FL"	"12031"	212	207906	102.0
+	"2005"	"2005"	"Marion County, IN"	"18097"	194	222125	87.3
+	"2005"	"2005"	"Jefferson County, KY"	"21111"	85	168746	50.4
+	"2005"	"2005"	"Kent County, MI"	"26081"	100	161962	61.7
+	"2005"	"2005"	"Jackson County, MO"	"29095"	134	166004	80.7
+	"2005"	"2005"	"St. Louis County, MO"	"29189"	163	244699	66.6
+	"2005"	"2005"	"St. Louis city, MO"	"29510"	87	77457	112.3
+	"2005"	"2005"	"Douglas County, NE"	"31055"	77	128124	60.1
+	"2005"	"2005"	"Guilford County, NC"	"37081"	78	107166	72.8
+	"2005"	"2005"	"Mecklenburg County, NC"	"37119"	156	205601	75.9
+	"2005"	"2005"	"Wake County, NC"	"37183"	120	193542	62.0
+	"2005"	"2005"	"Franklin County, OH"	"39049"	211	271823	77.6
+	"2005"	"2005"	"Hamilton County, OH"	"39061"	235	199678	117.7
+	"2005"	"2005"	"Montgomery County, OH"	"39113"	65	130415	49.8
+	"2005"	"2005"	"Oklahoma County, OK"	"40109"	156	171296	91.1
+	"2005"	"2005"	"Tulsa County, OK"	"40143"	115	145360	79.1
+	"2005"	"2005"	"Greenville County, SC"	"45045"	70	98978	70.7
+	"2005"	"2005"	"Davidson County, TN"	"47037"	119	130004	91.5
+	"2005"	"2005"	"Knox County, TN"	"47093"	59	88812	66.4
+	"2005"	"2005"	"Shelby County, TN"	"47157"	236	252364	93.5
+	"2005"	"2005"	"Richmond city, VA"	"51760"	61	41433	147.2
+	"2006"	"2006"	"Jefferson County, AL"	"01073"	149	157362	94.7
+	"2006"	"2006"	"Duval County, FL"	"12031"	202	208556	96.9
+	"2006"	"2006"	"Marion County, IN"	"18097"	212	222813	95.1
+	"2006"	"2006"	"Jefferson County, KY"	"21111"	114	169211	67.4
+	"2006"	"2006"	"Kent County, MI"	"26081"	113	161411	70.0
+	"2006"	"2006"	"Jackson County, MO"	"29095"	159	165988	95.8
+	"2006"	"2006"	"St. Louis County, MO"	"29189"	147	243070	60.5
+	"2006"	"2006"	"St. Louis city, MO"	"29510"	87	74848	116.2
+	"2006"	"2006"	"Douglas County, NE"	"31055"	94	129302	72.7
+	"2006"	"2006"	"Guilford County, NC"	"37081"	82	109377	75.0
+	"2006"	"2006"	"Mecklenburg County, NC"	"37119"	143	213661	66.9
+	"2006"	"2006"	"Wake County, NC"	"37183"	124	204089	60.8
+	"2006"	"2006"	"Franklin County, OH"	"39049"	224	272672	82.1
+	"2006"	"2006"	"Hamilton County, OH"	"39061"	172	196571	87.5
+	"2006"	"2006"	"Montgomery County, OH"	"39113"	78	128546	60.7
+	"2006"	"2006"	"Oklahoma County, OK"	"40109"	147	173174	84.9
+	"2006"	"2006"	"Tulsa County, OK"	"40143"	125	147478	84.8
+	"2006"	"2006"	"Greenville County, SC"	"45045"	59	101594	58.1
+	"2006"	"2006"	"Davidson County, TN"	"47037"	131	131799	99.4
+	"2006"	"2006"	"Knox County, TN"	"47093"	52	90560	57.4
+	"2006"	"2006"	"Shelby County, TN"	"47157"	282	253508	111.2
+	"2006"	"2006"	"Richmond city, VA"	"51760"	61	40807	149.5
+	"2007"	"2007"	"Jefferson County, AL"	"01073"	161	156492	102.9
+	"2007"	"2007"	"Duval County, FL"	"12031"	174	208026	83.6
+	"2007"	"2007"	"Marion County, IN"	"18097"	197	223348	88.2
+	"2007"	"2007"	"Jefferson County, KY"	"21111"	84	170081	49.4
+	"2007"	"2007"	"Kent County, MI"	"26081"	102	161429	63.2
+	"2007"	"2007"	"Jackson County, MO"	"29095"	143	165800	86.2
+	"2007"	"2007"	"St. Louis County, MO"	"29189"	181	240615	75.2
+	"2007"	"2007"	"St. Louis city, MO"	"29510"	88	72638	121.1
+	"2007"	"2007"	"Douglas County, NE"	"31055"	89	130588	68.2
+	"2007"	"2007"	"Guilford County, NC"	"37081"	85	112116	75.8
+	"2007"	"2007"	"Mecklenburg County, NC"	"37119"	142	222023	64.0
+	"2007"	"2007"	"Wake County, NC"	"37183"	130	215508	60.3
+	"2007"	"2007"	"Franklin County, OH"	"39049"	210	274044	76.6
+	"2007"	"2007"	"Hamilton County, OH"	"39061"	175	194096	90.2
+	"2007"	"2007"	"Montgomery County, OH"	"39113"	75	127207	59.0
+	"2007"	"2007"	"Oklahoma County, OK"	"40109"	156	174850	89.2
+	"2007"	"2007"	"Tulsa County, OK"	"40143"	143	149072	95.9
+	"2007"	"2007"	"Greenville County, SC"	"45045"	68	104901	64.8
+	"2007"	"2007"	"Davidson County, TN"	"47037"	112	133099	84.1
+	"2007"	"2007"	"Knox County, TN"	"47093"	39	92085	42.4
+	"2007"	"2007"	"Shelby County, TN"	"47157"	256	251042	102.0
+	"2007"	"2007"	"Richmond city, VA"	"51760"	56	40228	139.2
+	"2008"	"2008"	"Jefferson County, AL"	"01073"	181	155796	116.2
+	"2008"	"2008"	"Duval County, FL"	"12031"	169	205917	82.1
+	"2008"	"2008"	"Marion County, IN"	"18097"	196	223590	87.7
+	"2008"	"2008"	"Jefferson County, KY"	"21111"	108	171588	62.9
+	"2008"	"2008"	"Kent County, MI"	"26081"	99	159988	61.9
+	"2008"	"2008"	"Jackson County, MO"	"29095"	137	164700	83.2
+	"2008"	"2008"	"St. Louis County, MO"	"29189"	126	237760	53.0
+	"2008"	"2008"	"St. Louis city, MO"	"29510"	93	70964	131.1
+	"2008"	"2008"	"Douglas County, NE"	"31055"	74	131864	56.1
+	"2008"	"2008"	"Guilford County, NC"	"37081"	82	113295	72.4
+	"2008"	"2008"	"Mecklenburg County, NC"	"37119"	141	227151	62.1
+	"2008"	"2008"	"Wake County, NC"	"37183"	130	224405	57.9
+	"2008"	"2008"	"Franklin County, OH"	"39049"	219	275228	79.6
+	"2008"	"2008"	"Hamilton County, OH"	"39061"	167	191518	87.2
+	"2008"	"2008"	"Montgomery County, OH"	"39113"	75	125666	59.7
+	"2008"	"2008"	"Oklahoma County, OK"	"40109"	138	176017	78.4
+	"2008"	"2008"	"Tulsa County, OK"	"40143"	123	150133	81.9
+	"2008"	"2008"	"Greenville County, SC"	"45045"	70	107045	65.4
+	"2008"	"2008"	"Davidson County, TN"	"47037"	100	134239	74.5
+	"2008"	"2008"	"Knox County, TN"	"47093"	64	93465	68.5
+	"2008"	"2008"	"Shelby County, TN"	"47157"	275	249067	110.4
+	"2008"	"2008"	"Richmond city, VA"	"51760"	46	39586	116.2
+	"2009"	"2009"	"Jefferson County, AL"	"01073"	112	154904	72.3
+	"2009"	"2009"	"Duval County, FL"	"12031"	167	204181	81.8
+	"2009"	"2009"	"Marion County, IN"	"18097"	218	225112	96.8
+	"2009"	"2009"	"Jefferson County, KY"	"21111"	109	171497	63.6
+	"2009"	"2009"	"Kent County, MI"	"26081"	78	158625	49.2
+	"2009"	"2009"	"Jackson County, MO"	"29095"	118	165021	71.5
+	"2009"	"2009"	"St. Louis County, MO"	"29189"	137	235592	58.2
+	"2009"	"2009"	"St. Louis city, MO"	"29510"	85	68849	123.5
+	"2009"	"2009"	"Douglas County, NE"	"31055"	69	133406	51.7
+	"2009"	"2009"	"Guilford County, NC"	"37081"	82	113976	71.9
+	"2009"	"2009"	"Mecklenburg County, NC"	"37119"	132	231015	57.1
+	"2009"	"2009"	"Wake County, NC"	"37183"	131	230938	56.7
+	"2009"	"2009"	"Franklin County, OH"	"39049"	212	277556	76.4
+	"2009"	"2009"	"Hamilton County, OH"	"39061"	155	190683	81.3
+	"2009"	"2009"	"Montgomery County, OH"	"39113"	75	123971	60.5
+	"2009"	"2009"	"Oklahoma County, OK"	"40109"	158	179114	88.2
+	"2009"	"2009"	"Tulsa County, OK"	"40143"	120	152687	78.6
+	"2009"	"2009"	"Greenville County, SC"	"45045"	63	108705	58.0
+	"2009"	"2009"	"Davidson County, TN"	"47037"	112	135144	82.9
+	"2009"	"2009"	"Knox County, TN"	"47093"	41	94140	43.6
+	"2009"	"2009"	"Shelby County, TN"	"47157"	255	245600	103.8
+	"2009"	"2009"	"Richmond city, VA"	"51760"	49	38627	126.9
+	"2010"	"2010"	"Jefferson County, AL"	"01073"	148	154528	95.8
+	"2010"	"2010"	"Duval County, FL"	"12031"	144	203514	70.8
+	"2010"	"2010"	"Marion County, IN"	"18097"	195	226505	86.1
+	"2010"	"2010"	"Jefferson County, KY"	"21111"	114	171807	66.4
+	"2010"	"2010"	"Kent County, MI"	"26081"	80	158134	50.6
+	"2010"	"2010"	"Jackson County, MO"	"29095"	104	165635	62.8
+	"2010"	"2010"	"St. Louis County, MO"	"29189"	121	234174	51.7
+	"2010"	"2010"	"St. Louis city, MO"	"29510"	63	67539	93.3
+	"2010"	"2010"	"Douglas County, NE"	"31055"	78	134719	57.9
+	"2010"	"2010"	"Guilford County, NC"	"37081"	87	114483	76.0
+	"2010"	"2010"	"Mecklenburg County, NC"	"37119"	118	233338	50.6
+	"2010"	"2010"	"Wake County, NC"	"37183"	106	234613	45.2
+	"2010"	"2010"	"Franklin County, OH"	"39049"	196	278542	70.4
+	"2010"	"2010"	"Hamilton County, OH"	"39061"	153	189640	80.7
+	"2010"	"2010"	"Montgomery County, OH"	"39113"	76	123279	61.6
+	"2010"	"2010"	"Oklahoma County, OK"	"40109"	133	181118	73.4
+	"2010"	"2010"	"Tulsa County, OK"	"40143"	89	154276	57.7
+	"2010"	"2010"	"Greenville County, SC"	"45045"	60	109317	54.9
+	"2010"	"2010"	"Davidson County, TN"	"47037"	106	136391	77.7
+	"2010"	"2010"	"Knox County, TN"	"47093"	48	94490	50.8
+	"2010"	"2010"	"Shelby County, TN"	"47157"	193	244742	78.9
+	"2010"	"2010"	"Richmond city, VA"	"51760"	41	38009	107.9
+	"2011"	"2011"	"Jefferson County, AL"	"01073"	137	154664	88.6
+	"2011"	"2011"	"Duval County, FL"	"12031"	122	203176	60.0
+	"2011"	"2011"	"Marion County, IN"	"18097"	189	228998	82.5
+	"2011"	"2011"	"Jefferson County, KY"	"21111"	115	172038	66.8
+	"2011"	"2011"	"Kent County, MI"	"26081"	83	157786	52.6
+	"2011"	"2011"	"Jackson County, MO"	"29095"	100	165200	60.5
+	"2011"	"2011"	"St. Louis County, MO"	"29189"	136	229818	59.2
+	"2011"	"2011"	"St. Louis city, MO"	"29510"	74	67547	109.6
+	"2011"	"2011"	"Douglas County, NE"	"31055"	68	136791	49.7
+	"2011"	"2011"	"Guilford County, NC"	"37081"	69	114911	60.0
+	"2011"	"2011"	"Mecklenburg County, NC"	"37119"	114	238469	47.8
+	"2011"	"2011"	"Wake County, NC"	"37183"	138	239466	57.6
+	"2011"	"2011"	"Franklin County, OH"	"39049"	231	280751	82.3
+	"2011"	"2011"	"Hamilton County, OH"	"39061"	155	187735	82.6
+	"2011"	"2011"	"Montgomery County, OH"	"39113"	76	121810	62.4
+	"2011"	"2011"	"Oklahoma County, OK"	"40109"	144	186003	77.4
+	"2011"	"2011"	"Tulsa County, OK"	"40143"	103	155633	66.2
+	"2011"	"2011"	"Greenville County, SC"	"45045"	70	111572	62.7
+	"2011"	"2011"	"Davidson County, TN"	"47037"	94	138793	67.7
+	"2011"	"2011"	"Knox County, TN"	"47093"	48	94045	51.0
+	"2011"	"2011"	"Shelby County, TN"	"47157"	190	243754	77.9
+	"2011"	"2011"	"Richmond city, VA"	"51760"	38	39396	96.5
+	"2012"	"2012"	"Jefferson County, AL"	"01073"	139	154843	89.8
+	"2012"	"2012"	"Duval County, FL"	"12031"	147	203559	72.2
+	"2012"	"2012"	"Marion County, IN"	"18097"	151	231182	65.3
+	"2012"	"2012"	"Jefferson County, KY"	"21111"	120	172289	69.7
+	"2012"	"2012"	"Kent County, MI"	"26081"	79	158059	50.0
+	"2012"	"2012"	"Jackson County, MO"	"29095"	101	164364	61.4
+	"2012"	"2012"	"St. Louis County, MO"	"29189"	111	227216	48.9
+	"2012"	"2012"	"St. Louis city, MO"	"29510"	73	67703	107.8
+	"2012"	"2012"	"Douglas County, NE"	"31055"	65	139062	46.7
+	"2012"	"2012"	"Guilford County, NC"	"37081"	68	115535	58.9
+	"2012"	"2012"	"Mecklenburg County, NC"	"37119"	117	242487	48.3
+	"2012"	"2012"	"Wake County, NC"	"37183"	119	242741	49.0
+	"2012"	"2012"	"Franklin County, OH"	"39049"	196	284836	68.8
+	"2012"	"2012"	"Hamilton County, OH"	"39061"	129	187133	68.9
+	"2012"	"2012"	"Montgomery County, OH"	"39113"	77	120681	63.8
+	"2012"	"2012"	"Oklahoma County, OK"	"40109"	145	188490	76.9
+	"2012"	"2012"	"Tulsa County, OK"	"40143"	116	156081	74.3
+	"2012"	"2012"	"Greenville County, SC"	"45045"	44	111772	39.4
+	"2012"	"2012"	"Davidson County, TN"	"47037"	96	141663	67.8
+	"2012"	"2012"	"Knox County, TN"	"47093"	43	94795	45.4
+	"2012"	"2012"	"Shelby County, TN"	"47157"	213	242687	87.8
+	"2012"	"2012"	"Richmond city, VA"	"51760"	43	40670	105.7
+	"2013"	"2013"	"Jefferson County, AL"	"01073"	151	152972	98.7
+	"2013"	"2013"	"Duval County, FL"	"12031"	145	203639	71.2
+	"2013"	"2013"	"Marion County, IN"	"18097"	180	231174	77.9
+	"2013"	"2013"	"Jefferson County, KY"	"21111"	83	172744	48.0
+	"2013"	"2013"	"Kent County, MI"	"26081"	63	157831	39.9
+	"2013"	"2013"	"Jackson County, MO"	"29095"	84	163494	51.4
+	"2013"	"2013"	"St. Louis County, MO"	"29189"	105	225686	46.5
+	"2013"	"2013"	"St. Louis city, MO"	"29510"	71	64790	109.6
+	"2013"	"2013"	"Douglas County, NE"	"31055"	82	138770	59.1
+	"2013"	"2013"	"Guilford County, NC"	"37081"	72	115801	62.2
+	"2013"	"2013"	"Mecklenburg County, NC"	"37119"	127	245520	51.7
+	"2013"	"2013"	"Wake County, NC"	"37183"	95	246175	38.6
+	"2013"	"2013"	"Franklin County, OH"	"39049"	218	287437	75.8
+	"2013"	"2013"	"Hamilton County, OH"	"39061"	138	187530	73.6
+	"2013"	"2013"	"Montgomery County, OH"	"39113"	91	120052	75.8
+	"2013"	"2013"	"Oklahoma County, OK"	"40109"	148	192521	76.9
+	"2013"	"2013"	"Tulsa County, OK"	"40143"	103	158584	64.9
+	"2013"	"2013"	"Greenville County, SC"	"45045"	66	112297	58.8
+	"2013"	"2013"	"Davidson County, TN"	"47037"	102	142430	71.6
+	"2013"	"2013"	"Knox County, TN"	"47093"	42	95693	43.9
+	"2013"	"2013"	"Shelby County, TN"	"47157"	192	241026	79.7
+	"2013"	"2013"	"Richmond city, VA"	"51760"	37	39535	93.6
+	"2014"	"2014"	"Jefferson County, AL"	"01073"	122	152855	79.8
+	"2014"	"2014"	"Duval County, FL"	"12031"	168	205398	81.8
+	"2014"	"2014"	"Marion County, IN"	"18097"	178	232996	76.4
+	"2014"	"2014"	"Jefferson County, KY"	"21111"	107	172157	62.2
+	"2014"	"2014"	"Kent County, MI"	"26081"	76	158240	48.0
+	"2014"	"2014"	"Jackson County, MO"	"29095"	93	164068	56.7
+	"2014"	"2014"	"St. Louis County, MO"	"29189"	126	223659	56.3
+	"2014"	"2014"	"St. Louis city, MO"	"29510"	54	64355	83.9
+	"2014"	"2014"	"Douglas County, NE"	"31055"	67	140262	47.8
+	"2014"	"2014"	"Guilford County, NC"	"37081"	66	116655	56.6
+	"2014"	"2014"	"Mecklenburg County, NC"	"37119"	126	248710	50.7
+	"2014"	"2014"	"Wake County, NC"	"37183"	96	249875	38.4
+	"2014"	"2014"	"Franklin County, OH"	"39049"	219	291522	75.1
+	"2014"	"2014"	"Hamilton County, OH"	"39061"	144	187730	76.7
+	"2014"	"2014"	"Montgomery County, OH"	"39113"	54	119832	45.1
+	"2014"	"2014"	"Oklahoma County, OK"	"40109"	128	195960	65.3
+	"2014"	"2014"	"Tulsa County, OK"	"40143"	120	160865	74.6
+	"2014"	"2014"	"Greenville County, SC"	"45045"	57	113304	50.3
+	"2014"	"2014"	"Davidson County, TN"	"47037"	93	144015	64.6
+	"2014"	"2014"	"Knox County, TN"	"47093"	50	96283	51.9
+	"2014"	"2014"	"Shelby County, TN"	"47157"	193	239364	80.6
+	"2014"	"2014"	"Richmond city, VA"	"51760"	47	40178	117.0
+	"2015"	"2015"	"Jefferson County, AL"	"01073"	141	152511	92.5
+	"2015"	"2015"	"Duval County, FL"	"12031"	160	207260	77.2
+	"2015"	"2015"	"Marion County, IN"	"18097"	164	234220	70.0
+	"2015"	"2015"	"Jefferson County, KY"	"21111"	101	171811	58.8
+	"2015"	"2015"	"Kent County, MI"	"26081"	84	158665	52.9
+	"2015"	"2015"	"Jackson County, MO"	"29095"	106	165286	64.1
+	"2015"	"2015"	"St. Louis County, MO"	"29189"	137	223088	61.4
+	"2015"	"2015"	"St. Louis city, MO"	"29510"	59	63437	93.0
+	"2015"	"2015"	"Douglas County, NE"	"31055"	90	142366	63.2
+	"2015"	"2015"	"Guilford County, NC"	"37081"	73	117471	62.1
+	"2015"	"2015"	"Mecklenburg County, NC"	"37119"	130	251972	51.6
+	"2015"	"2015"	"Wake County, NC"	"37183"	105	253184	41.5
+	"2015"	"2015"	"Franklin County, OH"	"39049"	209	295725	70.7
+	"2015"	"2015"	"Hamilton County, OH"	"39061"	140	187937	74.5
+	"2015"	"2015"	"Montgomery County, OH"	"39113"	76	119127	63.8
+	"2015"	"2015"	"Oklahoma County, OK"	"40109"	139	199953	69.5
+	"2015"	"2015"	"Tulsa County, OK"	"40143"	104	163049	63.8
+	"2015"	"2015"	"Greenville County, SC"	"45045"	57	115082	49.5
+	"2015"	"2015"	"Davidson County, TN"	"47037"	117	145277	80.5
+	"2015"	"2015"	"Knox County, TN"	"47093"	53	96191	55.1
+	"2015"	"2015"	"Shelby County, TN"	"47157"	167	237852	70.2
+	"2015"	"2015"	"Richmond city, VA"	"51760"	47	40012	117.5
+	"2016"	"2016"	"Jefferson County, AL"	"01073"	114	151817	75.1
+	"2016"	"2016"	"Duval County, FL"	"12031"	160	209759	76.3
+	"2016"	"2016"	"Marion County, IN"	"18097"	187	234792	79.6
+	"2016"	"2016"	"Jefferson County, KY"	"21111"	112	171635	65.3
+	"2016"	"2016"	"Kent County, MI"	"26081"	81	158784	51.0
+	"2016"	"2016"	"Jackson County, MO"	"29095"	111	165756	67.0
+	"2016"	"2016"	"St. Louis County, MO"	"29189"	114	221665	51.4
+	"2016"	"2016"	"St. Louis city, MO"	"29510"	57	61887	92.1
+	"2016"	"2016"	"Douglas County, NE"	"31055"	84	143362	58.6
+	"2016"	"2016"	"Guilford County, NC"	"37081"	80	117601	68.0
+	"2016"	"2016"	"Mecklenburg County, NC"	"37119"	150	255098	58.8
+	"2016"	"2016"	"Wake County, NC"	"37183"	105	256755	40.9
+	"2016"	"2016"	"Franklin County, OH"	"39049"	238	297962	79.9
+	"2016"	"2016"	"Hamilton County, OH"	"39061"	136	188034	72.3
+	"2016"	"2016"	"Montgomery County, OH"	"39113"	76	118195	64.3
+	"2016"	"2016"	"Oklahoma County, OK"	"40109"	150	201935	74.3
+	"2016"	"2016"	"Tulsa County, OK"	"40143"	113	163882	69.0
+	"2016"	"2016"	"Greenville County, SC"	"45045"	68	116015	58.6
+	"2016"	"2016"	"Davidson County, TN"	"47037"	113	145977	77.4
+	"2016"	"2016"	"Knox County, TN"	"47093"	56	96791	57.9
+	"2016"	"2016"	"Shelby County, TN"	"47157"	189	235800	80.2
+	"2016"	"2016"	"Richmond city, VA"	"51760"	33	40104	82.3
+	"2017"	"2017"	"Jefferson County, AL"	"01073"	150	150913	99.4
+	"2017"	"2017"	"Duval County, FL"	"12031"	168	211784	79.3
+	"2017"	"2017"	"Marion County, IN"	"18097"	156	234906	66.4
+	"2017"	"2017"	"Jefferson County, KY"	"21111"	111	171882	64.6
+	"2017"	"2017"	"Kent County, MI"	"26081"	68	158211	43.0
+	"2017"	"2017"	"Jackson County, MO"	"29095"	101	165940	60.9
+	"2017"	"2017"	"St. Louis County, MO"	"29189"	127	219750	57.8
+	"2017"	"2017"	"St. Louis city, MO"	"29510"	68	59774	113.8
+	"2017"	"2017"	"Douglas County, NE"	"31055"	82	144522	56.7
+	"2017"	"2017"	"Guilford County, NC"	"37081"	90	118163	76.2
+	"2017"	"2017"	"Mecklenburg County, NC"	"37119"	110	257248	42.8
+	"2017"	"2017"	"Wake County, NC"	"37183"	101	259375	38.9
+	"2017"	"2017"	"Franklin County, OH"	"39049"	222	302103	73.5
+	"2017"	"2017"	"Hamilton County, OH"	"39061"	135	187514	72.0
+	"2017"	"2017"	"Montgomery County, OH"	"39113"	79	118015	66.9
+	"2017"	"2017"	"Oklahoma County, OK"	"40109"	130	202850	64.1
+	"2017"	"2017"	"Tulsa County, OK"	"40143"	119	164013	72.6
+	"2017"	"2017"	"Greenville County, SC"	"45045"	54	117631	45.9
+	"2017"	"2017"	"Davidson County, TN"	"47037"	115	145667	78.9
+	"2017"	"2017"	"Knox County, TN"	"47093"	52	97811	53.2
+	"2017"	"2017"	"Shelby County, TN"	"47157"	198	234376	84.5
+	"2017"	"2017"	"Richmond city, VA"	"51760"	43	40328	106.6
+"---"
+"Dataset: Underlying Cause of Death, 1999-2017"
+"Query Parameters:"
+"ICD-10 113 Cause List: #Salmonella infections (A01-A02); #Shigellosis and amebiasis (A03,A06); Certain other intestinal"
+"infections (A04,A07-A09); #Tuberculosis (A16-A19); Respiratory tuberculosis (A16); Other tuberculosis (A17-A19); #Whooping cough"
+"(A37); #Scarlet fever and erysipelas (A38,A46); #Meningococcal infection (A39); #Septicemia (A40-A41); #Syphilis (A50-A53);"
+"#Acute poliomyelitis (A80); #Arthropod-borne viral encephalitis (A83-A84,A85.2); #Measles (B05); #Viral hepatitis (B15-B19);"
+"#Human immunodeficiency virus (HIV) disease (B20-B24); #Malaria (B50-B54); Other and unspecified infectious and parasitic"
+"diseases and their sequelae (A00,A05,A20-A36,A42-A44,A48-A49,A54-A79,A81-A82,A85.0-A85.1,A85.8,A86-B04,B06-B09,B25-B49,B55-B99);"
+"#Malignant neoplasms (C00-C97); Malignant neoplasms of lip, oral cavity and pharynx (C00-C14); Malignant neoplasm of esophagus"
+"(C15); Malignant neoplasm of stomach (C16); Malignant neoplasms of colon, rectum and anus (C18-C21); Malignant neoplasms of"
+"liver and intrahepatic bile ducts (C22); Malignant neoplasm of pancreas (C25); Malignant neoplasm of larynx (C32); Malignant"
+"neoplasms of trachea, bronchus and lung (C33-C34); Malignant melanoma of skin (C43); Malignant neoplasm of breast (C50);"
+"Malignant neoplasm of cervix uteri (C53); Malignant neoplasms of corpus uteri and uterus, part unspecified (C54-C55); Malignant"
+"neoplasm of ovary (C56); Malignant neoplasm of prostate (C61); Malignant neoplasms of kidney and renal pelvis (C64-C65);"
+"Malignant neoplasm of bladder (C67); Malignant neoplasms of meninges, brain and other parts of central nervous system (C70-C72);"
+"Malignant neoplasms of lymphoid, hematopoietic and related tissue (C81-C96); Hodgkin disease (C81); Non-Hodgkin lymphoma"
+"(C82-C85); Leukemia (C91-C95); Multiple myeloma and immunoproliferative neoplasms (C88,C90); Other and unspecified malignant"
+"neoplasms of lymphoid, hematopoietic and related tissue (C96); All other and unspecified malignant neoplasms"
+"(C17,C23-C24,C26-C31,C37-C41,C44-C49,C51-C52,C57-C60,C62-C63,C66,C68-C69,C73-C80,C97); #In situ neoplasms, benign neoplasms and"
+"neoplasms of uncertain or unknown behavior (D00-D48); #Anemias (D50-D64); #Diabetes mellitus (E10-E14); #Nutritional"
+"deficiencies (E40-E64); Malnutrition (E40-E46); Other nutritional deficiencies (E50-E64); #Meningitis (G00,G03); #Parkinson"
+"disease (G20-G21); #Alzheimer disease (G30); Major cardiovascular diseases (I00-I78); #Diseases of heart"
+"(I00-I09,I11,I13,I20-I51); Acute rheumatic fever and chronic rheumatic heart diseases (I00-I09); Hypertensive heart disease"
+"(I11); Hypertensive heart and renal disease (I13); Ischemic heart diseases (I20-I25); Acute myocardial infarction (I21-I22);"
+"Other acute ischemic heart diseases (I24); Other forms of chronic ischemic heart disease (I20,I25); Atherosclerotic"
+"cardiovascular disease, so described (I25.0); All other forms of chronic ischemic heart disease (I20,I25.1-I25.9); Other heart"
+"diseases (I26-I51); Acute and subacute endocarditis (I33); Diseases of pericardium and acute myocarditis (I30-I31,I40); Heart"
+"failure (I50); All other forms of heart disease (I26-I28,I34-I38,I42-I49,I51); #Essential hypertension and hypertensive renal"
+"disease (I10,I12,I15); #Cerebrovascular diseases (I60-I69); #Atherosclerosis (I70); Other diseases of circulatory system"
+"(I71-I78); #Aortic aneurysm and dissection (I71); Other diseases of arteries, arterioles and capillaries (I72-I78); Other"
+"disorders of circulatory system (I80-I99); #Influenza and pneumonia (J09-J18); Influenza (J09-J11); Pneumonia (J12-J18); Other"
+"acute lower respiratory infections (J20-J22,U04); #Acute bronchitis and bronchiolitis (J20-J21); Other and unspecified acute"
+"lower respiratory infections (J22,U04); Bronchitis, chronic and unspecified (J40-J42); Emphysema (J43); Other chronic lower"
+"respiratory diseases (J44,J47); #Pneumoconioses and chemical effects (J60-J66,J68); #Pneumonitis due to solids and liquids"
+"(J69); Other diseases of respiratory system (J00-J06,J30- J39,J67,J70-J98); #Peptic ulcer (K25-K28); #Diseases of appendix"
+"(K35-K38); #Hernia (K40-K46); #Chronic liver disease and cirrhosis (K70,K73-K74); Alcoholic liver disease (K70); Other chronic"
+"liver disease and cirrhosis (K73-K74); #Cholelithiasis and other disorders of gallbladder (K80-K82); #Nephritis, nephrotic"
+"syndrome and nephrosis (N00-N07,N17-N19,N25-N27); Acute and rapidly progressive nephritic and nephrotic syndrome (N00-N01,N04);"
+"Chronic glomerulonephritis, nephritis and nephropathy not specified as acute or chronic, and renal sclerosis unspecified"
+"(N02-N03,N05-N07,N26); Renal failure (N17-N19); Other disorders of kidney (N25,N27); #Infections of kidney"
+"(N10-N12,N13.6,N15.1); #Hyperplasia of prostate (N40); #Inflammatory diseases of female pelvic organs (N70-N76); #Pregnancy,"
+"childbirth and the puerperium (O00-O99); Pregnancy with abortive outcome (O00-O07); Other complications of pregnancy, childbirth"
+"and the puerperium (O10-O99); #Certain conditions originating in the perinatal period (P00-P96); #Congenital malformations,"
+"deformations and chromosomal abnormalities (Q00-Q99); Symptoms, signs and abnormal clinical and laboratory findings, not"
+"elsewhere classified (R00-R99); All other diseases (Residual) ; #Accidents (unintentional injuries) (V01-X59,Y85-Y86); Transport"
+"accidents (V01-V99,Y85); Motor vehicle accidents"
+"(V02-V04,V09.0,V09.2,V12-V14,V19.0-V19.2,V19.4-V19.6,V20-V79,V80.3-V80.5,V81.0-V81.1,V82.0-V82.1,V83-V86,V87.0-V87.8,V88.0-V88.8"
+"V89.0,V89.2);"
+"Other land transport accidents"
+"(V01,V05-V06,V09.1,V09.3-V09.9,V10-V11,V15-V18,V19.3,V19.8-V19.9,V80.0-V80.2,V80.6-V80.9,V81.2-V81.9,V82.2-V82.9,V87.9,V88.9"
+"V89.1,V89.3,V89.9);"
+"Water, air and space, and other and unspecified transport accidents and their sequelae (V90-V99,Y85); Nontransport accidents"
+"(W00-X59,Y86); Falls (W00-W19); Accidental discharge of firearms (W32-W34); Accidental drowning and submersion (W65-W74);"
+"Accidental exposure to smoke, fire and flames (X00-X09); Accidental poisoning and exposure to noxious substances (X40-X49);"
+"Other and unspecified nontransport accidents and their sequelae (W20-W31,W35-W64,W75-W99,X10-X39,X50-X59,Y86); #Intentional"
+"self-harm (suicide) (*U03,X60-X84,Y87.0); Intentional self-harm (suicide) by discharge of firearms (X72-X74); Intentional"
+"self-harm (suicide) by other and unspecified means and their sequelae (*U03,X60-X71,X75-X84,Y87.0); #Assault (homicide)"
+"(*U01-*U02,X85-Y09,Y87.1); Assault (homicide) by discharge of firearms (*U01.4,X93-X95); Assault (homicide) by other and"
+"unspecified means and their sequelae (*U01.0-*U01.3,*U01.5-*U01.9,*U02,X85-X92,X96-Y09,Y87.1); #Legal intervention (Y35,Y89.0);"
+"Events of undetermined intent (Y10-Y34,Y87.2,Y89.9); Discharge of firearms, undetermined intent (Y22-Y24); Other and unspecified"
+"events of undetermined intent and their sequelae (Y10-Y21,Y25-Y34,Y87.2,Y89.9); #Operations of war and their sequelae"
+"(Y36,Y89.1); #Complications of medical and surgical care (Y40-Y84,Y88); #Enterocolitis due to Clostridium difficile (A04.7)"
+"Single-Year Ages: < 1 year; 1 year; 2 years; 3 years; 4 years; 5 years; 6 years; 7 years; 8 years; 9 years; 10 years; 11 years;"
+"12 years; 13 years; 14 years; 15 years; 16 years; 17 years"
+"States: Jefferson County, AL (01073); Duval County, FL (12031); Marion County, IN (18097); Jefferson County, KY (21111); Kent"
+"County, MI (26081); Jackson County, MO (29095); St. Louis County, MO (29189); St. Louis city, MO (29510); Douglas County, NE"
+"(31055); Guilford County, NC (37081); Mecklenburg County, NC (37119); Wake County, NC (37183); Franklin County, OH (39049);"
+"Hamilton County, OH (39061); Montgomery County, OH (39113); Oklahoma County, OK (40109); Tulsa County, OK (40143); Greenville"
+"County, SC (45045); Davidson County, TN (47037); Knox County, TN (47093); Shelby County, TN (47157); Richmond city, VA (51760)"
+"Group By: Year; County"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Dec 2, 2019 2:15:19 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2017 on CDC WONDER Online Database, released December, 2018. Data are from the Multiple Cause of Death Files, 1999-2017, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Dec 2, 2019 2:15:19 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Deaths and population estimates are reported separately for St. Louis City (FIPS code 29510) and county (FIPS code 29189)."
+"3. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,"
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"4. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the Vintage 2017"
+"postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The population figures for"
+"year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal series released by NCHS"
+"on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26, 2014. The"
+"population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012 postcensal"
+"series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010 are April 1"
+"Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident population, from"
+"the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population figures for 2000 are"
+"April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1 estimates. Population"
+"figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population figures for years 2001 -"
+"2009 differ slightly from previously published reports, due to use of the population estimates which were available at the time"
+"of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

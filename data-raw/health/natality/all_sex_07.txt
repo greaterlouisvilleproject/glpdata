@@ -1,0 +1,537 @@
+"Notes"	"Year"	"Year Code"	"County"	"County Code"	"Gender"	"Gender Code"	Births
+	"2007"	"2007"	"Jefferson County, AL"	"01073"	"Female"	"F"	4800
+	"2007"	"2007"	"Jefferson County, AL"	"01073"	"Male"	"M"	4890
+	"2007"	"2007"	"Duval County, FL"	"12031"	"Female"	"F"	6746
+	"2007"	"2007"	"Duval County, FL"	"12031"	"Male"	"M"	7040
+	"2007"	"2007"	"Marion County, IN"	"18097"	"Female"	"F"	7505
+	"2007"	"2007"	"Marion County, IN"	"18097"	"Male"	"M"	7892
+	"2007"	"2007"	"Jefferson County, KY"	"21111"	"Female"	"F"	5149
+	"2007"	"2007"	"Jefferson County, KY"	"21111"	"Male"	"M"	5475
+	"2007"	"2007"	"Kent County, MI"	"26081"	"Female"	"F"	4650
+	"2007"	"2007"	"Kent County, MI"	"26081"	"Male"	"M"	4894
+	"2007"	"2007"	"Jackson County, MO"	"29095"	"Female"	"F"	5208
+	"2007"	"2007"	"Jackson County, MO"	"29095"	"Male"	"M"	5430
+	"2007"	"2007"	"St. Louis County, MO"	"29189"	"Female"	"F"	5989
+	"2007"	"2007"	"St. Louis County, MO"	"29189"	"Male"	"M"	6047
+	"2007"	"2007"	"St. Louis city, MO"	"29510"	"Female"	"F"	2667
+	"2007"	"2007"	"St. Louis city, MO"	"29510"	"Male"	"M"	2676
+	"2007"	"2007"	"Douglas County, NE"	"31055"	"Female"	"F"	4257
+	"2007"	"2007"	"Douglas County, NE"	"31055"	"Male"	"M"	4394
+	"2007"	"2007"	"Guilford County, NC"	"37081"	"Female"	"F"	3035
+	"2007"	"2007"	"Guilford County, NC"	"37081"	"Male"	"M"	3260
+	"2007"	"2007"	"Mecklenburg County, NC"	"37119"	"Female"	"F"	7266
+	"2007"	"2007"	"Mecklenburg County, NC"	"37119"	"Male"	"M"	7500
+	"2007"	"2007"	"Wake County, NC"	"37183"	"Female"	"F"	6524
+	"2007"	"2007"	"Wake County, NC"	"37183"	"Male"	"M"	6762
+	"2007"	"2007"	"Franklin County, OH"	"39049"	"Female"	"F"	8821
+	"2007"	"2007"	"Franklin County, OH"	"39049"	"Male"	"M"	9318
+	"2007"	"2007"	"Hamilton County, OH"	"39061"	"Female"	"F"	5839
+	"2007"	"2007"	"Hamilton County, OH"	"39061"	"Male"	"M"	5867
+	"2007"	"2007"	"Montgomery County, OH"	"39113"	"Female"	"F"	3572
+	"2007"	"2007"	"Montgomery County, OH"	"39113"	"Male"	"M"	3669
+	"2007"	"2007"	"Oklahoma County, OK"	"40109"	"Female"	"F"	6054
+	"2007"	"2007"	"Oklahoma County, OK"	"40109"	"Male"	"M"	6411
+	"2007"	"2007"	"Tulsa County, OK"	"40143"	"Female"	"F"	4782
+	"2007"	"2007"	"Tulsa County, OK"	"40143"	"Male"	"M"	4995
+	"2007"	"2007"	"Greenville County, SC"	"45045"	"Female"	"F"	3179
+	"2007"	"2007"	"Greenville County, SC"	"45045"	"Male"	"M"	3417
+	"2007"	"2007"	"Davidson County, TN"	"47037"	"Female"	"F"	4875
+	"2007"	"2007"	"Davidson County, TN"	"47037"	"Male"	"M"	5117
+	"2007"	"2007"	"Knox County, TN"	"47093"	"Female"	"F"	2559
+	"2007"	"2007"	"Knox County, TN"	"47093"	"Male"	"M"	2778
+	"2007"	"2007"	"Shelby County, TN"	"47157"	"Female"	"F"	7423
+	"2007"	"2007"	"Shelby County, TN"	"47157"	"Male"	"M"	7820
+	"2007"	"2007"	"Richmond city, VA"	"51760"	"Female"	"F"	1636
+	"2007"	"2007"	"Richmond city, VA"	"51760"	"Male"	"M"	1666
+	"2008"	"2008"	"Jefferson County, AL"	"01073"	"Female"	"F"	4666
+	"2008"	"2008"	"Jefferson County, AL"	"01073"	"Male"	"M"	4900
+	"2008"	"2008"	"Duval County, FL"	"12031"	"Female"	"F"	6615
+	"2008"	"2008"	"Duval County, FL"	"12031"	"Male"	"M"	6845
+	"2008"	"2008"	"Marion County, IN"	"18097"	"Female"	"F"	7565
+	"2008"	"2008"	"Marion County, IN"	"18097"	"Male"	"M"	7769
+	"2008"	"2008"	"Jefferson County, KY"	"21111"	"Female"	"F"	5153
+	"2008"	"2008"	"Jefferson County, KY"	"21111"	"Male"	"M"	5400
+	"2008"	"2008"	"Kent County, MI"	"26081"	"Female"	"F"	4340
+	"2008"	"2008"	"Kent County, MI"	"26081"	"Male"	"M"	4690
+	"2008"	"2008"	"Jackson County, MO"	"29095"	"Female"	"F"	5068
+	"2008"	"2008"	"Jackson County, MO"	"29095"	"Male"	"M"	5449
+	"2008"	"2008"	"St. Louis County, MO"	"29189"	"Female"	"F"	5694
+	"2008"	"2008"	"St. Louis County, MO"	"29189"	"Male"	"M"	6000
+	"2008"	"2008"	"St. Louis city, MO"	"29510"	"Female"	"F"	2809
+	"2008"	"2008"	"St. Louis city, MO"	"29510"	"Male"	"M"	2934
+	"2008"	"2008"	"Douglas County, NE"	"31055"	"Female"	"F"	4142
+	"2008"	"2008"	"Douglas County, NE"	"31055"	"Male"	"M"	4393
+	"2008"	"2008"	"Guilford County, NC"	"37081"	"Female"	"F"	3159
+	"2008"	"2008"	"Guilford County, NC"	"37081"	"Male"	"M"	3214
+	"2008"	"2008"	"Mecklenburg County, NC"	"37119"	"Female"	"F"	7239
+	"2008"	"2008"	"Mecklenburg County, NC"	"37119"	"Male"	"M"	7670
+	"2008"	"2008"	"Wake County, NC"	"37183"	"Female"	"F"	6634
+	"2008"	"2008"	"Wake County, NC"	"37183"	"Male"	"M"	6904
+	"2008"	"2008"	"Franklin County, OH"	"39049"	"Female"	"F"	8939
+	"2008"	"2008"	"Franklin County, OH"	"39049"	"Male"	"M"	9395
+	"2008"	"2008"	"Hamilton County, OH"	"39061"	"Female"	"F"	5935
+	"2008"	"2008"	"Hamilton County, OH"	"39061"	"Male"	"M"	5866
+	"2008"	"2008"	"Montgomery County, OH"	"39113"	"Female"	"F"	3497
+	"2008"	"2008"	"Montgomery County, OH"	"39113"	"Male"	"M"	3661
+	"2008"	"2008"	"Oklahoma County, OK"	"40109"	"Female"	"F"	6045
+	"2008"	"2008"	"Oklahoma County, OK"	"40109"	"Male"	"M"	6329
+	"2008"	"2008"	"Tulsa County, OK"	"40143"	"Female"	"F"	4735
+	"2008"	"2008"	"Tulsa County, OK"	"40143"	"Male"	"M"	4787
+	"2008"	"2008"	"Greenville County, SC"	"45045"	"Female"	"F"	3229
+	"2008"	"2008"	"Greenville County, SC"	"45045"	"Male"	"M"	3485
+	"2008"	"2008"	"Davidson County, TN"	"47037"	"Female"	"F"	4941
+	"2008"	"2008"	"Davidson County, TN"	"47037"	"Male"	"M"	5162
+	"2008"	"2008"	"Knox County, TN"	"47093"	"Female"	"F"	2672
+	"2008"	"2008"	"Knox County, TN"	"47093"	"Male"	"M"	2822
+	"2008"	"2008"	"Shelby County, TN"	"47157"	"Female"	"F"	7380
+	"2008"	"2008"	"Shelby County, TN"	"47157"	"Male"	"M"	7670
+	"2008"	"2008"	"Richmond city, VA"	"51760"	"Female"	"F"	1623
+	"2008"	"2008"	"Richmond city, VA"	"51760"	"Male"	"M"	1680
+	"2009"	"2009"	"Jefferson County, AL"	"01073"	"Female"	"F"	5082
+	"2009"	"2009"	"Jefferson County, AL"	"01073"	"Male"	"M"	5353
+	"2009"	"2009"	"Duval County, FL"	"12031"	"Female"	"F"	6424
+	"2009"	"2009"	"Duval County, FL"	"12031"	"Male"	"M"	6747
+	"2009"	"2009"	"Marion County, IN"	"18097"	"Female"	"F"	7606
+	"2009"	"2009"	"Marion County, IN"	"18097"	"Male"	"M"	7749
+	"2009"	"2009"	"Jefferson County, KY"	"21111"	"Female"	"F"	5055
+	"2009"	"2009"	"Jefferson County, KY"	"21111"	"Male"	"M"	5374
+	"2009"	"2009"	"Kent County, MI"	"26081"	"Female"	"F"	4400
+	"2009"	"2009"	"Kent County, MI"	"26081"	"Male"	"M"	4493
+	"2009"	"2009"	"Jackson County, MO"	"29095"	"Female"	"F"	4994
+	"2009"	"2009"	"Jackson County, MO"	"29095"	"Male"	"M"	5361
+	"2009"	"2009"	"St. Louis County, MO"	"29189"	"Female"	"F"	5758
+	"2009"	"2009"	"St. Louis County, MO"	"29189"	"Male"	"M"	6015
+	"2009"	"2009"	"St. Louis city, MO"	"29510"	"Female"	"F"	2394
+	"2009"	"2009"	"St. Louis city, MO"	"29510"	"Male"	"M"	2737
+	"2009"	"2009"	"Douglas County, NE"	"31055"	"Female"	"F"	4232
+	"2009"	"2009"	"Douglas County, NE"	"31055"	"Male"	"M"	4384
+	"2009"	"2009"	"Guilford County, NC"	"37081"	"Female"	"F"	3019
+	"2009"	"2009"	"Guilford County, NC"	"37081"	"Male"	"M"	3127
+	"2009"	"2009"	"Mecklenburg County, NC"	"37119"	"Female"	"F"	7073
+	"2009"	"2009"	"Mecklenburg County, NC"	"37119"	"Male"	"M"	7572
+	"2009"	"2009"	"Wake County, NC"	"37183"	"Female"	"F"	6332
+	"2009"	"2009"	"Wake County, NC"	"37183"	"Male"	"M"	6674
+	"2009"	"2009"	"Franklin County, OH"	"39049"	"Female"	"F"	8984
+	"2009"	"2009"	"Franklin County, OH"	"39049"	"Male"	"M"	9313
+	"2009"	"2009"	"Hamilton County, OH"	"39061"	"Female"	"F"	5534
+	"2009"	"2009"	"Hamilton County, OH"	"39061"	"Male"	"M"	5816
+	"2009"	"2009"	"Montgomery County, OH"	"39113"	"Female"	"F"	3456
+	"2009"	"2009"	"Montgomery County, OH"	"39113"	"Male"	"M"	3595
+	"2009"	"2009"	"Oklahoma County, OK"	"40109"	"Female"	"F"	6069
+	"2009"	"2009"	"Oklahoma County, OK"	"40109"	"Male"	"M"	6422
+	"2009"	"2009"	"Tulsa County, OK"	"40143"	"Female"	"F"	4830
+	"2009"	"2009"	"Tulsa County, OK"	"40143"	"Male"	"M"	5048
+	"2009"	"2009"	"Greenville County, SC"	"45045"	"Female"	"F"	3804
+	"2009"	"2009"	"Greenville County, SC"	"45045"	"Male"	"M"	3919
+	"2009"	"2009"	"Davidson County, TN"	"47037"	"Female"	"F"	4771
+	"2009"	"2009"	"Davidson County, TN"	"47037"	"Male"	"M"	5007
+	"2009"	"2009"	"Knox County, TN"	"47093"	"Female"	"F"	2602
+	"2009"	"2009"	"Knox County, TN"	"47093"	"Male"	"M"	2718
+	"2009"	"2009"	"Shelby County, TN"	"47157"	"Female"	"F"	7099
+	"2009"	"2009"	"Shelby County, TN"	"47157"	"Male"	"M"	7364
+	"2009"	"2009"	"Richmond city, VA"	"51760"	"Female"	"F"	1539
+	"2009"	"2009"	"Richmond city, VA"	"51760"	"Male"	"M"	1651
+	"2010"	"2010"	"Jefferson County, AL"	"01073"	"Female"	"F"	4270
+	"2010"	"2010"	"Jefferson County, AL"	"01073"	"Male"	"M"	4616
+	"2010"	"2010"	"Duval County, FL"	"12031"	"Female"	"F"	6146
+	"2010"	"2010"	"Duval County, FL"	"12031"	"Male"	"M"	6467
+	"2010"	"2010"	"Marion County, IN"	"18097"	"Female"	"F"	7091
+	"2010"	"2010"	"Marion County, IN"	"18097"	"Male"	"M"	7499
+	"2010"	"2010"	"Jefferson County, KY"	"21111"	"Female"	"F"	4989
+	"2010"	"2010"	"Jefferson County, KY"	"21111"	"Male"	"M"	5215
+	"2010"	"2010"	"Kent County, MI"	"26081"	"Female"	"F"	4189
+	"2010"	"2010"	"Kent County, MI"	"26081"	"Male"	"M"	4402
+	"2010"	"2010"	"Jackson County, MO"	"29095"	"Female"	"F"	4830
+	"2010"	"2010"	"Jackson County, MO"	"29095"	"Male"	"M"	4932
+	"2010"	"2010"	"St. Louis County, MO"	"29189"	"Female"	"F"	5570
+	"2010"	"2010"	"St. Louis County, MO"	"29189"	"Male"	"M"	6010
+	"2010"	"2010"	"St. Louis city, MO"	"29510"	"Female"	"F"	2297
+	"2010"	"2010"	"St. Louis city, MO"	"29510"	"Male"	"M"	2496
+	"2010"	"2010"	"Douglas County, NE"	"31055"	"Female"	"F"	4077
+	"2010"	"2010"	"Douglas County, NE"	"31055"	"Male"	"M"	4127
+	"2010"	"2010"	"Guilford County, NC"	"37081"	"Female"	"F"	2876
+	"2010"	"2010"	"Guilford County, NC"	"37081"	"Male"	"M"	3121
+	"2010"	"2010"	"Mecklenburg County, NC"	"37119"	"Female"	"F"	6837
+	"2010"	"2010"	"Mecklenburg County, NC"	"37119"	"Male"	"M"	7055
+	"2010"	"2010"	"Wake County, NC"	"37183"	"Female"	"F"	6307
+	"2010"	"2010"	"Wake County, NC"	"37183"	"Male"	"M"	6391
+	"2010"	"2010"	"Franklin County, OH"	"39049"	"Female"	"F"	8642
+	"2010"	"2010"	"Franklin County, OH"	"39049"	"Male"	"M"	9154
+	"2010"	"2010"	"Hamilton County, OH"	"39061"	"Female"	"F"	5326
+	"2010"	"2010"	"Hamilton County, OH"	"39061"	"Male"	"M"	5512
+	"2010"	"2010"	"Montgomery County, OH"	"39113"	"Female"	"F"	3211
+	"2010"	"2010"	"Montgomery County, OH"	"39113"	"Male"	"M"	3512
+	"2010"	"2010"	"Oklahoma County, OK"	"40109"	"Female"	"F"	5891
+	"2010"	"2010"	"Oklahoma County, OK"	"40109"	"Male"	"M"	6287
+	"2010"	"2010"	"Tulsa County, OK"	"40143"	"Female"	"F"	4511
+	"2010"	"2010"	"Tulsa County, OK"	"40143"	"Male"	"M"	4766
+	"2010"	"2010"	"Greenville County, SC"	"45045"	"Female"	"F"	3000
+	"2010"	"2010"	"Greenville County, SC"	"45045"	"Male"	"M"	3107
+	"2010"	"2010"	"Davidson County, TN"	"47037"	"Female"	"F"	4755
+	"2010"	"2010"	"Davidson County, TN"	"47037"	"Male"	"M"	4805
+	"2010"	"2010"	"Knox County, TN"	"47093"	"Female"	"F"	2498
+	"2010"	"2010"	"Knox County, TN"	"47093"	"Male"	"M"	2600
+	"2010"	"2010"	"Shelby County, TN"	"47157"	"Female"	"F"	6649
+	"2010"	"2010"	"Shelby County, TN"	"47157"	"Male"	"M"	7142
+	"2010"	"2010"	"Richmond city, VA"	"51760"	"Female"	"F"	1405
+	"2010"	"2010"	"Richmond city, VA"	"51760"	"Male"	"M"	1556
+	"2011"	"2011"	"Jefferson County, AL"	"01073"	"Female"	"F"	4316
+	"2011"	"2011"	"Jefferson County, AL"	"01073"	"Male"	"M"	4597
+	"2011"	"2011"	"Duval County, FL"	"12031"	"Female"	"F"	6061
+	"2011"	"2011"	"Duval County, FL"	"12031"	"Male"	"M"	6351
+	"2011"	"2011"	"Marion County, IN"	"18097"	"Female"	"F"	7146
+	"2011"	"2011"	"Marion County, IN"	"18097"	"Male"	"M"	7413
+	"2011"	"2011"	"Jefferson County, KY"	"21111"	"Female"	"F"	4952
+	"2011"	"2011"	"Jefferson County, KY"	"21111"	"Male"	"M"	5131
+	"2011"	"2011"	"Kent County, MI"	"26081"	"Female"	"F"	4192
+	"2011"	"2011"	"Kent County, MI"	"26081"	"Male"	"M"	4606
+	"2011"	"2011"	"Jackson County, MO"	"29095"	"Female"	"F"	4688
+	"2011"	"2011"	"Jackson County, MO"	"29095"	"Male"	"M"	4908
+	"2011"	"2011"	"St. Louis County, MO"	"29189"	"Female"	"F"	5735
+	"2011"	"2011"	"St. Louis County, MO"	"29189"	"Male"	"M"	6076
+	"2011"	"2011"	"St. Louis city, MO"	"29510"	"Female"	"F"	2388
+	"2011"	"2011"	"St. Louis city, MO"	"29510"	"Male"	"M"	2557
+	"2011"	"2011"	"Douglas County, NE"	"31055"	"Female"	"F"	4119
+	"2011"	"2011"	"Douglas County, NE"	"31055"	"Male"	"M"	4155
+	"2011"	"2011"	"Guilford County, NC"	"37081"	"Female"	"F"	2979
+	"2011"	"2011"	"Guilford County, NC"	"37081"	"Male"	"M"	3056
+	"2011"	"2011"	"Mecklenburg County, NC"	"37119"	"Female"	"F"	6822
+	"2011"	"2011"	"Mecklenburg County, NC"	"37119"	"Male"	"M"	6912
+	"2011"	"2011"	"Wake County, NC"	"37183"	"Female"	"F"	6073
+	"2011"	"2011"	"Wake County, NC"	"37183"	"Male"	"M"	6372
+	"2011"	"2011"	"Franklin County, OH"	"39049"	"Female"	"F"	8770
+	"2011"	"2011"	"Franklin County, OH"	"39049"	"Male"	"M"	9235
+	"2011"	"2011"	"Hamilton County, OH"	"39061"	"Female"	"F"	5360
+	"2011"	"2011"	"Hamilton County, OH"	"39061"	"Male"	"M"	5705
+	"2011"	"2011"	"Montgomery County, OH"	"39113"	"Female"	"F"	3256
+	"2011"	"2011"	"Montgomery County, OH"	"39113"	"Male"	"M"	3327
+	"2011"	"2011"	"Oklahoma County, OK"	"40109"	"Female"	"F"	5865
+	"2011"	"2011"	"Oklahoma County, OK"	"40109"	"Male"	"M"	5985
+	"2011"	"2011"	"Tulsa County, OK"	"40143"	"Female"	"F"	4423
+	"2011"	"2011"	"Tulsa County, OK"	"40143"	"Male"	"M"	4772
+	"2011"	"2011"	"Greenville County, SC"	"45045"	"Female"	"F"	2835
+	"2011"	"2011"	"Greenville County, SC"	"45045"	"Male"	"M"	3248
+	"2011"	"2011"	"Davidson County, TN"	"47037"	"Female"	"F"	4730
+	"2011"	"2011"	"Davidson County, TN"	"47037"	"Male"	"M"	4871
+	"2011"	"2011"	"Knox County, TN"	"47093"	"Female"	"F"	2549
+	"2011"	"2011"	"Knox County, TN"	"47093"	"Male"	"M"	2596
+	"2011"	"2011"	"Shelby County, TN"	"47157"	"Female"	"F"	6832
+	"2011"	"2011"	"Shelby County, TN"	"47157"	"Male"	"M"	7175
+	"2011"	"2011"	"Richmond city, VA"	"51760"	"Female"	"F"	1439
+	"2011"	"2011"	"Richmond city, VA"	"51760"	"Male"	"M"	1541
+	"2012"	"2012"	"Jefferson County, AL"	"01073"	"Female"	"F"	4448
+	"2012"	"2012"	"Jefferson County, AL"	"01073"	"Male"	"M"	4570
+	"2012"	"2012"	"Duval County, FL"	"12031"	"Female"	"F"	6108
+	"2012"	"2012"	"Duval County, FL"	"12031"	"Male"	"M"	6360
+	"2012"	"2012"	"Marion County, IN"	"18097"	"Female"	"F"	7144
+	"2012"	"2012"	"Marion County, IN"	"18097"	"Male"	"M"	7422
+	"2012"	"2012"	"Jefferson County, KY"	"21111"	"Female"	"F"	4824
+	"2012"	"2012"	"Jefferson County, KY"	"21111"	"Male"	"M"	5114
+	"2012"	"2012"	"Kent County, MI"	"26081"	"Female"	"F"	4457
+	"2012"	"2012"	"Kent County, MI"	"26081"	"Male"	"M"	4508
+	"2012"	"2012"	"Jackson County, MO"	"29095"	"Female"	"F"	4800
+	"2012"	"2012"	"Jackson County, MO"	"29095"	"Male"	"M"	4842
+	"2012"	"2012"	"St. Louis County, MO"	"29189"	"Female"	"F"	5571
+	"2012"	"2012"	"St. Louis County, MO"	"29189"	"Male"	"M"	5855
+	"2012"	"2012"	"St. Louis city, MO"	"29510"	"Female"	"F"	2207
+	"2012"	"2012"	"St. Louis city, MO"	"29510"	"Male"	"M"	2459
+	"2012"	"2012"	"Douglas County, NE"	"31055"	"Female"	"F"	4080
+	"2012"	"2012"	"Douglas County, NE"	"31055"	"Male"	"M"	4340
+	"2012"	"2012"	"Guilford County, NC"	"37081"	"Female"	"F"	2992
+	"2012"	"2012"	"Guilford County, NC"	"37081"	"Male"	"M"	3171
+	"2012"	"2012"	"Mecklenburg County, NC"	"37119"	"Female"	"F"	6896
+	"2012"	"2012"	"Mecklenburg County, NC"	"37119"	"Male"	"M"	6955
+	"2012"	"2012"	"Wake County, NC"	"37183"	"Female"	"F"	6001
+	"2012"	"2012"	"Wake County, NC"	"37183"	"Male"	"M"	6307
+	"2012"	"2012"	"Franklin County, OH"	"39049"	"Female"	"F"	8932
+	"2012"	"2012"	"Franklin County, OH"	"39049"	"Male"	"M"	9383
+	"2012"	"2012"	"Hamilton County, OH"	"39061"	"Female"	"F"	5413
+	"2012"	"2012"	"Hamilton County, OH"	"39061"	"Male"	"M"	5602
+	"2012"	"2012"	"Montgomery County, OH"	"39113"	"Female"	"F"	3312
+	"2012"	"2012"	"Montgomery County, OH"	"39113"	"Male"	"M"	3442
+	"2012"	"2012"	"Oklahoma County, OK"	"40109"	"Female"	"F"	5876
+	"2012"	"2012"	"Oklahoma County, OK"	"40109"	"Male"	"M"	6219
+	"2012"	"2012"	"Tulsa County, OK"	"40143"	"Female"	"F"	4608
+	"2012"	"2012"	"Tulsa County, OK"	"40143"	"Male"	"M"	4699
+	"2012"	"2012"	"Greenville County, SC"	"45045"	"Female"	"F"	2975
+	"2012"	"2012"	"Greenville County, SC"	"45045"	"Male"	"M"	3189
+	"2012"	"2012"	"Davidson County, TN"	"47037"	"Female"	"F"	4814
+	"2012"	"2012"	"Davidson County, TN"	"47037"	"Male"	"M"	4921
+	"2012"	"2012"	"Knox County, TN"	"47093"	"Female"	"F"	2560
+	"2012"	"2012"	"Knox County, TN"	"47093"	"Male"	"M"	2726
+	"2012"	"2012"	"Shelby County, TN"	"47157"	"Female"	"F"	6748
+	"2012"	"2012"	"Shelby County, TN"	"47157"	"Male"	"M"	7149
+	"2012"	"2012"	"Richmond city, VA"	"51760"	"Female"	"F"	1406
+	"2012"	"2012"	"Richmond city, VA"	"51760"	"Male"	"M"	1531
+	"2013"	"2013"	"Jefferson County, AL"	"01073"	"Female"	"F"	4208
+	"2013"	"2013"	"Jefferson County, AL"	"01073"	"Male"	"M"	4422
+	"2013"	"2013"	"Duval County, FL"	"12031"	"Female"	"F"	6096
+	"2013"	"2013"	"Duval County, FL"	"12031"	"Male"	"M"	6474
+	"2013"	"2013"	"Marion County, IN"	"18097"	"Female"	"F"	6960
+	"2013"	"2013"	"Marion County, IN"	"18097"	"Male"	"M"	7374
+	"2013"	"2013"	"Jefferson County, KY"	"21111"	"Female"	"F"	4807
+	"2013"	"2013"	"Jefferson County, KY"	"21111"	"Male"	"M"	5151
+	"2013"	"2013"	"Kent County, MI"	"26081"	"Female"	"F"	4267
+	"2013"	"2013"	"Kent County, MI"	"26081"	"Male"	"M"	4583
+	"2013"	"2013"	"Jackson County, MO"	"29095"	"Female"	"F"	4669
+	"2013"	"2013"	"Jackson County, MO"	"29095"	"Male"	"M"	4805
+	"2013"	"2013"	"St. Louis County, MO"	"29189"	"Female"	"F"	5648
+	"2013"	"2013"	"St. Louis County, MO"	"29189"	"Male"	"M"	5851
+	"2013"	"2013"	"St. Louis city, MO"	"29510"	"Female"	"F"	2345
+	"2013"	"2013"	"St. Louis city, MO"	"29510"	"Male"	"M"	2347
+	"2013"	"2013"	"Douglas County, NE"	"31055"	"Female"	"F"	4066
+	"2013"	"2013"	"Douglas County, NE"	"31055"	"Male"	"M"	4299
+	"2013"	"2013"	"Guilford County, NC"	"37081"	"Female"	"F"	3064
+	"2013"	"2013"	"Guilford County, NC"	"37081"	"Male"	"M"	3099
+	"2013"	"2013"	"Mecklenburg County, NC"	"37119"	"Female"	"F"	6815
+	"2013"	"2013"	"Mecklenburg County, NC"	"37119"	"Male"	"M"	7008
+	"2013"	"2013"	"Wake County, NC"	"37183"	"Female"	"F"	6148
+	"2013"	"2013"	"Wake County, NC"	"37183"	"Male"	"M"	6283
+	"2013"	"2013"	"Franklin County, OH"	"39049"	"Female"	"F"	9178
+	"2013"	"2013"	"Franklin County, OH"	"39049"	"Male"	"M"	9544
+	"2013"	"2013"	"Hamilton County, OH"	"39061"	"Female"	"F"	5301
+	"2013"	"2013"	"Hamilton County, OH"	"39061"	"Male"	"M"	5466
+	"2013"	"2013"	"Montgomery County, OH"	"39113"	"Female"	"F"	3339
+	"2013"	"2013"	"Montgomery County, OH"	"39113"	"Male"	"M"	3405
+	"2013"	"2013"	"Oklahoma County, OK"	"40109"	"Female"	"F"	5974
+	"2013"	"2013"	"Oklahoma County, OK"	"40109"	"Male"	"M"	6497
+	"2013"	"2013"	"Tulsa County, OK"	"40143"	"Female"	"F"	4509
+	"2013"	"2013"	"Tulsa County, OK"	"40143"	"Male"	"M"	4746
+	"2013"	"2013"	"Greenville County, SC"	"45045"	"Female"	"F"	2936
+	"2013"	"2013"	"Greenville County, SC"	"45045"	"Male"	"M"	3117
+	"2013"	"2013"	"Davidson County, TN"	"47037"	"Female"	"F"	4904
+	"2013"	"2013"	"Davidson County, TN"	"47037"	"Male"	"M"	5010
+	"2013"	"2013"	"Knox County, TN"	"47093"	"Female"	"F"	2508
+	"2013"	"2013"	"Knox County, TN"	"47093"	"Male"	"M"	2604
+	"2013"	"2013"	"Shelby County, TN"	"47157"	"Female"	"F"	6678
+	"2013"	"2013"	"Shelby County, TN"	"47157"	"Male"	"M"	7089
+	"2013"	"2013"	"Richmond city, VA"	"51760"	"Female"	"F"	1385
+	"2013"	"2013"	"Richmond city, VA"	"51760"	"Male"	"M"	1450
+	"2014"	"2014"	"Jefferson County, AL"	"01073"	"Female"	"F"	4412
+	"2014"	"2014"	"Jefferson County, AL"	"01073"	"Male"	"M"	4497
+	"2014"	"2014"	"Duval County, FL"	"12031"	"Female"	"F"	6142
+	"2014"	"2014"	"Duval County, FL"	"12031"	"Male"	"M"	6373
+	"2014"	"2014"	"Marion County, IN"	"18097"	"Female"	"F"	7138
+	"2014"	"2014"	"Marion County, IN"	"18097"	"Male"	"M"	7499
+	"2014"	"2014"	"Jefferson County, KY"	"21111"	"Female"	"F"	4834
+	"2014"	"2014"	"Jefferson County, KY"	"21111"	"Male"	"M"	5177
+	"2014"	"2014"	"Kent County, MI"	"26081"	"Female"	"F"	4359
+	"2014"	"2014"	"Kent County, MI"	"26081"	"Male"	"M"	4563
+	"2014"	"2014"	"Jackson County, MO"	"29095"	"Female"	"F"	4704
+	"2014"	"2014"	"Jackson County, MO"	"29095"	"Male"	"M"	4909
+	"2014"	"2014"	"St. Louis County, MO"	"29189"	"Female"	"F"	5740
+	"2014"	"2014"	"St. Louis County, MO"	"29189"	"Male"	"M"	5966
+	"2014"	"2014"	"St. Louis city, MO"	"29510"	"Female"	"F"	2240
+	"2014"	"2014"	"St. Louis city, MO"	"29510"	"Male"	"M"	2438
+	"2014"	"2014"	"Douglas County, NE"	"31055"	"Female"	"F"	4231
+	"2014"	"2014"	"Douglas County, NE"	"31055"	"Male"	"M"	4488
+	"2014"	"2014"	"Guilford County, NC"	"37081"	"Female"	"F"	2998
+	"2014"	"2014"	"Guilford County, NC"	"37081"	"Male"	"M"	3083
+	"2014"	"2014"	"Mecklenburg County, NC"	"37119"	"Female"	"F"	7037
+	"2014"	"2014"	"Mecklenburg County, NC"	"37119"	"Male"	"M"	7380
+	"2014"	"2014"	"Wake County, NC"	"37183"	"Female"	"F"	6235
+	"2014"	"2014"	"Wake County, NC"	"37183"	"Male"	"M"	6399
+	"2014"	"2014"	"Franklin County, OH"	"39049"	"Female"	"F"	9313
+	"2014"	"2014"	"Franklin County, OH"	"39049"	"Male"	"M"	9529
+	"2014"	"2014"	"Hamilton County, OH"	"39061"	"Female"	"F"	5415
+	"2014"	"2014"	"Hamilton County, OH"	"39061"	"Male"	"M"	5619
+	"2014"	"2014"	"Montgomery County, OH"	"39113"	"Female"	"F"	3212
+	"2014"	"2014"	"Montgomery County, OH"	"39113"	"Male"	"M"	3377
+	"2014"	"2014"	"Oklahoma County, OK"	"40109"	"Female"	"F"	6069
+	"2014"	"2014"	"Oklahoma County, OK"	"40109"	"Male"	"M"	6223
+	"2014"	"2014"	"Tulsa County, OK"	"40143"	"Female"	"F"	4527
+	"2014"	"2014"	"Tulsa County, OK"	"40143"	"Male"	"M"	4856
+	"2014"	"2014"	"Greenville County, SC"	"45045"	"Female"	"F"	3091
+	"2014"	"2014"	"Greenville County, SC"	"45045"	"Male"	"M"	3254
+	"2014"	"2014"	"Davidson County, TN"	"47037"	"Female"	"F"	4982
+	"2014"	"2014"	"Davidson County, TN"	"47037"	"Male"	"M"	5282
+	"2014"	"2014"	"Knox County, TN"	"47093"	"Female"	"F"	2567
+	"2014"	"2014"	"Knox County, TN"	"47093"	"Male"	"M"	2669
+	"2014"	"2014"	"Shelby County, TN"	"47157"	"Female"	"F"	6801
+	"2014"	"2014"	"Shelby County, TN"	"47157"	"Male"	"M"	6996
+	"2014"	"2014"	"Richmond city, VA"	"51760"	"Female"	"F"	1413
+	"2014"	"2014"	"Richmond city, VA"	"51760"	"Male"	"M"	1503
+	"2015"	"2015"	"Jefferson County, AL"	"01073"	"Female"	"F"	4332
+	"2015"	"2015"	"Jefferson County, AL"	"01073"	"Male"	"M"	4458
+	"2015"	"2015"	"Duval County, FL"	"12031"	"Female"	"F"	6258
+	"2015"	"2015"	"Duval County, FL"	"12031"	"Male"	"M"	6776
+	"2015"	"2015"	"Marion County, IN"	"18097"	"Female"	"F"	6924
+	"2015"	"2015"	"Marion County, IN"	"18097"	"Male"	"M"	7558
+	"2015"	"2015"	"Jefferson County, KY"	"21111"	"Female"	"F"	4934
+	"2015"	"2015"	"Jefferson County, KY"	"21111"	"Male"	"M"	5213
+	"2015"	"2015"	"Kent County, MI"	"26081"	"Female"	"F"	4365
+	"2015"	"2015"	"Kent County, MI"	"26081"	"Male"	"M"	4476
+	"2015"	"2015"	"Jackson County, MO"	"29095"	"Female"	"F"	4552
+	"2015"	"2015"	"Jackson County, MO"	"29095"	"Male"	"M"	4793
+	"2015"	"2015"	"St. Louis County, MO"	"29189"	"Female"	"F"	5835
+	"2015"	"2015"	"St. Louis County, MO"	"29189"	"Male"	"M"	5837
+	"2015"	"2015"	"St. Louis city, MO"	"29510"	"Female"	"F"	2269
+	"2015"	"2015"	"St. Louis city, MO"	"29510"	"Male"	"M"	2300
+	"2015"	"2015"	"Douglas County, NE"	"31055"	"Female"	"F"	4197
+	"2015"	"2015"	"Douglas County, NE"	"31055"	"Male"	"M"	4516
+	"2015"	"2015"	"Guilford County, NC"	"37081"	"Female"	"F"	2976
+	"2015"	"2015"	"Guilford County, NC"	"37081"	"Male"	"M"	3107
+	"2015"	"2015"	"Mecklenburg County, NC"	"37119"	"Female"	"F"	7241
+	"2015"	"2015"	"Mecklenburg County, NC"	"37119"	"Male"	"M"	7614
+	"2015"	"2015"	"Wake County, NC"	"37183"	"Female"	"F"	6320
+	"2015"	"2015"	"Wake County, NC"	"37183"	"Male"	"M"	6539
+	"2015"	"2015"	"Franklin County, OH"	"39049"	"Female"	"F"	9390
+	"2015"	"2015"	"Franklin County, OH"	"39049"	"Male"	"M"	9730
+	"2015"	"2015"	"Hamilton County, OH"	"39061"	"Female"	"F"	5289
+	"2015"	"2015"	"Hamilton County, OH"	"39061"	"Male"	"M"	5669
+	"2015"	"2015"	"Montgomery County, OH"	"39113"	"Female"	"F"	3217
+	"2015"	"2015"	"Montgomery County, OH"	"39113"	"Male"	"M"	3438
+	"2015"	"2015"	"Oklahoma County, OK"	"40109"	"Female"	"F"	6176
+	"2015"	"2015"	"Oklahoma County, OK"	"40109"	"Male"	"M"	6332
+	"2015"	"2015"	"Tulsa County, OK"	"40143"	"Female"	"F"	4624
+	"2015"	"2015"	"Tulsa County, OK"	"40143"	"Male"	"M"	5027
+	"2015"	"2015"	"Greenville County, SC"	"45045"	"Female"	"F"	3146
+	"2015"	"2015"	"Greenville County, SC"	"45045"	"Male"	"M"	3277
+	"2015"	"2015"	"Davidson County, TN"	"47037"	"Female"	"F"	5024
+	"2015"	"2015"	"Davidson County, TN"	"47037"	"Male"	"M"	5252
+	"2015"	"2015"	"Knox County, TN"	"47093"	"Female"	"F"	2624
+	"2015"	"2015"	"Knox County, TN"	"47093"	"Male"	"M"	2721
+	"2015"	"2015"	"Shelby County, TN"	"47157"	"Female"	"F"	6670
+	"2015"	"2015"	"Shelby County, TN"	"47157"	"Male"	"M"	6765
+	"2015"	"2015"	"Richmond city, VA"	"51760"	"Female"	"F"	1519
+	"2015"	"2015"	"Richmond city, VA"	"51760"	"Male"	"M"	1587
+	"2016"	"2016"	"Jefferson County, AL"	"01073"	"Female"	"F"	4224
+	"2016"	"2016"	"Jefferson County, AL"	"01073"	"Male"	"M"	4425
+	"2016"	"2016"	"Duval County, FL"	"12031"	"Female"	"F"	6510
+	"2016"	"2016"	"Duval County, FL"	"12031"	"Male"	"M"	6776
+	"2016"	"2016"	"Marion County, IN"	"18097"	"Female"	"F"	6992
+	"2016"	"2016"	"Marion County, IN"	"18097"	"Male"	"M"	7293
+	"2016"	"2016"	"Jefferson County, KY"	"21111"	"Female"	"F"	4874
+	"2016"	"2016"	"Jefferson County, KY"	"21111"	"Male"	"M"	5015
+	"2016"	"2016"	"Kent County, MI"	"26081"	"Female"	"F"	4299
+	"2016"	"2016"	"Kent County, MI"	"26081"	"Male"	"M"	4504
+	"2016"	"2016"	"Jackson County, MO"	"29095"	"Female"	"F"	4651
+	"2016"	"2016"	"Jackson County, MO"	"29095"	"Male"	"M"	4751
+	"2016"	"2016"	"St. Louis County, MO"	"29189"	"Female"	"F"	5687
+	"2016"	"2016"	"St. Louis County, MO"	"29189"	"Male"	"M"	5986
+	"2016"	"2016"	"St. Louis city, MO"	"29510"	"Female"	"F"	2087
+	"2016"	"2016"	"St. Louis city, MO"	"29510"	"Male"	"M"	2226
+	"2016"	"2016"	"Douglas County, NE"	"31055"	"Female"	"F"	4325
+	"2016"	"2016"	"Douglas County, NE"	"31055"	"Male"	"M"	4504
+	"2016"	"2016"	"Guilford County, NC"	"37081"	"Female"	"F"	3032
+	"2016"	"2016"	"Guilford County, NC"	"37081"	"Male"	"M"	3225
+	"2016"	"2016"	"Mecklenburg County, NC"	"37119"	"Female"	"F"	7222
+	"2016"	"2016"	"Mecklenburg County, NC"	"37119"	"Male"	"M"	7655
+	"2016"	"2016"	"Wake County, NC"	"37183"	"Female"	"F"	6256
+	"2016"	"2016"	"Wake County, NC"	"37183"	"Male"	"M"	6751
+	"2016"	"2016"	"Franklin County, OH"	"39049"	"Female"	"F"	9319
+	"2016"	"2016"	"Franklin County, OH"	"39049"	"Male"	"M"	9699
+	"2016"	"2016"	"Hamilton County, OH"	"39061"	"Female"	"F"	5317
+	"2016"	"2016"	"Hamilton County, OH"	"39061"	"Male"	"M"	5483
+	"2016"	"2016"	"Montgomery County, OH"	"39113"	"Female"	"F"	3263
+	"2016"	"2016"	"Montgomery County, OH"	"39113"	"Male"	"M"	3363
+	"2016"	"2016"	"Oklahoma County, OK"	"40109"	"Female"	"F"	5886
+	"2016"	"2016"	"Oklahoma County, OK"	"40109"	"Male"	"M"	6305
+	"2016"	"2016"	"Tulsa County, OK"	"40143"	"Female"	"F"	4699
+	"2016"	"2016"	"Tulsa County, OK"	"40143"	"Male"	"M"	4919
+	"2016"	"2016"	"Greenville County, SC"	"45045"	"Female"	"F"	3026
+	"2016"	"2016"	"Greenville County, SC"	"45045"	"Male"	"M"	3270
+	"2016"	"2016"	"Davidson County, TN"	"47037"	"Female"	"F"	4764
+	"2016"	"2016"	"Davidson County, TN"	"47037"	"Male"	"M"	5035
+	"2016"	"2016"	"Knox County, TN"	"47093"	"Female"	"F"	2527
+	"2016"	"2016"	"Knox County, TN"	"47093"	"Male"	"M"	2721
+	"2016"	"2016"	"Shelby County, TN"	"47157"	"Female"	"F"	6487
+	"2016"	"2016"	"Shelby County, TN"	"47157"	"Male"	"M"	6672
+	"2016"	"2016"	"Richmond city, VA"	"51760"	"Female"	"F"	1532
+	"2016"	"2016"	"Richmond city, VA"	"51760"	"Male"	"M"	1492
+	"2017"	"2017"	"Jefferson County, AL"	"01073"	"Female"	"F"	4243
+	"2017"	"2017"	"Jefferson County, AL"	"01073"	"Male"	"M"	4450
+	"2017"	"2017"	"Duval County, FL"	"12031"	"Female"	"F"	6503
+	"2017"	"2017"	"Duval County, FL"	"12031"	"Male"	"M"	6671
+	"2017"	"2017"	"Marion County, IN"	"18097"	"Female"	"F"	7062
+	"2017"	"2017"	"Marion County, IN"	"18097"	"Male"	"M"	7318
+	"2017"	"2017"	"Jefferson County, KY"	"21111"	"Female"	"F"	4817
+	"2017"	"2017"	"Jefferson County, KY"	"21111"	"Male"	"M"	5091
+	"2017"	"2017"	"Kent County, MI"	"26081"	"Female"	"F"	4223
+	"2017"	"2017"	"Kent County, MI"	"26081"	"Male"	"M"	4468
+	"2017"	"2017"	"Jackson County, MO"	"29095"	"Female"	"F"	4648
+	"2017"	"2017"	"Jackson County, MO"	"29095"	"Male"	"M"	4643
+	"2017"	"2017"	"St. Louis County, MO"	"29189"	"Female"	"F"	5504
+	"2017"	"2017"	"St. Louis County, MO"	"29189"	"Male"	"M"	5862
+	"2017"	"2017"	"St. Louis city, MO"	"29510"	"Female"	"F"	2024
+	"2017"	"2017"	"St. Louis city, MO"	"29510"	"Male"	"M"	2107
+	"2017"	"2017"	"Douglas County, NE"	"31055"	"Female"	"F"	4108
+	"2017"	"2017"	"Douglas County, NE"	"31055"	"Male"	"M"	4195
+	"2017"	"2017"	"Guilford County, NC"	"37081"	"Female"	"F"	3033
+	"2017"	"2017"	"Guilford County, NC"	"37081"	"Male"	"M"	3179
+	"2017"	"2017"	"Mecklenburg County, NC"	"37119"	"Female"	"F"	7148
+	"2017"	"2017"	"Mecklenburg County, NC"	"37119"	"Male"	"M"	7597
+	"2017"	"2017"	"Wake County, NC"	"37183"	"Female"	"F"	6249
+	"2017"	"2017"	"Wake County, NC"	"37183"	"Male"	"M"	6420
+	"2017"	"2017"	"Franklin County, OH"	"39049"	"Female"	"F"	9166
+	"2017"	"2017"	"Franklin County, OH"	"39049"	"Male"	"M"	9699
+	"2017"	"2017"	"Hamilton County, OH"	"39061"	"Female"	"F"	5293
+	"2017"	"2017"	"Hamilton County, OH"	"39061"	"Male"	"M"	5526
+	"2017"	"2017"	"Montgomery County, OH"	"39113"	"Female"	"F"	3252
+	"2017"	"2017"	"Montgomery County, OH"	"39113"	"Male"	"M"	3474
+	"2017"	"2017"	"Oklahoma County, OK"	"40109"	"Female"	"F"	5603
+	"2017"	"2017"	"Oklahoma County, OK"	"40109"	"Male"	"M"	5944
+	"2017"	"2017"	"Tulsa County, OK"	"40143"	"Female"	"F"	4433
+	"2017"	"2017"	"Tulsa County, OK"	"40143"	"Male"	"M"	4680
+	"2017"	"2017"	"Greenville County, SC"	"45045"	"Female"	"F"	3085
+	"2017"	"2017"	"Greenville County, SC"	"45045"	"Male"	"M"	3322
+	"2017"	"2017"	"Davidson County, TN"	"47037"	"Female"	"F"	4963
+	"2017"	"2017"	"Davidson County, TN"	"47037"	"Male"	"M"	5090
+	"2017"	"2017"	"Knox County, TN"	"47093"	"Female"	"F"	2524
+	"2017"	"2017"	"Knox County, TN"	"47093"	"Male"	"M"	2662
+	"2017"	"2017"	"Shelby County, TN"	"47157"	"Female"	"F"	6387
+	"2017"	"2017"	"Shelby County, TN"	"47157"	"Male"	"M"	6709
+	"2017"	"2017"	"Richmond city, VA"	"51760"	"Female"	"F"	1433
+	"2017"	"2017"	"Richmond city, VA"	"51760"	"Male"	"M"	1596
+"---"
+"Dataset: Natality, 2007-2017"
+"Query Parameters:"
+"Birth Weight 12: 499 grams or less; 500 - 999 grams; 1000 - 1499 grams; 1500 - 1999 grams; 2000 - 2499 grams; 2500 - 2999 grams;"
+"3000 - 3499 grams; 3500 - 3999 grams; 4000 - 4499 grams; 4500 - 4999 grams; 5000 - 8165 grams"
+"States: Jefferson County, AL (01073); Duval County, FL (12031); Marion County, IN (18097); Jefferson County, KY (21111); Kent"
+"County, MI (26081); Jackson County, MO (29095); St. Louis County, MO (29189); St. Louis city, MO (29510); Douglas County, NE"
+"(31055); Guilford County, NC (37081); Mecklenburg County, NC (37119); Wake County, NC (37183); Franklin County, OH (39049);"
+"Hamilton County, OH (39061); Montgomery County, OH (39113); Oklahoma County, OK (40109); Tulsa County, OK (40143); Greenville"
+"County, SC (45045); Davidson County, TN (47037); Knox County, TN (47093); Shelby County, TN (47157); Richmond city, VA (51760)"
+"Group By: Year; County; Gender"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 1,000"
+"Population Option: No populations shown because rates were not selected."
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/Natality.html for more information."
+"---"
+"Query Date: Mar 29, 2019 11:26:02 AM"
+"---"
+"Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention"
+"(CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics, Natality public-use data 2007-2017, on CDC"
+"WONDER Online Database, October 2018. Accessed at http://wonder.cdc.gov/natality-current.html on Mar 29, 2019 11:26:02 AM"
+"---"
+Caveats:
+"1. Each birth record represents one living baby."
+"2. County-level data are shown only for counties with populations of 100,000 persons or more. Within each state, data for all"
+"counties with fewer than 100,000 persons are combined together under the label ""Unidentified Counties."""
+"3. For birth weight data shown in WONDER before May 8, 2015, 21 births that occurred in year 2011 were erroneously reported in"
+"the birth weight category 5000-8165 grams, instead of the ""Not stated"" birth weight category. These 21 births are now reported"
+"in ""Not stated"" birth weight category."
+"4. As a result of population changes the following counties do not have data available for all years.<br/> Before 2014 the data"
+"for the following counties was recoded to the ""Unidentified Counties"" category within the state of the county because they did"
+"not meet minimum population standards. Houston County, AL (01069); Navajo County, AZ (04017); Faulkner County, AR (05045);"
+"Saline County, AR (05125); Bartow County, GA (13015); Carroll County, GA (13045); Columbia County, GA (13073); Coweta County, GA"
+"(13077); Douglas County, GA (13097); Fayette County, GA (13113); Forsyth County, GA (13117); Lowndes County, GA (13185);"
+"Paulding County, GA (13223); Whitfield County, GA (13313); Bonneville County, ID (16019); DeKalb County, IL (17037); Kendall"
+"County, IL (17093); Clark County, IN (18019); Douglas County, KS (20045); Boone County, KY (21015); Hardin County, KY (21093);"
+"Warren County, KY (21227); Ascension Parish, LA (22005); Bossier Parish, LA (22015); Livingston Parish, LA (22063); Cecil"
+"County, MD (24015); St. Mary's County, MD (24037); Scott County, MN (27139); Wright County, MN (27171); Franklin County, MO"
+"(29071); Missoula County, MT (30063); Sandoval County, NM (35043); Tompkins County, NY (36109); Brunswick County, NC (37019);"
+"Craven County, NC (37049); Harnett County, NC (37085); Henderson County, NC (37089); Miami County, OH (39109); Canadian County,"
+"OK (40017); Adams County, PA (42001); Dorchester County, SC (45035); Pennington County, SD (46103); Wilson County, TN (47189);"
+"Comal County, TX (48091); Guadalupe County, TX (48187); Hays County, TX (48209); Kaufman County, TX (48257); Parker County, TX"
+"(48367); Cache County, UT (49005); Washington County, UT (49053); Spotsylvania County, VA (51177); Stafford County, VA (51179);"
+"Cowlitz County, WA (53015); Berkeley County, WV (54003); Fond du Lac County, WI (55039); Walworth County, WI (55127). <br/>"
+"After 2013 the data for the following counties was recoded to the ""Unidentified Counties"" category within the state of the"
+"county because they did not meet minimum population standards. Cape May County, NJ (34009); Portsmouth city, VA (51740)."
+"5. Data for some counties in New York and Virginia have been revised for 2014 births based on updated residence population. More"
+"information: http://wonder.cdc.gov/wonder/help/Natality.html#county_2014."
+"6. The independent city of St. Louis, Missouri (FIPS code 29510) is reported separately from St. Louis County (FIPS code 29189)."

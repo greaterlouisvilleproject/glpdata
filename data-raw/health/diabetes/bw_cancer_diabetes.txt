@@ -1,0 +1,786 @@
+"Notes"	"Year"	"Year Code"	"County"	"County Code"	"Race"	"Race Code"	Deaths	Population	Crude Rate	Age Adjusted Rate
+	"1999"	"1999"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	652	259939	250.8	311.6
+	"1999"	"1999"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	1164	385853	301.7	240.0
+	"1999"	"1999"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	507	209562	241.9	352.9
+	"1999"	"1999"	"Marion County, IN"	"18097"	"White"	"2106-3"	1496	602319	248.4	248.8
+	"1999"	"1999"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	85	35768	237.6	342.2
+	"1999"	"1999"	"Fayette County, KY"	"21067"	"White"	"2106-3"	396	208098	190.3	214.3
+	"1999"	"1999"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	323	131995	244.7	335.1
+	"1999"	"1999"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1506	537011	280.4	243.8
+	"1999"	"1999"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	73	52427	139.2	305.9
+	"1999"	"1999"	"Kent County, MI"	"26081"	"White"	"2106-3"	878	465395	188.7	199.5
+	"1999"	"1999"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	373	155016	240.6	334.9
+	"1999"	"1999"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1111	451911	245.8	216.7
+	"1999"	"1999"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	351	192690	182.2	301.3
+	"1999"	"1999"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	2076	783486	265.0	211.9
+	"1999"	"1999"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	536	180845	296.4	344.4
+	"1999"	"1999"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	501	154241	324.8	259.3
+	"1999"	"1999"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	115	54682	210.3	347.5
+	"1999"	"1999"	"Douglas County, NE"	"31055"	"White"	"2106-3"	821	366042	224.3	226.8
+	"1999"	"1999"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	247	122430	201.7	314.9
+	"1999"	"1999"	"Guilford County, NC"	"37081"	"White"	"2106-3"	633	267605	236.5	205.8
+	"1999"	"1999"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	301	191211	157.4	295.2
+	"1999"	"1999"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	775	427421	181.3	202.1
+	"1999"	"1999"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	374	195879	190.9	312.1
+	"1999"	"1999"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1747	805495	216.9	246.2
+	"1999"	"1999"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	484	201117	240.7	324.1
+	"1999"	"1999"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1804	623624	289.3	250.0
+	"1999"	"1999"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	213	102459	207.9	343.7
+	"1999"	"1999"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1198	456921	262.2	226.6
+	"1999"	"1999"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	147	63878	230.1	396.4
+	"1999"	"1999"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1069	424424	251.9	233.3
+	"1999"	"1999"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	155	69183	224.0	329.3
+	"1999"	"1999"	"Greenville County, SC"	"45045"	"White"	"2106-3"	694	287093	241.7	229.2
+	"1999"	"1999"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	357	148594	240.3	388.0
+	"1999"	"1999"	"Davidson County, TN"	"47037"	"White"	"2106-3"	922	380226	242.5	226.8
+	"1999"	"1999"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	74	33572	220.4	297.1
+	"1999"	"1999"	"Knox County, TN"	"47093"	"White"	"2106-3"	785	335736	233.8	223.4
+	"1999"	"1999"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	952	433218	219.8	348.8
+	"1999"	"1999"	"Shelby County, TN"	"47157"	"White"	"2106-3"	945	422850	223.5	207.9
+	"2000"	"2000"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	633	261304	242.2	299.7
+	"2000"	"2000"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	1107	382469	289.4	229.7
+	"2000"	"2000"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	464	211815	219.1	323.0
+	"2000"	"2000"	"Marion County, IN"	"18097"	"White"	"2106-3"	1478	599103	246.7	245.3
+	"2000"	"2000"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	84	35999	233.3	344.6
+	"2000"	"2000"	"Fayette County, KY"	"21067"	"White"	"2106-3"	407	208601	195.1	216.9
+	"2000"	"2000"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	341	133117	256.2	351.6
+	"2000"	"2000"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1560	535942	291.1	251.5
+	"2000"	"2000"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	92	53230	172.8	339.9
+	"2000"	"2000"	"Kent County, MI"	"26081"	"White"	"2106-3"	890	466355	190.8	200.7
+	"2000"	"2000"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	353	155464	227.1	324.7
+	"2000"	"2000"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1155	449931	256.7	225.4
+	"2000"	"2000"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	334	196206	170.2	279.9
+	"2000"	"2000"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	1992	778630	255.8	202.6
+	"2000"	"2000"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	510	180069	283.2	327.9
+	"2000"	"2000"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	474	152304	311.2	247.3
+	"2000"	"2000"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	105	55358	189.7	317.2
+	"2000"	"2000"	"Douglas County, NE"	"31055"	"White"	"2106-3"	775	365763	211.9	212.8
+	"2000"	"2000"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	228	124501	183.1	292.3
+	"2000"	"2000"	"Guilford County, NC"	"37081"	"White"	"2106-3"	630	267410	235.6	203.2
+	"2000"	"2000"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	310	195133	158.9	296.4
+	"2000"	"2000"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	794	429625	184.8	205.4
+	"2000"	"2000"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	409	199141	205.4	344.3
+	"2000"	"2000"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1725	806481	213.9	242.3
+	"2000"	"2000"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	546	201565	270.9	362.4
+	"2000"	"2000"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1731	617524	280.3	241.4
+	"2000"	"2000"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	187	103133	181.3	305.7
+	"2000"	"2000"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1198	455735	262.9	225.6
+	"2000"	"2000"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	139	64528	215.4	372.3
+	"2000"	"2000"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1092	422387	258.5	236.7
+	"2000"	"2000"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	173	69950	247.3	355.0
+	"2000"	"2000"	"Greenville County, SC"	"45045"	"White"	"2106-3"	663	289056	229.4	216.3
+	"2000"	"2000"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	355	149939	236.8	379.4
+	"2000"	"2000"	"Davidson County, TN"	"47037"	"White"	"2106-3"	907	377327	240.4	223.1
+	"2000"	"2000"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	93	33728	275.7	369.7
+	"2000"	"2000"	"Knox County, TN"	"47093"	"White"	"2106-3"	844	337059	250.4	238.3
+	"2000"	"2000"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	994	437348	227.3	364.4
+	"2000"	"2000"	"Shelby County, TN"	"47157"	"White"	"2106-3"	976	419152	232.9	214.1
+	"2001"	"2001"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	656	263244	249.2	307.9
+	"2001"	"2001"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	1077	377031	285.7	224.8
+	"2001"	"2001"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	499	216298	230.7	338.7
+	"2001"	"2001"	"Marion County, IN"	"18097"	"White"	"2106-3"	1496	593862	251.9	248.7
+	"2001"	"2001"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	87	36840	236.2	355.3
+	"2001"	"2001"	"Fayette County, KY"	"21067"	"White"	"2106-3"	443	210104	210.8	231.3
+	"2001"	"2001"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	293	135452	216.3	302.7
+	"2001"	"2001"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1602	534828	299.5	257.0
+	"2001"	"2001"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	69	54721	126.1	253.4
+	"2001"	"2001"	"Kent County, MI"	"26081"	"White"	"2106-3"	888	467706	189.9	197.3
+	"2001"	"2001"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	358	156908	228.2	320.9
+	"2001"	"2001"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1138	448558	253.7	222.6
+	"2001"	"2001"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	400	202181	197.8	313.7
+	"2001"	"2001"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	2059	769914	267.4	209.9
+	"2001"	"2001"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	506	177791	284.6	328.3
+	"2001"	"2001"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	472	148708	317.4	254.6
+	"2001"	"2001"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	111	56094	197.9	319.6
+	"2001"	"2001"	"Douglas County, NE"	"31055"	"White"	"2106-3"	855	365674	233.8	233.7
+	"2001"	"2001"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	227	128675	176.4	270.0
+	"2001"	"2001"	"Guilford County, NC"	"37081"	"White"	"2106-3"	642	267667	239.9	203.9
+	"2001"	"2001"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	313	204371	153.2	276.0
+	"2001"	"2001"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	799	436414	183.1	199.9
+	"2001"	"2001"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	401	207218	193.5	322.5
+	"2001"	"2001"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1775	807111	219.9	246.9
+	"2001"	"2001"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	524	203139	258.0	346.8
+	"2001"	"2001"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1671	609382	274.2	234.0
+	"2001"	"2001"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	201	104309	192.7	314.4
+	"2001"	"2001"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1252	453215	276.2	235.1
+	"2001"	"2001"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	119	64773	183.7	310.9
+	"2001"	"2001"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1123	420731	266.9	243.3
+	"2001"	"2001"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	159	71122	223.6	318.2
+	"2001"	"2001"	"Greenville County, SC"	"45045"	"White"	"2106-3"	659	291668	225.9	211.2
+	"2001"	"2001"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	352	152672	230.6	370.7
+	"2001"	"2001"	"Davidson County, TN"	"47037"	"White"	"2106-3"	942	375263	251.0	230.6
+	"2001"	"2001"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	77	33963	226.7	312.7
+	"2001"	"2001"	"Knox County, TN"	"47093"	"White"	"2106-3"	798	339423	235.1	222.7
+	"2001"	"2001"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	978	444586	220.0	349.5
+	"2001"	"2001"	"Shelby County, TN"	"47157"	"White"	"2106-3"	977	410489	238.0	214.9
+	"2002"	"2002"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	645	263881	244.4	304.2
+	"2002"	"2002"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	1025	371901	275.6	214.5
+	"2002"	"2002"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	506	219768	230.2	339.7
+	"2002"	"2002"	"Marion County, IN"	"18097"	"White"	"2106-3"	1400	585905	238.9	232.2
+	"2002"	"2002"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	86	37411	229.9	338.1
+	"2002"	"2002"	"Fayette County, KY"	"21067"	"White"	"2106-3"	480	210129	228.4	249.2
+	"2002"	"2002"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	345	137739	250.5	346.1
+	"2002"	"2002"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1611	532782	302.4	256.5
+	"2002"	"2002"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	106	55591	190.7	378.4
+	"2002"	"2002"	"Kent County, MI"	"26081"	"White"	"2106-3"	929	467883	198.6	203.9
+	"2002"	"2002"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	329	157686	208.6	288.8
+	"2002"	"2002"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1065	446918	238.3	207.9
+	"2002"	"2002"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	430	207218	207.5	326.4
+	"2002"	"2002"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	2078	760353	273.3	211.0
+	"2002"	"2002"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	492	175483	280.4	320.4
+	"2002"	"2002"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	466	145555	320.2	260.4
+	"2002"	"2002"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	103	56618	181.9	293.5
+	"2002"	"2002"	"Douglas County, NE"	"31055"	"White"	"2106-3"	810	365252	221.8	221.0
+	"2002"	"2002"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	245	131045	187.0	302.9
+	"2002"	"2002"	"Guilford County, NC"	"37081"	"White"	"2106-3"	642	266379	241.0	201.4
+	"2002"	"2002"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	341	212106	160.8	293.9
+	"2002"	"2002"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	769	437983	175.6	188.2
+	"2002"	"2002"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	454	213826	212.3	352.9
+	"2002"	"2002"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1813	802098	226.0	249.5
+	"2002"	"2002"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	509	204124	249.4	330.5
+	"2002"	"2002"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1712	598953	285.8	241.3
+	"2002"	"2002"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	205	105879	193.6	320.0
+	"2002"	"2002"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1262	451843	279.3	236.1
+	"2002"	"2002"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	127	65098	195.1	348.2
+	"2002"	"2002"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1049	419311	250.2	225.1
+	"2002"	"2002"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	160	71654	223.3	321.9
+	"2002"	"2002"	"Greenville County, SC"	"45045"	"White"	"2106-3"	649	293223	221.3	204.4
+	"2002"	"2002"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	341	154359	220.9	360.3
+	"2002"	"2002"	"Davidson County, TN"	"47037"	"White"	"2106-3"	935	370070	252.7	229.9
+	"2002"	"2002"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	89	34410	258.6	353.8
+	"2002"	"2002"	"Knox County, TN"	"47093"	"White"	"2106-3"	821	341432	240.5	225.5
+	"2002"	"2002"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	908	450806	201.4	321.6
+	"2002"	"2002"	"Shelby County, TN"	"47157"	"White"	"2106-3"	944	404060	233.6	207.7
+	"2003"	"2003"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	665	265681	250.3	311.2
+	"2003"	"2003"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	1074	368393	291.5	226.3
+	"2003"	"2003"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	478	223078	214.3	314.9
+	"2003"	"2003"	"Marion County, IN"	"18097"	"White"	"2106-3"	1440	579772	248.4	237.3
+	"2003"	"2003"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	85	38180	222.6	324.2
+	"2003"	"2003"	"Fayette County, KY"	"21067"	"White"	"2106-3"	421	211942	198.6	214.8
+	"2003"	"2003"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	337	139850	241.0	329.6
+	"2003"	"2003"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1561	532009	293.4	246.9
+	"2003"	"2003"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	78	56566	137.9	272.0
+	"2003"	"2003"	"Kent County, MI"	"26081"	"White"	"2106-3"	871	467584	186.3	188.6
+	"2003"	"2003"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	366	158604	230.8	313.2
+	"2003"	"2003"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1087	443727	245.0	210.2
+	"2003"	"2003"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	432	211472	204.3	312.5
+	"2003"	"2003"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	1988	750865	264.8	201.1
+	"2003"	"2003"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	508	173789	292.3	333.1
+	"2003"	"2003"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	445	143231	310.7	254.7
+	"2003"	"2003"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	124	57379	216.1	351.4
+	"2003"	"2003"	"Douglas County, NE"	"31055"	"White"	"2106-3"	812	365830	222.0	218.3
+	"2003"	"2003"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	217	133681	162.3	258.4
+	"2003"	"2003"	"Guilford County, NC"	"37081"	"White"	"2106-3"	611	265890	229.8	188.4
+	"2003"	"2003"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	349	219010	159.4	280.0
+	"2003"	"2003"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	810	441165	183.6	195.1
+	"2003"	"2003"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	431	219835	196.1	320.6
+	"2003"	"2003"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1762	797947	220.8	239.2
+	"2003"	"2003"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	516	204713	252.1	329.9
+	"2003"	"2003"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1640	589940	278.0	231.3
+	"2003"	"2003"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	205	107042	191.5	312.4
+	"2003"	"2003"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1146	449026	255.2	213.3
+	"2003"	"2003"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	127	65247	194.6	342.3
+	"2003"	"2003"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1062	415029	255.9	226.1
+	"2003"	"2003"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	173	72313	239.2	338.2
+	"2003"	"2003"	"Greenville County, SC"	"45045"	"White"	"2106-3"	685	294349	232.7	210.9
+	"2003"	"2003"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	334	156598	213.3	344.1
+	"2003"	"2003"	"Davidson County, TN"	"47037"	"White"	"2106-3"	926	367093	252.3	227.1
+	"2003"	"2003"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	83	34977	237.3	323.6
+	"2003"	"2003"	"Knox County, TN"	"47093"	"White"	"2106-3"	841	344371	244.2	228.4
+	"2003"	"2003"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	971	457071	212.4	339.0
+	"2003"	"2003"	"Shelby County, TN"	"47157"	"White"	"2106-3"	917	398476	230.1	201.2
+	"2004"	"2004"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	662	267085	247.9	307.3
+	"2004"	"2004"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	1008	363467	277.3	214.3
+	"2004"	"2004"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	456	226602	201.2	296.9
+	"2004"	"2004"	"Marion County, IN"	"18097"	"White"	"2106-3"	1417	572539	247.5	234.4
+	"2004"	"2004"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	80	38868	205.8	316.1
+	"2004"	"2004"	"Fayette County, KY"	"21067"	"White"	"2106-3"	420	212167	198.0	210.0
+	"2004"	"2004"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	329	142868	230.3	319.0
+	"2004"	"2004"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1504	529279	284.2	236.4
+	"2004"	"2004"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	101	57512	175.6	315.8
+	"2004"	"2004"	"Kent County, MI"	"26081"	"White"	"2106-3"	915	466148	196.3	195.3
+	"2004"	"2004"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	341	159763	213.4	284.3
+	"2004"	"2004"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1116	439622	253.9	217.2
+	"2004"	"2004"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	426	215906	197.3	301.8
+	"2004"	"2004"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	2013	740063	272.0	203.7
+	"2004"	"2004"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	511	171835	297.4	337.4
+	"2004"	"2004"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	435	140584	309.4	264.3
+	"2004"	"2004"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	126	58399	215.8	350.6
+	"2004"	"2004"	"Douglas County, NE"	"31055"	"White"	"2106-3"	778	367138	211.9	206.5
+	"2004"	"2004"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	212	136628	155.2	245.3
+	"2004"	"2004"	"Guilford County, NC"	"37081"	"White"	"2106-3"	618	264669	233.5	187.9
+	"2004"	"2004"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	359	226998	158.2	278.6
+	"2004"	"2004"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	776	443944	174.8	181.6
+	"2004"	"2004"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	459	225325	203.7	330.0
+	"2004"	"2004"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1712	792855	215.9	231.6
+	"2004"	"2004"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	574	205222	279.7	367.4
+	"2004"	"2004"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1563	580389	269.3	221.8
+	"2004"	"2004"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	198	108369	182.7	293.0
+	"2004"	"2004"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1175	445868	263.5	218.6
+	"2004"	"2004"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	130	65215	199.3	348.0
+	"2004"	"2004"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	984	410150	239.9	207.2
+	"2004"	"2004"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	157	73382	213.9	302.7
+	"2004"	"2004"	"Greenville County, SC"	"45045"	"White"	"2106-3"	628	295943	212.2	189.1
+	"2004"	"2004"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	293	159446	183.8	288.5
+	"2004"	"2004"	"Davidson County, TN"	"47037"	"White"	"2106-3"	933	365514	255.3	227.8
+	"2004"	"2004"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	74	35486	208.5	286.9
+	"2004"	"2004"	"Knox County, TN"	"47093"	"White"	"2106-3"	845	346533	243.8	225.8
+	"2004"	"2004"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	960	462554	207.5	321.1
+	"2004"	"2004"	"Shelby County, TN"	"47157"	"White"	"2106-3"	877	391894	223.8	191.8
+	"2005"	"2005"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	695	268781	258.6	316.4
+	"2005"	"2005"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	990	358626	276.1	208.8
+	"2005"	"2005"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	530	229847	230.6	334.3
+	"2005"	"2005"	"Marion County, IN"	"18097"	"White"	"2106-3"	1456	565988	257.2	239.4
+	"2005"	"2005"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	71	39723	178.7	258.6
+	"2005"	"2005"	"Fayette County, KY"	"21067"	"White"	"2106-3"	422	212744	198.4	206.0
+	"2005"	"2005"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	341	145070	235.1	324.1
+	"2005"	"2005"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1564	527587	296.4	243.1
+	"2005"	"2005"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	86	58193	147.8	278.0
+	"2005"	"2005"	"Kent County, MI"	"26081"	"White"	"2106-3"	895	465891	192.1	188.9
+	"2005"	"2005"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	363	160404	226.3	303.1
+	"2005"	"2005"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1149	436848	263.0	222.7
+	"2005"	"2005"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	425	220576	192.7	277.3
+	"2005"	"2005"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	1889	729344	259.0	191.3
+	"2005"	"2005"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	476	168378	282.7	316.7
+	"2005"	"2005"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	389	137404	283.1	236.0
+	"2005"	"2005"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	116	59040	196.5	321.9
+	"2005"	"2005"	"Douglas County, NE"	"31055"	"White"	"2106-3"	781	369328	211.5	204.3
+	"2005"	"2005"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	247	140849	175.4	273.0
+	"2005"	"2005"	"Guilford County, NC"	"37081"	"White"	"2106-3"	597	265047	225.2	176.6
+	"2005"	"2005"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	350	237152	147.6	268.6
+	"2005"	"2005"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	789	450612	175.1	180.5
+	"2005"	"2005"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	444	230352	192.7	306.9
+	"2005"	"2005"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1679	789109	212.8	224.6
+	"2005"	"2005"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	522	205866	253.6	329.7
+	"2005"	"2005"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1441	571611	252.1	205.4
+	"2005"	"2005"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	223	109803	203.1	316.5
+	"2005"	"2005"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1225	444394	275.7	224.8
+	"2005"	"2005"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	125	65379	191.2	314.5
+	"2005"	"2005"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1085	408037	265.9	226.9
+	"2005"	"2005"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	153	74591	205.1	280.7
+	"2005"	"2005"	"Greenville County, SC"	"45045"	"White"	"2106-3"	673	298598	225.4	198.4
+	"2005"	"2005"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	315	162826	193.5	299.3
+	"2005"	"2005"	"Davidson County, TN"	"47037"	"White"	"2106-3"	900	364336	247.0	218.9
+	"2005"	"2005"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	76	36080	210.6	283.9
+	"2005"	"2005"	"Knox County, TN"	"47093"	"White"	"2106-3"	807	350460	230.3	211.5
+	"2005"	"2005"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1056	467077	226.1	348.8
+	"2005"	"2005"	"Shelby County, TN"	"47157"	"White"	"2106-3"	973	386749	251.6	212.3
+	"2006"	"2006"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	666	271507	245.3	298.7
+	"2006"	"2006"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	999	354750	281.6	213.2
+	"2006"	"2006"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	488	233783	208.7	297.5
+	"2006"	"2006"	"Marion County, IN"	"18097"	"White"	"2106-3"	1353	560594	241.4	221.9
+	"2006"	"2006"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	84	40683	206.5	294.6
+	"2006"	"2006"	"Fayette County, KY"	"21067"	"White"	"2106-3"	394	214607	183.6	187.6
+	"2006"	"2006"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	348	147261	236.3	320.1
+	"2006"	"2006"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1517	527640	287.5	231.8
+	"2006"	"2006"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	79	59310	133.2	256.4
+	"2006"	"2006"	"Kent County, MI"	"26081"	"White"	"2106-3"	848	465801	182.1	174.5
+	"2006"	"2006"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	335	162114	206.6	274.9
+	"2006"	"2006"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1149	434500	264.4	220.7
+	"2006"	"2006"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	465	225480	206.2	311.4
+	"2006"	"2006"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	1975	719778	274.4	199.5
+	"2006"	"2006"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	511	165390	309.0	342.8
+	"2006"	"2006"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	409	134912	303.2	262.2
+	"2006"	"2006"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	114	60147	189.5	311.7
+	"2006"	"2006"	"Douglas County, NE"	"31055"	"White"	"2106-3"	831	370624	224.2	214.8
+	"2006"	"2006"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	239	145907	163.8	248.5
+	"2006"	"2006"	"Guilford County, NC"	"37081"	"White"	"2106-3"	607	267309	227.1	175.3
+	"2006"	"2006"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	397	249667	159.0	279.1
+	"2006"	"2006"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	798	458990	173.9	176.7
+	"2006"	"2006"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	405	236236	171.4	268.5
+	"2006"	"2006"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1692	788864	214.5	223.8
+	"2006"	"2006"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	475	207081	229.4	290.2
+	"2006"	"2006"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1590	563355	282.2	227.9
+	"2006"	"2006"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	204	111349	183.2	273.0
+	"2006"	"2006"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1184	444148	266.6	213.6
+	"2006"	"2006"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	138	66422	207.8	335.9
+	"2006"	"2006"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1085	408185	265.8	222.3
+	"2006"	"2006"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	162	76253	212.5	285.6
+	"2006"	"2006"	"Greenville County, SC"	"45045"	"White"	"2106-3"	668	304042	219.7	187.9
+	"2006"	"2006"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	345	166781	206.9	331.7
+	"2006"	"2006"	"Davidson County, TN"	"47037"	"White"	"2106-3"	953	363521	262.2	228.9
+	"2006"	"2006"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	83	37126	223.6	302.2
+	"2006"	"2006"	"Knox County, TN"	"47093"	"White"	"2106-3"	819	355319	230.5	207.8
+	"2006"	"2006"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1060	473792	223.7	337.8
+	"2006"	"2006"	"Shelby County, TN"	"47157"	"White"	"2106-3"	885	382133	231.6	191.7
+	"2007"	"2007"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	647	272690	237.3	285.5
+	"2007"	"2007"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	936	350886	266.8	200.0
+	"2007"	"2007"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	485	237214	204.5	291.1
+	"2007"	"2007"	"Marion County, IN"	"18097"	"White"	"2106-3"	1290	555874	232.1	212.3
+	"2007"	"2007"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	98	41614	235.5	333.7
+	"2007"	"2007"	"Fayette County, KY"	"21067"	"White"	"2106-3"	448	215266	208.1	209.9
+	"2007"	"2007"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	334	150503	221.9	299.1
+	"2007"	"2007"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1555	528998	294.0	234.2
+	"2007"	"2007"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	73	60367	120.9	215.7
+	"2007"	"2007"	"Kent County, MI"	"26081"	"White"	"2106-3"	824	465867	176.9	167.6
+	"2007"	"2007"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	384	162958	235.6	301.1
+	"2007"	"2007"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1059	433530	244.3	203.4
+	"2007"	"2007"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	441	229294	192.3	283.0
+	"2007"	"2007"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	1822	711059	256.2	183.4
+	"2007"	"2007"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	449	162916	275.6	305.0
+	"2007"	"2007"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	350	134552	260.1	228.4
+	"2007"	"2007"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	113	61053	185.1	293.9
+	"2007"	"2007"	"Douglas County, NE"	"31055"	"White"	"2106-3"	828	371693	222.8	208.6
+	"2007"	"2007"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	220	150477	146.2	212.7
+	"2007"	"2007"	"Guilford County, NC"	"37081"	"White"	"2106-3"	661	268537	246.1	188.5
+	"2007"	"2007"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	391	260741	150.0	249.6
+	"2007"	"2007"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	870	466051	186.7	185.7
+	"2007"	"2007"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	439	241928	181.5	285.9
+	"2007"	"2007"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1716	790076	217.2	220.9
+	"2007"	"2007"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	485	208109	233.1	288.8
+	"2007"	"2007"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1572	557635	281.9	225.2
+	"2007"	"2007"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	228	112943	201.9	310.4
+	"2007"	"2007"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1130	442681	255.3	202.7
+	"2007"	"2007"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	118	67292	175.4	282.7
+	"2007"	"2007"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1110	408494	271.7	224.0
+	"2007"	"2007"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	180	78209	230.2	321.1
+	"2007"	"2007"	"Greenville County, SC"	"45045"	"White"	"2106-3"	693	310062	223.5	190.2
+	"2007"	"2007"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	335	169323	197.8	299.1
+	"2007"	"2007"	"Davidson County, TN"	"47037"	"White"	"2106-3"	940	362907	259.0	226.1
+	"2007"	"2007"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	85	37963	223.9	300.7
+	"2007"	"2007"	"Knox County, TN"	"47093"	"White"	"2106-3"	865	360084	240.2	214.2
+	"2007"	"2007"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	989	476565	207.5	307.3
+	"2007"	"2007"	"Shelby County, TN"	"47157"	"White"	"2106-3"	918	376193	244.0	199.3
+	"2008"	"2008"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	668	274755	243.1	288.9
+	"2008"	"2008"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	956	348388	274.4	204.1
+	"2008"	"2008"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	423	240955	175.6	246.2
+	"2008"	"2008"	"Marion County, IN"	"18097"	"White"	"2106-3"	1340	552276	242.6	217.3
+	"2008"	"2008"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	71	42618	166.6	247.0
+	"2008"	"2008"	"Fayette County, KY"	"21067"	"White"	"2106-3"	453	216937	208.8	206.7
+	"2008"	"2008"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	341	153185	222.6	289.3
+	"2008"	"2008"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1493	530546	281.4	222.7
+	"2008"	"2008"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	72	61017	118.0	210.0
+	"2008"	"2008"	"Kent County, MI"	"26081"	"White"	"2106-3"	913	464843	196.4	182.5
+	"2008"	"2008"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	332	163612	202.9	253.8
+	"2008"	"2008"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1127	432835	260.4	212.9
+	"2008"	"2008"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	427	232252	183.9	250.4
+	"2008"	"2008"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	1872	704735	265.6	186.3
+	"2008"	"2008"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	417	161671	257.9	283.0
+	"2008"	"2008"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	354	135068	262.1	233.0
+	"2008"	"2008"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	122	61991	196.8	314.9
+	"2008"	"2008"	"Douglas County, NE"	"31055"	"White"	"2106-3"	838	373188	224.6	209.9
+	"2008"	"2008"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	272	155175	175.3	253.2
+	"2008"	"2008"	"Guilford County, NC"	"37081"	"White"	"2106-3"	613	269744	227.3	170.5
+	"2008"	"2008"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	419	270085	155.1	261.0
+	"2008"	"2008"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	825	471522	175.0	173.0
+	"2008"	"2008"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	437	247964	176.2	267.3
+	"2008"	"2008"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1665	793100	209.9	211.0
+	"2008"	"2008"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	455	209157	217.5	268.1
+	"2008"	"2008"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1450	553021	262.2	208.0
+	"2008"	"2008"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	204	114260	178.5	256.4
+	"2008"	"2008"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1231	441696	278.7	218.8
+	"2008"	"2008"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	122	67860	179.8	285.4
+	"2008"	"2008"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1035	409214	252.9	205.4
+	"2008"	"2008"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	162	80015	202.5	289.1
+	"2008"	"2008"	"Greenville County, SC"	"45045"	"White"	"2106-3"	732	315732	231.8	195.1
+	"2008"	"2008"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	334	171965	194.2	298.9
+	"2008"	"2008"	"Davidson County, TN"	"47037"	"White"	"2106-3"	914	363831	251.2	217.4
+	"2008"	"2008"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	68	38749	175.5	237.4
+	"2008"	"2008"	"Knox County, TN"	"47093"	"White"	"2106-3"	838	363962	230.2	204.6
+	"2008"	"2008"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	995	479006	207.7	304.0
+	"2008"	"2008"	"Shelby County, TN"	"47157"	"White"	"2106-3"	929	370531	250.7	198.5
+	"2009"	"2009"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	655	277169	236.3	274.0
+	"2009"	"2009"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	920	345973	265.9	193.4
+	"2009"	"2009"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	536	245085	218.7	300.3
+	"2009"	"2009"	"Marion County, IN"	"18097"	"White"	"2106-3"	1337	550528	242.9	215.7
+	"2009"	"2009"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	95	43989	216.0	319.0
+	"2009"	"2009"	"Fayette County, KY"	"21067"	"White"	"2106-3"	448	218576	205.0	197.8
+	"2009"	"2009"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	375	156249	240.0	303.0
+	"2009"	"2009"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1402	530395	264.3	206.2
+	"2009"	"2009"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	90	61393	146.6	248.1
+	"2009"	"2009"	"Kent County, MI"	"26081"	"White"	"2106-3"	891	465023	191.6	172.4
+	"2009"	"2009"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	332	164881	201.4	251.8
+	"2009"	"2009"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1158	434311	266.6	217.5
+	"2009"	"2009"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	417	235335	177.2	234.4
+	"2009"	"2009"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	1851	699833	264.5	183.7
+	"2009"	"2009"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	413	160643	257.1	283.5
+	"2009"	"2009"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	383	136261	281.1	254.1
+	"2009"	"2009"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	126	63016	199.9	302.8
+	"2009"	"2009"	"Douglas County, NE"	"31055"	"White"	"2106-3"	790	375985	210.1	192.8
+	"2009"	"2009"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	272	159070	171.0	244.9
+	"2009"	"2009"	"Guilford County, NC"	"37081"	"White"	"2106-3"	655	269642	242.9	180.1
+	"2009"	"2009"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	431	280106	153.9	245.8
+	"2009"	"2009"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	804	474255	169.5	164.8
+	"2009"	"2009"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	492	253782	193.9	286.9
+	"2009"	"2009"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1694	796950	212.6	211.9
+	"2009"	"2009"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	468	210910	221.9	273.9
+	"2009"	"2009"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1459	551904	264.4	207.6
+	"2009"	"2009"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	220	116882	188.2	273.5
+	"2009"	"2009"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1225	442163	277.0	216.6
+	"2009"	"2009"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	114	69405	164.3	263.9
+	"2009"	"2009"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	991	410434	241.5	193.9
+	"2009"	"2009"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	140	81484	171.8	230.5
+	"2009"	"2009"	"Greenville County, SC"	"45045"	"White"	"2106-3"	712	319538	222.8	184.6
+	"2009"	"2009"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	351	174745	200.9	303.0
+	"2009"	"2009"	"Davidson County, TN"	"47037"	"White"	"2106-3"	899	365685	245.8	214.3
+	"2009"	"2009"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	67	39322	170.4	210.6
+	"2009"	"2009"	"Knox County, TN"	"47093"	"White"	"2106-3"	877	366112	239.5	209.1
+	"2009"	"2009"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1039	482599	215.3	302.5
+	"2009"	"2009"	"Shelby County, TN"	"47157"	"White"	"2106-3"	906	365435	247.9	195.2
+	"2010"	"2010"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	632	278243	227.1	261.2
+	"2010"	"2010"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	934	343260	272.1	196.6
+	"2010"	"2010"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	467	248459	188.0	255.1
+	"2010"	"2010"	"Marion County, IN"	"18097"	"White"	"2106-3"	1308	547310	239.0	210.0
+	"2010"	"2010"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	94	44664	210.5	286.6
+	"2010"	"2010"	"Fayette County, KY"	"21067"	"White"	"2106-3"	448	219700	203.9	195.2
+	"2010"	"2010"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	339	158386	214.0	278.9
+	"2010"	"2010"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1473	530572	277.6	213.5
+	"2010"	"2010"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	89	61858	143.9	250.0
+	"2010"	"2010"	"Kent County, MI"	"26081"	"White"	"2106-3"	881	464367	189.7	168.4
+	"2010"	"2010"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	369	166059	222.2	272.0
+	"2010"	"2010"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1097	434146	252.7	204.9
+	"2010"	"2010"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	492	237817	206.9	258.7
+	"2010"	"2010"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	1789	696139	257.0	175.4
+	"2010"	"2010"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	423	159882	264.6	289.5
+	"2010"	"2010"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	339	136912	247.6	225.2
+	"2010"	"2010"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	130	63852	203.6	317.3
+	"2010"	"2010"	"Douglas County, NE"	"31055"	"White"	"2106-3"	801	377276	212.3	194.5
+	"2010"	"2010"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	247	161702	152.8	213.7
+	"2010"	"2010"	"Guilford County, NC"	"37081"	"White"	"2106-3"	629	269267	233.6	171.7
+	"2010"	"2010"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	462	285447	161.9	253.5
+	"2010"	"2010"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	839	473804	177.1	169.2
+	"2010"	"2010"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	414	257303	160.9	241.0
+	"2010"	"2010"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1623	797843	203.4	202.8
+	"2010"	"2010"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	483	211924	227.9	274.9
+	"2010"	"2010"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1426	549849	259.3	202.8
+	"2010"	"2010"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	243	118592	204.9	280.4
+	"2010"	"2010"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1195	441721	270.5	210.4
+	"2010"	"2010"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	137	70399	194.6	301.3
+	"2010"	"2010"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	992	410964	241.4	191.6
+	"2010"	"2010"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	175	82807	211.3	286.8
+	"2010"	"2010"	"Greenville County, SC"	"45045"	"White"	"2106-3"	742	321195	231.0	189.6
+	"2010"	"2010"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	346	176851	195.6	295.4
+	"2010"	"2010"	"Davidson County, TN"	"47037"	"White"	"2106-3"	915	366275	249.8	216.8
+	"2010"	"2010"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	89	39780	223.7	287.9
+	"2010"	"2010"	"Knox County, TN"	"47093"	"White"	"2106-3"	860	367304	234.1	202.1
+	"2010"	"2010"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1032	486929	211.9	292.5
+	"2010"	"2010"	"Shelby County, TN"	"47157"	"White"	"2106-3"	921	363507	253.4	197.7
+	"2011"	"2011"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	680	278853	243.9	276.0
+	"2011"	"2011"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	891	341587	260.8	189.3
+	"2011"	"2011"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	509	249198	204.3	272.5
+	"2011"	"2011"	"Marion County, IN"	"18097"	"White"	"2106-3"	1349	550868	244.9	215.2
+	"2011"	"2011"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	85	45283	187.7	262.0
+	"2011"	"2011"	"Fayette County, KY"	"21067"	"White"	"2106-3"	442	223686	197.6	190.8
+	"2011"	"2011"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	363	159333	227.8	290.2
+	"2011"	"2011"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1491	533914	279.3	215.2
+	"2011"	"2011"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	102	63189	161.4	276.1
+	"2011"	"2011"	"Kent County, MI"	"26081"	"White"	"2106-3"	925	466826	198.1	173.9
+	"2011"	"2011"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	346	165999	208.4	245.4
+	"2011"	"2011"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1114	435739	255.7	203.7
+	"2011"	"2011"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	448	237543	188.6	233.8
+	"2011"	"2011"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	1758	694114	253.3	171.7
+	"2011"	"2011"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	453	155814	290.7	306.8
+	"2011"	"2011"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	325	139750	232.6	223.7
+	"2011"	"2011"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	118	63816	184.9	275.6
+	"2011"	"2011"	"Douglas County, NE"	"31055"	"White"	"2106-3"	837	382112	219.0	199.3
+	"2011"	"2011"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	222	164276	135.1	192.8
+	"2011"	"2011"	"Guilford County, NC"	"37081"	"White"	"2106-3"	653	271355	240.6	173.9
+	"2011"	"2011"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	473	292666	161.6	247.4
+	"2011"	"2011"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	841	483978	173.8	161.4
+	"2011"	"2011"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	453	260629	173.8	254.3
+	"2011"	"2011"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1615	806175	200.3	197.2
+	"2011"	"2011"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	488	210988	231.3	274.2
+	"2011"	"2011"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1490	547701	272.0	213.3
+	"2011"	"2011"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	234	119546	195.7	266.4
+	"2011"	"2011"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1246	447695	278.3	213.5
+	"2011"	"2011"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	138	70794	194.9	299.2
+	"2011"	"2011"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1074	414273	259.2	202.1
+	"2011"	"2011"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	194	85147	227.8	300.3
+	"2011"	"2011"	"Greenville County, SC"	"45045"	"White"	"2106-3"	764	326312	234.1	188.7
+	"2011"	"2011"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	368	178004	206.7	290.3
+	"2011"	"2011"	"Davidson County, TN"	"47037"	"White"	"2106-3"	874	371430	235.3	203.0
+	"2011"	"2011"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	78	40803	191.2	248.7
+	"2011"	"2011"	"Knox County, TN"	"47093"	"White"	"2106-3"	916	369689	247.8	210.0
+	"2011"	"2011"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1053	489455	215.1	289.4
+	"2011"	"2011"	"Shelby County, TN"	"47157"	"White"	"2106-3"	871	365390	238.4	184.0
+	"2012"	"2012"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	612	281458	217.4	241.8
+	"2012"	"2012"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	872	340169	256.3	183.9
+	"2012"	"2012"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	531	255481	207.8	278.9
+	"2012"	"2012"	"Marion County, IN"	"18097"	"White"	"2106-3"	1451	549006	264.3	228.8
+	"2012"	"2012"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	100	46513	215.0	301.2
+	"2012"	"2012"	"Fayette County, KY"	"21067"	"White"	"2106-3"	423	225536	187.6	176.0
+	"2012"	"2012"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	320	162252	197.2	252.3
+	"2012"	"2012"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1556	533338	291.7	222.0
+	"2012"	"2012"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	83	64280	129.1	208.9
+	"2012"	"2012"	"Kent County, MI"	"26081"	"White"	"2106-3"	947	470397	201.3	175.1
+	"2012"	"2012"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	378	166252	227.4	262.0
+	"2012"	"2012"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1086	435481	249.4	197.4
+	"2012"	"2012"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	517	240579	214.9	253.4
+	"2012"	"2012"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	1812	690726	262.3	174.0
+	"2012"	"2012"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	424	156654	270.7	285.0
+	"2012"	"2012"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	320	138521	231.0	210.7
+	"2012"	"2012"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	121	64778	186.8	284.0
+	"2012"	"2012"	"Douglas County, NE"	"31055"	"White"	"2106-3"	855	384731	222.2	200.3
+	"2012"	"2012"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	286	168140	170.1	225.4
+	"2012"	"2012"	"Guilford County, NC"	"37081"	"White"	"2106-3"	670	271051	247.2	173.9
+	"2012"	"2012"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	472	302616	156.0	235.1
+	"2012"	"2012"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	807	490322	164.6	150.4
+	"2012"	"2012"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	422	267775	157.6	222.8
+	"2012"	"2012"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1697	811655	209.1	202.6
+	"2012"	"2012"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	492	212387	231.7	266.9
+	"2012"	"2012"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1357	546723	248.2	190.0
+	"2012"	"2012"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	216	122415	176.4	261.9
+	"2012"	"2012"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1268	450280	281.6	218.6
+	"2012"	"2012"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	144	71486	201.4	301.8
+	"2012"	"2012"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1105	414464	266.6	208.2
+	"2012"	"2012"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	164	86430	189.7	241.7
+	"2012"	"2012"	"Greenville County, SC"	"45045"	"White"	"2106-3"	814	329748	246.9	193.7
+	"2012"	"2012"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	377	183498	205.5	286.2
+	"2012"	"2012"	"Davidson County, TN"	"47037"	"White"	"2106-3"	888	376624	235.8	202.3
+	"2012"	"2012"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	100	41411	241.5	314.5
+	"2012"	"2012"	"Knox County, TN"	"47093"	"White"	"2106-3"	842	372278	226.2	189.2
+	"2012"	"2012"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1090	497506	219.1	284.9
+	"2012"	"2012"	"Shelby County, TN"	"47157"	"White"	"2106-3"	935	360943	259.0	196.3
+	"2013"	"2013"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	642	282650	227.1	248.4
+	"2013"	"2013"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	967	339328	285.0	203.1
+	"2013"	"2013"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	500	259904	192.4	249.2
+	"2013"	"2013"	"Marion County, IN"	"18097"	"White"	"2106-3"	1302	551041	236.3	202.7
+	"2013"	"2013"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	106	46970	225.7	320.2
+	"2013"	"2013"	"Fayette County, KY"	"21067"	"White"	"2106-3"	456	227579	200.4	182.9
+	"2013"	"2013"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	340	164746	206.4	250.6
+	"2013"	"2013"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1471	535264	274.8	206.8
+	"2013"	"2013"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	104	65191	159.5	238.7
+	"2013"	"2013"	"Kent County, MI"	"26081"	"White"	"2106-3"	924	474730	194.6	167.2
+	"2013"	"2013"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	382	166119	230.0	262.5
+	"2013"	"2013"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1129	436710	258.5	200.9
+	"2013"	"2013"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	546	241847	225.8	260.2
+	"2013"	"2013"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	1707	689204	247.7	163.0
+	"2013"	"2013"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	388	154356	251.4	251.7
+	"2013"	"2013"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	314	140515	223.5	208.2
+	"2013"	"2013"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	119	64872	183.4	271.2
+	"2013"	"2013"	"Douglas County, NE"	"31055"	"White"	"2106-3"	863	388612	222.1	198.4
+	"2013"	"2013"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	294	171319	171.6	225.6
+	"2013"	"2013"	"Guilford County, NC"	"37081"	"White"	"2106-3"	648	271760	238.4	163.9
+	"2013"	"2013"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	469	312935	149.9	219.0
+	"2013"	"2013"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	846	496589	170.4	154.8
+	"2013"	"2013"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	472	273428	172.6	246.9
+	"2013"	"2013"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1682	818946	205.4	194.9
+	"2013"	"2013"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	489	214107	228.4	258.1
+	"2013"	"2013"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1386	546297	253.7	194.4
+	"2013"	"2013"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	219	124827	175.4	230.0
+	"2013"	"2013"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1275	456725	279.2	215.5
+	"2013"	"2013"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	171	72117	237.1	365.3
+	"2013"	"2013"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1112	418209	265.9	205.3
+	"2013"	"2013"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	169	87673	192.8	243.0
+	"2013"	"2013"	"Greenville County, SC"	"45045"	"White"	"2106-3"	748	333375	224.4	175.4
+	"2013"	"2013"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	353	186142	189.6	256.8
+	"2013"	"2013"	"Davidson County, TN"	"47037"	"White"	"2106-3"	876	382586	229.0	195.1
+	"2013"	"2013"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	73	41542	175.7	220.3
+	"2013"	"2013"	"Knox County, TN"	"47093"	"White"	"2106-3"	881	375135	234.8	193.9
+	"2013"	"2013"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1125	499540	225.2	285.6
+	"2013"	"2013"	"Shelby County, TN"	"47157"	"White"	"2106-3"	880	357652	246.0	182.2
+	"2014"	"2014"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	633	283976	222.9	235.8
+	"2014"	"2014"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	911	339106	268.6	188.1
+	"2014"	"2014"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	533	263708	202.1	260.7
+	"2014"	"2014"	"Marion County, IN"	"18097"	"White"	"2106-3"	1358	550022	246.9	209.3
+	"2014"	"2014"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	94	47806	196.6	266.2
+	"2014"	"2014"	"Fayette County, KY"	"21067"	"White"	"2106-3"	476	228446	208.4	190.5
+	"2014"	"2014"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	353	166658	211.8	255.5
+	"2014"	"2014"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1521	534798	284.4	211.8
+	"2014"	"2014"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	86	66364	129.6	185.4
+	"2014"	"2014"	"Kent County, MI"	"26081"	"White"	"2106-3"	955	478188	199.7	167.6
+	"2014"	"2014"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	398	166851	238.5	266.2
+	"2014"	"2014"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1085	437180	248.2	192.0
+	"2014"	"2014"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	542	243509	222.6	249.1
+	"2014"	"2014"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	1753	685277	255.8	165.2
+	"2014"	"2014"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	414	152933	270.7	274.8
+	"2014"	"2014"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	306	140516	217.8	204.7
+	"2014"	"2014"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	109	65581	166.2	249.9
+	"2014"	"2014"	"Douglas County, NE"	"31055"	"White"	"2106-3"	838	390527	214.6	188.2
+	"2014"	"2014"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	279	174419	160.0	207.1
+	"2014"	"2014"	"Guilford County, NC"	"37081"	"White"	"2106-3"	725	271927	266.6	180.0
+	"2014"	"2014"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	495	320735	154.3	215.3
+	"2014"	"2014"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	893	502510	177.7	156.6
+	"2014"	"2014"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	493	281186	175.3	245.1
+	"2014"	"2014"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1716	824168	208.2	194.6
+	"2014"	"2014"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	464	215477	215.3	241.3
+	"2014"	"2014"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1454	545335	266.6	201.4
+	"2014"	"2014"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	250	126560	197.5	261.3
+	"2014"	"2014"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1276	459551	277.7	211.7
+	"2014"	"2014"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	149	73214	203.5	291.7
+	"2014"	"2014"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1059	419989	252.1	191.6
+	"2014"	"2014"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	148	89416	165.5	195.0
+	"2014"	"2014"	"Greenville County, SC"	"45045"	"White"	"2106-3"	773	338479	228.4	174.9
+	"2014"	"2014"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	361	188844	191.2	251.6
+	"2014"	"2014"	"Davidson County, TN"	"47037"	"White"	"2106-3"	891	387250	230.1	196.9
+	"2014"	"2014"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	86	41965	204.9	250.0
+	"2014"	"2014"	"Knox County, TN"	"47093"	"White"	"2106-3"	930	377506	246.4	201.5
+	"2014"	"2014"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1100	501325	219.4	268.7
+	"2014"	"2014"	"Shelby County, TN"	"47157"	"White"	"2106-3"	855	353940	241.6	178.1
+	"2015"	"2015"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	630	284914	221.1	230.9
+	"2015"	"2015"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	905	337246	268.4	186.1
+	"2015"	"2015"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	517	266942	193.7	247.2
+	"2015"	"2015"	"Marion County, IN"	"18097"	"White"	"2106-3"	1376	547428	251.4	209.8
+	"2015"	"2015"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	87	48249	180.3	223.3
+	"2015"	"2015"	"Fayette County, KY"	"21067"	"White"	"2106-3"	493	230699	213.7	191.6
+	"2015"	"2015"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	335	168323	199.0	228.3
+	"2015"	"2015"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1520	534554	284.3	207.0
+	"2015"	"2015"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	77	67588	113.9	167.3
+	"2015"	"2015"	"Kent County, MI"	"26081"	"White"	"2106-3"	933	481491	193.8	163.0
+	"2015"	"2015"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	390	168149	231.9	250.3
+	"2015"	"2015"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1078	438516	245.8	187.1
+	"2015"	"2015"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	495	245819	201.4	218.6
+	"2015"	"2015"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	1784	681851	261.6	167.2
+	"2015"	"2015"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	410	149978	273.4	269.9
+	"2015"	"2015"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	277	141168	196.2	181.5
+	"2015"	"2015"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	128	66174	193.4	285.8
+	"2015"	"2015"	"Douglas County, NE"	"31055"	"White"	"2106-3"	903	392692	230.0	199.1
+	"2015"	"2015"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	318	177463	179.2	222.8
+	"2015"	"2015"	"Guilford County, NC"	"37081"	"White"	"2106-3"	702	271760	258.3	171.4
+	"2015"	"2015"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	511	328534	155.5	208.4
+	"2015"	"2015"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	851	508817	167.3	145.4
+	"2015"	"2015"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	481	289334	166.2	228.1
+	"2015"	"2015"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1839	830355	221.5	206.3
+	"2015"	"2015"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	525	216689	242.3	265.9
+	"2015"	"2015"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1396	543284	257.0	195.3
+	"2015"	"2015"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	263	128662	204.4	263.1
+	"2015"	"2015"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1309	461816	283.4	213.2
+	"2015"	"2015"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	127	74471	170.5	237.0
+	"2015"	"2015"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1063	423081	251.3	190.8
+	"2015"	"2015"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	184	91329	201.5	240.1
+	"2015"	"2015"	"Greenville County, SC"	"45045"	"White"	"2106-3"	762	344076	221.5	166.8
+	"2015"	"2015"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	346	191447	180.7	234.7
+	"2015"	"2015"	"Davidson County, TN"	"47037"	"White"	"2106-3"	900	392436	229.3	194.7
+	"2015"	"2015"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	94	42323	222.1	253.5
+	"2015"	"2015"	"Knox County, TN"	"47093"	"White"	"2106-3"	879	378707	232.1	186.0
+	"2015"	"2015"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1066	502430	212.2	251.5
+	"2015"	"2015"	"Shelby County, TN"	"47157"	"White"	"2106-3"	895	350521	255.3	181.1
+	"2016"	"2016"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	606	286951	211.2	214.4
+	"2016"	"2016"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	942	334691	281.5	194.3
+	"2016"	"2016"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	555	272323	203.8	258.1
+	"2016"	"2016"	"Marion County, IN"	"18097"	"White"	"2106-3"	1331	539202	246.8	201.8
+	"2016"	"2016"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	101	49322	204.8	259.9
+	"2016"	"2016"	"Fayette County, KY"	"21067"	"White"	"2106-3"	485	233060	208.1	186.8
+	"2016"	"2016"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	358	170589	209.9	247.1
+	"2016"	"2016"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1442	531622	271.2	194.0
+	"2016"	"2016"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	113	68207	165.7	256.2
+	"2016"	"2016"	"Kent County, MI"	"26081"	"White"	"2106-3"	946	483953	195.5	161.8
+	"2016"	"2016"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	359	169437	211.9	228.8
+	"2016"	"2016"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1040	440882	235.9	177.7
+	"2016"	"2016"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	528	248845	212.2	228.0
+	"2016"	"2016"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	1706	673981	253.1	156.5
+	"2016"	"2016"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	379	148885	254.6	253.3
+	"2016"	"2016"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	295	137904	213.9	193.9
+	"2016"	"2016"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	136	66256	205.3	284.9
+	"2016"	"2016"	"Douglas County, NE"	"31055"	"White"	"2106-3"	790	394242	200.4	169.9
+	"2016"	"2016"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	302	180527	167.3	207.9
+	"2016"	"2016"	"Guilford County, NC"	"37081"	"White"	"2106-3"	695	270879	256.6	166.5
+	"2016"	"2016"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	545	338513	161.0	212.2
+	"2016"	"2016"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	904	512144	176.5	149.6
+	"2016"	"2016"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	466	297349	156.7	212.3
+	"2016"	"2016"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1670	828355	201.6	185.3
+	"2016"	"2016"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	500	219030	228.3	248.1
+	"2016"	"2016"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1382	540691	255.6	190.6
+	"2016"	"2016"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	250	130645	191.4	236.7
+	"2016"	"2016"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1296	461055	281.1	209.3
+	"2016"	"2016"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	118	75007	157.3	224.7
+	"2016"	"2016"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1089	422529	257.7	191.4
+	"2016"	"2016"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	176	92731	189.8	218.1
+	"2016"	"2016"	"Greenville County, SC"	"45045"	"White"	"2106-3"	831	348078	238.7	178.8
+	"2016"	"2016"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	364	193204	188.4	248.7
+	"2016"	"2016"	"Davidson County, TN"	"47037"	"White"	"2106-3"	865	393381	219.9	189.3
+	"2016"	"2016"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	95	42419	224.0	253.8
+	"2016"	"2016"	"Knox County, TN"	"47093"	"White"	"2106-3"	876	383038	228.7	179.2
+	"2016"	"2016"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1107	506893	218.4	258.6
+	"2016"	"2016"	"Shelby County, TN"	"47157"	"White"	"2106-3"	897	342797	261.7	180.8
+	"2017"	"2017"	"Jefferson County, AL"	"01073"	"Black or African American"	"2054-5"	644	287506	224.0	217.2
+	"2017"	"2017"	"Jefferson County, AL"	"01073"	"White"	"2106-3"	854	332351	257.0	176.7
+	"2017"	"2017"	"Marion County, IN"	"18097"	"Black or African American"	"2054-5"	552	276675	199.5	246.1
+	"2017"	"2017"	"Marion County, IN"	"18097"	"White"	"2106-3"	1370	537153	255.0	201.3
+	"2017"	"2017"	"Fayette County, KY"	"21067"	"Black or African American"	"2054-5"	102	50027	203.9	250.3
+	"2017"	"2017"	"Fayette County, KY"	"21067"	"White"	"2106-3"	458	233934	195.8	169.5
+	"2017"	"2017"	"Jefferson County, KY"	"21111"	"Black or African American"	"2054-5"	336	173612	193.5	217.1
+	"2017"	"2017"	"Jefferson County, KY"	"21111"	"White"	"2106-3"	1431	530705	269.6	189.6
+	"2017"	"2017"	"Kent County, MI"	"26081"	"Black or African American"	"2054-5"	88	69318	127.0	189.5
+	"2017"	"2017"	"Kent County, MI"	"26081"	"White"	"2106-3"	908	486295	186.7	149.0
+	"2017"	"2017"	"Jackson County, MO"	"29095"	"Black or African American"	"2054-5"	367	170433	215.3	225.8
+	"2017"	"2017"	"Jackson County, MO"	"29095"	"White"	"2106-3"	1038	444202	233.7	174.7
+	"2017"	"2017"	"St. Louis County, MO"	"29189"	"Black or African American"	"2054-5"	559	250702	223.0	238.8
+	"2017"	"2017"	"St. Louis County, MO"	"29189"	"White"	"2106-3"	1719	667852	257.4	158.3
+	"2017"	"2017"	"St. Louis city, MO"	"29510"	"Black or African American"	"2054-5"	379	145723	260.1	238.6
+	"2017"	"2017"	"St. Louis city, MO"	"29510"	"White"	"2106-3"	278	137883	201.6	177.0
+	"2017"	"2017"	"Douglas County, NE"	"31055"	"Black or African American"	"2054-5"	151	67271	224.5	314.4
+	"2017"	"2017"	"Douglas County, NE"	"31055"	"White"	"2106-3"	909	396192	229.4	190.7
+	"2017"	"2017"	"Guilford County, NC"	"37081"	"Black or African American"	"2054-5"	339	183493	184.7	218.5
+	"2017"	"2017"	"Guilford County, NC"	"37081"	"White"	"2106-3"	683	270510	252.5	163.1
+	"2017"	"2017"	"Mecklenburg County, NC"	"37119"	"Black or African American"	"2054-5"	499	346390	144.1	186.4
+	"2017"	"2017"	"Mecklenburg County, NC"	"37119"	"White"	"2106-3"	853	515369	165.5	138.7
+	"2017"	"2017"	"Franklin County, OH"	"39049"	"Black or African American"	"2054-5"	526	308144	170.7	227.3
+	"2017"	"2017"	"Franklin County, OH"	"39049"	"White"	"2106-3"	1770	836074	211.7	189.0
+	"2017"	"2017"	"Hamilton County, OH"	"39061"	"Black or African American"	"2054-5"	529	221201	239.1	252.6
+	"2017"	"2017"	"Hamilton County, OH"	"39061"	"White"	"2106-3"	1332	540037	246.6	182.3
+	"2017"	"2017"	"Oklahoma County, OK"	"40109"	"Black or African American"	"2054-5"	286	131605	217.3	269.0
+	"2017"	"2017"	"Oklahoma County, OK"	"40109"	"White"	"2106-3"	1315	459014	286.5	211.1
+	"2017"	"2017"	"Tulsa County, OK"	"40143"	"Black or African American"	"2054-5"	168	75486	222.6	302.7
+	"2017"	"2017"	"Tulsa County, OK"	"40143"	"White"	"2106-3"	1070	420601	254.4	185.3
+	"2017"	"2017"	"Greenville County, SC"	"45045"	"Black or African American"	"2054-5"	172	93967	183.0	202.1
+	"2017"	"2017"	"Greenville County, SC"	"45045"	"White"	"2106-3"	796	351912	226.2	166.9
+	"2017"	"2017"	"Davidson County, TN"	"47037"	"Black or African American"	"2054-5"	373	194032	192.2	234.9
+	"2017"	"2017"	"Davidson County, TN"	"47037"	"White"	"2106-3"	837	396197	211.3	176.7
+	"2017"	"2017"	"Knox County, TN"	"47093"	"Black or African American"	"2054-5"	95	42977	221.0	263.2
+	"2017"	"2017"	"Knox County, TN"	"47093"	"White"	"2106-3"	896	386258	232.0	182.1
+	"2017"	"2017"	"Shelby County, TN"	"47157"	"Black or African American"	"2054-5"	1058	508329	208.1	243.0
+	"2017"	"2017"	"Shelby County, TN"	"47157"	"White"	"2106-3"	847	340827	248.5	167.6
+"---"
+"Dataset: Underlying Cause of Death, 1999-2017"
+"Query Parameters:"
+"Hispanic Origin: Not Hispanic or Latino"
+"ICD-10 113 Cause List: #Malignant neoplasms (C00-C97); #Diabetes mellitus (E10-E14)"
+"Race: Black or African American; White"
+"States: Jefferson County, AL (01073); Marion County, IN (18097); Fayette County, KY (21067); Jefferson County, KY (21111); Kent"
+"County, MI (26081); Jackson County, MO (29095); St. Louis County, MO (29189); St. Louis city, MO (29510); Douglas County, NE"
+"(31055); Guilford County, NC (37081); Mecklenburg County, NC (37119); Franklin County, OH (39049); Hamilton County, OH (39061);"
+"Oklahoma County, OK (40109); Tulsa County, OK (40143); Greenville County, SC (45045); Davidson County, TN (47037); Knox County,"
+"TN (47093); Shelby County, TN (47157)"
+"Group By: Year; County; Race"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Standard Population: 2000 U.S. Std. Population"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Sep 15, 2019 11:35:31 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2017 on CDC WONDER Online Database, released December, 2018. Data are from the Multiple Cause of Death Files, 1999-2017, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Sep 15, 2019 11:35:31 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Deaths and population estimates are reported separately for St. Louis City (FIPS code 29510) and county (FIPS code 29189)."
+"3. The populations used to calculate standard age-adjusted rates are documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2000 Standard Population."
+"4. The method used to calculate age-adjusted rates is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Age-Adjusted Rates."
+"5. Deaths for persons of unknown age are included in counts and crude rates, but are not included in age-adjusted rates."
+"6. Deaths of persons with Hispanic origin ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among"
+"Hispanic Origin groups, so are not included in the Hispanic Origin specific counts and rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"7. Information included on the death certificate about the race and Hispanic ethnicity of the decedent is reported by the"
+"funeral director as provided by an informant, often the surviving next of kin, or, in the absence of an informant, on the basis"
+"of observation. Race and ethnicity information from the census is by self-report. To the extent that race and Hispanic origin"
+"are inconsistent between these two data sources, death rates will be biased. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Racial Differences."
+"8. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the Vintage 2017"
+"postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The population figures for"
+"year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal series released by NCHS"
+"on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26, 2014. The"
+"population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012 postcensal"
+"series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010 are April 1"
+"Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident population, from"
+"the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population figures for 2000 are"
+"April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1 estimates. Population"
+"figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population figures for years 2001 -"
+"2009 differ slightly from previously published reports, due to use of the population estimates which were available at the time"
+"of release."
+"9. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."
