@@ -1,111 +1,22 @@
-#' Earnings
+#' A map of tracts in Louisville
 #'
-#' Median Earnings data from ACS
-#'
-#' @format A data frame with nine variables:
+#' @format A SpatialPolygonsDataFrame
+#' @include
 #' \describe{
-#' \item{\code{x}}{age in years}
-#' \item{\code{qx}}{probability of death at age \code{x}}
+#' \item{\code{GEO_ID}}{20-character GEO_ID code}
+#' \item{\code{tract}}{numeric tract code}
+#' \item{\code{neighborhood}}{neighborhood name}
+#' \item{\code{line1}}{Tract \code{tract} in the}
+#' \item{\code{line2}}{\code{neighborhood} neighborhood}
 #' }
-#'
-#' For further details, see \url{http://www.ssa.gov/oact/NOTES/as120/LifeTables_Body.html#wp1168594}
-#'
-"act"
+"map_tract"
 
-#' Earnings
+#' A map of neighborhood areas in Louisville
 #'
-#' Median Earnings data from ACS
-#'
-#' @format A data frame with nine variables:
+#' @format A SpatialPolygonsDataFrame
 #' \describe{
-#' \item{\code{x}}{age in years}
-#' \item{\code{qx}}{probability of death at age \code{x}}
+#' \item{\code{neighborhood}}{neighborhood name}
+#' \item{\code{line1}}{\code{neighborhood}}
 #' }
-#'
-#' For further details, see \url{http://www.ssa.gov/oact/NOTES/as120/LifeTables_Body.html#wp1168594}
-#'
-"degree"
+"map_nh"
 
-#' Earnings
-#'
-#' Median Earnings data from ACS
-#'
-#' @format A data frame with nine variables:
-#' \describe{
-#' \item{\code{x}}{age in years}
-#' \item{\code{qx}}{probability of death at age \code{x}}
-#' }
-#'
-#' For further details, see \url{http://www.ssa.gov/oact/NOTES/as120/LifeTables_Body.html#wp1168594}
-#'
-"degree_race"
-
-#' Earnings
-#'
-#' Median Earnings data from ACS
-#'
-#' @format A data frame with nine variables:
-#' \describe{
-#' \item{\code{x}}{age in years}
-#' \item{\code{qx}}{probability of death at age \code{x}}
-#' }
-#'
-#' For further details, see \url{http://www.ssa.gov/oact/NOTES/as120/LifeTables_Body.html#wp1168594}
-#'
-"earn_data"
-
-#' Earnings
-#'
-#' Median Earnings data from ACS
-#'
-#' @format A data frame with nine variables:
-#' \describe{
-#' \item{\code{x}}{age in years}
-#' \item{\code{qx}}{probability of death at age \code{x}}
-#' }
-#'
-#' For further details, see \url{http://www.ssa.gov/oact/NOTES/as120/LifeTables_Body.html#wp1168594}
-#'
-"graduation"
-
-#' Earnings
-#'
-#' Median Earnings data from ACS
-#'
-#' @format A data frame with nine variables:
-#' \describe{
-#' \item{\code{x}}{age in years}
-#' \item{\code{qx}}{probability of death at age \code{x}}
-#' }
-#'
-#' For further details, see \url{http://www.ssa.gov/oact/NOTES/as120/LifeTables_Body.html#wp1168594}
-#'
-"naep"
-
-#' Earnings
-#'
-#' Median Earnings data from ACS
-#'
-#' @format A data frame with nine variables:
-#' \describe{
-#' \item{\code{x}}{age in years}
-#' \item{\code{qx}}{probability of death at age \code{x}}
-#' }
-#'
-#' For further details, see \url{http://www.ssa.gov/oact/NOTES/as120/LifeTables_Body.html#wp1168594}
-#'
-"poverty"
-
-#' Earnings
-#'
-#' Median Earnings data from ACS
-#'
-#' @format A data frame with nine variables:
-#' \describe{
-#' \item{\code{x}}{age in years}
-#' \item{\code{qx}}{probability of death at age \code{x}}
-#' }
-#'
-#' For further details, see \url{http://www.ssa.gov/oact/NOTES/as120/LifeTables_Body.html#wp1168594}
-#'
-"preschool"
