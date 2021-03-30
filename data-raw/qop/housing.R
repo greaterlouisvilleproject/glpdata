@@ -1,16 +1,9 @@
-library(tidyr)
-library(readr)
-library(dplyr)
-library(stringr)
-library(magrittr)
 library(glptools)
-
-library(survey)
-library(feather)
+glp_load_packages()
 
 path <- "data-raw/qop/housing/"
 
-acs_micro <- read_feather("data-raw/microdata/acs_micro.feather")
+acs_micro <- feather::read_feather("data-raw/microdata/acs_micro_FIPS_repwts.feather")
 
 acs_micro %<>%
   group_by(year, SERIAL) %>%
@@ -18,98 +11,87 @@ acs_micro %<>%
   ungroup() %>%
   filter(PERNUM == 1) %>%
   mutate(
-    MSA = as.character(MSA),
-
     OWNCOST  = replace(OWNCOST, OWNCOST == 99999, NA),
     HHINCOME = replace(HHINCOME, HHINCOME == 99999, NA),
     OWNERSHP = replace(OWNERSHP, OWNERSHP == 0, NA),
     RENTGRS  = replace(RENTGRS, RENTGRS == 0 & OWNERSHP == 1, NA),
 
-    homeownership = if_else(OWNERSHP == 1, 1, 0),
+    homeownership = if_else(OWNERSHP == 1, T, F),
 
     hcost = if_else(homeownership == 1, OWNCOST, RENTGRS),
-    cost_burden = if_else(hcost * 12 / HHINCOME > 0.3, 1, 0),
+    cost_burden = if_else(hcost * 12 / HHINCOME > 0.3, T, F),
     severe_cost_burden = if_else(hcost * 12 / HHINCOME > 0.5, 1, 0),
 
     hh_type = case_when(
-      homeownership == 1 & cost_burden == 0 ~ "noncb_homeowner",
-      homeownership == 1 & cost_burden == 1 ~ "cb_homeowner",
-      homeownership == 0 & cost_burden == 0 ~ "noncb_renter",
-      homeownership == 0 & cost_burden == 1 ~ "cb_renter",
+      homeownership  & !cost_burden ~ "noncb_homeowner",
+      homeownership  & cost_burden  ~ "cb_homeowner",
+      !homeownership & !cost_burden ~ "noncb_renter",
+      !homeownership & cost_burden  ~ "cb_renter",
       TRUE ~ NA_character_),
-
 
     KITCHEN  = replace(KITCHEN, KITCHEN == 0, NA),
     ROOMS    = replace(ROOMS, ROOMS == 0, NA),
     PLUMBING = replace(PLUMBING, PLUMBING == 0, NA),
 
     severe_housing_problems = if_else(
-      KITCHEN == 1 | PLUMBING == 10 | hh_members / ROOMS > 1 | severe_cost_burden, 1, 0))
+      KITCHEN == 1 | PLUMBING == 10 | hh_members / ROOMS > 1 | severe_cost_burden, T, F))
 
 # Homeownership and Cost-burden
-housing_county  <- svy_race_sex_cat(acs_micro, "hh_type", "HHWT")
-housing_msa_1yr <- svy_race_sex_cat(acs_micro, "hh_type", "HHWT", geog = "MSA")
+housing_county1  <- survey_by_demog(acs_micro, "hh_type", "HHWT")
+housing_county2  <- survey_by_demog(acs_micro, "homeownership", "HHWT")
+housing_county3  <- survey_by_demog(acs_micro, "cost_burden", "HHWT")
+housing_county <- bind_df(housing_county1, housing_county2, housing_county3)
 
-housing_county %<>%
+housing_msa1  <- survey_by_demog(acs_micro, "hh_type", "HHWT", geog = "MSA")
+housing_msa2  <- survey_by_demog(acs_micro, "homeownership", "HHWT", geog = "MSA")
+housing_msa3  <- survey_by_demog(acs_micro, "cost_burden", "HHWT", geog = "MSA")
+housing_msa_1yr <- bind_df(housing_msa1, housing_msa2, housing_msa3)
+
+housing_vars_05_5yr <- build_census_var_df("acs5", "B25106")
+
+housing_map <- get_census(housing_vars_05_5yr, "tract")
+
+housing_map %<>%
   mutate(
-    homeownership = cb_homeowner + noncb_homeowner,
-    cost_burdened = cb_homeowner + cb_renter)
+    homeownership_ = case_when(
+      str_detect(label, "Renter") ~ F,
+      str_detect(label, "Owner") ~ T,
+      TRUE ~ NA),
+    cost_burden_ = case_when(
+      str_detect(label, "30 percent or more") ~ T,
+      str_detect(label, "Zero or negative income") ~ T,
+      str_detect(label, "No cash rent") ~ F,
+      str_detect(label, "20 to 29 percent") ~ F,
+      str_detect(label, "Less than 20 percent") ~ F,
+      TRUE ~ NA),
+    hh_type = case_when(
+      homeownership_ & !cost_burden_  ~ "noncb_homeowner",
+      homeownership_ & cost_burden_   ~ "cb_homeowner",
+      !homeownership_ & !cost_burden_ ~ "noncb_renter",
+      !homeownership_ & cost_burden_  ~ "cb_renter",
+      TRUE ~ NA_character_))
 
-housing_msa_1yr %<>%
-  mutate(
-    homeownership = cb_homeowner + noncb_homeowner,
-    cost_burdened = cb_homeowner + cb_renter)
+housing_map1 <- process_census(housing_map, cat_var = "hh_type", output_name = "housing")
+housing_map2 <- process_census(housing_map, cat_var = "homeownership_", output_name = "homeownership")
+housing_map3 <- process_census(housing_map, cat_var = "cost_burden_", output_name = "cost_burden")
 
-homeownership_map <- read_csv(path %p% "ACS_17_5YR_B25003_with_ann.csv", skip = 1)
+housing_map <- bind_df(housing_map1, housing_map2, housing_map3)
 
-homeownership_map %>%
-  transmute(
-    tract = Id,
-    year = 2015,
-    total = `Estimate; Total:`,
-    homeownership = `Estimate; Total: - Owner occupied`) %>%
-  process_map("homeownership", "total", return_name = "homeownership") %>%
-  list2env(.GlobalEnv)
-
-burdened_map <- read_csv(path %p% "ACS_17_5YR_B25106_with_ann.csv", skip = 1)
-
-burdened_map %>%
-  transmute(
-    tract = Id,
-    year = 2015,
-    total = `Estimate; Total:`,
-    cost_burdened =
-      `Estimate; Owner-occupied housing units: - Less than $20,000: - 30 percent or more` +
-      `Estimate; Owner-occupied housing units: - $20,000 to $34,999: - 30 percent or more` +
-      `Estimate; Owner-occupied housing units: - $35,000 to $49,999: - 30 percent or more` +
-      `Estimate; Owner-occupied housing units: - $50,000 to $74,999: - 30 percent or more` +
-      `Estimate; Owner-occupied housing units: - $75,000 or more: - 30 percent or more` +
-      `Estimate; Owner-occupied housing units: - Zero or negative income` +
-      `Estimate; Renter-occupied housing units: - Less than $20,000: - 30 percent or more` +
-      `Estimate; Renter-occupied housing units: - $20,000 to $34,999: - 30 percent or more` +
-      `Estimate; Renter-occupied housing units: - $35,000 to $49,999: - 30 percent or more` +
-      `Estimate; Renter-occupied housing units: - $50,000 to $74,999: - 30 percent or more` +
-      `Estimate; Renter-occupied housing units: - $75,000 or more: - 30 percent or more` +
-      `Estimate; Renter-occupied housing units: - Zero or negative income`) %>%
-  process_map("cost_burdened", "total", return_name = "burdened") %>%
+housing_map %>%
+  process_map(cb_homeowner:cost_burden, return_name = "housing") %>%
   list2env(.GlobalEnv)
 
 # Severe Housing Problems
-housing_problems_county <- svy_race_sex(acs_micro, severe_housing_problems, "HHWT")
-housing_problems_msa    <- svy_race_sex(acs_micro, severe_housing_problems, "HHWT", geog = "MSA")
+housing_problems_county <- survey_by_demog(acs_micro, "severe_housing_problems", "HHWT")
+housing_problems_msa    <- survey_by_demog(acs_micro, "severe_housing_problems", "HHWT", geog = "MSA")
 
-housing_problems_county %<>% mutate(severe_housing_problems = severe_housing_problems * 100)
-housing_problems_msa    %<>% mutate(severe_housing_problems = severe_housing_problems * 100)
-
-housing_tract   <- bind_df(homeownership_tract, burdened_tract)
-housing_nh      <- bind_df(homeownership_nh,    burdened_nh)
-housing_muw     <- bind_df(homeownership_muw,   burdened_muw)
 housing_county  %<>% bind_df(housing_problems_county)
 housing_msa_1yr %<>% bind_df(housing_problems_msa)
 
-update_sysdata(housing_county, housing_msa_1yr, housing_tract, housing_nh, housing_muw)
+usethis::use_data(housing_county, housing_msa_1yr, housing_tract, housing_nh, housing_muw, overwrite = TRUE)
 
 rm(acs_micro, housing_problems_county, housing_problems_msa,
-   homeownership_map, burdened_map, path)
-
-
+   housing_county1, housing_county2, housing_county3,
+   housing_msa1, housing_msa2, housing_msa3,
+   housing_map1, housing_map2, housing_map3,
+   housing_vars_05_5yr, housing_map, path)
