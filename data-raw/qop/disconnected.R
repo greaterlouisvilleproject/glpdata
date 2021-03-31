@@ -1,11 +1,7 @@
-library(tidyr)
-library(readr)
-library(dplyr)
-library(stringr)
-library(magrittr)
 library(glptools)
+glp_load_packages()
 
-acs_micro <- feather::read_feather("data-raw/microdata/acs_micro.feather")
+acs_micro <- feather::read_feather("data-raw/microdata/acs_micro_repwts.feather")
 
 acs_micro %<>%
   filter(age >= 16 & age <= 24) %>%
@@ -22,12 +18,12 @@ acs_micro %<>%
                            is.na(not_employed) | is.na(not_in_school),
                            NA_integer_))
 
-disconnected_county  <- svy_race_sex(acs_micro, disconnected)
-disconnected_msa_1yr <- svy_race_sex(acs_micro, disconnected, geog = "MSA")
+disconnected_county  <- survey_by_demog(acs_micro, disconnected)
+disconnected_msa_1yr <- survey_by_demog(acs_micro, disconnected, geog = "MSA")
 
 disconnected_county  %<>% mutate(disconnected = disconnected * 100)
 disconnected_msa_1yr %<>% mutate(disconnected = disconnected * 100)
 
-update_sysdata(disconnected_county, disconnected_msa_1yr)
+usethis::use_data(disconnected_county, disconnected_msa_1yr, overwrite = TRUE)
 
 rm(acs_micro)
