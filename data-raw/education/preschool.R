@@ -34,7 +34,7 @@ acs_micro %<>%
   filter(age %in% 3:4) %>%
   mutate(preschool = if_else(SCHOOL == 2, T, F))
 
-preschool_county  <- svy_race_sex(acs_micro, "preschool", "proportion")
+preschool_county <- survey_by_demog(acs_micro, "preschool")
 
 usethis::use_data(preschool_county, preschool_tract, preschool_nh, preschool_muw, overwrite = TRUE)
 
