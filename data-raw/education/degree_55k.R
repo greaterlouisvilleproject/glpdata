@@ -6,7 +6,122 @@ library(magrittr)
 library(glptools)
 
 library(survey)
+degree_county_adult <- degree_county %>%
+  process_census(cat_var = "educ", output_name = "degree",
+                 age_groups = c("25_34", "35_44", "45_64", "25_64"),
+                 output_percent = F, output_population = T)
 
+test1 <- degree_county_all %>% reshape_55k1()
+
+test2 <- degree_county_all %>% reshape_55k2()
+
+test3 <- test %>% filter(Gender == "Both", Age == "")
+
+write_csv(test2, "community_peer_cities.csv")
+
+
+reshape_55k1 <- function(df) {
+  df %<>%
+    filter(FIPS == "21111", race == "total", year >= 2008) %>%
+    select(year, sex, educ, degree_25_34:degree_25_64_pop) %>%
+    pivot_longer(cols = degree_25_34:degree_25_64_pop,
+                 names_to = "var",
+                 values_to = "value") %>%
+    mutate(
+      age = str_extract(var, "(?<=degree_).{5}"),
+      cat = if_else(str_detect(var, "pop"), "population", "Freq")) %>%
+    pivot_wider(id_cols = c(year, sex, age, educ),
+                names_from = cat,
+                values_from = value) %>%
+    mutate(
+      EDUC = replace(educ, educ == "no_hs",    "Did not finish High School"),
+      EDUC = replace(EDUC, educ == "hs",       "High School Graduate"),
+      EDUC = replace(EDUC, educ == "some_col", "Some College"),
+      EDUC = replace(EDUC, educ == "assoc",    "Associate"),
+      EDUC = replace(EDUC, educ == "bach",     "Bachelor's"),
+      EDUC = replace(EDUC, educ == "grad",     "Masters or better"),
+
+      AGE = replace(age, age == "25_34", "25-34"),
+      AGE = replace(AGE, age == "35_44", "35-44"),
+      AGE = replace(AGE, age == "45_64", "45-64"),
+
+      SEX = replace(sex, sex == "total", "both") %>%
+        str_to_title())
+
+  assoc_plus <- df %>%
+    group_by(across(c("SEX", "AGE", "year"))) %>%
+    filter(EDUC %in% c("Associate", "Bachelor's", "Masters or better")) %>%
+    summarise(Freq = sum(Freq),
+              population = first(population), .groups = "drop") %>%
+    mutate(EDUC = "Associate +")
+
+  bach_plus <- df %>%
+    group_by(across(c("SEX", "AGE", "year"))) %>%
+    filter(EDUC %in% c("Bachelor's", "Masters or better")) %>%
+    summarise(Freq = sum(Freq),
+              population = first(population), .groups = "drop") %>%
+    mutate(EDUC = "Bachelor's +")
+
+  output <- bind_rows(df, assoc_plus, bach_plus)
+
+  output %<>%
+    transmute(
+      ` ` = row_number(),
+      Year = paste0("1/1/", year),
+      Gender = SEX,
+      Age = AGE,
+      Education = EDUC,
+      Freq,
+      Value = Freq  / population * 100)
+
+  output
+}
+
+reshape_55k2 <- function(df) {
+
+  df %<>%
+    pull_peers(add_info = TRUE) %>%
+    filter(baseline == 1, sex == "total", race == "total", year >= 2008) %>%
+    select(city, year, educ, degree_25_64, degree_25_64_pop) %>%
+    mutate(
+      EDUC = replace(educ, educ == "no_hs",    "Did not finish High School"),
+      EDUC = replace(EDUC, educ == "hs",       "High School Graduate"),
+      EDUC = replace(EDUC, educ == "some_col", "Some College"),
+      EDUC = replace(EDUC, educ == "assoc",    "Associate"),
+      EDUC = replace(EDUC, educ == "bach",     "Bachelor's"),
+      EDUC = replace(EDUC, educ == "grad",     "Masters or better"),
+
+      Freq = degree_25_64,
+      population = degree_25_64_pop)
+
+  assoc_plus <- df %>%
+    group_by(city, year) %>%
+    filter(EDUC %in% c("Associate", "Bachelor's", "Masters or better")) %>%
+    summarise(Freq = sum(Freq),
+              population = first(population), .groups = "drop") %>%
+    mutate(EDUC = "Associate +")
+
+  bach_plus <- df %>%
+    group_by(city, year) %>%
+    filter(EDUC %in% c("Bachelor's", "Masters or better")) %>%
+    summarise(Freq = sum(Freq),
+              population = first(population), .groups = "drop") %>%
+    mutate(EDUC = "Bachelor's +")
+
+  output <- bind_rows(df, assoc_plus, bach_plus)
+
+  output %<>%
+    transmute(
+      ` ` = row_number(),
+      City = city,
+      Year = paste0("1/1/", year),
+      Education = EDUC,
+      Value = Freq  / population * 100)
+
+  output
+}
+
+write_csv(test, "community_louisville_attainment.csv")
 #function for adding in combinations involving group totals
 pumsagg <- function(df_original){
 
