@@ -1,9 +1,5 @@
-library(tidyr)
-library(readr)
-library(dplyr)
-library(stringr)
-library(magrittr)
 library(glptools)
+glp_load_packages()
 
 source("data-raw/helpers/process_ky_ed.R")
 
@@ -20,12 +16,7 @@ read_naep <- function(folder, score_type){
                                  "demographic", "naep_" %p% score_type),
                    col_types = "icci")
 
-    if(!exists("output")){
-      output <- df
-    }
-    else{
-      output %<>% bind_rows(df)
-    }
+    output <- assign_row_join(output, df)
   }
   output
 }
@@ -42,6 +33,6 @@ naep_ky %<>%
   mutate(variable = if_else(variable == "Kentucky", "mean", "lou")) %>%
   spread_ky_ed()
 
-update_sysdata(naep_ky)
+usethis::use_data(naep_ky, overwrite = TRUE)
 
-rm(path, read_naep, naep_math, naep_reading, clean_ky_ed, process_ky_ed, spread_ky_ed)
+rm(path, read_naep, naep_math, naep_reading, clean_ky_ed, process_ky_ed, spread_ky_ed, clean_55k)

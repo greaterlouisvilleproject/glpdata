@@ -1,9 +1,5 @@
-library(tidyr)
-library(readr)
-library(dplyr)
-library(stringr)
-library(magrittr)
 library(glptools)
+glp_load_packages()
 
 source("data-raw/helpers/process_ky_ed.R")
 
@@ -18,16 +14,32 @@ grad_read <- function(folder, geog = "district") {
                 "REPORTYEAR_2016", "REPORTYEAR_2017", "GRADRATE4YR")
 
   for (f in files) {
+
+    print(y)
+
     df <- read_csv(folder %p% "kentucky/" %p% f)
 
-    if (geog == "district") {
-      df %<>%
-        filter(
-          str_detect(SCH_NAME, "District|State"),
-          !is.na(DIST_NAME))
-    } else if (geog == "school") {
-      df %<>% filter(DIST_NAME %in% c("Jefferson County", "State"))
+    if(y %in% 2013:2019) {
+      if (geog == "district") {
+        df %<>%
+          filter(
+            str_detect(SCH_NAME, "District|State"),
+            !is.na(DIST_NAME))
+      } else if (geog == "school") {
+        df %<>% filter(DIST_NAME %in% c("Jefferson County", "State"))
+      }
+    } else if (y >= 2020) {
+      if (geog == "district") {
+        df %<>%
+          filter(
+            str_detect(`SCHOOL NAME`, "District|State"),
+            !is.na(`DISTRICT NAME`))
+      } else if (geog == "school") {
+        df %<>% filter(`DISTRICT NAME` %in% c("Jefferson County", "State"))
+      }
     }
+
+
 
     if (y %in% 2013) {
       df %<>%
@@ -68,7 +80,7 @@ grad_read <- function(folder, geog = "district") {
       df <- full_join(score_df, denom_df,
                       by = c("district", "school", "year", "demographic"))
 
-    } else if (y %in% 2018) {
+    } else if (y %in% 2018:2019) {
       df %<>%
         transmute(
           district = DIST_NAME,
@@ -77,6 +89,15 @@ grad_read <- function(folder, geog = "district") {
           demographic = DEMOGRAPHIC,
           num_students = COHORT4YR,
           graduation = GRADRATE4YR)
+    } else if (y %in% 2020) {
+      df %<>%
+        transmute(
+          district = `DISTRICT NAME`,
+          school = `SCHOOL NAME`,
+          year = y,
+          demographic = DEMOGRAPHIC,
+          num_students = `NUMBER OF STUDENTS IN 4-YEAR COHORT`,
+          graduation = `4-YEAR GRADUATION RATE`)
     }
 
     df %<>%
@@ -171,8 +192,7 @@ graduation_55k %<>%
     Demographic,
     `Graduation Rate`)
 
-
-update_sysdata(graduation_ky, graduation_55k)
+usethis::use_data(graduation_ky, graduation_55k, overwrite = TRUE)
 
 rm(grad_read, clean_ky_ed, clean_55k, process_ky_ed, spread_ky_ed,
    grad_read_national, grad_race, grad_tot, path)
