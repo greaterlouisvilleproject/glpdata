@@ -23,7 +23,12 @@ clean_ky_ed <- function(df_original, ..., pop_var = "num_students", calc_nonfrl 
                  "Asian/Pacific Islander" = "asian", "White" = "white",
                  "Eligible" = "frl", "Not eligible" = "nonfrl")
 
-  demog_labels = c(dem_lab_1, dem_lab_2, dem_lab_3, dem_lab_4)
+  # Graduation 2020
+  dem_lab_5 <- c("Hispanic or Latino" = "hispanic",
+                 "White (non-Hispanic)" = "white",
+                 "Economically Disadvantaged" = "frl")
+
+  demog_labels = c(dem_lab_1, dem_lab_2, dem_lab_3, dem_lab_4, dem_lab_5)
 
   if(!calc_nonfrl){
     output <- df_original %>%
@@ -40,7 +45,7 @@ clean_ky_ed <- function(df_original, ..., pop_var = "num_students", calc_nonfrl 
 
   for(var in variables){
 
-    df <- df_original %>% select(district, year, demographic, !!var, !!pop_var)
+    df <- df_original %>% select(any_of(c("district", "year", "demographic", "prior_setting", var, pop_var)))
 
     # Non-frl calculation:
     # frl_students * frl_score + non_frl_students * non_frl_score = total_students * total_score
@@ -61,7 +66,7 @@ clean_ky_ed <- function(df_original, ..., pop_var = "num_students", calc_nonfrl 
         var_all = !!var,
         pop_all = !!pop_var)
 
-    df_nonfrl <- full_join(df_all, df_frl, by = c("district", "year"))
+    df_nonfrl <- full_join(df_all, df_frl, by = df_all %cols_in% c("district", "year", "prior_setting"))
 
     df_nonfrl %<>%
       mutate(
@@ -69,17 +74,18 @@ clean_ky_ed <- function(df_original, ..., pop_var = "num_students", calc_nonfrl 
         var_nonfrl = (pop_all * var_all -
                       pop_frl * var_frl) / pop_nonfrl,
         demographic = "nonfrl") %>%
-      select(district, year, demographic, !!var := var_nonfrl, !!pop_var := pop_nonfrl)
+      select(any_of(c("district", "year", "demographic", "prior_setting", "var_nonfrl", "pop_nonfrl"))) %>%
+      rename(!!var := var_nonfrl, !!pop_var := pop_nonfrl)
 
     df %<>%
       bind_rows(df_nonfrl) %>%
       mutate(!!var := round(!!sym(var), 1))
 
     df %<>%
-      select(district, year, demographic, !!pop_var, !!var) %>%
+      select(any_of(c("district", "year", "demographic", "prior_setting", pop_var, var))) %>%
       arrange(year, district, demographic)
 
-    output <- assign_col_join(output, df, by = c("district", "year", "demographic", pop_var))
+    output <- assign_col_join(output, df, by = df %cols_in%  c("district", "year", "demographic", "prior_setting", pop_var))
   }
   output
 }
@@ -90,7 +96,7 @@ process_ky_ed <- function(df_original, ..., pop_var = "num_students", calc_nonfr
   pop_var <- as.character(substitute(pop_var))
 
   for(var in variables){
-    df <- df_original %>% select("district", "year", "demographic", !!var, !!pop_var)
+    df <- df_original %>% select(any_of(c("district", "year", "demographic", "prior_setting", var, pop_var)))
 
     #df$var <- df[[v]]
     #df$pop <- df[[pop_var]]
@@ -112,37 +118,49 @@ process_ky_ed <- function(df_original, ..., pop_var = "num_students", calc_nonfr
         var_state = !!var,
         pop_state = !!pop_var)
 
-    df_nonjc <- full_join(df_state, df_jc, by = c("year", "demographic"))
+    df_nonjc <- full_join(df_state, df_jc, by = df_jc %cols_in% c("year", "demographic", "prior_setting"))
 
     df_nonjc %<>%
       mutate(
         pop_nonjc = pop_state - pop_jc,
         mean = (pop_state * var_state -
                 pop_jc * var_jc) / pop_nonjc) %>%
-      select(year, demographic, mean)
+      select(any_of(c("year", "demographic", "prior_setting", "mean")))
 
     # Q1 and Q3
     #   Do not process for race, as most non-white population data is missing
+
+    if ("prior_setting" %in% names(df)) {
+      pctiles <- df %>%
+        filter(prior_setting == "All Students")
+    } else {
+      pctiles <- df
+    }
 
     pctiles <- df %>%
       filter(
         str_detect(district, "Jefferson|State", negate = T),
         demographic %not_in% c("white", "black", "hispanic", "asian")) %>%
-      group_by(year, demographic) %>%
+      group_by(across(pctiles %cols_in% c("year", "demographic", "prior_setting"))) %>%
       summarise(
         q1 = Hmisc::wtd.quantile(!!sym(var), !!sym(pop_var), probs = 0.25, na.rm = T),
-        q3 = Hmisc::wtd.quantile(!!sym(var), !!sym(pop_var), probs = 0.75, na.rm = T)) %>%
-      ungroup()
+        q3 = Hmisc::wtd.quantile(!!sym(var), !!sym(pop_var), probs = 0.75, na.rm = T),
+        .groups = "drop")
+
+    attr(pctiles$q1, "names") <- NULL
+    attr(pctiles$q3, "names") <- NULL
 
     # Louisville
-    df_jc %<>% select(year, demographic, lou = var_jc)
+    df_jc %<>%
+      select(any_of(c("year", "demographic", "prior_setting", "var_jc"))) %>%
+      rename(lou = var_jc)
 
-    df <- full_join(df_jc, df_nonjc, by = c("year", "demographic"))
-    df %<>% full_join(pctiles, by = c("year", "demographic"))
+    df <- full_join(df_jc, df_nonjc, by = df %cols_in% c("year", "demographic", "prior_setting"))
+    df %<>% full_join(pctiles, by = df %cols_in% c("year", "demographic", "prior_setting"))
 
     df %<>%
-      gather(lou, q1, mean, q3, key = "variable", value = !!var) %>%
-      select(year, demographic, variable, !!var)
+      pivot_longer(lou:q3, names_to = "variable", values_to = var) %>%
+      select(any_of(c("year", "demographic", "prior_setting", "variable", var)))
 
     output <- assign_col_join(output, df)
   }

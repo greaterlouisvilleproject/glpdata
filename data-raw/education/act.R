@@ -1,13 +1,9 @@
-library(tidyr)
-library(readr)
-library(dplyr)
-library(stringr)
-library(magrittr)
 library(glptools)
+glp_load_packages()
 
 source("data-raw/helpers/process_ky_ed.R")
 
-path <- "data-raw/education/act/"
+path <- "data-raw/education/act/csv/"
 
 act_read <- function(folder, geog = "district") {
 
@@ -40,7 +36,7 @@ act_read <- function(folder, geog = "district") {
           act_science = SCIENCE_MEAN_SCORE,
           act_composite = COMPOSITE_MEAN_SCORE)
     }
-    if(y %in% 2018){
+    if(y %in% 2018:2019){
       df %<>%
         transmute(
           district = DIST_NAME,
@@ -88,6 +84,6 @@ act_55k %<>%
     Subject = str_extract(Subject, "(?<=_).*") %>% str_to_title(),
     Score)
 
-update_sysdata(act_ky, act_55k)
+usethis::use_data(act_ky, act_55k, overwrite = T)
 
 rm(act_read, clean_ky_ed, clean_55k, process_ky_ed, spread_ky_ed, path)
