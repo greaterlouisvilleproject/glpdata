@@ -13,16 +13,13 @@ acs_micro %<>%
     not_in_school = if_else(SCHOOL == 1, 1, 0),
     not_in_school = replace(not_in_school, SCHOOL == 0, NA),
 
-    disconnected = if_else(not_employed & not_in_school, 1, 0),
+    disconnected = if_else(not_employed & not_in_school, T, F),
     disconnected = replace(disconnected,
                            is.na(not_employed) | is.na(not_in_school),
-                           NA_integer_))
+                           NA))
 
-disconnected_county  <- survey_by_demog(acs_micro, disconnected)
-disconnected_msa_1yr <- survey_by_demog(acs_micro, disconnected, geog = "MSA")
-
-disconnected_county  %<>% mutate(disconnected = disconnected * 100)
-disconnected_msa_1yr %<>% mutate(disconnected = disconnected * 100)
+disconnected_county  <- survey_by_demog(acs_micro, "disconnected")
+disconnected_msa_1yr <- survey_by_demog(acs_micro, "disconnected", geog = "MSA")
 
 usethis::use_data(disconnected_county, disconnected_msa_1yr, overwrite = TRUE)
 
