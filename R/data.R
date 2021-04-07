@@ -1,22 +1,13 @@
-#' A map of tracts in Louisville
+#' Kindergarten Readiness
 #'
-#' @format A SpatialPolygonsDataFrame
+#' @format A Data Frame
 #' @include
 #' \describe{
-#' \item{\code{GEO_ID}}{20-character GEO_ID code}
-#' \item{\code{tract}}{numeric tract code}
-#' \item{\code{neighborhood}}{neighborhood name}
-#' \item{\code{line1}}{Tract \code{tract} in the}
-#' \item{\code{line2}}{\code{neighborhood} neighborhood}
+#' \item{\code{variable}}{type of observation}
+#' \item{\code{year}}{year of observation}
+#' \item{\code{sex}}{sex}
+#' \item{\code{race}}{race}
+#' \item{\code{frl_status}}{free- or reduced-lunch status}
+#' \item{\code{kready}}{percent of students who are kindergarten-ready}
 #' }
-"map_tract"
-
-#' A map of neighborhood areas in Louisville
-#'
-#' @format A SpatialPolygonsDataFrame
-#' \describe{
-#' \item{\code{neighborhood}}{neighborhood name}
-#' \item{\code{line1}}{\code{neighborhood}}
-#' }
-"map_nh"
-
+"kready_ky"

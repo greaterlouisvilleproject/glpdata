@@ -9,3 +9,6 @@
 .httr-oauth
 
 data-raw/qop/home_loan/
+
+data-raw/health/driving_fatalities/FARS/
+.Rproj.user
