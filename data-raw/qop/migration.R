@@ -1,136 +1,248 @@
-library(tidyr)
-library(readr)
-library(dplyr)
-library(stringr)
-library(magrittr)
 library(glptools)
+glp_load_packages()
 
-path <- "data-raw/qop/migration/"
+process_inmigration <- function(df) {
+  df %>%
+    mutate(
+      inmigrated = case_when(
+        str_detect(label, "Moved from") ~ T,
+        str_detect(label, "Moved within|Same house") ~ F,
+        TRUE ~ NA))
+}
+process_outmigration <- function(df) {
+  df %>%
+    mutate(
+      outmigrated = case_when(
+        str_detect(label, "Moved to") ~ T,
+        str_detect(label, "Moved within|Same house") ~ F,
+        TRUE ~ NA))
+}
+add_educ_label <- function(df) {
+  df %>%
+    mutate(
+      educ = case_when(
+        str_detect(label, "no diploma|Less than") ~ "no_hs",
+        str_detect(label, "High school") ~ "hs",
+        str_detect(label, "Some college") ~ "some_col_assoc",
+        str_detect(label, "Bachelor") ~ "bach",
+        str_detect(label, "Graduate") ~ "grad")) %>%
+    filter(!is.na(educ))
+}
 
-#Age
-in_mig <- acs_time(path %p% "B07001", starting_year = 2006)
-out_mig <- acs_time(path %p% "B07401", starting_year = 2007)
+#test <- censusapi::listCensusApis()
+#test2 <- censusapi::listCensusMetadata("pep/components", 2019)
 
-in_mig %<>%
+test_api <- data.frame(
+  survey = "pep/components",
+  year = 2019,
+  variable = c("NETMIG", "DATE"),
+  race = "total",
+  sex = "total",
+  age_group = "all",
+  age_low = 0,
+  age_high = Inf,
+  label = "",
+  table = "")
+
+for (f in FIPS_df_two_stl$FIPS) {
+  temp <- censusapi::getCensus(
+    name = "pep/components",
+    vintage = 2019,
+    vars = c("PERIOD_CODE", "PERIOD_DESC",
+             "BIRTHS", "DEATHS", "NETMIG",
+             "DOMESTICMIG", "INTERNATIONALMIG",
+             "NATURALINC",
+             "RBIRTH", "RDEATH", "RNETMIG",
+             "RDOMESTICMIG", "RINTERNATIONALMIG",
+             "RNATURALINC"),
+    regionin = paste0("state:", str_sub(f, 1, 2)),
+    region = paste0("county:", str_sub(f, 3, 5)),
+    PERIOD_CODE = paste0(1:10, collapse=","),
+    key = Sys.getenv("CENSUS_API_KEY"))
+
+  output <- assign_row_join(output, temp)
+}
+
+test <- output %>%
+  mutate(across())
   mutate(
-    total =
-      `Estimate; Total:`,
+    FIPS = paste0(state, county),
+    year = str_sub(PERIOD_DESC, -4))
 
-    total_young =
-      `Estimate; 20 to 24 years` +
-      `Estimate; 30 to 34 years`,
 
-    in_mig =
-      `Estimate; Moved from different county within same state:` +
-      `Estimate; Moved from different state:` +
-      `Estimate; Moved from abroad:`,
 
-    in_mig_young =
-      `Estimate; Moved from different county within same state: - 25 to 29 years` +
-      `Estimate; Moved from different county within same state: - 30 to 34 years` +
-      `Estimate; Moved from different state: - 25 to 29 years` +
-      `Estimate; Moved from different state: - 30 to 34 years` +
-      `Estimate; Moved from abroad: - 25 to 29 years` +
-      `Estimate; Moved from abroad: - 30 to 34 years`)
+# Total, race
+inmigration_vars2  <- build_census_var_df("acs1", c("B07003", "B07004"))
+outmigration_vars <- build_census_var_df("acs1", c("B07403", "B07404"))
 
-out_mig %<>%
-  mutate(
-    out_mig =
-      `Estimate; Moved to different county within same state:` +
-      `Estimate; Moved to different state:`,
+# Age
+inmigration_vars_age  <- build_census_var_df("acs1", "B07001",
+                                                    age_groups = c("25_29", "30_34"))
+outmigration_vars_age <- build_census_var_df("acs1", "B07401",
+                                                    age_groups = c("25_29", "30_34"))
 
-    out_mig_young =
-      `Estimate; Moved to different county within same state: - 25 to 29 years` +
-      `Estimate; Moved to different county within same state: - 30 to 34 years` +
-      `Estimate; Moved to different state: - 25 to 29 years` +
-      `Estimate; Moved to different state: - 30 to 34 years`)
+# Education
+inmigration_vars_educ  <- build_census_var_df("acs1", "B07009")
+outmigration_vars_educ <- build_census_var_df("acs1", "B07409")
 
-mig_age <- bind_df(in_mig, out_mig)
 
-mig_age %<>%
-  mutate(
-    net_mig = in_mig - out_mig,
-    net_mig_young = in_mig_young - out_mig_young)
+# Get data
+inmigration  <- get_census(inmigration_vars2, "FIPS", parallel = T)
+outmigration <- get_census(outmigration_vars, "FIPS", parallel = T)
 
-mig_total <- mig_age %>%
-  stl_merge(total, in_mig, out_mig, net_mig, method = "sum") %>%
-  group_by(year) %>%
-  mutate(
-    lou_pop = total[FIPS == "21111"],
-    scale_lou = lou_pop / total,
-    in_mig_adj = in_mig * scale_lou,
-    out_mig_adj = out_mig * scale_lou,
-    net_mig_adj = net_mig * scale_lou) %>%
+inmigration_age  <- get_census(inmigration_vars_age, "FIPS", parallel = T)
+outmigration_age <- get_census(outmigration_vars_age, "FIPS", parallel = T)
+
+inmigration_educ  <- get_census(inmigration_vars_educ, "FIPS", parallel = T)
+outmigration_educ <- get_census(outmigration_vars_educ, "FIPS", parallel = T)
+
+
+# Add info
+inmigration %<>% process_inmigration()
+outmigration %<>% process_outmigration()
+
+inmigration_age %<>% process_inmigration()
+outmigration_age %<>% process_outmigration()
+
+inmigration_educ  %<>% process_inmigration() %>% add_educ_label()
+outmigration_educ  %<>% process_outmigration() %>% add_educ_label()
+
+
+# Process data
+inmigration  %<>% process_census(cat_var = "inmigrated",  output_name = "inmigration",
+                                 output_percent = FALSE, output_population = TRUE)
+outmigration %<>% process_census(cat_var = "outmigrated", output_name = "outmigration",
+                                 output_percent = FALSE, output_population = TRUE)
+
+inmigration_age  %<>% process_census(cat_var = "inmigrated",  output_name = "inmigration",
+                                     age_groups = c("25_29", "30_34"),
+                                     output_percent = FALSE, output_population = TRUE)
+outmigration_age  %<>% process_census(cat_var = "outmigrated",  output_name = "outmigration",
+                                      age_groups = c("25_29", "30_34"),
+                                      output_percent = FALSE, output_population = TRUE)
+
+inmigration_educ %<>%
+  group_by(educ) %>%
+  nest() %>%
+  mutate(data = map(data, ~ process_census(.,
+                               cat_var = "inmigrated", output_name = "inmigration",
+                               output_percent = FALSE, output_population = TRUE))) %>%
+  unnest(cols = c(data)) %>%
   ungroup() %>%
-  select(-total, -lou_pop, -scale_lou) %>%
-  organize()
+  pivot_wider(names_from = educ,
+              values_from = inmigration:inmigration_pop)
 
-mig_age %<>%
-  stl_merge(total_young, in_mig_young, out_mig_young, net_mig_young, method = "sum") %>%
-  select(-total_young) %>%
-  organize()
+outmigration_educ %<>%
+  group_by(educ) %>%
+  nest() %>%
+  mutate(data = map(data, ~ process_census(.,
+                                           cat_var = "outmigrated", output_name = "outmigration",
+                                           output_percent = FALSE, output_population = TRUE))) %>%
+  unnest(cols = c(data)) %>%
+  ungroup() %>%
+  pivot_wider(names_from = educ,
+              values_from = outmigration:outmigration_pop)
 
-
-#Education
-in_mig <- acs_time(path %p% "B07009")
-out_mig <- acs_time(path %p% "B07409", starting_year = 2007)
-
-in_mig %<>%
-  mutate(
-    in_mig_bach =
-      `Estimate; Moved from different county within same state: - Bachelor's degree` +
-      `Estimate; Moved from different state: - Bachelor's degree` +
-      `Estimate; Moved from abroad: - Bachelor's degree`,
-
-    in_mig_grad =
-      `Estimate; Moved from different county within same state: - Graduate or professional degree` +
-      `Estimate; Moved from different state: - Graduate or professional degree` +
-      `Estimate; Moved from abroad: - Graduate or professional degree`,
-
-    in_mig_bach_plus =
-      in_mig_bach + in_mig_grad)
-
-out_mig %<>%
-  mutate(
-    out_mig_bach =
-      `Estimate; Moved to different county within same state: - Bachelor's degree` +
-      `Estimate; Moved to different state: - Bachelor's degree`,
-
-    out_mig_grad =
-      `Estimate; Moved to different county within same state: - Graduate or professional degree` +
-      `Estimate; Moved to different state: - Graduate or professional degree`,
-
-    out_mig_bach_plus =
-      out_mig_bach + out_mig_grad)
-
-mig_edu <- bind_df(in_mig, out_mig)
-
-mig_edu %<>%
-  select(FIPS, year, contains("mig")) %>%
-  stl_merge(in_mig_bach:out_mig_bach_plus, method = "sum") %>%
-  mutate(
-    net_mig_bach = in_mig_bach - out_mig_bach,
-    net_mig_grad = in_mig_grad - out_mig_grad,
-    net_mig_bach_plus = in_mig_bach_plus - out_mig_bach_plus)
-
-migration_county <- bind_df(mig_total, mig_age, mig_edu)
+migration_county <- bind_df(inmigration,      outmigration,
+                            inmigration_age,  outmigration_age,
+                            inmigration_educ, outmigration_educ)
 
 migration_county %<>%
-  mutate(sex = "total", race = "total") %>%
-  organize()
-
-# MSA
-migration_msa_1yr <- acs_time(path %p% "PEPTCOMP", geog = "MSA", starting_year = 2011)
-
-migration_msa_1yr %<>%
+  stl_merge(inmigration:outmigration_pop_grad, method = "sum") %>%
   transmute(
-    MSA,
-    year,
-    sex = "total",
-    race = "total",
-    net_migration = `Annual Estimates of the Components of Population Change - July 1, 2010 to July 1, 2011 - Net Migration - Total`)
+    FIPS, year, sex, race,
 
-update_sysdata(migration_county, migration_msa_1yr)
+    # Totals
+    inmigration_num = inmigration,
+    inmigration = inmigration / inmigration_pop * 100,
 
-rm(in_mig, out_mig, mig_age, mig_edu, mig_total, path)
+    outmigration_num = outmigration,
+    outmigration = outmigration / outmigration_pop * 100,
+
+    # Age
+    inmigration_num_young = inmigration_25_29 + inmigration_30_34,
+    inmigration_young =
+      inmigration_num_young /
+      (inmigration_25_29_pop + inmigration_30_34_pop) * 100,
+
+    outmigration_num_young = outmigration_25_29 + outmigration_30_34,
+    outmigration_young =
+      outmigration_num_young /
+      (outmigration_25_29_pop + outmigration_30_34_pop) * 100,
+
+    # Education
+    inmigration_num_no_hs = inmigration_no_hs,
+    inmigration_no_hs = inmigration_num_no_hs / inmigration_pop_no_hs * 100,
+
+    inmigration_num_hs = inmigration_hs,
+    inmigration_hs = inmigration_num_hs / inmigration_pop_hs * 100,
+
+    inmigration_num_some_col_assoc = inmigration_some_col_assoc,
+    inmigration_some_col_assoc = inmigration_num_some_col_assoc / inmigration_pop_some_col_assoc * 100,
+
+    inmigration_num_bach = inmigration_bach,
+    inmigration_bach = inmigration_num_bach / inmigration_pop_bach * 100,
+
+    inmigration_num_grad = inmigration_grad,
+    inmigration_grad = inmigration_num_grad / inmigration_pop_grad * 100,
+
+    inmigration_num_some_col_plus = inmigration_num_some_col_assoc + inmigration_num_bach + inmigration_num_grad,
+    inmigration_some_col_plus = inmigration_num_some_col_plus / (inmigration_pop_some_col_assoc +
+                                                                 inmigration_pop_bach +
+                                                                 inmigration_pop_grad) * 100,
+
+    inmigration_num_bach_plus = inmigration_num_bach + inmigration_num_grad,
+    inmigration_bach_plus = inmigration_num_bach_plus / (inmigration_pop_bach + inmigration_pop_grad) * 100,
+
+    outmigration_num_no_hs = outmigration_no_hs,
+    outmigration_no_hs = outmigration_num_no_hs / outmigration_pop_no_hs * 100,
+
+    outmigration_num_hs = outmigration_hs,
+    outmigration_hs = outmigration_num_hs / outmigration_pop_hs * 100,
+
+    outmigration_num_some_col_assoc = outmigration_some_col_assoc,
+    outmigration_some_col_assoc = outmigration_num_some_col_assoc / outmigration_pop_some_col_assoc * 100,
+
+    outmigration_num_bach = outmigration_bach,
+    outmigration_bach = outmigration_num_bach / outmigration_pop_bach * 100,
+
+    outmigration_num_grad = outmigration_grad,
+    outmigration_grad = outmigration_num_grad / outmigration_pop_grad * 100,
+
+    outmigration_num_some_col_plus = outmigration_num_some_col_assoc + outmigration_num_bach + outmigration_num_grad,
+    outmigration_some_col_plus = outmigration_num_some_col_plus / (outmigration_pop_some_col_assoc +
+                                                                   outmigration_pop_bach +
+                                                                   outmigration_pop_grad) * 100,
+
+    outmigration_num_bach_plus = outmigration_num_bach + outmigration_num_grad,
+    outmigration_bach_plus = outmigration_num_bach_plus / (outmigration_pop_bach + outmigration_pop_grad) * 100,
+
+    net_migration_num =         inmigration_num -        outmigration_num,
+    net_migration_num_young =   inmigration_num_young -  outmigration_num_young,
+    net_migration_num_no_hs = inmigration_num_no_hs -     outmigration_num_no_hs,
+    net_migration_num_hs =          inmigration_num_hs -        outmigration_num_hs,
+    net_migration_num_some_col_assoc =    inmigration_num_some_col_assoc - outmigration_num_some_col_assoc,
+    net_migration_num_bach =        inmigration_num_bach -      outmigration_num_bach,
+    net_migration_num_grad =        inmigration_num_grad -      outmigration_num_grad,
+    net_migration_num_some_col_plus =   inmigration_num_some_col_plus - outmigration_num_some_col_plus,
+    net_migration_num_bach_plus =   inmigration_num_bach_plus - outmigration_num_bach_plus,
+
+    net_migration                = inmigration -        outmigration,
+    net_migration_young          = inmigration_young -  outmigration_young,
+    net_migration_no_hs          = inmigration_no_hs -     outmigration_no_hs,
+    net_migration_hs             = inmigration_hs -        outmigration_hs,
+    net_migration_some_col_assoc = inmigration_some_col_assoc - outmigration_some_col_assoc,
+    net_migration_bach           = inmigration_bach -      outmigration_bach,
+    net_migration_grad           = inmigration_grad -      outmigration_grad,
+    net_migration_some_col_plus      = inmigration_some_col_plus - outmigration_some_col_plus,
+    net_migration_bach_plus      = inmigration_bach_plus - outmigration_bach_plus)
+
+usethis::use_data(migration_county, overwrite = TRUE)
+
+rm(process_inmigration, process_outmigration, add_educ_label,
+   inmigration_vars, outmigration_vars,
+   inmigration_vars_age, outmigration_vars_age,
+   inmigration_vars_educ, outmigration_vars_educ,
+   inmigration, inmigration_age, inmigration_educ,
+   outmigration, outmigration_age, outmigration_educ)
 
