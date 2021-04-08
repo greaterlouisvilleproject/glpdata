@@ -1,0 +1,891 @@
+"Notes"	"County"	"County Code"	"Year"	"Year Code"	"Gender"	"Gender Code"	Deaths	Population	Crude Rate	Age Adjusted Rate
+	"Jefferson County, AL"	"01073"	"2000"	"2000"	"Female"	"F"	3782	349958	1080.7	849.8
+	"Jefferson County, AL"	"01073"	"2000"	"2000"	"Male"	"M"	3404	312089	1090.7	1272.0
+	"Jefferson County, AL"	"01073"	"2001"	"2001"	"Female"	"F"	3856	348755	1105.6	877.6
+	"Jefferson County, AL"	"01073"	"2001"	"2001"	"Male"	"M"	3366	311442	1080.8	1255.5
+	"Jefferson County, AL"	"01073"	"2002"	"2002"	"Female"	"F"	3874	346895	1116.8	883.8
+	"Jefferson County, AL"	"01073"	"2002"	"2002"	"Male"	"M"	3496	310623	1125.5	1307.0
+	"Jefferson County, AL"	"01073"	"2003"	"2003"	"Female"	"F"	3863	346598	1114.5	888.0
+	"Jefferson County, AL"	"01073"	"2003"	"2003"	"Male"	"M"	3482	310915	1119.9	1293.8
+	"Jefferson County, AL"	"01073"	"2004"	"2004"	"Female"	"F"	3796	346026	1097.0	878.3
+	"Jefferson County, AL"	"01073"	"2004"	"2004"	"Male"	"M"	3401	309997	1097.1	1250.0
+	"Jefferson County, AL"	"01073"	"2005"	"2005"	"Female"	"F"	3728	345432	1079.2	856.4
+	"Jefferson County, AL"	"01073"	"2005"	"2005"	"Male"	"M"	3451	309487	1115.1	1262.8
+	"Jefferson County, AL"	"01073"	"2006"	"2006"	"Female"	"F"	3648	345905	1054.6	836.0
+	"Jefferson County, AL"	"01073"	"2006"	"2006"	"Male"	"M"	3458	309988	1115.5	1244.3
+	"Jefferson County, AL"	"01073"	"2007"	"2007"	"Female"	"F"	3584	345407	1037.6	823.1
+	"Jefferson County, AL"	"01073"	"2007"	"2007"	"Male"	"M"	3318	309756	1071.2	1181.5
+	"Jefferson County, AL"	"01073"	"2008"	"2008"	"Female"	"F"	3723	345962	1076.1	846.3
+	"Jefferson County, AL"	"01073"	"2008"	"2008"	"Male"	"M"	3438	310548	1107.1	1202.5
+	"Jefferson County, AL"	"01073"	"2009"	"2009"	"Female"	"F"	3495	346675	1008.1	792.5
+	"Jefferson County, AL"	"01073"	"2009"	"2009"	"Male"	"M"	3312	311766	1062.3	1147.5
+	"Jefferson County, AL"	"01073"	"2010"	"2010"	"Female"	"F"	3546	346653	1022.9	798.2
+	"Jefferson County, AL"	"01073"	"2010"	"2010"	"Male"	"M"	3287	311813	1054.2	1137.4
+	"Jefferson County, AL"	"01073"	"2011"	"2011"	"Female"	"F"	3491	347243	1005.3	776.4
+	"Jefferson County, AL"	"01073"	"2011"	"2011"	"Male"	"M"	3359	311688	1077.7	1137.7
+	"Jefferson County, AL"	"01073"	"2012"	"2012"	"Female"	"F"	3488	347863	1002.7	769.0
+	"Jefferson County, AL"	"01073"	"2012"	"2012"	"Male"	"M"	3364	312146	1077.7	1129.1
+	"Jefferson County, AL"	"01073"	"2013"	"2013"	"Female"	"F"	3486	347328	1003.7	766.1
+	"Jefferson County, AL"	"01073"	"2013"	"2013"	"Male"	"M"	3515	312151	1126.1	1170.0
+	"Jefferson County, AL"	"01073"	"2014"	"2014"	"Female"	"F"	3599	348750	1032.0	782.1
+	"Jefferson County, AL"	"01073"	"2014"	"2014"	"Male"	"M"	3351	312043	1073.9	1088.5
+	"Jefferson County, AL"	"01073"	"2015"	"2015"	"Female"	"F"	3657	348523	1049.3	784.8
+	"Jefferson County, AL"	"01073"	"2015"	"2015"	"Male"	"M"	3525	311844	1130.4	1149.4
+	"Jefferson County, AL"	"01073"	"2016"	"2016"	"Female"	"F"	3618	347409	1041.4	773.9
+	"Jefferson County, AL"	"01073"	"2016"	"2016"	"Male"	"M"	3519	312112	1127.5	1123.8
+	"Jefferson County, AL"	"01073"	"2017"	"2017"	"Female"	"F"	3587	347367	1032.6	767.7
+	"Jefferson County, AL"	"01073"	"2017"	"2017"	"Male"	"M"	3727	311830	1195.2	1176.4
+	"Jefferson County, AL"	"01073"	"2018"	"2018"	"Female"	"F"	3637	347709	1046.0	769.8
+	"Jefferson County, AL"	"01073"	"2018"	"2018"	"Male"	"M"	3814	311591	1224.0	1198.0
+	"Duval County, FL"	"12031"	"2000"	"2000"	"Female"	"F"	3351	401098	835.5	834.0
+	"Duval County, FL"	"12031"	"2000"	"2000"	"Male"	"M"	3320	377781	878.8	1226.4
+	"Duval County, FL"	"12031"	"2001"	"2001"	"Female"	"F"	3509	407419	861.3	842.3
+	"Duval County, FL"	"12031"	"2001"	"2001"	"Male"	"M"	3392	383262	885.0	1224.5
+	"Duval County, FL"	"12031"	"2002"	"2002"	"Female"	"F"	3410	413003	825.7	811.1
+	"Duval County, FL"	"12031"	"2002"	"2002"	"Male"	"M"	3347	387529	863.7	1180.9
+	"Duval County, FL"	"12031"	"2003"	"2003"	"Female"	"F"	3464	418123	828.5	813.4
+	"Duval County, FL"	"12031"	"2003"	"2003"	"Male"	"M"	3389	391510	865.6	1166.7
+	"Duval County, FL"	"12031"	"2004"	"2004"	"Female"	"F"	3605	422915	852.4	837.0
+	"Duval County, FL"	"12031"	"2004"	"2004"	"Male"	"M"	3489	397155	878.5	1186.7
+	"Duval County, FL"	"12031"	"2005"	"2005"	"Female"	"F"	3482	427635	814.2	791.8
+	"Duval County, FL"	"12031"	"2005"	"2005"	"Male"	"M"	3521	401353	877.3	1160.9
+	"Duval County, FL"	"12031"	"2006"	"2006"	"Female"	"F"	3536	434088	814.6	783.5
+	"Duval County, FL"	"12031"	"2006"	"2006"	"Male"	"M"	3446	408010	844.6	1085.5
+	"Duval County, FL"	"12031"	"2007"	"2007"	"Female"	"F"	3612	438594	823.5	784.8
+	"Duval County, FL"	"12031"	"2007"	"2007"	"Male"	"M"	3578	412439	867.5	1104.0
+	"Duval County, FL"	"12031"	"2008"	"2008"	"Female"	"F"	3522	440681	799.2	751.2
+	"Duval County, FL"	"12031"	"2008"	"2008"	"Male"	"M"	3732	414756	899.8	1127.4
+	"Duval County, FL"	"12031"	"2009"	"2009"	"Female"	"F"	3473	442685	784.5	727.2
+	"Duval County, FL"	"12031"	"2009"	"2009"	"Male"	"M"	3686	417110	883.7	1090.3
+	"Duval County, FL"	"12031"	"2010"	"2010"	"Female"	"F"	3629	444838	815.8	749.4
+	"Duval County, FL"	"12031"	"2010"	"2010"	"Male"	"M"	3494	419425	833.0	1025.3
+	"Duval County, FL"	"12031"	"2011"	"2011"	"Female"	"F"	3718	448405	829.2	738.8
+	"Duval County, FL"	"12031"	"2011"	"2011"	"Male"	"M"	3697	422304	875.4	1046.2
+	"Duval County, FL"	"12031"	"2012"	"2012"	"Female"	"F"	3588	453000	792.1	689.6
+	"Duval County, FL"	"12031"	"2012"	"2012"	"Male"	"M"	3786	426602	887.5	1035.7
+	"Duval County, FL"	"12031"	"2013"	"2013"	"Female"	"F"	3888	456097	852.5	741.0
+	"Duval County, FL"	"12031"	"2013"	"2013"	"Male"	"M"	3862	429758	898.6	1026.0
+	"Duval County, FL"	"12031"	"2014"	"2014"	"Female"	"F"	3748	462964	809.6	692.6
+	"Duval County, FL"	"12031"	"2014"	"2014"	"Male"	"M"	3802	434734	874.6	983.3
+	"Duval County, FL"	"12031"	"2015"	"2015"	"Female"	"F"	3860	470283	820.8	699.4
+	"Duval County, FL"	"12031"	"2015"	"2015"	"Male"	"M"	3971	442727	896.9	992.1
+	"Duval County, FL"	"12031"	"2016"	"2016"	"Female"	"F"	3922	477562	821.3	693.8
+	"Duval County, FL"	"12031"	"2016"	"2016"	"Male"	"M"	4142	448693	923.1	1003.6
+	"Duval County, FL"	"12031"	"2017"	"2017"	"Female"	"F"	4110	483457	850.1	728.7
+	"Duval County, FL"	"12031"	"2017"	"2017"	"Male"	"M"	4452	454477	979.6	1071.3
+	"Duval County, FL"	"12031"	"2018"	"2018"	"Female"	"F"	4202	489747	858.0	723.9
+	"Duval County, FL"	"12031"	"2018"	"2018"	"Male"	"M"	4474	460434	971.7	1037.3
+	"Marion County, IN"	"18097"	"2000"	"2000"	"Female"	"F"	3976	444456	894.6	839.7
+	"Marion County, IN"	"18097"	"2000"	"2000"	"Male"	"M"	3690	415998	887.0	1215.3
+	"Marion County, IN"	"18097"	"2001"	"2001"	"Female"	"F"	3810	447166	852.0	801.4
+	"Marion County, IN"	"18097"	"2001"	"2001"	"Male"	"M"	3838	418496	917.1	1256.1
+	"Marion County, IN"	"18097"	"2002"	"2002"	"Female"	"F"	3781	447772	844.4	791.9
+	"Marion County, IN"	"18097"	"2002"	"2002"	"Male"	"M"	3718	418438	888.5	1210.0
+	"Marion County, IN"	"18097"	"2003"	"2003"	"Female"	"F"	3849	449007	857.2	804.1
+	"Marion County, IN"	"18097"	"2003"	"2003"	"Male"	"M"	3662	419569	872.8	1170.8
+	"Marion County, IN"	"18097"	"2004"	"2004"	"Female"	"F"	3788	450051	841.7	788.4
+	"Marion County, IN"	"18097"	"2004"	"2004"	"Male"	"M"	3682	420327	876.0	1166.9
+	"Marion County, IN"	"18097"	"2005"	"2005"	"Female"	"F"	3894	451651	862.2	806.8
+	"Marion County, IN"	"18097"	"2005"	"2005"	"Male"	"M"	3605	421659	855.0	1125.8
+	"Marion County, IN"	"18097"	"2006"	"2006"	"Female"	"F"	3742	454282	823.7	769.1
+	"Marion County, IN"	"18097"	"2006"	"2006"	"Male"	"M"	3727	424233	878.5	1132.3
+	"Marion County, IN"	"18097"	"2007"	"2007"	"Female"	"F"	3561	457092	779.1	727.8
+	"Marion County, IN"	"18097"	"2007"	"2007"	"Male"	"M"	3482	426499	816.4	1053.0
+	"Marion County, IN"	"18097"	"2008"	"2008"	"Female"	"F"	3752	460457	814.8	758.1
+	"Marion County, IN"	"18097"	"2008"	"2008"	"Male"	"M"	3636	429047	847.5	1070.8
+	"Marion County, IN"	"18097"	"2009"	"2009"	"Female"	"F"	3672	465051	789.6	736.0
+	"Marion County, IN"	"18097"	"2009"	"2009"	"Male"	"M"	3613	433343	833.8	1052.3
+	"Marion County, IN"	"18097"	"2010"	"2010"	"Female"	"F"	3720	467706	795.4	736.3
+	"Marion County, IN"	"18097"	"2010"	"2010"	"Male"	"M"	3629	435687	832.9	1049.8
+	"Marion County, IN"	"18097"	"2011"	"2011"	"Female"	"F"	3724	471725	789.4	728.7
+	"Marion County, IN"	"18097"	"2011"	"2011"	"Male"	"M"	3711	439571	844.2	1054.9
+	"Marion County, IN"	"18097"	"2012"	"2012"	"Female"	"F"	3768	475575	792.3	729.6
+	"Marion County, IN"	"18097"	"2012"	"2012"	"Male"	"M"	3945	443402	889.7	1096.9
+	"Marion County, IN"	"18097"	"2013"	"2013"	"Female"	"F"	3769	480459	784.5	719.3
+	"Marion County, IN"	"18097"	"2013"	"2013"	"Male"	"M"	3892	447822	869.1	1051.0
+	"Marion County, IN"	"18097"	"2014"	"2014"	"Female"	"F"	3976	484395	820.8	750.7
+	"Marion County, IN"	"18097"	"2014"	"2014"	"Male"	"M"	3923	449848	872.1	1052.4
+	"Marion County, IN"	"18097"	"2015"	"2015"	"Female"	"F"	4044	486334	831.5	759.0
+	"Marion County, IN"	"18097"	"2015"	"2015"	"Male"	"M"	3960	452686	874.8	1037.8
+	"Marion County, IN"	"18097"	"2016"	"2016"	"Female"	"F"	4007	487834	821.4	746.9
+	"Marion County, IN"	"18097"	"2016"	"2016"	"Male"	"M"	4256	453395	938.7	1107.0
+	"Marion County, IN"	"18097"	"2017"	"2017"	"Female"	"F"	4162	492417	845.2	753.9
+	"Marion County, IN"	"18097"	"2017"	"2017"	"Male"	"M"	4327	457665	945.5	1083.9
+	"Marion County, IN"	"18097"	"2018"	"2018"	"Female"	"F"	3998	494577	808.4	713.5
+	"Marion County, IN"	"18097"	"2018"	"2018"	"Male"	"M"	4295	460093	933.5	1054.4
+	"Jefferson County, KY"	"21111"	"2000"	"2000"	"Female"	"F"	3788	362005	1046.4	834.4
+	"Jefferson County, KY"	"21111"	"2000"	"2000"	"Male"	"M"	3393	331599	1023.2	1229.2
+	"Jefferson County, KY"	"21111"	"2001"	"2001"	"Female"	"F"	3709	363380	1020.7	812.6
+	"Jefferson County, KY"	"21111"	"2001"	"2001"	"Male"	"M"	3346	333779	1002.5	1206.1
+	"Jefferson County, KY"	"21111"	"2002"	"2002"	"Female"	"F"	3778	364572	1036.3	826.8
+	"Jefferson County, KY"	"21111"	"2002"	"2002"	"Male"	"M"	3487	335238	1040.2	1231.9
+	"Jefferson County, KY"	"21111"	"2003"	"2003"	"Female"	"F"	3737	366983	1018.3	809.1
+	"Jefferson County, KY"	"21111"	"2003"	"2003"	"Male"	"M"	3356	336987	995.9	1165.3
+	"Jefferson County, KY"	"21111"	"2004"	"2004"	"Female"	"F"	3576	367429	973.2	774.1
+	"Jefferson County, KY"	"21111"	"2004"	"2004"	"Male"	"M"	3190	339399	939.9	1092.0
+	"Jefferson County, KY"	"21111"	"2005"	"2005"	"Female"	"F"	3580	368895	970.5	757.8
+	"Jefferson County, KY"	"21111"	"2005"	"2005"	"Male"	"M"	3269	341123	958.3	1084.5
+	"Jefferson County, KY"	"21111"	"2006"	"2006"	"Female"	"F"	3546	371642	954.1	737.5
+	"Jefferson County, KY"	"21111"	"2006"	"2006"	"Male"	"M"	3320	343507	966.5	1089.5
+	"Jefferson County, KY"	"21111"	"2007"	"2007"	"Female"	"F"	3638	374800	970.7	748.1
+	"Jefferson County, KY"	"21111"	"2007"	"2007"	"Male"	"M"	3357	348240	964.0	1070.9
+	"Jefferson County, KY"	"21111"	"2008"	"2008"	"Female"	"F"	3572	378794	943.0	725.7
+	"Jefferson County, KY"	"21111"	"2008"	"2008"	"Male"	"M"	3340	351400	950.5	1046.9
+	"Jefferson County, KY"	"21111"	"2009"	"2009"	"Female"	"F"	3508	381036	920.6	706.1
+	"Jefferson County, KY"	"21111"	"2009"	"2009"	"Male"	"M"	3247	355669	912.9	982.3
+	"Jefferson County, KY"	"21111"	"2010"	"2010"	"Female"	"F"	3697	383397	964.3	734.9
+	"Jefferson County, KY"	"21111"	"2010"	"2010"	"Male"	"M"	3384	357699	946.0	1018.5
+	"Jefferson County, KY"	"21111"	"2011"	"2011"	"Female"	"F"	3683	386533	952.8	714.1
+	"Jefferson County, KY"	"21111"	"2011"	"2011"	"Male"	"M"	3513	360373	974.8	1029.4
+	"Jefferson County, KY"	"21111"	"2012"	"2012"	"Female"	"F"	3777	388159	973.1	731.9
+	"Jefferson County, KY"	"21111"	"2012"	"2012"	"Male"	"M"	3598	362669	992.1	1036.3
+	"Jefferson County, KY"	"21111"	"2013"	"2013"	"Female"	"F"	3701	391609	945.1	708.8
+	"Jefferson County, KY"	"21111"	"2013"	"2013"	"Male"	"M"	3603	365223	986.5	1013.0
+	"Jefferson County, KY"	"21111"	"2014"	"2014"	"Female"	"F"	3832	393365	974.2	724.2
+	"Jefferson County, KY"	"21111"	"2014"	"2014"	"Male"	"M"	3689	366661	1006.1	1018.6
+	"Jefferson County, KY"	"21111"	"2015"	"2015"	"Female"	"F"	3953	394885	1001.1	739.1
+	"Jefferson County, KY"	"21111"	"2015"	"2015"	"Male"	"M"	3908	368738	1059.8	1053.0
+	"Jefferson County, KY"	"21111"	"2016"	"2016"	"Female"	"F"	4165	395377	1053.4	779.0
+	"Jefferson County, KY"	"21111"	"2016"	"2016"	"Male"	"M"	3984	369975	1076.8	1060.1
+	"Jefferson County, KY"	"21111"	"2017"	"2017"	"Female"	"F"	4091	398199	1027.4	754.4
+	"Jefferson County, KY"	"21111"	"2017"	"2017"	"Male"	"M"	4016	372959	1076.8	1052.7
+	"Jefferson County, KY"	"21111"	"2018"	"2018"	"Female"	"F"	4060	398090	1019.9	732.2
+	"Jefferson County, KY"	"21111"	"2018"	"2018"	"Male"	"M"	4053	372427	1088.3	1043.3
+	"Kent County, MI"	"26081"	"2000"	"2000"	"Female"	"F"	2118	291717	726.0	694.1
+	"Kent County, MI"	"26081"	"2000"	"2000"	"Male"	"M"	1994	282618	705.5	1024.3
+	"Kent County, MI"	"26081"	"2001"	"2001"	"Female"	"F"	2089	295097	707.9	674.2
+	"Kent County, MI"	"26081"	"2001"	"2001"	"Male"	"M"	1913	286127	668.6	968.3
+	"Kent County, MI"	"26081"	"2002"	"2002"	"Female"	"F"	2114	297219	711.3	674.6
+	"Kent County, MI"	"26081"	"2002"	"2002"	"Male"	"M"	1925	287721	669.1	949.1
+	"Kent County, MI"	"26081"	"2003"	"2003"	"Female"	"F"	2171	298666	726.9	682.3
+	"Kent County, MI"	"26081"	"2003"	"2003"	"Male"	"M"	1916	289124	662.7	911.6
+	"Kent County, MI"	"26081"	"2004"	"2004"	"Female"	"F"	2206	299900	735.6	684.7
+	"Kent County, MI"	"26081"	"2004"	"2004"	"Male"	"M"	1988	289654	686.3	938.2
+	"Kent County, MI"	"26081"	"2005"	"2005"	"Female"	"F"	2203	301253	731.3	674.8
+	"Kent County, MI"	"26081"	"2005"	"2005"	"Male"	"M"	2043	290957	702.2	953.8
+	"Kent County, MI"	"26081"	"2006"	"2006"	"Female"	"F"	2152	303008	710.2	643.5
+	"Kent County, MI"	"26081"	"2006"	"2006"	"Male"	"M"	1872	292183	640.7	844.1
+	"Kent County, MI"	"26081"	"2007"	"2007"	"Female"	"F"	2073	304597	680.6	614.7
+	"Kent County, MI"	"26081"	"2007"	"2007"	"Male"	"M"	1958	293480	667.2	857.5
+	"Kent County, MI"	"26081"	"2008"	"2008"	"Female"	"F"	2179	305628	713.0	626.7
+	"Kent County, MI"	"26081"	"2008"	"2008"	"Male"	"M"	2068	293606	704.3	890.0
+	"Kent County, MI"	"26081"	"2009"	"2009"	"Female"	"F"	2154	306802	702.1	606.2
+	"Kent County, MI"	"26081"	"2009"	"2009"	"Male"	"M"	1973	294635	669.6	822.4
+	"Kent County, MI"	"26081"	"2010"	"2010"	"Female"	"F"	2175	307520	707.3	605.3
+	"Kent County, MI"	"26081"	"2010"	"2010"	"Male"	"M"	2016	295102	683.2	826.9
+	"Kent County, MI"	"26081"	"2011"	"2011"	"Female"	"F"	2287	310337	736.9	624.6
+	"Kent County, MI"	"26081"	"2011"	"2011"	"Male"	"M"	2084	298116	699.1	825.4
+	"Kent County, MI"	"26081"	"2012"	"2012"	"Female"	"F"	2151	312879	687.5	577.6
+	"Kent County, MI"	"26081"	"2012"	"2012"	"Male"	"M"	2107	301583	698.6	808.7
+	"Kent County, MI"	"26081"	"2013"	"2013"	"Female"	"F"	2280	316192	721.1	602.7
+	"Kent County, MI"	"26081"	"2013"	"2013"	"Male"	"M"	2150	305508	703.7	806.1
+	"Kent County, MI"	"26081"	"2014"	"2014"	"Female"	"F"	2345	319958	732.9	608.4
+	"Kent County, MI"	"26081"	"2014"	"2014"	"Male"	"M"	2279	309279	736.9	824.3
+	"Kent County, MI"	"26081"	"2015"	"2015"	"Female"	"F"	2414	323185	746.9	613.5
+	"Kent County, MI"	"26081"	"2015"	"2015"	"Male"	"M"	2320	313184	740.8	822.9
+	"Kent County, MI"	"26081"	"2016"	"2016"	"Female"	"F"	2402	325699	737.5	600.8
+	"Kent County, MI"	"26081"	"2016"	"2016"	"Male"	"M"	2411	316474	761.8	846.1
+	"Kent County, MI"	"26081"	"2017"	"2017"	"Female"	"F"	2374	328779	722.1	587.9
+	"Kent County, MI"	"26081"	"2017"	"2017"	"Male"	"M"	2422	319815	757.3	819.5
+	"Kent County, MI"	"26081"	"2018"	"2018"	"Female"	"F"	2500	331450	754.3	610.9
+	"Kent County, MI"	"26081"	"2018"	"2018"	"Male"	"M"	2443	322336	757.9	812.0
+	"Jackson County, MO"	"29095"	"2000"	"2000"	"Female"	"F"	3225	339442	950.1	788.8
+	"Jackson County, MO"	"29095"	"2000"	"2000"	"Male"	"M"	2859	315438	906.4	1138.2
+	"Jackson County, MO"	"29095"	"2001"	"2001"	"Female"	"F"	3257	340580	956.3	799.5
+	"Jackson County, MO"	"29095"	"2001"	"2001"	"Male"	"M"	2922	316432	923.4	1145.6
+	"Jackson County, MO"	"29095"	"2002"	"2002"	"Female"	"F"	3106	341337	910.0	763.3
+	"Jackson County, MO"	"29095"	"2002"	"2002"	"Male"	"M"	2901	317428	913.9	1130.5
+	"Jackson County, MO"	"29095"	"2003"	"2003"	"Female"	"F"	3184	341223	933.1	776.9
+	"Jackson County, MO"	"29095"	"2003"	"2003"	"Male"	"M"	2836	317691	892.7	1086.2
+	"Jackson County, MO"	"29095"	"2004"	"2004"	"Female"	"F"	3050	340819	894.9	750.9
+	"Jackson County, MO"	"29095"	"2004"	"2004"	"Male"	"M"	2881	317488	907.4	1099.6
+	"Jackson County, MO"	"29095"	"2005"	"2005"	"Female"	"F"	3092	341002	906.7	758.7
+	"Jackson County, MO"	"29095"	"2005"	"2005"	"Male"	"M"	2937	317590	924.8	1086.3
+	"Jackson County, MO"	"29095"	"2006"	"2006"	"Female"	"F"	3180	341965	929.9	771.9
+	"Jackson County, MO"	"29095"	"2006"	"2006"	"Male"	"M"	2992	318574	939.2	1095.5
+	"Jackson County, MO"	"29095"	"2007"	"2007"	"Female"	"F"	3055	342858	891.0	737.0
+	"Jackson County, MO"	"29095"	"2007"	"2007"	"Male"	"M"	2901	320137	906.2	1041.5
+	"Jackson County, MO"	"29095"	"2008"	"2008"	"Female"	"F"	3133	343819	911.2	750.2
+	"Jackson County, MO"	"29095"	"2008"	"2008"	"Male"	"M"	3013	321608	936.9	1057.9
+	"Jackson County, MO"	"29095"	"2009"	"2009"	"Female"	"F"	3014	346555	869.7	721.2
+	"Jackson County, MO"	"29095"	"2009"	"2009"	"Male"	"M"	2913	324208	898.5	1002.1
+	"Jackson County, MO"	"29095"	"2010"	"2010"	"Female"	"F"	3068	348305	880.8	728.6
+	"Jackson County, MO"	"29095"	"2010"	"2010"	"Male"	"M"	2839	325853	871.3	968.6
+	"Jackson County, MO"	"29095"	"2011"	"2011"	"Female"	"F"	3045	349229	871.9	706.3
+	"Jackson County, MO"	"29095"	"2011"	"2011"	"Male"	"M"	2961	327131	905.1	989.5
+	"Jackson County, MO"	"29095"	"2012"	"2012"	"Female"	"F"	2897	349894	828.0	664.9
+	"Jackson County, MO"	"29095"	"2012"	"2012"	"Male"	"M"	3175	327483	969.5	1037.4
+	"Jackson County, MO"	"29095"	"2013"	"2013"	"Female"	"F"	3092	351001	880.9	705.6
+	"Jackson County, MO"	"29095"	"2013"	"2013"	"Male"	"M"	3086	328995	938.0	986.8
+	"Jackson County, MO"	"29095"	"2014"	"2014"	"Female"	"F"	3011	352822	853.4	679.1
+	"Jackson County, MO"	"29095"	"2014"	"2014"	"Male"	"M"	3070	330369	929.3	974.9
+	"Jackson County, MO"	"29095"	"2015"	"2015"	"Female"	"F"	3143	354967	885.4	702.7
+	"Jackson County, MO"	"29095"	"2015"	"2015"	"Male"	"M"	3198	332656	961.4	992.8
+	"Jackson County, MO"	"29095"	"2016"	"2016"	"Female"	"F"	3069	357130	859.4	674.2
+	"Jackson County, MO"	"29095"	"2016"	"2016"	"Male"	"M"	3075	334671	918.8	941.0
+	"Jackson County, MO"	"29095"	"2017"	"2017"	"Female"	"F"	3092	360588	857.5	672.2
+	"Jackson County, MO"	"29095"	"2017"	"2017"	"Male"	"M"	3402	338307	1005.6	1014.9
+	"Jackson County, MO"	"29095"	"2018"	"2018"	"Female"	"F"	3095	361556	856.0	661.2
+	"Jackson County, MO"	"29095"	"2018"	"2018"	"Male"	"M"	3281	338751	968.6	953.9
+	"St. Louis County, MO"	"29189"	"2000"	"2000"	"Female"	"F"	5291	534944	989.1	735.0
+	"St. Louis County, MO"	"29189"	"2000"	"2000"	"Male"	"M"	4359	481371	905.5	1032.3
+	"St. Louis County, MO"	"29189"	"2001"	"2001"	"Female"	"F"	5344	534859	999.1	740.7
+	"St. Louis County, MO"	"29189"	"2001"	"2001"	"Male"	"M"	4287	481384	890.6	996.6
+	"St. Louis County, MO"	"29189"	"2002"	"2002"	"Female"	"F"	5341	533820	1000.5	734.7
+	"St. Louis County, MO"	"29189"	"2002"	"2002"	"Male"	"M"	4520	480539	940.6	1032.6
+	"St. Louis County, MO"	"29189"	"2003"	"2003"	"Female"	"F"	5268	532429	989.4	719.9
+	"St. Louis County, MO"	"29189"	"2003"	"2003"	"Male"	"M"	4261	479249	889.1	964.5
+	"St. Louis County, MO"	"29189"	"2004"	"2004"	"Female"	"F"	5068	530589	955.2	687.8
+	"St. Louis County, MO"	"29189"	"2004"	"2004"	"Male"	"M"	4313	477224	903.8	954.4
+	"St. Louis County, MO"	"29189"	"2005"	"2005"	"Female"	"F"	4972	528992	939.9	675.8
+	"St. Louis County, MO"	"29189"	"2005"	"2005"	"Male"	"M"	4213	475117	886.7	925.7
+	"St. Louis County, MO"	"29189"	"2006"	"2006"	"Female"	"F"	5139	527983	973.3	692.2
+	"St. Louis County, MO"	"29189"	"2006"	"2006"	"Male"	"M"	4220	474067	890.2	913.6
+	"St. Louis County, MO"	"29189"	"2007"	"2007"	"Female"	"F"	4861	526449	923.4	641.0
+	"St. Louis County, MO"	"29189"	"2007"	"2007"	"Male"	"M"	4146	472940	876.6	881.1
+	"St. Louis County, MO"	"29189"	"2008"	"2008"	"Female"	"F"	5128	525876	975.1	669.7
+	"St. Louis County, MO"	"29189"	"2008"	"2008"	"Male"	"M"	4412	472455	933.8	920.5
+	"St. Louis County, MO"	"29189"	"2009"	"2009"	"Female"	"F"	4880	525910	927.9	631.6
+	"St. Louis County, MO"	"29189"	"2009"	"2009"	"Male"	"M"	4229	472708	894.6	866.8
+	"St. Louis County, MO"	"29189"	"2010"	"2010"	"Female"	"F"	4946	526051	940.2	633.4
+	"St. Louis County, MO"	"29189"	"2010"	"2010"	"Male"	"M"	4345	472903	918.8	881.8
+	"St. Louis County, MO"	"29189"	"2011"	"2011"	"Female"	"F"	4896	525964	930.9	622.8
+	"St. Louis County, MO"	"29189"	"2011"	"2011"	"Male"	"M"	4335	472728	917.0	860.5
+	"St. Louis County, MO"	"29189"	"2012"	"2012"	"Female"	"F"	4924	526792	934.7	613.7
+	"St. Louis County, MO"	"29189"	"2012"	"2012"	"Male"	"M"	4475	473646	944.8	872.3
+	"St. Louis County, MO"	"29189"	"2013"	"2013"	"Female"	"F"	5075	527321	962.4	623.5
+	"St. Louis County, MO"	"29189"	"2013"	"2013"	"Male"	"M"	4494	474123	947.9	858.3
+	"St. Louis County, MO"	"29189"	"2014"	"2014"	"Female"	"F"	5016	527427	951.0	610.6
+	"St. Louis County, MO"	"29189"	"2014"	"2014"	"Male"	"M"	4613	474449	972.3	866.0
+	"St. Louis County, MO"	"29189"	"2015"	"2015"	"Female"	"F"	5184	528012	981.8	620.0
+	"St. Louis County, MO"	"29189"	"2015"	"2015"	"Male"	"M"	4798	475350	1009.4	891.1
+	"St. Louis County, MO"	"29189"	"2016"	"2016"	"Female"	"F"	5216	524651	994.2	623.8
+	"St. Louis County, MO"	"29189"	"2016"	"2016"	"Male"	"M"	4809	473930	1014.7	889.9
+	"St. Louis County, MO"	"29189"	"2017"	"2017"	"Female"	"F"	5307	523675	1013.4	631.2
+	"St. Louis County, MO"	"29189"	"2017"	"2017"	"Male"	"M"	4962	473051	1048.9	911.7
+	"St. Louis County, MO"	"29189"	"2018"	"2018"	"Female"	"F"	5557	524058	1060.4	657.5
+	"St. Louis County, MO"	"29189"	"2018"	"2018"	"Male"	"M"	5323	472887	1125.6	967.7
+	"St. Louis city, MO"	"29510"	"2000"	"2000"	"Female"	"F"	2191	184622	1186.7	898.5
+	"St. Louis city, MO"	"29510"	"2000"	"2000"	"Male"	"M"	2015	163567	1231.9	1467.4
+	"St. Louis city, MO"	"29510"	"2001"	"2001"	"Female"	"F"	2153	181620	1185.4	916.9
+	"St. Louis city, MO"	"29510"	"2001"	"2001"	"Male"	"M"	2043	161623	1264.1	1509.7
+	"St. Louis city, MO"	"29510"	"2002"	"2002"	"Female"	"F"	2256	178703	1262.4	981.0
+	"St. Louis city, MO"	"29510"	"2002"	"2002"	"Male"	"M"	1921	159754	1202.5	1449.9
+	"St. Louis city, MO"	"29510"	"2003"	"2003"	"Female"	"F"	2080	176326	1179.6	939.2
+	"St. Louis city, MO"	"29510"	"2003"	"2003"	"Male"	"M"	1913	158567	1206.4	1465.7
+	"St. Louis city, MO"	"29510"	"2004"	"2004"	"Female"	"F"	1911	173948	1098.6	891.9
+	"St. Louis city, MO"	"29510"	"2004"	"2004"	"Male"	"M"	1825	157040	1162.1	1417.8
+	"St. Louis city, MO"	"29510"	"2005"	"2005"	"Female"	"F"	1761	170300	1034.1	835.4
+	"St. Louis city, MO"	"29510"	"2005"	"2005"	"Male"	"M"	1778	154645	1149.7	1390.7
+	"St. Louis city, MO"	"29510"	"2006"	"2006"	"Female"	"F"	1789	167239	1069.7	884.9
+	"St. Louis city, MO"	"29510"	"2006"	"2006"	"Male"	"M"	1795	152892	1174.0	1429.3
+	"St. Louis city, MO"	"29510"	"2007"	"2007"	"Female"	"F"	1680	165612	1014.4	843.6
+	"St. Louis city, MO"	"29510"	"2007"	"2007"	"Male"	"M"	1638	152347	1075.2	1294.7
+	"St. Louis city, MO"	"29510"	"2008"	"2008"	"Female"	"F"	1659	165252	1003.9	846.8
+	"St. Louis city, MO"	"29510"	"2008"	"2008"	"Male"	"M"	1652	152703	1081.8	1299.7
+	"St. Louis city, MO"	"29510"	"2009"	"2009"	"Female"	"F"	1551	165023	939.9	819.2
+	"St. Louis city, MO"	"29510"	"2009"	"2009"	"Male"	"M"	1546	153819	1005.1	1209.3
+	"St. Louis city, MO"	"29510"	"2010"	"2010"	"Female"	"F"	1522	165123	921.7	803.3
+	"St. Louis city, MO"	"29510"	"2010"	"2010"	"Male"	"M"	1545	154171	1002.1	1205.9
+	"St. Louis city, MO"	"29510"	"2011"	"2011"	"Female"	"F"	1442	164132	878.6	776.1
+	"St. Louis city, MO"	"29510"	"2011"	"2011"	"Male"	"M"	1548	153937	1005.6	1214.1
+	"St. Louis city, MO"	"29510"	"2012"	"2012"	"Female"	"F"	1415	164506	860.2	743.8
+	"St. Louis city, MO"	"29510"	"2012"	"2012"	"Male"	"M"	1521	153666	989.8	1170.0
+	"St. Louis city, MO"	"29510"	"2013"	"2013"	"Female"	"F"	1442	164393	877.2	760.7
+	"St. Louis city, MO"	"29510"	"2013"	"2013"	"Male"	"M"	1458	154023	946.6	1105.9
+	"St. Louis city, MO"	"29510"	"2014"	"2014"	"Female"	"F"	1446	163997	881.7	763.3
+	"St. Louis city, MO"	"29510"	"2014"	"2014"	"Male"	"M"	1547	153422	1008.3	1168.5
+	"St. Louis city, MO"	"29510"	"2015"	"2015"	"Female"	"F"	1363	162878	836.8	736.0
+	"St. Louis city, MO"	"29510"	"2015"	"2015"	"Male"	"M"	1602	152807	1048.4	1201.4
+	"St. Louis city, MO"	"29510"	"2016"	"2016"	"Female"	"F"	1392	160688	866.3	755.8
+	"St. Louis city, MO"	"29510"	"2016"	"2016"	"Male"	"M"	1617	150716	1072.9	1197.1
+	"St. Louis city, MO"	"29510"	"2017"	"2017"	"Female"	"F"	1399	159301	878.2	735.3
+	"St. Louis city, MO"	"29510"	"2017"	"2017"	"Male"	"M"	1740	149325	1165.2	1225.3
+	"St. Louis city, MO"	"29510"	"2018"	"2018"	"Female"	"F"	1366	156286	874.0	722.8
+	"St. Louis city, MO"	"29510"	"2018"	"2018"	"Male"	"M"	1674	146552	1142.3	1165.5
+	"Douglas County, NE"	"31055"	"2000"	"2000"	"Female"	"F"	1830	236851	772.6	715.2
+	"Douglas County, NE"	"31055"	"2000"	"2000"	"Male"	"M"	1706	226734	752.4	1050.8
+	"Douglas County, NE"	"31055"	"2001"	"2001"	"Female"	"F"	1922	239004	804.2	750.9
+	"Douglas County, NE"	"31055"	"2001"	"2001"	"Male"	"M"	1727	229121	753.8	1045.1
+	"Douglas County, NE"	"31055"	"2002"	"2002"	"Female"	"F"	1881	240735	781.4	733.4
+	"Douglas County, NE"	"31055"	"2002"	"2002"	"Male"	"M"	1805	231131	780.9	1067.6
+	"Douglas County, NE"	"31055"	"2003"	"2003"	"Female"	"F"	1883	242919	775.2	724.7
+	"Douglas County, NE"	"31055"	"2003"	"2003"	"Male"	"M"	1761	233782	753.3	1051.6
+	"Douglas County, NE"	"31055"	"2004"	"2004"	"Female"	"F"	1798	245416	732.6	687.3
+	"Douglas County, NE"	"31055"	"2004"	"2004"	"Male"	"M"	1714	236659	724.2	1001.6
+	"Douglas County, NE"	"31055"	"2005"	"2005"	"Female"	"F"	1800	248355	724.8	675.8
+	"Douglas County, NE"	"31055"	"2005"	"2005"	"Male"	"M"	1752	239759	730.7	990.3
+	"Douglas County, NE"	"31055"	"2006"	"2006"	"Female"	"F"	1853	251228	737.6	681.5
+	"Douglas County, NE"	"31055"	"2006"	"2006"	"Male"	"M"	1727	242529	712.1	939.6
+	"Douglas County, NE"	"31055"	"2007"	"2007"	"Female"	"F"	1896	253932	746.7	687.2
+	"Douglas County, NE"	"31055"	"2007"	"2007"	"Male"	"M"	1693	244811	691.6	903.6
+	"Douglas County, NE"	"31055"	"2008"	"2008"	"Female"	"F"	1944	256596	757.6	697.7
+	"Douglas County, NE"	"31055"	"2008"	"2008"	"Male"	"M"	1770	247951	713.9	928.7
+	"Douglas County, NE"	"31055"	"2009"	"2009"	"Female"	"F"	1792	260317	688.4	632.2
+	"Douglas County, NE"	"31055"	"2009"	"2009"	"Male"	"M"	1642	251585	652.7	829.0
+	"Douglas County, NE"	"31055"	"2010"	"2010"	"Female"	"F"	1815	262946	690.3	631.7
+	"Douglas County, NE"	"31055"	"2010"	"2010"	"Male"	"M"	1820	254164	716.1	919.3
+	"Douglas County, NE"	"31055"	"2011"	"2011"	"Female"	"F"	1912	266711	716.9	649.4
+	"Douglas County, NE"	"31055"	"2011"	"2011"	"Male"	"M"	1877	258150	727.1	920.6
+	"Douglas County, NE"	"31055"	"2012"	"2012"	"Female"	"F"	1916	270022	709.6	639.5
+	"Douglas County, NE"	"31055"	"2012"	"2012"	"Male"	"M"	1921	261243	735.3	917.5
+	"Douglas County, NE"	"31055"	"2013"	"2013"	"Female"	"F"	1964	272811	719.9	648.9
+	"Douglas County, NE"	"31055"	"2013"	"2013"	"Male"	"M"	1934	264445	731.3	914.8
+	"Douglas County, NE"	"31055"	"2014"	"2014"	"Female"	"F"	1929	275619	699.9	629.2
+	"Douglas County, NE"	"31055"	"2014"	"2014"	"Male"	"M"	2040	267625	762.3	927.3
+	"Douglas County, NE"	"31055"	"2015"	"2015"	"Female"	"F"	2101	278628	754.1	674.2
+	"Douglas County, NE"	"31055"	"2015"	"2015"	"Male"	"M"	2110	271436	777.3	948.5
+	"Douglas County, NE"	"31055"	"2016"	"2016"	"Female"	"F"	2000	281241	711.1	632.7
+	"Douglas County, NE"	"31055"	"2016"	"2016"	"Male"	"M"	1940	273754	708.7	838.6
+	"Douglas County, NE"	"31055"	"2017"	"2017"	"Female"	"F"	2050	284563	720.4	633.6
+	"Douglas County, NE"	"31055"	"2017"	"2017"	"Male"	"M"	2120	277057	765.2	878.8
+	"Douglas County, NE"	"31055"	"2018"	"2018"	"Female"	"F"	2073	287002	722.3	627.3
+	"Douglas County, NE"	"31055"	"2018"	"2018"	"Male"	"M"	2123	279878	758.5	857.3
+	"Guilford County, NC"	"37081"	"2000"	"2000"	"Female"	"F"	1904	219319	868.1	774.2
+	"Guilford County, NC"	"37081"	"2000"	"2000"	"Male"	"M"	1663	201729	824.4	1085.9
+	"Guilford County, NC"	"37081"	"2001"	"2001"	"Female"	"F"	1763	223385	789.2	710.6
+	"Guilford County, NC"	"37081"	"2001"	"2001"	"Male"	"M"	1620	204996	790.3	1036.3
+	"Guilford County, NC"	"37081"	"2002"	"2002"	"Female"	"F"	1857	225522	823.4	739.1
+	"Guilford County, NC"	"37081"	"2002"	"2002"	"Male"	"M"	1658	206546	802.7	1039.2
+	"Guilford County, NC"	"37081"	"2003"	"2003"	"Female"	"F"	1875	228253	821.5	729.0
+	"Guilford County, NC"	"37081"	"2003"	"2003"	"Male"	"M"	1667	208074	801.2	1023.7
+	"Guilford County, NC"	"37081"	"2004"	"2004"	"Female"	"F"	1829	230311	794.1	703.4
+	"Guilford County, NC"	"37081"	"2004"	"2004"	"Male"	"M"	1709	210286	812.7	1018.6
+	"Guilford County, NC"	"37081"	"2005"	"2005"	"Female"	"F"	1896	234477	808.6	701.8
+	"Guilford County, NC"	"37081"	"2005"	"2005"	"Male"	"M"	1776	213715	831.0	1022.2
+	"Guilford County, NC"	"37081"	"2006"	"2006"	"Female"	"F"	1822	239936	759.4	657.0
+	"Guilford County, NC"	"37081"	"2006"	"2006"	"Male"	"M"	1721	218856	786.4	947.3
+	"Guilford County, NC"	"37081"	"2007"	"2007"	"Female"	"F"	1898	245611	772.8	671.5
+	"Guilford County, NC"	"37081"	"2007"	"2007"	"Male"	"M"	1739	222855	780.3	926.6
+	"Guilford County, NC"	"37081"	"2008"	"2008"	"Female"	"F"	1929	250214	770.9	665.9
+	"Guilford County, NC"	"37081"	"2008"	"2008"	"Male"	"M"	1768	227595	776.8	913.8
+	"Guilford County, NC"	"37081"	"2009"	"2009"	"Female"	"F"	2059	253734	811.5	689.8
+	"Guilford County, NC"	"37081"	"2009"	"2009"	"Male"	"M"	1762	230446	764.6	888.6
+	"Guilford County, NC"	"37081"	"2010"	"2010"	"Female"	"F"	1907	255923	745.1	634.4
+	"Guilford County, NC"	"37081"	"2010"	"2010"	"Male"	"M"	1802	232483	775.1	896.2
+	"Guilford County, NC"	"37081"	"2011"	"2011"	"Female"	"F"	2048	259626	788.8	658.2
+	"Guilford County, NC"	"37081"	"2011"	"2011"	"Male"	"M"	1850	235653	785.1	889.8
+	"Guilford County, NC"	"37081"	"2012"	"2012"	"Female"	"F"	2076	262151	791.9	654.6
+	"Guilford County, NC"	"37081"	"2012"	"2012"	"Male"	"M"	1857	238728	777.9	854.7
+	"Guilford County, NC"	"37081"	"2013"	"2013"	"Female"	"F"	2050	265405	772.4	627.7
+	"Guilford County, NC"	"37081"	"2013"	"2013"	"Male"	"M"	1931	241205	800.6	868.6
+	"Guilford County, NC"	"37081"	"2014"	"2014"	"Female"	"F"	2135	268635	794.8	638.2
+	"Guilford County, NC"	"37081"	"2014"	"2014"	"Male"	"M"	2059	243484	845.6	894.3
+	"Guilford County, NC"	"37081"	"2015"	"2015"	"Female"	"F"	2215	271543	815.7	644.7
+	"Guilford County, NC"	"37081"	"2015"	"2015"	"Male"	"M"	2075	246057	843.3	880.6
+	"Guilford County, NC"	"37081"	"2016"	"2016"	"Female"	"F"	2181	274081	795.8	627.4
+	"Guilford County, NC"	"37081"	"2016"	"2016"	"Male"	"M"	2191	247249	886.2	913.2
+	"Guilford County, NC"	"37081"	"2017"	"2017"	"Female"	"F"	2330	277132	840.8	662.8
+	"Guilford County, NC"	"37081"	"2017"	"2017"	"Male"	"M"	2259	249821	904.2	906.9
+	"Guilford County, NC"	"37081"	"2018"	"2018"	"Female"	"F"	2335	280983	831.0	656.0
+	"Guilford County, NC"	"37081"	"2018"	"2018"	"Male"	"M"	2260	252687	894.4	888.6
+	"Mecklenburg County, NC"	"37119"	"2000"	"2000"	"Female"	"F"	2326	353997	657.1	743.4
+	"Mecklenburg County, NC"	"37119"	"2000"	"2000"	"Male"	"M"	2268	341457	664.2	1128.4
+	"Mecklenburg County, NC"	"37119"	"2001"	"2001"	"Female"	"F"	2215	366835	603.8	684.8
+	"Mecklenburg County, NC"	"37119"	"2001"	"2001"	"Male"	"M"	2256	353336	638.5	1069.4
+	"Mecklenburg County, NC"	"37119"	"2002"	"2002"	"Female"	"F"	2393	376033	636.4	720.2
+	"Mecklenburg County, NC"	"37119"	"2002"	"2002"	"Male"	"M"	2248	360389	623.8	1029.3
+	"Mecklenburg County, NC"	"37119"	"2003"	"2003"	"Female"	"F"	2468	386465	638.6	725.3
+	"Mecklenburg County, NC"	"37119"	"2003"	"2003"	"Male"	"M"	2264	367526	616.0	1020.7
+	"Mecklenburg County, NC"	"37119"	"2004"	"2004"	"Female"	"F"	2407	396624	606.9	689.4
+	"Mecklenburg County, NC"	"37119"	"2004"	"2004"	"Male"	"M"	2284	376325	606.9	987.0
+	"Mecklenburg County, NC"	"37119"	"2005"	"2005"	"Female"	"F"	2492	410743	606.7	690.4
+	"Mecklenburg County, NC"	"37119"	"2005"	"2005"	"Male"	"M"	2313	387958	596.2	971.3
+	"Mecklenburg County, NC"	"37119"	"2006"	"2006"	"Female"	"F"	2441	427832	570.6	644.0
+	"Mecklenburg County, NC"	"37119"	"2006"	"2006"	"Male"	"M"	2401	403675	594.8	954.0
+	"Mecklenburg County, NC"	"37119"	"2007"	"2007"	"Female"	"F"	2497	444934	561.2	636.7
+	"Mecklenburg County, NC"	"37119"	"2007"	"2007"	"Male"	"M"	2507	417243	600.8	943.0
+	"Mecklenburg County, NC"	"37119"	"2008"	"2008"	"Female"	"F"	2583	457729	564.3	636.7
+	"Mecklenburg County, NC"	"37119"	"2008"	"2008"	"Male"	"M"	2450	430262	569.4	891.7
+	"Mecklenburg County, NC"	"37119"	"2009"	"2009"	"Female"	"F"	2619	469198	558.2	623.3
+	"Mecklenburg County, NC"	"37119"	"2009"	"2009"	"Male"	"M"	2458	439506	559.3	866.9
+	"Mecklenburg County, NC"	"37119"	"2010"	"2010"	"Female"	"F"	2527	474747	532.3	588.2
+	"Mecklenburg County, NC"	"37119"	"2010"	"2010"	"Male"	"M"	2552	444881	573.6	880.9
+	"Mecklenburg County, NC"	"37119"	"2011"	"2011"	"Female"	"F"	2634	487892	539.9	582.0
+	"Mecklenburg County, NC"	"37119"	"2011"	"2011"	"Male"	"M"	2521	456481	552.3	829.2
+	"Mecklenburg County, NC"	"37119"	"2012"	"2012"	"Female"	"F"	2775	501172	553.7	588.9
+	"Mecklenburg County, NC"	"37119"	"2012"	"2012"	"Male"	"M"	2603	467859	556.4	818.0
+	"Mecklenburg County, NC"	"37119"	"2013"	"2013"	"Female"	"F"	2820	513305	549.4	577.9
+	"Mecklenburg County, NC"	"37119"	"2013"	"2013"	"Male"	"M"	2656	477672	556.0	791.8
+	"Mecklenburg County, NC"	"37119"	"2014"	"2014"	"Female"	"F"	2900	525471	551.9	572.8
+	"Mecklenburg County, NC"	"37119"	"2014"	"2014"	"Male"	"M"	2858	487068	586.8	813.3
+	"Mecklenburg County, NC"	"37119"	"2015"	"2015"	"Female"	"F"	3065	536856	570.9	587.3
+	"Mecklenburg County, NC"	"37119"	"2015"	"2015"	"Male"	"M"	2959	497214	595.1	818.8
+	"Mecklenburg County, NC"	"37119"	"2016"	"2016"	"Female"	"F"	3153	548403	574.9	581.1
+	"Mecklenburg County, NC"	"37119"	"2016"	"2016"	"Male"	"M"	3074	506432	607.0	813.7
+	"Mecklenburg County, NC"	"37119"	"2017"	"2017"	"Female"	"F"	3097	559106	553.9	563.0
+	"Mecklenburg County, NC"	"37119"	"2017"	"2017"	"Male"	"M"	3094	517731	597.6	785.3
+	"Mecklenburg County, NC"	"37119"	"2018"	"2018"	"Female"	"F"	3208	567887	564.9	564.3
+	"Mecklenburg County, NC"	"37119"	"2018"	"2018"	"Male"	"M"	3272	526014	622.0	801.6
+	"Wake County, NC"	"37183"	"2000"	"2000"	"Female"	"F"	1691	316410	534.4	700.3
+	"Wake County, NC"	"37183"	"2000"	"2000"	"Male"	"M"	1558	311436	500.3	992.4
+	"Wake County, NC"	"37183"	"2001"	"2001"	"Female"	"F"	1701	331517	513.1	668.0
+	"Wake County, NC"	"37183"	"2001"	"2001"	"Male"	"M"	1631	325302	501.4	1004.4
+	"Wake County, NC"	"37183"	"2002"	"2002"	"Female"	"F"	1733	342409	506.1	657.7
+	"Wake County, NC"	"37183"	"2002"	"2002"	"Male"	"M"	1629	333983	487.7	961.4
+	"Wake County, NC"	"37183"	"2003"	"2003"	"Female"	"F"	1879	353877	531.0	687.4
+	"Wake County, NC"	"37183"	"2003"	"2003"	"Male"	"M"	1696	341869	496.1	932.6
+	"Wake County, NC"	"37183"	"2004"	"2004"	"Female"	"F"	1835	364794	503.0	638.9
+	"Wake County, NC"	"37183"	"2004"	"2004"	"Male"	"M"	1683	351542	478.7	862.4
+	"Wake County, NC"	"37183"	"2005"	"2005"	"Female"	"F"	1900	380664	499.1	628.8
+	"Wake County, NC"	"37183"	"2005"	"2005"	"Male"	"M"	1793	365384	490.7	870.6
+	"Wake County, NC"	"37183"	"2006"	"2006"	"Female"	"F"	1911	400509	477.1	580.0
+	"Wake County, NC"	"37183"	"2006"	"2006"	"Male"	"M"	1834	383529	478.2	807.0
+	"Wake County, NC"	"37183"	"2007"	"2007"	"Female"	"F"	2089	421100	496.1	600.2
+	"Wake County, NC"	"37183"	"2007"	"2007"	"Male"	"M"	1942	400507	484.9	814.6
+	"Wake County, NC"	"37183"	"2008"	"2008"	"Female"	"F"	2117	438774	482.5	582.7
+	"Wake County, NC"	"37183"	"2008"	"2008"	"Male"	"M"	1993	417718	477.1	793.6
+	"Wake County, NC"	"37183"	"2009"	"2009"	"Female"	"F"	2197	453495	484.5	572.6
+	"Wake County, NC"	"37183"	"2009"	"2009"	"Male"	"M"	1962	430129	456.1	751.9
+	"Wake County, NC"	"37183"	"2010"	"2010"	"Female"	"F"	2259	462201	488.7	574.4
+	"Wake County, NC"	"37183"	"2010"	"2010"	"Male"	"M"	2027	438792	462.0	741.7
+	"Wake County, NC"	"37183"	"2011"	"2011"	"Female"	"F"	2288	477042	479.6	550.2
+	"Wake County, NC"	"37183"	"2011"	"2011"	"Male"	"M"	2139	452738	472.5	732.2
+	"Wake County, NC"	"37183"	"2012"	"2012"	"Female"	"F"	2481	488386	508.0	571.3
+	"Wake County, NC"	"37183"	"2012"	"2012"	"Male"	"M"	2234	463765	481.7	744.9
+	"Wake County, NC"	"37183"	"2013"	"2013"	"Female"	"F"	2459	499691	492.1	539.9
+	"Wake County, NC"	"37183"	"2013"	"2013"	"Male"	"M"	2376	474598	500.6	737.8
+	"Wake County, NC"	"37183"	"2014"	"2014"	"Female"	"F"	2545	512700	496.4	533.9
+	"Wake County, NC"	"37183"	"2014"	"2014"	"Male"	"M"	2540	485991	522.6	755.1
+	"Wake County, NC"	"37183"	"2015"	"2015"	"Female"	"F"	2677	525493	509.4	545.7
+	"Wake County, NC"	"37183"	"2015"	"2015"	"Male"	"M"	2560	498705	513.3	729.8
+	"Wake County, NC"	"37183"	"2016"	"2016"	"Female"	"F"	2869	538241	533.0	559.7
+	"Wake County, NC"	"37183"	"2016"	"2016"	"Male"	"M"	2686	508550	528.2	725.2
+	"Wake County, NC"	"37183"	"2017"	"2017"	"Female"	"F"	2853	550211	518.5	529.3
+	"Wake County, NC"	"37183"	"2017"	"2017"	"Male"	"M"	2888	521992	553.3	739.5
+	"Wake County, NC"	"37183"	"2018"	"2018"	"Female"	"F"	2901	560759	517.3	523.7
+	"Wake County, NC"	"37183"	"2018"	"2018"	"Male"	"M"	2950	531546	555.0	716.9
+	"Franklin County, OH"	"39049"	"2000"	"2000"	"Female"	"F"	4337	549695	789.0	828.8
+	"Franklin County, OH"	"39049"	"2000"	"2000"	"Male"	"M"	3782	519283	728.3	1147.4
+	"Franklin County, OH"	"39049"	"2001"	"2001"	"Female"	"F"	4271	556523	767.4	812.0
+	"Franklin County, OH"	"39049"	"2001"	"2001"	"Male"	"M"	3915	526415	743.7	1159.6
+	"Franklin County, OH"	"39049"	"2002"	"2002"	"Female"	"F"	4410	559236	788.6	827.8
+	"Franklin County, OH"	"39049"	"2002"	"2002"	"Male"	"M"	3998	529457	755.1	1163.7
+	"Franklin County, OH"	"39049"	"2003"	"2003"	"Female"	"F"	4371	562267	777.4	809.9
+	"Franklin County, OH"	"39049"	"2003"	"2003"	"Male"	"M"	4043	532983	758.6	1135.5
+	"Franklin County, OH"	"39049"	"2004"	"2004"	"Female"	"F"	4245	564433	752.1	780.9
+	"Franklin County, OH"	"39049"	"2004"	"2004"	"Male"	"M"	4045	535170	755.8	1110.0
+	"Franklin County, OH"	"39049"	"2005"	"2005"	"Female"	"F"	4414	567546	777.7	801.6
+	"Franklin County, OH"	"39049"	"2005"	"2005"	"Male"	"M"	4106	537951	763.3	1113.7
+	"Franklin County, OH"	"39049"	"2006"	"2006"	"Female"	"F"	4332	573105	755.9	769.3
+	"Franklin County, OH"	"39049"	"2006"	"2006"	"Male"	"M"	4002	542819	737.3	1050.6
+	"Franklin County, OH"	"39049"	"2007"	"2007"	"Female"	"F"	4186	578432	723.7	729.9
+	"Franklin County, OH"	"39049"	"2007"	"2007"	"Male"	"M"	4059	548742	739.7	1034.1
+	"Franklin County, OH"	"39049"	"2008"	"2008"	"Female"	"F"	4383	585533	748.5	749.5
+	"Franklin County, OH"	"39049"	"2008"	"2008"	"Male"	"M"	4164	555650	749.4	1027.2
+	"Franklin County, OH"	"39049"	"2009"	"2009"	"Female"	"F"	4381	592863	739.0	738.0
+	"Franklin County, OH"	"39049"	"2009"	"2009"	"Male"	"M"	4094	562545	727.8	989.1
+	"Franklin County, OH"	"39049"	"2010"	"2010"	"Female"	"F"	4302	596915	720.7	714.8
+	"Franklin County, OH"	"39049"	"2010"	"2010"	"Male"	"M"	4226	566499	746.0	1017.0
+	"Franklin County, OH"	"39049"	"2011"	"2011"	"Female"	"F"	4510	604566	746.0	734.7
+	"Franklin County, OH"	"39049"	"2011"	"2011"	"Male"	"M"	4140	574233	721.0	960.1
+	"Franklin County, OH"	"39049"	"2012"	"2012"	"Female"	"F"	4586	612937	748.2	731.2
+	"Franklin County, OH"	"39049"	"2012"	"2012"	"Male"	"M"	4244	582600	728.5	958.4
+	"Franklin County, OH"	"39049"	"2013"	"2013"	"Female"	"F"	4533	621721	729.1	705.0
+	"Franklin County, OH"	"39049"	"2013"	"2013"	"Male"	"M"	4374	590542	740.7	959.5
+	"Franklin County, OH"	"39049"	"2014"	"2014"	"Female"	"F"	4540	631376	719.1	695.1
+	"Franklin County, OH"	"39049"	"2014"	"2014"	"Male"	"M"	4479	600017	746.5	948.8
+	"Franklin County, OH"	"39049"	"2015"	"2015"	"Female"	"F"	4921	641584	767.0	742.4
+	"Franklin County, OH"	"39049"	"2015"	"2015"	"Male"	"M"	4823	610138	790.5	995.2
+	"Franklin County, OH"	"39049"	"2016"	"2016"	"Female"	"F"	4852	647359	749.5	722.4
+	"Franklin County, OH"	"39049"	"2016"	"2016"	"Male"	"M"	4772	617159	773.2	961.4
+	"Franklin County, OH"	"39049"	"2017"	"2017"	"Female"	"F"	4966	661710	750.5	714.3
+	"Franklin County, OH"	"39049"	"2017"	"2017"	"Male"	"M"	5065	630271	803.6	979.0
+	"Franklin County, OH"	"39049"	"2018"	"2018"	"Female"	"F"	5012	670214	747.8	707.6
+	"Franklin County, OH"	"39049"	"2018"	"2018"	"Male"	"M"	5222	640086	815.8	982.3
+	"Hamilton County, OH"	"39061"	"2000"	"2000"	"Female"	"F"	4597	442334	1039.3	801.1
+	"Hamilton County, OH"	"39061"	"2000"	"2000"	"Male"	"M"	3725	402969	924.4	1109.3
+	"Hamilton County, OH"	"39061"	"2001"	"2001"	"Female"	"F"	4482	439375	1020.1	790.3
+	"Hamilton County, OH"	"39061"	"2001"	"2001"	"Male"	"M"	3827	400960	954.5	1135.6
+	"Hamilton County, OH"	"39061"	"2002"	"2002"	"Female"	"F"	4541	434821	1044.3	811.1
+	"Hamilton County, OH"	"39061"	"2002"	"2002"	"Male"	"M"	3972	397569	999.1	1176.7
+	"Hamilton County, OH"	"39061"	"2003"	"2003"	"Female"	"F"	4308	430693	1000.2	770.6
+	"Hamilton County, OH"	"39061"	"2003"	"2003"	"Male"	"M"	3760	394446	953.2	1106.7
+	"Hamilton County, OH"	"39061"	"2004"	"2004"	"Female"	"F"	4270	426214	1001.8	772.0
+	"Hamilton County, OH"	"39061"	"2004"	"2004"	"Male"	"M"	3685	391092	942.2	1077.7
+	"Hamilton County, OH"	"39061"	"2005"	"2005"	"Female"	"F"	4397	422274	1041.3	801.2
+	"Hamilton County, OH"	"39061"	"2005"	"2005"	"Male"	"M"	3637	388078	937.2	1055.0
+	"Hamilton County, OH"	"39061"	"2006"	"2006"	"Female"	"F"	4347	419282	1036.8	785.9
+	"Hamilton County, OH"	"39061"	"2006"	"2006"	"Male"	"M"	3869	385631	1003.3	1117.6
+	"Hamilton County, OH"	"39061"	"2007"	"2007"	"Female"	"F"	4042	417672	967.7	729.4
+	"Hamilton County, OH"	"39061"	"2007"	"2007"	"Male"	"M"	3722	384143	968.9	1062.6
+	"Hamilton County, OH"	"39061"	"2008"	"2008"	"Female"	"F"	4150	416475	996.5	749.1
+	"Hamilton County, OH"	"39061"	"2008"	"2008"	"Male"	"M"	3682	383365	960.4	1038.6
+	"Hamilton County, OH"	"39061"	"2009"	"2009"	"Female"	"F"	3973	417352	952.0	717.3
+	"Hamilton County, OH"	"39061"	"2009"	"2009"	"Male"	"M"	3546	384797	921.5	987.4
+	"Hamilton County, OH"	"39061"	"2010"	"2010"	"Female"	"F"	4120	417153	987.6	740.7
+	"Hamilton County, OH"	"39061"	"2010"	"2010"	"Male"	"M"	3417	385221	887.0	943.1
+	"Hamilton County, OH"	"39061"	"2011"	"2011"	"Female"	"F"	4041	415956	971.5	724.6
+	"Hamilton County, OH"	"39061"	"2011"	"2011"	"Male"	"M"	3728	384406	969.8	1023.6
+	"Hamilton County, OH"	"39061"	"2012"	"2012"	"Female"	"F"	3875	416291	930.8	693.6
+	"Hamilton County, OH"	"39061"	"2012"	"2012"	"Male"	"M"	3633	385747	941.8	976.5
+	"Hamilton County, OH"	"39061"	"2013"	"2013"	"Female"	"F"	4014	417048	962.5	711.4
+	"Hamilton County, OH"	"39061"	"2013"	"2013"	"Male"	"M"	3639	387472	939.2	951.4
+	"Hamilton County, OH"	"39061"	"2014"	"2014"	"Female"	"F"	4086	418495	976.4	718.4
+	"Hamilton County, OH"	"39061"	"2014"	"2014"	"Male"	"M"	3914	388136	1008.4	1017.6
+	"Hamilton County, OH"	"39061"	"2015"	"2015"	"Female"	"F"	4145	418989	989.3	732.3
+	"Hamilton County, OH"	"39061"	"2015"	"2015"	"Male"	"M"	3949	388609	1016.2	1026.5
+	"Hamilton County, OH"	"39061"	"2016"	"2016"	"Female"	"F"	4029	419005	961.6	709.3
+	"Hamilton County, OH"	"39061"	"2016"	"2016"	"Male"	"M"	3855	390094	988.2	977.3
+	"Hamilton County, OH"	"39061"	"2017"	"2017"	"Female"	"F"	4259	421073	1011.5	744.9
+	"Hamilton County, OH"	"39061"	"2017"	"2017"	"Male"	"M"	4115	392749	1047.7	1030.6
+	"Hamilton County, OH"	"39061"	"2018"	"2018"	"Female"	"F"	4112	422178	974.0	713.6
+	"Hamilton County, OH"	"39061"	"2018"	"2018"	"Male"	"M"	4030	394506	1021.5	1003.8
+	"Montgomery County, OH"	"39113"	"2000"	"2000"	"Female"	"F"	2898	290691	996.9	814.8
+	"Montgomery County, OH"	"39113"	"2000"	"2000"	"Male"	"M"	2690	268371	1002.3	1167.1
+	"Montgomery County, OH"	"39113"	"2001"	"2001"	"Female"	"F"	2902	288834	1004.7	806.8
+	"Montgomery County, OH"	"39113"	"2001"	"2001"	"Male"	"M"	2663	266702	998.5	1139.9
+	"Montgomery County, OH"	"39113"	"2002"	"2002"	"Female"	"F"	2920	287565	1015.4	807.6
+	"Montgomery County, OH"	"39113"	"2002"	"2002"	"Male"	"M"	2734	265605	1029.3	1151.1
+	"Montgomery County, OH"	"39113"	"2003"	"2003"	"Female"	"F"	2957	286865	1030.8	807.8
+	"Montgomery County, OH"	"39113"	"2003"	"2003"	"Male"	"M"	2553	264877	963.8	1056.8
+	"Montgomery County, OH"	"39113"	"2004"	"2004"	"Female"	"F"	2771	285659	970.0	754.0
+	"Montgomery County, OH"	"39113"	"2004"	"2004"	"Male"	"M"	2592	264054	981.6	1051.5
+	"Montgomery County, OH"	"39113"	"2005"	"2005"	"Female"	"F"	2677	284368	941.4	712.1
+	"Montgomery County, OH"	"39113"	"2005"	"2005"	"Male"	"M"	2722	262611	1036.5	1095.4
+	"Montgomery County, OH"	"39113"	"2006"	"2006"	"Female"	"F"	2724	282529	964.1	724.3
+	"Montgomery County, OH"	"39113"	"2006"	"2006"	"Male"	"M"	2618	261091	1002.7	1037.5
+	"Montgomery County, OH"	"39113"	"2007"	"2007"	"Female"	"F"	2793	281058	993.7	727.1
+	"Montgomery County, OH"	"39113"	"2007"	"2007"	"Male"	"M"	2580	259609	993.8	1006.4
+	"Montgomery County, OH"	"39113"	"2008"	"2008"	"Female"	"F"	2968	279650	1061.3	761.2
+	"Montgomery County, OH"	"39113"	"2008"	"2008"	"Male"	"M"	2813	258014	1090.3	1078.6
+	"Montgomery County, OH"	"39113"	"2009"	"2009"	"Female"	"F"	2761	278420	991.7	713.2
+	"Montgomery County, OH"	"39113"	"2009"	"2009"	"Male"	"M"	2643	256874	1028.9	1001.7
+	"Montgomery County, OH"	"39113"	"2010"	"2010"	"Female"	"F"	2897	278192	1041.4	729.8
+	"Montgomery County, OH"	"39113"	"2010"	"2010"	"Male"	"M"	2756	256961	1072.5	1028.3
+	"Montgomery County, OH"	"39113"	"2011"	"2011"	"Female"	"F"	2839	279456	1015.9	688.8
+	"Montgomery County, OH"	"39113"	"2011"	"2011"	"Male"	"M"	2854	258146	1105.6	1021.4
+	"Montgomery County, OH"	"39113"	"2012"	"2012"	"Female"	"F"	2920	277285	1053.1	721.1
+	"Montgomery County, OH"	"39113"	"2012"	"2012"	"Male"	"M"	2761	257040	1074.2	997.5
+	"Montgomery County, OH"	"39113"	"2013"	"2013"	"Female"	"F"	3027	277997	1088.9	738.8
+	"Montgomery County, OH"	"39113"	"2013"	"2013"	"Male"	"M"	2866	257849	1111.5	1022.5
+	"Montgomery County, OH"	"39113"	"2014"	"2014"	"Female"	"F"	3021	276706	1091.8	740.6
+	"Montgomery County, OH"	"39113"	"2014"	"2014"	"Male"	"M"	2936	256410	1145.0	1031.5
+	"Montgomery County, OH"	"39113"	"2015"	"2015"	"Female"	"F"	3138	276148	1136.3	759.8
+	"Montgomery County, OH"	"39113"	"2015"	"2015"	"Male"	"M"	2966	256110	1158.1	1039.2
+	"Montgomery County, OH"	"39113"	"2016"	"2016"	"Female"	"F"	3026	275259	1099.3	735.0
+	"Montgomery County, OH"	"39113"	"2016"	"2016"	"Male"	"M"	3192	255980	1247.0	1107.9
+	"Montgomery County, OH"	"39113"	"2017"	"2017"	"Female"	"F"	3232	275371	1173.7	801.5
+	"Montgomery County, OH"	"39113"	"2017"	"2017"	"Male"	"M"	3310	256171	1292.1	1148.7
+	"Montgomery County, OH"	"39113"	"2018"	"2018"	"Female"	"F"	3203	275949	1160.7	766.7
+	"Montgomery County, OH"	"39113"	"2018"	"2018"	"Male"	"M"	3238	256382	1263.0	1096.7
+	"Oklahoma County, OK"	"40109"	"2000"	"2000"	"Female"	"F"	3316	340022	975.2	851.2
+	"Oklahoma County, OK"	"40109"	"2000"	"2000"	"Male"	"M"	3056	320426	953.7	1221.0
+	"Oklahoma County, OK"	"40109"	"2001"	"2001"	"Female"	"F"	3335	341999	975.1	854.5
+	"Oklahoma County, OK"	"40109"	"2001"	"2001"	"Male"	"M"	3090	322837	957.1	1217.4
+	"Oklahoma County, OK"	"40109"	"2002"	"2002"	"Female"	"F"	3380	344872	980.1	867.5
+	"Oklahoma County, OK"	"40109"	"2002"	"2002"	"Male"	"M"	3065	326248	939.5	1188.0
+	"Oklahoma County, OK"	"40109"	"2003"	"2003"	"Female"	"F"	3333	346764	961.2	849.8
+	"Oklahoma County, OK"	"40109"	"2003"	"2003"	"Male"	"M"	3096	327807	944.5	1187.0
+	"Oklahoma County, OK"	"40109"	"2004"	"2004"	"Female"	"F"	3172	347723	912.2	809.0
+	"Oklahoma County, OK"	"40109"	"2004"	"2004"	"Male"	"M"	2975	330019	901.5	1113.8
+	"Oklahoma County, OK"	"40109"	"2005"	"2005"	"Female"	"F"	3284	350515	936.9	823.0
+	"Oklahoma County, OK"	"40109"	"2005"	"2005"	"Male"	"M"	3127	332784	939.6	1143.5
+	"Oklahoma County, OK"	"40109"	"2006"	"2006"	"Female"	"F"	3126	354056	882.9	771.1
+	"Oklahoma County, OK"	"40109"	"2006"	"2006"	"Male"	"M"	3086	336097	918.2	1092.0
+	"Oklahoma County, OK"	"40109"	"2007"	"2007"	"Female"	"F"	3277	356582	919.0	795.0
+	"Oklahoma County, OK"	"40109"	"2007"	"2007"	"Male"	"M"	3070	339124	905.3	1072.8
+	"Oklahoma County, OK"	"40109"	"2008"	"2008"	"Female"	"F"	3306	359322	920.1	795.6
+	"Oklahoma County, OK"	"40109"	"2008"	"2008"	"Male"	"M"	3202	342162	935.8	1098.3
+	"Oklahoma County, OK"	"40109"	"2009"	"2009"	"Female"	"F"	3201	363801	879.9	756.1
+	"Oklahoma County, OK"	"40109"	"2009"	"2009"	"Male"	"M"	3083	347794	886.4	1033.3
+	"Oklahoma County, OK"	"40109"	"2010"	"2010"	"Female"	"F"	3319	367257	903.7	779.0
+	"Oklahoma County, OK"	"40109"	"2010"	"2010"	"Male"	"M"	3296	351376	938.0	1096.0
+	"Oklahoma County, OK"	"40109"	"2011"	"2011"	"Female"	"F"	3380	373490	905.0	775.6
+	"Oklahoma County, OK"	"40109"	"2011"	"2011"	"Male"	"M"	3383	358881	942.7	1088.0
+	"Oklahoma County, OK"	"40109"	"2012"	"2012"	"Female"	"F"	3375	378104	892.6	774.8
+	"Oklahoma County, OK"	"40109"	"2012"	"2012"	"Male"	"M"	3269	363677	898.9	1035.1
+	"Oklahoma County, OK"	"40109"	"2013"	"2013"	"Female"	"F"	3490	385297	905.8	784.0
+	"Oklahoma County, OK"	"40109"	"2013"	"2013"	"Male"	"M"	3560	369948	962.3	1088.3
+	"Oklahoma County, OK"	"40109"	"2014"	"2014"	"Female"	"F"	3580	391169	915.2	797.4
+	"Oklahoma County, OK"	"40109"	"2014"	"2014"	"Male"	"M"	3506	375046	934.8	1055.2
+	"Oklahoma County, OK"	"40109"	"2015"	"2015"	"Female"	"F"	3595	396785	906.0	786.2
+	"Oklahoma County, OK"	"40109"	"2015"	"2015"	"Male"	"M"	3525	380079	927.4	1047.3
+	"Oklahoma County, OK"	"40109"	"2016"	"2016"	"Female"	"F"	3541	399876	885.5	768.0
+	"Oklahoma County, OK"	"40109"	"2016"	"2016"	"Male"	"M"	3540	383094	924.1	1038.0
+	"Oklahoma County, OK"	"40109"	"2017"	"2017"	"Female"	"F"	3681	402119	915.4	795.4
+	"Oklahoma County, OK"	"40109"	"2017"	"2017"	"Male"	"M"	3689	385839	956.1	1055.6
+	"Oklahoma County, OK"	"40109"	"2018"	"2018"	"Female"	"F"	3611	404447	892.8	755.9
+	"Oklahoma County, OK"	"40109"	"2018"	"2018"	"Male"	"M"	3735	388135	962.3	1051.3
+	"Tulsa County, OK"	"40143"	"2000"	"2000"	"Female"	"F"	2765	290069	953.2	838.5
+	"Tulsa County, OK"	"40143"	"2000"	"2000"	"Male"	"M"	2396	273230	876.9	1155.4
+	"Tulsa County, OK"	"40143"	"2001"	"2001"	"Female"	"F"	2801	291223	961.8	849.8
+	"Tulsa County, OK"	"40143"	"2001"	"2001"	"Male"	"M"	2450	274952	891.1	1181.6
+	"Tulsa County, OK"	"40143"	"2002"	"2002"	"Female"	"F"	2746	292370	939.2	831.0
+	"Tulsa County, OK"	"40143"	"2002"	"2002"	"Male"	"M"	2503	276800	904.3	1191.2
+	"Tulsa County, OK"	"40143"	"2003"	"2003"	"Female"	"F"	2791	291923	956.1	841.6
+	"Tulsa County, OK"	"40143"	"2003"	"2003"	"Male"	"M"	2591	276483	937.1	1199.7
+	"Tulsa County, OK"	"40143"	"2004"	"2004"	"Female"	"F"	2618	290659	900.7	784.9
+	"Tulsa County, OK"	"40143"	"2004"	"2004"	"Male"	"M"	2437	275481	884.6	1119.7
+	"Tulsa County, OK"	"40143"	"2005"	"2005"	"Female"	"F"	2935	291706	1006.2	870.5
+	"Tulsa County, OK"	"40143"	"2005"	"2005"	"Male"	"M"	2611	276493	944.3	1161.1
+	"Tulsa County, OK"	"40143"	"2006"	"2006"	"Female"	"F"	2769	295232	937.9	804.6
+	"Tulsa County, OK"	"40143"	"2006"	"2006"	"Male"	"M"	2547	279782	910.4	1111.4
+	"Tulsa County, OK"	"40143"	"2007"	"2007"	"Female"	"F"	2866	298426	960.4	818.6
+	"Tulsa County, OK"	"40143"	"2007"	"2007"	"Male"	"M"	2581	283668	909.9	1089.7
+	"Tulsa County, OK"	"40143"	"2008"	"2008"	"Female"	"F"	2899	301637	961.1	817.6
+	"Tulsa County, OK"	"40143"	"2008"	"2008"	"Male"	"M"	2729	286873	951.3	1128.0
+	"Tulsa County, OK"	"40143"	"2009"	"2009"	"Female"	"F"	2591	306187	846.2	724.3
+	"Tulsa County, OK"	"40143"	"2009"	"2009"	"Male"	"M"	2663	291561	913.4	1061.0
+	"Tulsa County, OK"	"40143"	"2010"	"2010"	"Female"	"F"	2727	308963	882.6	745.9
+	"Tulsa County, OK"	"40143"	"2010"	"2010"	"Male"	"M"	2615	294440	888.1	1030.0
+	"Tulsa County, OK"	"40143"	"2011"	"2011"	"Female"	"F"	2800	312490	896.0	748.7
+	"Tulsa County, OK"	"40143"	"2011"	"2011"	"Male"	"M"	2651	298109	889.3	1004.7
+	"Tulsa County, OK"	"40143"	"2012"	"2012"	"Female"	"F"	2782	314648	884.2	739.7
+	"Tulsa County, OK"	"40143"	"2012"	"2012"	"Male"	"M"	2708	299168	905.2	1020.2
+	"Tulsa County, OK"	"40143"	"2013"	"2013"	"Female"	"F"	2935	319035	920.0	770.5
+	"Tulsa County, OK"	"40143"	"2013"	"2013"	"Male"	"M"	2781	303374	916.7	1023.9
+	"Tulsa County, OK"	"40143"	"2014"	"2014"	"Female"	"F"	2823	323021	873.9	726.6
+	"Tulsa County, OK"	"40143"	"2014"	"2014"	"Male"	"M"	2854	306577	930.9	1015.0
+	"Tulsa County, OK"	"40143"	"2015"	"2015"	"Female"	"F"	2796	327809	852.9	708.4
+	"Tulsa County, OK"	"40143"	"2015"	"2015"	"Male"	"M"	2935	311433	942.4	1032.4
+	"Tulsa County, OK"	"40143"	"2016"	"2016"	"Female"	"F"	2919	329511	885.9	729.3
+	"Tulsa County, OK"	"40143"	"2016"	"2016"	"Male"	"M"	2878	313429	918.2	987.3
+	"Tulsa County, OK"	"40143"	"2017"	"2017"	"Female"	"F"	3001	330896	906.9	733.7
+	"Tulsa County, OK"	"40143"	"2017"	"2017"	"Male"	"M"	3041	315370	964.3	1030.7
+	"Tulsa County, OK"	"40143"	"2018"	"2018"	"Female"	"F"	3043	331991	916.6	732.1
+	"Tulsa County, OK"	"40143"	"2018"	"2018"	"Male"	"M"	3099	316369	979.6	1022.9
+	"Greenville County, SC"	"45045"	"2000"	"2000"	"Female"	"F"	1738	194834	892.0	794.5
+	"Greenville County, SC"	"45045"	"2000"	"2000"	"Male"	"M"	1617	184782	875.1	1153.3
+	"Greenville County, SC"	"45045"	"2001"	"2001"	"Female"	"F"	1743	197879	880.8	783.2
+	"Greenville County, SC"	"45045"	"2001"	"2001"	"Male"	"M"	1625	187901	864.8	1111.5
+	"Greenville County, SC"	"45045"	"2002"	"2002"	"Female"	"F"	1727	200006	863.5	765.1
+	"Greenville County, SC"	"45045"	"2002"	"2002"	"Male"	"M"	1628	190191	856.0	1106.6
+	"Greenville County, SC"	"45045"	"2003"	"2003"	"Female"	"F"	1775	202197	877.9	775.5
+	"Greenville County, SC"	"45045"	"2003"	"2003"	"Male"	"M"	1567	192045	816.0	1024.7
+	"Greenville County, SC"	"45045"	"2004"	"2004"	"Female"	"F"	1631	204711	796.7	697.4
+	"Greenville County, SC"	"45045"	"2004"	"2004"	"Male"	"M"	1540	194608	791.3	998.1
+	"Greenville County, SC"	"45045"	"2005"	"2005"	"Female"	"F"	1716	208003	825.0	715.0
+	"Greenville County, SC"	"45045"	"2005"	"2005"	"Male"	"M"	1701	197605	860.8	1059.7
+	"Greenville County, SC"	"45045"	"2006"	"2006"	"Female"	"F"	1667	213672	780.2	662.9
+	"Greenville County, SC"	"45045"	"2006"	"2006"	"Male"	"M"	1721	202285	850.8	1020.2
+	"Greenville County, SC"	"45045"	"2007"	"2007"	"Female"	"F"	1808	220076	821.5	704.9
+	"Greenville County, SC"	"45045"	"2007"	"2007"	"Male"	"M"	1759	207894	846.1	1000.4
+	"Greenville County, SC"	"45045"	"2008"	"2008"	"Female"	"F"	1875	225713	830.7	711.1
+	"Greenville County, SC"	"45045"	"2008"	"2008"	"Male"	"M"	1761	213029	826.6	979.3
+	"Greenville County, SC"	"45045"	"2009"	"2009"	"Female"	"F"	1810	230020	786.9	668.5
+	"Greenville County, SC"	"45045"	"2009"	"2009"	"Male"	"M"	1733	216635	800.0	937.5
+	"Greenville County, SC"	"45045"	"2010"	"2010"	"Female"	"F"	1891	232434	813.6	690.3
+	"Greenville County, SC"	"45045"	"2010"	"2010"	"Male"	"M"	1803	218791	824.1	944.4
+	"Greenville County, SC"	"45045"	"2011"	"2011"	"Female"	"F"	2011	237322	847.4	705.5
+	"Greenville County, SC"	"45045"	"2011"	"2011"	"Male"	"M"	1814	223977	809.9	917.9
+	"Greenville County, SC"	"45045"	"2012"	"2012"	"Female"	"F"	2002	240737	831.6	680.0
+	"Greenville County, SC"	"45045"	"2012"	"2012"	"Male"	"M"	1850	226868	815.5	899.4
+	"Greenville County, SC"	"45045"	"2013"	"2013"	"Female"	"F"	1958	243544	804.0	657.1
+	"Greenville County, SC"	"45045"	"2013"	"2013"	"Male"	"M"	1962	230722	850.4	924.0
+	"Greenville County, SC"	"45045"	"2014"	"2014"	"Female"	"F"	2031	248084	818.7	664.9
+	"Greenville County, SC"	"45045"	"2014"	"2014"	"Male"	"M"	1984	234668	845.4	902.3
+	"Greenville County, SC"	"45045"	"2015"	"2015"	"Female"	"F"	2174	252857	859.8	695.1
+	"Greenville County, SC"	"45045"	"2015"	"2015"	"Male"	"M"	2120	239006	887.0	926.2
+	"Greenville County, SC"	"45045"	"2016"	"2016"	"Female"	"F"	2243	256648	874.0	698.6
+	"Greenville County, SC"	"45045"	"2016"	"2016"	"Male"	"M"	2181	242118	900.8	919.5
+	"Greenville County, SC"	"45045"	"2017"	"2017"	"Female"	"F"	2196	260889	841.7	674.0
+	"Greenville County, SC"	"45045"	"2017"	"2017"	"Male"	"M"	2229	245948	906.3	911.1
+	"Greenville County, SC"	"45045"	"2018"	"2018"	"Female"	"F"	2214	264849	835.9	659.7
+	"Greenville County, SC"	"45045"	"2018"	"2018"	"Male"	"M"	2339	249364	938.0	928.8
+	"Davidson County, TN"	"47037"	"2000"	"2000"	"Female"	"F"	2650	294026	901.3	814.7
+	"Davidson County, TN"	"47037"	"2000"	"2000"	"Male"	"M"	2410	275865	873.6	1197.7
+	"Davidson County, TN"	"47037"	"2001"	"2001"	"Female"	"F"	2690	295782	909.5	822.6
+	"Davidson County, TN"	"47037"	"2001"	"2001"	"Male"	"M"	2434	278337	874.5	1199.2
+	"Davidson County, TN"	"47037"	"2002"	"2002"	"Female"	"F"	2674	295835	903.9	826.2
+	"Davidson County, TN"	"47037"	"2002"	"2002"	"Male"	"M"	2505	278380	899.8	1238.8
+	"Davidson County, TN"	"47037"	"2003"	"2003"	"Female"	"F"	2657	297643	892.7	820.5
+	"Davidson County, TN"	"47037"	"2003"	"2003"	"Male"	"M"	2535	279588	906.7	1228.3
+	"Davidson County, TN"	"47037"	"2004"	"2004"	"Female"	"F"	2490	299873	830.4	766.4
+	"Davidson County, TN"	"47037"	"2004"	"2004"	"Male"	"M"	2364	283140	834.9	1117.3
+	"Davidson County, TN"	"47037"	"2005"	"2005"	"Female"	"F"	2472	303277	815.1	749.0
+	"Davidson County, TN"	"47037"	"2005"	"2005"	"Male"	"M"	2423	286510	845.7	1120.0
+	"Davidson County, TN"	"47037"	"2006"	"2006"	"Female"	"F"	2599	307651	844.8	782.0
+	"Davidson County, TN"	"47037"	"2006"	"2006"	"Male"	"M"	2509	289946	865.3	1134.3
+	"Davidson County, TN"	"47037"	"2007"	"2007"	"Female"	"F"	2634	311227	846.3	789.7
+	"Davidson County, TN"	"47037"	"2007"	"2007"	"Male"	"M"	2340	293804	796.4	1052.1
+	"Davidson County, TN"	"47037"	"2008"	"2008"	"Female"	"F"	2564	315743	812.1	763.3
+	"Davidson County, TN"	"47037"	"2008"	"2008"	"Male"	"M"	2522	296906	849.4	1122.5
+	"Davidson County, TN"	"47037"	"2009"	"2009"	"Female"	"F"	2426	320129	757.8	715.6
+	"Davidson County, TN"	"47037"	"2009"	"2009"	"Male"	"M"	2509	300879	833.9	1089.4
+	"Davidson County, TN"	"47037"	"2010"	"2010"	"Female"	"F"	2550	323141	789.1	744.1
+	"Davidson County, TN"	"47037"	"2010"	"2010"	"Male"	"M"	2427	303540	799.6	1048.1
+	"Davidson County, TN"	"47037"	"2011"	"2011"	"Female"	"F"	2414	327972	736.0	692.8
+	"Davidson County, TN"	"47037"	"2011"	"2011"	"Male"	"M"	2444	307503	794.8	1022.5
+	"Davidson County, TN"	"47037"	"2012"	"2012"	"Female"	"F"	2476	334630	739.9	693.8
+	"Davidson County, TN"	"47037"	"2012"	"2012"	"Male"	"M"	2509	313665	799.9	1029.2
+	"Davidson County, TN"	"47037"	"2013"	"2013"	"Female"	"F"	2606	340313	765.8	720.0
+	"Davidson County, TN"	"47037"	"2013"	"2013"	"Male"	"M"	2479	318289	778.9	979.0
+	"Davidson County, TN"	"47037"	"2014"	"2014"	"Female"	"F"	2553	346406	737.0	693.2
+	"Davidson County, TN"	"47037"	"2014"	"2014"	"Male"	"M"	2621	321941	814.1	1006.9
+	"Davidson County, TN"	"47037"	"2015"	"2015"	"Female"	"F"	2629	352100	746.7	703.9
+	"Davidson County, TN"	"47037"	"2015"	"2015"	"Male"	"M"	2613	326789	799.6	989.4
+	"Davidson County, TN"	"47037"	"2016"	"2016"	"Female"	"F"	2704	354769	762.2	716.6
+	"Davidson County, TN"	"47037"	"2016"	"2016"	"Male"	"M"	2729	329641	827.9	1010.8
+	"Davidson County, TN"	"47037"	"2017"	"2017"	"Female"	"F"	2650	357863	740.5	687.2
+	"Davidson County, TN"	"47037"	"2017"	"2017"	"Male"	"M"	2849	333380	854.6	1023.1
+	"Davidson County, TN"	"47037"	"2018"	"2018"	"Female"	"F"	2721	358308	759.4	697.2
+	"Davidson County, TN"	"47037"	"2018"	"2018"	"Male"	"M"	2805	334279	839.1	995.4
+	"Knox County, TN"	"47093"	"2000"	"2000"	"Female"	"F"	1890	197455	957.2	798.5
+	"Knox County, TN"	"47093"	"2000"	"2000"	"Male"	"M"	1728	184577	936.2	1188.5
+	"Knox County, TN"	"47093"	"2001"	"2001"	"Female"	"F"	1911	199386	958.4	798.0
+	"Knox County, TN"	"47093"	"2001"	"2001"	"Male"	"M"	1675	186437	898.4	1130.8
+	"Knox County, TN"	"47093"	"2002"	"2002"	"Female"	"F"	1959	201068	974.3	814.8
+	"Knox County, TN"	"47093"	"2002"	"2002"	"Male"	"M"	1743	188375	925.3	1150.7
+	"Knox County, TN"	"47093"	"2003"	"2003"	"Female"	"F"	1975	203579	970.1	814.1
+	"Knox County, TN"	"47093"	"2003"	"2003"	"Male"	"M"	1690	190684	886.3	1079.4
+	"Knox County, TN"	"47093"	"2004"	"2004"	"Female"	"F"	1878	205391	914.4	773.2
+	"Knox County, TN"	"47093"	"2004"	"2004"	"Male"	"M"	1739	192916	901.4	1084.4
+	"Knox County, TN"	"47093"	"2005"	"2005"	"Female"	"F"	1871	208417	897.7	753.0
+	"Knox County, TN"	"47093"	"2005"	"2005"	"Male"	"M"	1758	195817	897.8	1067.4
+	"Knox County, TN"	"47093"	"2006"	"2006"	"Female"	"F"	1883	212162	887.5	739.6
+	"Knox County, TN"	"47093"	"2006"	"2006"	"Male"	"M"	1685	199623	844.1	979.9
+	"Knox County, TN"	"47093"	"2007"	"2007"	"Female"	"F"	1885	215627	874.2	722.9
+	"Knox County, TN"	"47093"	"2007"	"2007"	"Male"	"M"	1816	203469	892.5	1027.3
+	"Knox County, TN"	"47093"	"2008"	"2008"	"Female"	"F"	2010	218962	918.0	754.4
+	"Knox County, TN"	"47093"	"2008"	"2008"	"Male"	"M"	1882	206314	912.2	1040.4
+	"Knox County, TN"	"47093"	"2009"	"2009"	"Female"	"F"	1928	220790	873.2	714.4
+	"Knox County, TN"	"47093"	"2009"	"2009"	"Male"	"M"	1904	208685	912.4	1028.5
+	"Knox County, TN"	"47093"	"2010"	"2010"	"Female"	"F"	1961	222141	882.8	712.9
+	"Knox County, TN"	"47093"	"2010"	"2010"	"Male"	"M"	2003	210085	953.4	1056.2
+	"Knox County, TN"	"47093"	"2011"	"2011"	"Female"	"F"	2015	224315	898.3	719.1
+	"Knox County, TN"	"47093"	"2011"	"2011"	"Male"	"M"	1985	212614	933.6	1021.1
+	"Knox County, TN"	"47093"	"2012"	"2012"	"Female"	"F"	2098	226574	926.0	730.4
+	"Knox County, TN"	"47093"	"2012"	"2012"	"Male"	"M"	2014	214737	937.9	1011.5
+	"Knox County, TN"	"47093"	"2013"	"2013"	"Female"	"F"	2047	228552	895.6	700.7
+	"Knox County, TN"	"47093"	"2013"	"2013"	"Male"	"M"	1956	216070	905.3	958.8
+	"Knox County, TN"	"47093"	"2014"	"2014"	"Female"	"F"	2277	230664	987.2	772.7
+	"Knox County, TN"	"47093"	"2014"	"2014"	"Male"	"M"	2200	217980	1009.3	1047.5
+	"Knox County, TN"	"47093"	"2015"	"2015"	"Female"	"F"	2177	231868	938.9	731.0
+	"Knox County, TN"	"47093"	"2015"	"2015"	"Male"	"M"	2152	219456	980.6	1002.9
+	"Knox County, TN"	"47093"	"2016"	"2016"	"Female"	"F"	2231	234563	951.1	731.6
+	"Knox County, TN"	"47093"	"2016"	"2016"	"Male"	"M"	2182	221569	984.8	984.2
+	"Knox County, TN"	"47093"	"2017"	"2017"	"Female"	"F"	2292	237448	965.3	745.3
+	"Knox County, TN"	"47093"	"2017"	"2017"	"Male"	"M"	2290	224412	1020.4	1023.3
+	"Knox County, TN"	"47093"	"2018"	"2018"	"Female"	"F"	2335	239283	975.8	752.3
+	"Knox County, TN"	"47093"	"2018"	"2018"	"Male"	"M"	2441	226006	1080.1	1063.4
+	"Shelby County, TN"	"47157"	"2000"	"2000"	"Female"	"F"	4181	468827	891.8	914.6
+	"Shelby County, TN"	"47157"	"2000"	"2000"	"Male"	"M"	4018	428645	937.4	1376.6
+	"Shelby County, TN"	"47157"	"2001"	"2001"	"Female"	"F"	4142	469767	881.7	901.4
+	"Shelby County, TN"	"47157"	"2001"	"2001"	"Male"	"M"	3679	429578	856.4	1242.9
+	"Shelby County, TN"	"47157"	"2002"	"2002"	"Female"	"F"	4107	471772	870.5	894.7
+	"Shelby County, TN"	"47157"	"2002"	"2002"	"Male"	"M"	3838	430862	890.8	1284.3
+	"Shelby County, TN"	"47157"	"2003"	"2003"	"Female"	"F"	4040	474432	851.5	874.8
+	"Shelby County, TN"	"47157"	"2003"	"2003"	"Male"	"M"	3748	432301	867.0	1242.2
+	"Shelby County, TN"	"47157"	"2004"	"2004"	"Female"	"F"	3889	474874	819.0	838.4
+	"Shelby County, TN"	"47157"	"2004"	"2004"	"Male"	"M"	3675	434769	845.3	1202.3
+	"Shelby County, TN"	"47157"	"2005"	"2005"	"Female"	"F"	3996	476712	838.2	854.5
+	"Shelby County, TN"	"47157"	"2005"	"2005"	"Male"	"M"	3907	436489	895.1	1232.4
+	"Shelby County, TN"	"47157"	"2006"	"2006"	"Female"	"F"	3817	481023	793.5	802.1
+	"Shelby County, TN"	"47157"	"2006"	"2006"	"Male"	"M"	3716	439083	846.3	1152.3
+	"Shelby County, TN"	"47157"	"2007"	"2007"	"Female"	"F"	3836	481027	797.5	798.8
+	"Shelby County, TN"	"47157"	"2007"	"2007"	"Male"	"M"	3790	440092	861.2	1168.3
+	"Shelby County, TN"	"47157"	"2008"	"2008"	"Female"	"F"	3938	481607	817.7	808.6
+	"Shelby County, TN"	"47157"	"2008"	"2008"	"Male"	"M"	3599	439078	819.7	1097.7
+	"Shelby County, TN"	"47157"	"2009"	"2009"	"Female"	"F"	3768	482805	780.4	762.6
+	"Shelby County, TN"	"47157"	"2009"	"2009"	"Male"	"M"	3733	439736	848.9	1110.2
+	"Shelby County, TN"	"47157"	"2010"	"2010"	"Female"	"F"	3818	484992	787.2	767.7
+	"Shelby County, TN"	"47157"	"2010"	"2010"	"Male"	"M"	3737	442652	844.2	1109.3
+	"Shelby County, TN"	"47157"	"2011"	"2011"	"Female"	"F"	3824	488948	782.1	740.7
+	"Shelby County, TN"	"47157"	"2011"	"2011"	"Male"	"M"	3636	446140	815.0	1029.2
+	"Shelby County, TN"	"47157"	"2012"	"2012"	"Female"	"F"	3829	491611	778.9	732.2
+	"Shelby County, TN"	"47157"	"2012"	"2012"	"Male"	"M"	3890	449153	866.1	1081.8
+	"Shelby County, TN"	"47157"	"2013"	"2013"	"Female"	"F"	3976	491565	808.8	752.5
+	"Shelby County, TN"	"47157"	"2013"	"2013"	"Male"	"M"	3966	447900	885.5	1076.9
+	"Shelby County, TN"	"47157"	"2014"	"2014"	"Female"	"F"	3877	491679	788.5	724.8
+	"Shelby County, TN"	"47157"	"2014"	"2014"	"Male"	"M"	4036	447124	902.7	1078.7
+	"Shelby County, TN"	"47157"	"2015"	"2015"	"Female"	"F"	4064	491423	827.0	741.7
+	"Shelby County, TN"	"47157"	"2015"	"2015"	"Male"	"M"	4178	446646	935.4	1092.2
+	"Shelby County, TN"	"47157"	"2016"	"2016"	"Female"	"F"	4001	489831	816.8	722.7
+	"Shelby County, TN"	"47157"	"2016"	"2016"	"Male"	"M"	4128	444772	928.1	1057.4
+	"Shelby County, TN"	"47157"	"2017"	"2017"	"Female"	"F"	4035	491208	821.4	717.3
+	"Shelby County, TN"	"47157"	"2017"	"2017"	"Male"	"M"	4235	445753	950.1	1071.7
+	"Shelby County, TN"	"47157"	"2018"	"2018"	"Female"	"F"	4129	491242	840.5	717.5
+	"Shelby County, TN"	"47157"	"2018"	"2018"	"Male"	"M"	4399	444522	989.6	1089.3
+	"Richmond city, VA"	"51760"	"2000"	"2000"	"Female"	"F"	1295	105722	1224.9	985.8
+	"Richmond city, VA"	"51760"	"2000"	"2000"	"Male"	"M"	1176	92068	1277.3	1543.6
+	"Richmond city, VA"	"51760"	"2001"	"2001"	"Female"	"F"	1188	104863	1132.9	936.6
+	"Richmond city, VA"	"51760"	"2001"	"2001"	"Male"	"M"	1113	92712	1200.5	1481.5
+	"Richmond city, VA"	"51760"	"2002"	"2002"	"Female"	"F"	1169	104901	1114.4	920.1
+	"Richmond city, VA"	"51760"	"2002"	"2002"	"Male"	"M"	1142	92612	1233.1	1508.1
+	"Richmond city, VA"	"51760"	"2003"	"2003"	"Female"	"F"	1200	104470	1148.7	964.6
+	"Richmond city, VA"	"51760"	"2003"	"2003"	"Male"	"M"	1177	92836	1267.8	1558.6
+	"Richmond city, VA"	"51760"	"2004"	"2004"	"Female"	"F"	1049	104213	1006.6	857.2
+	"Richmond city, VA"	"51760"	"2004"	"2004"	"Male"	"M"	1058	92665	1141.7	1408.8
+	"Richmond city, VA"	"51760"	"2005"	"2005"	"Female"	"F"	1026	104397	982.8	848.7
+	"Richmond city, VA"	"51760"	"2005"	"2005"	"Male"	"M"	1126	93068	1209.9	1470.1
+	"Richmond city, VA"	"51760"	"2006"	"2006"	"Female"	"F"	1056	104803	1007.6	877.5
+	"Richmond city, VA"	"51760"	"2006"	"2006"	"Male"	"M"	1014	93815	1080.9	1296.9
+	"Richmond city, VA"	"51760"	"2007"	"2007"	"Female"	"F"	1016	105580	962.3	837.3
+	"Richmond city, VA"	"51760"	"2007"	"2007"	"Male"	"M"	1049	94621	1108.6	1341.6
+	"Richmond city, VA"	"51760"	"2008"	"2008"	"Female"	"F"	1016	106335	955.5	841.1
+	"Richmond city, VA"	"51760"	"2008"	"2008"	"Male"	"M"	927	95919	966.4	1181.2
+	"Richmond city, VA"	"51760"	"2009"	"2009"	"Female"	"F"	964	106848	902.2	802.3
+	"Richmond city, VA"	"51760"	"2009"	"2009"	"Male"	"M"	932	96830	962.5	1151.0
+	"Richmond city, VA"	"51760"	"2010"	"2010"	"Female"	"F"	948	106883	887.0	782.7
+	"Richmond city, VA"	"51760"	"2010"	"2010"	"Male"	"M"	939	97331	964.7	1167.0
+	"Richmond city, VA"	"51760"	"2011"	"2011"	"Female"	"F"	894	107472	831.8	724.3
+	"Richmond city, VA"	"51760"	"2011"	"2011"	"Male"	"M"	936	98061	954.5	1126.2
+	"Richmond city, VA"	"51760"	"2012"	"2012"	"Female"	"F"	938	110402	849.6	741.5
+	"Richmond city, VA"	"51760"	"2012"	"2012"	"Male"	"M"	914	99907	914.9	1061.2
+	"Richmond city, VA"	"51760"	"2013"	"2013"	"Female"	"F"	923	112276	822.1	718.2
+	"Richmond city, VA"	"51760"	"2013"	"2013"	"Male"	"M"	948	101838	930.9	1086.6
+	"Richmond city, VA"	"51760"	"2014"	"2014"	"Female"	"F"	904	113971	793.2	710.9
+	"Richmond city, VA"	"51760"	"2014"	"2014"	"Male"	"M"	930	103882	895.2	1030.6
+	"Richmond city, VA"	"51760"	"2015"	"2015"	"Female"	"F"	837	115498	724.7	655.7
+	"Richmond city, VA"	"51760"	"2015"	"2015"	"Male"	"M"	878	104791	837.9	947.8
+	"Richmond city, VA"	"51760"	"2016"	"2016"	"Female"	"F"	903	117253	770.1	698.7
+	"Richmond city, VA"	"51760"	"2016"	"2016"	"Male"	"M"	903	105917	852.6	980.4
+	"Richmond city, VA"	"51760"	"2017"	"2017"	"Female"	"F"	892	119258	748.0	656.7
+	"Richmond city, VA"	"51760"	"2017"	"2017"	"Male"	"M"	959	107774	889.8	972.7
+	"Richmond city, VA"	"51760"	"2018"	"2018"	"Female"	"F"	845	120327	702.3	604.7
+	"Richmond city, VA"	"51760"	"2018"	"2018"	"Male"	"M"	973	108456	897.1	967.7
+"---"
+"Dataset: Underlying Cause of Death, 1999-2018"
+"Query Parameters:"
+"States: Jefferson County, AL (01073); Duval County, FL (12031); Marion County, IN (18097); Jefferson County, KY (21111); Kent"
+"County, MI (26081); Jackson County, MO (29095); St. Louis County, MO (29189); St. Louis city, MO (29510); Douglas County, NE"
+"(31055); Guilford County, NC (37081); Mecklenburg County, NC (37119); Wake County, NC (37183); Franklin County, OH (39049);"
+"Hamilton County, OH (39061); Montgomery County, OH (39113); Oklahoma County, OK (40109); Tulsa County, OK (40143); Greenville"
+"County, SC (45045); Davidson County, TN (47037); Knox County, TN (47093); Shelby County, TN (47157); Richmond city, VA (51760)"
+"Year/Month: 2000; 2001; 2002; 2003; 2004; 2005; 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017; 2018"
+"Group By: County; Year; Gender"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Standard Population: 2000 U.S. Std. Population"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Dec 15, 2020 12:25:19 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2018 on CDC WONDER Online Database, released in 2020. Data are from the Multiple Cause of Death Files, 1999-2018, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Dec 15, 2020 12:25:19 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Deaths and population estimates are reported separately for St. Louis City (FIPS code 29510) and county (FIPS code 29189)."
+"3. The populations used to calculate standard age-adjusted rates are documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2000 Standard Population."
+"4. The method used to calculate age-adjusted rates is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Age-Adjusted Rates."
+"5. Deaths for persons of unknown age are included in counts and crude rates, but are not included in age-adjusted rates."
+"6. The population figures for year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018"
+"postcensal series released by NCHS on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for"
+"year 2016 are bridged-race estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS"
+"on June 26, 2017. The population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2015 postcensal series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The"
+"population figures for year 2013 are bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal"
+"series released by NCHS on June 26, 2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2012 postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18,"
+"2012. Population figures for 2010 are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race"
+"estimates of the July 1 resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on"
+"October 26, 2012. Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999"
+"intercensal series of July 1 estimates. Population figures for the infant age groups are the number of live births."
+"<br/><b>Note:</b> Rates and population figures for years 2001 - 2009 differ slightly from previously published reports, due to"
+"use of the population estimates which were available at the time of release."
+"7. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."
