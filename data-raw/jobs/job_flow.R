@@ -1,19 +1,11 @@
-library(tidyr)
-library(readr)
-library(dplyr)
-library(stringr)
-library(magrittr)
 library(glptools)
-
-library(purrr)
-
-path <- "data-raw/jobs/job_flow/"
+glp_load_packages()
 
 get_qwi <- function(variables = c("FrmJbGn", "FrmJbLs", "FrmJbGnS", "FrmJbLsS", "Emp", "EmpEnd"),
                     group = "total",
                     industry_level = "A",
                     geog = "FIPS",
-                    geog_codes = c("01073", FIPS_df$FIPS[2:22])) {
+                    geog_codes = FIPS_df_two_stl$FIPS) {
 
   if (group == "total") {
     endpoint <- "sa"
@@ -26,7 +18,7 @@ get_qwi <- function(variables = c("FrmJbGn", "FrmJbLs", "FrmJbGnS", "FrmJbLsS", 
     demog_groups <- "&race=A0&race=A1&race=A2&ethnicity=A1&ethnicity=A2"
   }
 
-  if (geog == "FIPS") yrs <- 2002:2017 else yrs <- 2005:2016
+  if (geog == "FIPS") yrs <- 2002:2018 else yrs <- 2005:2018
 
   urls <- crossing(years = yrs,
                    endpoint,
@@ -133,14 +125,14 @@ job_flow_total <- get_qwi()
 job_flow_sex   <- get_qwi(group = "sex")
 job_flow_race  <- get_qwi(group = "race")
 
-all_FIPS <- MSA_FIPS$FIPS %>%
-  subset(. != "MERGED") %>%
-  str_pad(5, "left", "0")
+job_flow_county <- bind_rows(job_flow_total, job_flow_sex, job_flow_race)
+
+all_FIPS <- MSA_FIPS$FIPS[MSA_FIPS$FIPS != "MERGED"]
 
 job_flow_msa_1yr <- get_qwi(geog = "MSA", geog_codes = all_FIPS)
 
-job_flow_county <- bind_rows(job_flow_total, job_flow_sex, job_flow_race)
+job_flow_msa_1yr %<>% filter(!is.na(job_flow_msa_1yr$MSA))
 
-update_sysdata(job_flow_county, job_flow_msa_1yr)
+usethis::use_data(job_flow_county, job_flow_msa_1yr)
 
-rm(get_qwi, job_flow_total, job_flow_sex, job_flow_race, path)
+rm(get_qwi, job_flow_total, job_flow_sex, job_flow_race, all_FIPS)
