@@ -1,6 +1,5 @@
-library(tidyverse)
-library(magrittr)
 library(glptools)
+glp_load_packages()
 
 path <- "data-raw/health/natality/"
 
@@ -23,14 +22,7 @@ underweight <- bind_rows(underweight_03, underweight_07)
 
 underweight %<>% rename(underweight = births)
 
-natality_total <- full_join(all, underweight, by = c("FIPS", "year"))
-
-# Create underweight bith variable
-natality_total %<>%
-  mutate(
-    underweight = underweight / births * 100,
-    race = "total",
-    sex = "total")
+natality_total <- bind_df(all, underweight)
 
 
 # Sex
@@ -52,13 +44,7 @@ underweight_sex <- bind_rows(underweight_sex_03, underweight_sex_07)
 
 underweight_sex %<>% rename(underweight = births)
 
-natality_sex <- full_join(all_sex, underweight_sex, by = c("FIPS", "year", "sex"))
-
-# Create underweight bith variable
-natality_sex %<>%
-  mutate(
-    underweight = underweight / births * 100,
-    race = "total")
+natality_sex <- bind_df(all_sex, underweight_sex)
 
 
 # Race
@@ -88,20 +74,20 @@ underweight_race <- bind_rows(underweight_bw_03, underweight_bw_07, underweight_
 
 underweight_race %<>% rename(underweight = births)
 
-natality_race <- full_join(all_race, underweight_race, by = c("FIPS", "year", "race"))
+natality_race <- bind_df(all_race, underweight_race)
 
-# Create underweight birth variable
-natality_race %<>%
-  mutate(
-    underweight = underweight / births * 100,
-    sex = "total")
 
 # Bind all data frames
 natality_county <- bind_rows(natality_total, natality_sex, natality_race) %>%
-  select(-births) %>%
+  transmute(
+    FIPS, year, sex, race,
+    estimate = underweight,
+    percent = underweight / births * 100,
+    population = births) %>%
+  pivot_longer(estimate:population, values_to = "underweight_births", names_to = "var_type") %>%
   organize()
 
-update_sysdata(natality_county)
+usethis::use_data(natality_county, overwrite = TRUE)
 
 rm(all, all_03, all_07, all_bw_03, all_bw_07, all_h_03, all_h_07, all_race, all_sex_03, all_sex_07, all_sex,
    underweight, underweight_03, underweight_07, underweight_bw_03, underweight_bw_07, underweight_h_03,

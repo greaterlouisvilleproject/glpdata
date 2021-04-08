@@ -92,21 +92,35 @@ function(df, var, age_var = "age", pop_var = "population"){
 brfss_micro %<>%
   filter(year > 2002) %>%
   mutate(
-    poor_or_fair = recode(genhlth, 0, 0, 0, 1, 1, .default = NA_real_),
+    poor_or_fair = case_when(
+      genhlth %in% 1:3 ~ F,
+      genhlth %in% 4:5 ~ T,
+      genhlth %in% c(7, 9) ~ NA),
 
-    physdays = replace(physdays, physdays == 88, 0),
-    physdays = replace(physdays, physdays %in% c(77, 99), NA),
+    physdays = case_when(
+      physdays == 88 ~ 0,
+      physdays %in% 1:30 ~ as.double(physdays),
+      physdays %in% c(77, 99) ~ NA_real_),
 
-    mentdays = replace(mentdays, mentdays == 88, 0),
-    mentdays = replace(mentdays, mentdays %in% c(77, 99), NA),
+    mentdays = case_when(
+      mentdays == 88 ~ 0,
+      mentdays %in% 1:30 ~ as.double(mentdays),
+      mentdays %in% c(77, 99) ~ NA_real_),
 
-    diabetes = replace(diabetes, diabetes %in% 2:4, 0) %>%
-      replace(. %in% 7:9, NA),
+    diabetes = case_when(
+      diabetes == 1 ~ T,
+      diabetes %in% 2:4 ~ F,
+      diabetes %in% c(7, 9) ~ NA),
 
-    asthma = replace(asthma, asthma %in% 1:2, 1) %>%
-      replace(. == 9, NA),
+    asthma = case_when(
+      asthma == 1 ~ T,
+      asthma == 2 ~ F,
+      asthma %in% c(7, 9) ~ NA),
 
-    pcp = recode(pcp, `1` = 1, `2` = 1, `3` = 0, .default = NA_real_))
+    pcp = case_when(
+      pcp %in% 1:2 ~ T,
+      pcp == 3 ~ F,
+      pcp %in% c(7, 9) ~ NA))
 
 
 age_groups <-
@@ -165,8 +179,7 @@ std_pop <- std_pop %>%
 
 brfss_prevelance <- brfss_micro %>%
   group_by(MSA, year, age_group) %>%
-  summarise(age_pop = sum(wgt)) %>%
-  ungroup() %>%
+  summarise(age_pop = sum(wgt), .groups = "drop") %>%
   group_by(MSA, year) %>%
   transmute(
     age_group,
@@ -178,100 +191,101 @@ brfss_prevelance <- brfss_micro %>%
     wgt_adjustment = weight / group_pct)
 
 
-test <- brfss_micro %>%
-  group_by(MSA, year) %>%
-  left_join(brfss_prevelance, by = c("MSA", "year", "age_group")) %>%
-  mutate(wgt2 = wgt * wgt_adjustment) %>%
-  summarise(
-    pcp_raw = weighted.mean(pcp, wgt, na.rm = TRUE),
-    pcp_age = weighted.mean(pcp, wgt2, na.rm = TRUE)) %>%
-  ungroup()
-
-test %<>%
-  left_join(std_pop, by = "age_group") %>%
-  group_by(MSA, year) %>%
-  summarise(pcp = sum(pcp * weight)) %>%
-  ungroup()
-
-
+# test <- brfss_micro %>%
+#   group_by(MSA, year) %>%
+#   left_join(brfss_prevelance, by = c("MSA", "year", "age_group")) %>%
+#   mutate(wgt2 = wgt * wgt_adjustment) %>%
+#   summarise(
+#     pcp_raw = weighted.mean(pcp, wgt, na.rm = TRUE),
+#     pcp_age = weighted.mean(pcp, wgt2, na.rm = TRUE)) %>%
+#   ungroup()
+#
+# test %<>%
+#   left_join(std_pop, by = "age_group") %>%
+#   group_by(MSA, year) %>%
+#   summarise(pcp = sum(pcp * weight)) %>%
+#   ungroup()
 
 
+demogs <- c("total", "sex", "race")
+
+tictoc::tic()
 brfss_msa_1yr <- bind_df(
-  svy_race_sex(brfss_micro, "poor_or_fair", "wgt", "MSA"),
-  svy_race_sex(brfss_micro, "physdays",     "wgt", "MSA"),
-  svy_race_sex(brfss_micro, "mentdays",     "wgt", "MSA"),
-  svy_race_sex(brfss_micro, "diabetes",     "wgt", "MSA"),
-  svy_race_sex(brfss_micro, "asthma",       "wgt", "MSA"),
-  svy_race_sex(brfss_micro, "pcp",          "wgt", "MSA"))
+  svy_race_sex(brfss_micro, "poor_or_fair", "proportion", "wgt", "MSA", breakdowns = demogs),
+  svy_race_sex(brfss_micro, "physdays",     "mean", "wgt", "MSA", breakdowns = demogs),
+  svy_race_sex(brfss_micro, "mentdays",     "mean", "wgt", "MSA", breakdowns = demogs),
+  svy_race_sex(brfss_micro, "diabetes",     "proportion", "wgt", "MSA", breakdowns = demogs),
+  svy_race_sex(brfss_micro, "asthma",       "proportion", "wgt", "MSA", breakdowns = demogs),
+  svy_race_sex(brfss_micro, "pcp",          "proportion", "wgt", "MSA", breakdowns = demogs))
+tictoc::toc()
 
-brfss_msa_1yr %<>%
-  mutate_at(vars(poor_or_fair, diabetes, asthma, pcp), ~ . * 100) %>%
-  organize() %>%
-  mutate(no_pcp = 100 - pcp)
+write_feather(brfss_msa_1yr, path %p% "brfss_msa_1yr.feather")
 
 # The Greensboro MSA does not have enough results to be included after 2014.
 # Model data based off CHR Greensboro data and the Greensboro AHEC
 # (contains Greensboro MSA and 5 other counties)
 # Also need to model physical and mentally healthy days
-
-greensboro_chr_14 <- read_csv(path %p% "2014.csv")
-greensboro_chr_15 <- read_csv(path %p% "2015.csv")
-greensboro_chr_16 <- read_csv(path %p% "2016.csv")
-
-greensboro_chr_14 %<>%
-  filter(
-    STATECODE == "37",
-    COUNTYCODE %in% c("081", "151", "157")) %>%
-  transmute(
-    FIPS             = paste0(STATECODE, COUNTYCODE),
-    year             = 2014,
-    poor_or_fair     = `Poor or fair health Value` * 100,
-    physdays         = `Poor physical health days Value`,
-    mentdays         = `Poor mental health days Value`,
-    diabetes         = `Diabetes Value` * 100)
-
-greensboro_chr_15 %<>%
-  filter(`5-Digit FIPS Code` %in% c("37081", "37151", "37157")) %>%
-  transmute(
-    FIPS             = `5-Digit FIPS Code`,
-    year             = 2015,
-    poor_or_fair     = as.numeric(`Poor or fair health Value`) * 100,
-    physdays         = as.numeric(`Poor physical health days Value`),
-    mentdays         = as.numeric(`Poor mental health days Value`),
-    diabetes         = as.numeric(`Diabetes Value`) * 100)
-
-greensboro_chr_16 %<>%
-  filter(`5-digit FIPS Code` %in% c("37081", "37151", "37157")) %>%
-  transmute(
-    FIPS             = `5-digit FIPS Code`,
-    year             = 2016,
-    poor_or_fair     = as.numeric(`Poor or fair health raw value`) * 100,
-    physdays         = as.numeric(`Poor physical health days raw value`),
-    mentdays         = as.numeric(`Poor mental health days raw value`),
-    diabetes         = as.numeric(`Diabetes prevalence raw value`) * 100)
-
-greensboro_chr_17 <- greensboro_chr_16 %>%
-  mutate(year = 2017)
-
-greensboro_chr <- bind_rows(greensboro_chr_14, greensboro_chr_15, greensboro_chr_16, greensboro_chr_17) %>%
-  mutate(race = "total", sex = "total") %>%
-  left_join(glpdata:::population_msa_counties, by = c("FIPS", "year", "sex", "race")) %>%
-  select(-race, -sex)
-
-greensboro_chr %<>%
-  select(-FIPS) %>%
-  group_by(year) %>%
-  summarise_all(~weighted.mean(., population)) %>%
-  select(-population) %>%
-  filter(year > 2014) %>%
-  mutate(MSA = 24660, sex = "total", race = "total")
+#
+# greensboro_chr_14 <- read_csv(path %p% "2014.csv")
+# greensboro_chr_15 <- read_csv(path %p% "2015.csv")
+# greensboro_chr_16 <- read_csv(path %p% "2016.csv")
+#
+# greensboro_chr_14 %<>%
+#   filter(
+#     STATECODE == "37",
+#     COUNTYCODE %in% c("081", "151", "157")) %>%
+#   transmute(
+#     FIPS             = paste0(STATECODE, COUNTYCODE),
+#     year             = 2014,
+#     poor_or_fair     = `Poor or fair health Value` * 100,
+#     physdays         = `Poor physical health days Value`,
+#     mentdays         = `Poor mental health days Value`,
+#     diabetes         = `Diabetes Value` * 100)
+#
+# greensboro_chr_15 %<>%
+#   filter(`5-Digit FIPS Code` %in% c("37081", "37151", "37157")) %>%
+#   transmute(
+#     FIPS             = `5-Digit FIPS Code`,
+#     year             = 2015,
+#     poor_or_fair     = as.numeric(`Poor or fair health Value`) * 100,
+#     physdays         = as.numeric(`Poor physical health days Value`),
+#     mentdays         = as.numeric(`Poor mental health days Value`),
+#     diabetes         = as.numeric(`Diabetes Value`) * 100)
+#
+# greensboro_chr_16 %<>%
+#   filter(`5-digit FIPS Code` %in% c("37081", "37151", "37157")) %>%
+#   transmute(
+#     FIPS             = `5-digit FIPS Code`,
+#     year             = 2016,
+#     poor_or_fair     = as.numeric(`Poor or fair health raw value`) * 100,
+#     physdays         = as.numeric(`Poor physical health days raw value`),
+#     mentdays         = as.numeric(`Poor mental health days raw value`),
+#     diabetes         = as.numeric(`Diabetes prevalence raw value`) * 100)
+#
+# greensboro_chr_17 <- greensboro_chr_16 %>%
+#   mutate(year = 2017)
+#
+# greensboro_chr <- bind_rows(greensboro_chr_14, greensboro_chr_15, greensboro_chr_16, greensboro_chr_17) %>%
+#   mutate(race = "total", sex = "total") %>%
+#   left_join(glpdata:::population_msa_counties, by = c("FIPS", "year", "sex", "race")) %>%
+#   select(-race, -sex)
+#
+# greensboro_chr %<>%
+#   select(-FIPS) %>%
+#   group_by(year) %>%
+#   summarise_all(~weighted.mean(., population)) %>%
+#   select(-population) %>%
+#   filter(year > 2014) %>%
+#   mutate(MSA = 24660, sex = "total", race = "total")
+#
+# brfss_msa_1yr %<>%
+#   filter(!(MSA == 24660 & sex == "total" & race == "total" & year >= 2015)) %>%
+#   bind_rows(greensboro_chr) %>%
 
 brfss_msa_1yr %<>%
-  filter(!(MSA == 24660 & sex == "total" & race == "total" & year >= 2015)) %>%
-  bind_rows(greensboro_chr) %>%
   organize()
 
-update_sysdata(brfss_msa_1yr)
+usethis::use_data(brfss_msa_1yr)
 
 rm(brfss_micro, greensboro_chr_14, greensboro_chr_15,
    greensboro_chr_16, greensboro_chr_17, greensboro_chr, path)
