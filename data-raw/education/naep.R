@@ -33,6 +33,8 @@ naep_ky %<>%
   mutate(variable = if_else(variable == "Kentucky", "mean", "lou")) %>%
   spread_ky_ed()
 
+attr(naep_ky, 'problems') <- NULL
+
 usethis::use_data(naep_ky, overwrite = TRUE)
 
 rm(path, read_naep, naep_math, naep_reading, clean_ky_ed, process_ky_ed, spread_ky_ed, clean_55k)
