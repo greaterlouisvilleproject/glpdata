@@ -1,16 +1,7 @@
-library(tidyr)
-library(readr)
-library(dplyr)
-library(stringr)
-library(magrittr)
 library(glptools)
+glp_load_packages()
 
-library(survey)
-library(feather)
-
-path <- "data-raw/education/high_wage/"
-
-acs_micro <- read_feather("data-raw/microdata/acs_micro.feather")
+acs_micro <- feather::read_feather("data-raw/microdata/acs_micro_repwts.feather")
 
 hw_2000 <- c(
   #Management, business, science, and arts occupations
@@ -34,39 +25,46 @@ hw_acs <- c(
 
 acs_micro %<>%
   mutate(
-    high_wage = if_else(OCC %in% hw_2000 & year == 2000, 1, 0),
-    high_wage = replace(high_wage, OCC %in% hw_acs & year >= 2005, 1),
-    high_wage = replace(high_wage, OCC == 0, NA))
+    high_wage = case_when(
+      year == 2000 & OCC %in% hw_2000 ~ TRUE,
+      year >= 2005 & OCC %in% hw_acs  ~ TRUE,
+      OCC == 0 ~ NA,
+      TRUE ~ FALSE))
 
-high_wage_county  <- svy_race_sex(acs_micro, high_wage)
-high_wage_msa_1yr <- svy_race_sex(acs_micro, high_wage, geog = "MSA")
+high_wage_county  <- survey_by_demog(acs_micro, high_wage)
+high_wage_msa_1yr <- survey_by_demog(acs_micro, high_wage, geog = "MSA")
 
-high_wage_msa_1yr %<>% mutate(MSA = as.character(MSA))
+high_wage_05_5yr <- build_census_var_df("acs5", "C24010") %>% filter(year >= 2014, race == "total")
 
-# Map
-high_wage_map <- read_csv(path %p% "ACS_17_5YR_S2401_with_ann.csv", skip = 1)
+high_wage_recode = data.frame(
+  variable = c("C24010_002E", "C24010_003E", "C24010_023E", "C24010_032E", "C24010_038E", "C24010_039E", "C24010_059E", "C24010_068E"),
+  label = c("total", "high_wage", "high_wage", "high_wage"),
+  sex   = rep(c("male", "female"), each = 4),
+  group = c("total",
+            "Management business science and arts occupations",
+            "Service occupations..Protective service occupations..Law enforcement workers including supervisors",
+            "Natural resources construction and maintenance occupations..Construction and extraction occupations"),
+  stringsAsFactors = F)
 
-high_wage_tract <- high_wage_map %>%
-  transmute(
-    tract = Id,
-    year = 2015,
-    high_wage =
-      (`Total; Estimate; Management, business, science, and arts occupations:` +
-      `Total; Estimate; Service occupations: - Protective service occupations: - Law enforcement workers including supervisors` +
-      `Total; Estimate; Natural resources, construction, and maintenance occupations: - Construction and extraction occupations`) /
-      `Total; Estimate; Civilian employed population 16 years and over` * 100)
+high_wage_05_5yr %<>% filter(variable %in% high_wage_recode$variable)
 
-high_wage_nh <- high_wage_map %>%
-  left_join(nh_tract, by = c("Id" = "GEO_ID")) %>%
-  group_by(neighborhood) %>%
-  summarise(
-    year = 2015,
-    high_wage =
-      sum(`Total; Estimate; Management, business, science, and arts occupations:` +
-          `Total; Estimate; Service occupations: - Protective service occupations: - Law enforcement workers including supervisors` +
-          `Total; Estimate; Natural resources, construction, and maintenance occupations: - Construction and extraction occupations`) /
-      sum(`Total; Estimate; Civilian employed population 16 years and over`) * 100)
+high_wage_map    <- get_census(high_wage_05_5yr, geog = "tract", parallel =  T)
 
-update_sysdata(high_wage_county, high_wage_tract, high_wage_nh, high_wage_msa_1yr)
+high_wage_map %<>%
+  transmute(tract, year, race, sex, value, variable) %>%
+  left_join(high_wage_recode, by = c("sex", "variable")) %>%
+  group_by(tract, year, race, sex, label) %>%
+  summarise(value = sum(value)) %>%
+  ungroup() %>%
+  pivot_wider(names_from = label, values_from = value) %>%
+  total_demographics(high_wage:total) %>%
+  organize()
 
-rm(hw_2000, hw_acs, acs_micro, path, high_wage_map)
+high_wage_map %>%
+  process_map("high_wage", pop = "total", method = "percent", return_name = "high_wage") %>%
+  list2env(.GlobalEnv)
+
+usethis::use_data(high_wage_msa_1yr, high_wage_county,
+                  high_wage_tract, high_wage_nh, high_wage_muw, overwrite = TRUE)
+
+rm(hw_2000, hw_acs, acs_micro, high_wage_map, high_wage_05_5yr, high_wage_recode)
