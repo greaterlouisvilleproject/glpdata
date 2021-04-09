@@ -1,0 +1,924 @@
+"Notes"	"County"	"County Code"	"Year"	"Year Code"	"Race"	"Race Code"	Deaths	Population	Crude Rate	Age Adjusted Rate
+	"Jefferson County, AL"	"01073"	"2000"	"2000"	"Black or African American"	"2054-5"	2417	261304	925.0	1124.3
+	"Jefferson County, AL"	"01073"	"2000"	"2000"	"White"	"2106-3"	4275	382469	1117.7	876.0
+	"Jefferson County, AL"	"01073"	"2001"	"2001"	"Black or African American"	"2054-5"	2537	263244	963.7	1174.3
+	"Jefferson County, AL"	"01073"	"2001"	"2001"	"White"	"2106-3"	4167	377031	1105.2	860.3
+	"Jefferson County, AL"	"01073"	"2002"	"2002"	"Black or African American"	"2054-5"	2567	263881	972.8	1199.1
+	"Jefferson County, AL"	"01073"	"2002"	"2002"	"White"	"2106-3"	4271	371901	1148.4	885.2
+	"Jefferson County, AL"	"01073"	"2003"	"2003"	"Black or African American"	"2054-5"	2524	265681	950.0	1186.6
+	"Jefferson County, AL"	"01073"	"2003"	"2003"	"White"	"2106-3"	4282	368393	1162.3	889.5
+	"Jefferson County, AL"	"01073"	"2004"	"2004"	"Black or African American"	"2054-5"	2471	267085	925.2	1147.6
+	"Jefferson County, AL"	"01073"	"2004"	"2004"	"White"	"2106-3"	4209	363467	1158.0	877.8
+	"Jefferson County, AL"	"01073"	"2005"	"2005"	"Black or African American"	"2054-5"	2501	268781	930.5	1151.6
+	"Jefferson County, AL"	"01073"	"2005"	"2005"	"White"	"2106-3"	4084	358626	1138.8	846.8
+	"Jefferson County, AL"	"01073"	"2006"	"2006"	"Black or African American"	"2054-5"	2499	271507	920.4	1130.8
+	"Jefferson County, AL"	"01073"	"2006"	"2006"	"White"	"2106-3"	4022	354750	1133.8	831.1
+	"Jefferson County, AL"	"01073"	"2007"	"2007"	"Black or African American"	"2054-5"	2411	272690	884.2	1079.7
+	"Jefferson County, AL"	"01073"	"2007"	"2007"	"White"	"2106-3"	3927	350886	1119.2	812.7
+	"Jefferson County, AL"	"01073"	"2008"	"2008"	"Black or African American"	"2054-5"	2464	274755	896.8	1078.9
+	"Jefferson County, AL"	"01073"	"2008"	"2008"	"White"	"2106-3"	4088	348388	1173.4	840.3
+	"Jefferson County, AL"	"01073"	"2009"	"2009"	"Black or African American"	"2054-5"	2341	277169	844.6	1006.7
+	"Jefferson County, AL"	"01073"	"2009"	"2009"	"White"	"2106-3"	3906	345973	1129.0	801.0
+	"Jefferson County, AL"	"01073"	"2010"	"2010"	"Black or African American"	"2054-5"	2336	278243	839.6	987.3
+	"Jefferson County, AL"	"01073"	"2010"	"2010"	"White"	"2106-3"	4004	343260	1166.5	823.8
+	"Jefferson County, AL"	"01073"	"2011"	"2011"	"Black or African American"	"2054-5"	2421	278853	868.2	999.4
+	"Jefferson County, AL"	"01073"	"2011"	"2011"	"White"	"2106-3"	3829	341587	1120.9	780.6
+	"Jefferson County, AL"	"01073"	"2012"	"2012"	"Black or African American"	"2054-5"	2346	281458	833.5	938.5
+	"Jefferson County, AL"	"01073"	"2012"	"2012"	"White"	"2106-3"	3956	340169	1163.0	806.2
+	"Jefferson County, AL"	"01073"	"2013"	"2013"	"Black or African American"	"2054-5"	2427	282650	858.7	966.9
+	"Jefferson County, AL"	"01073"	"2013"	"2013"	"White"	"2106-3"	4006	339328	1180.6	806.8
+	"Jefferson County, AL"	"01073"	"2014"	"2014"	"Black or African American"	"2054-5"	2398	283976	844.4	917.6
+	"Jefferson County, AL"	"01073"	"2014"	"2014"	"White"	"2106-3"	3958	339106	1167.2	795.3
+	"Jefferson County, AL"	"01073"	"2015"	"2015"	"Black or African American"	"2054-5"	2486	284914	872.5	935.1
+	"Jefferson County, AL"	"01073"	"2015"	"2015"	"White"	"2106-3"	4024	337246	1193.2	803.7
+	"Jefferson County, AL"	"01073"	"2016"	"2016"	"Black or African American"	"2054-5"	2393	286951	833.9	871.3
+	"Jefferson County, AL"	"01073"	"2016"	"2016"	"White"	"2106-3"	4010	334691	1198.1	798.5
+	"Jefferson County, AL"	"01073"	"2017"	"2017"	"Black or African American"	"2054-5"	2499	287506	869.2	891.1
+	"Jefferson County, AL"	"01073"	"2017"	"2017"	"White"	"2106-3"	4057	332351	1220.7	811.1
+	"Jefferson County, AL"	"01073"	"2018"	"2018"	"Black or African American"	"2054-5"	2600	287740	903.6	917.2
+	"Jefferson County, AL"	"01073"	"2018"	"2018"	"White"	"2106-3"	4114	331246	1242.0	818.5
+	"Duval County, FL"	"12031"	"2000"	"2000"	"Black or African American"	"2054-5"	1592	218171	729.7	1123.4
+	"Duval County, FL"	"12031"	"2000"	"2000"	"White"	"2106-3"	4475	502798	890.0	902.4
+	"Duval County, FL"	"12031"	"2001"	"2001"	"Black or African American"	"2054-5"	1602	223361	717.2	1127.5
+	"Duval County, FL"	"12031"	"2001"	"2001"	"White"	"2106-3"	4642	504602	919.9	904.1
+	"Duval County, FL"	"12031"	"2002"	"2002"	"Black or African American"	"2054-5"	1613	227827	708.0	1108.5
+	"Duval County, FL"	"12031"	"2002"	"2002"	"White"	"2106-3"	4397	505537	869.8	849.9
+	"Duval County, FL"	"12031"	"2003"	"2003"	"Black or African American"	"2054-5"	1637	232377	704.5	1088.4
+	"Duval County, FL"	"12031"	"2003"	"2003"	"White"	"2106-3"	4465	505306	883.6	851.3
+	"Duval County, FL"	"12031"	"2004"	"2004"	"Black or African American"	"2054-5"	1593	237538	670.6	1050.1
+	"Duval County, FL"	"12031"	"2004"	"2004"	"White"	"2106-3"	4708	504769	932.7	893.6
+	"Duval County, FL"	"12031"	"2005"	"2005"	"Black or African American"	"2054-5"	1610	241843	665.7	1025.7
+	"Duval County, FL"	"12031"	"2005"	"2005"	"White"	"2106-3"	4549	503662	903.2	847.7
+	"Duval County, FL"	"12031"	"2006"	"2006"	"Black or African American"	"2054-5"	1676	247152	678.1	1025.2
+	"Duval County, FL"	"12031"	"2006"	"2006"	"White"	"2106-3"	4413	504783	874.2	803.6
+	"Duval County, FL"	"12031"	"2007"	"2007"	"Black or African American"	"2054-5"	1709	250838	681.3	1040.3
+	"Duval County, FL"	"12031"	"2007"	"2007"	"White"	"2106-3"	4529	503990	898.6	805.8
+	"Duval County, FL"	"12031"	"2008"	"2008"	"Black or African American"	"2054-5"	1691	253147	668.0	1011.6
+	"Duval County, FL"	"12031"	"2008"	"2008"	"White"	"2106-3"	4662	501728	929.2	815.5
+	"Duval County, FL"	"12031"	"2009"	"2009"	"Black or African American"	"2054-5"	1654	255465	647.4	943.5
+	"Duval County, FL"	"12031"	"2009"	"2009"	"White"	"2106-3"	4589	499525	918.7	788.9
+	"Duval County, FL"	"12031"	"2010"	"2010"	"Black or African American"	"2054-5"	1586	257352	616.3	903.0
+	"Duval County, FL"	"12031"	"2010"	"2010"	"White"	"2106-3"	4663	499104	934.3	794.0
+	"Duval County, FL"	"12031"	"2011"	"2011"	"Black or African American"	"2054-5"	1684	258272	652.0	900.5
+	"Duval County, FL"	"12031"	"2011"	"2011"	"White"	"2106-3"	4821	500507	963.2	797.4
+	"Duval County, FL"	"12031"	"2012"	"2012"	"Black or African American"	"2054-5"	1674	261660	639.8	865.6
+	"Duval County, FL"	"12031"	"2012"	"2012"	"White"	"2106-3"	4649	501375	927.3	750.1
+	"Duval County, FL"	"12031"	"2013"	"2013"	"Black or African American"	"2054-5"	1808	264653	683.2	925.3
+	"Duval County, FL"	"12031"	"2013"	"2013"	"White"	"2106-3"	4927	501885	981.7	781.6
+	"Duval County, FL"	"12031"	"2014"	"2014"	"Black or African American"	"2054-5"	1691	269118	628.3	832.1
+	"Duval County, FL"	"12031"	"2014"	"2014"	"White"	"2106-3"	4797	503736	952.3	745.1
+	"Duval County, FL"	"12031"	"2015"	"2015"	"Black or African American"	"2054-5"	1796	273475	656.7	843.8
+	"Duval County, FL"	"12031"	"2015"	"2015"	"White"	"2106-3"	4906	507960	965.8	750.5
+	"Duval County, FL"	"12031"	"2016"	"2016"	"Black or African American"	"2054-5"	1780	279295	637.3	801.9
+	"Duval County, FL"	"12031"	"2016"	"2016"	"White"	"2106-3"	4916	510200	963.5	734.8
+	"Duval County, FL"	"12031"	"2017"	"2017"	"Black or African American"	"2054-5"	1824	284277	641.6	806.0
+	"Duval County, FL"	"12031"	"2017"	"2017"	"White"	"2106-3"	5189	509678	1018.1	789.0
+	"Duval County, FL"	"12031"	"2018"	"2018"	"Black or African American"	"2054-5"	2085	288621	722.4	885.2
+	"Duval County, FL"	"12031"	"2018"	"2018"	"White"	"2106-3"	5194	510673	1017.1	769.3
+	"Marion County, IN"	"18097"	"2000"	"2000"	"Black or African American"	"2054-5"	1600	211815	755.4	1095.7
+	"Marion County, IN"	"18097"	"2000"	"2000"	"White"	"2106-3"	5500	599103	918.0	906.1
+	"Marion County, IN"	"18097"	"2001"	"2001"	"Black or African American"	"2054-5"	1641	216298	758.7	1118.3
+	"Marion County, IN"	"18097"	"2001"	"2001"	"White"	"2106-3"	5426	593862	913.7	893.2
+	"Marion County, IN"	"18097"	"2002"	"2002"	"Black or African American"	"2054-5"	1658	219768	754.4	1117.7
+	"Marion County, IN"	"18097"	"2002"	"2002"	"White"	"2106-3"	5267	585905	899.0	867.4
+	"Marion County, IN"	"18097"	"2003"	"2003"	"Black or African American"	"2054-5"	1682	223078	754.0	1113.3
+	"Marion County, IN"	"18097"	"2003"	"2003"	"White"	"2106-3"	5259	579772	907.1	860.1
+	"Marion County, IN"	"18097"	"2004"	"2004"	"Black or African American"	"2054-5"	1554	226602	685.8	1002.8
+	"Marion County, IN"	"18097"	"2004"	"2004"	"White"	"2106-3"	5241	572539	915.4	856.1
+	"Marion County, IN"	"18097"	"2005"	"2005"	"Black or African American"	"2054-5"	1685	229847	733.1	1071.4
+	"Marion County, IN"	"18097"	"2005"	"2005"	"White"	"2106-3"	5192	565988	917.3	846.7
+	"Marion County, IN"	"18097"	"2006"	"2006"	"Black or African American"	"2054-5"	1681	233783	719.0	1033.2
+	"Marion County, IN"	"18097"	"2006"	"2006"	"White"	"2106-3"	5078	560594	905.8	823.7
+	"Marion County, IN"	"18097"	"2007"	"2007"	"Black or African American"	"2054-5"	1559	237214	657.2	937.8
+	"Marion County, IN"	"18097"	"2007"	"2007"	"White"	"2106-3"	4812	555874	865.7	779.0
+	"Marion County, IN"	"18097"	"2008"	"2008"	"Black or African American"	"2054-5"	1577	240955	654.5	916.7
+	"Marion County, IN"	"18097"	"2008"	"2008"	"White"	"2106-3"	5024	552276	909.7	804.4
+	"Marion County, IN"	"18097"	"2009"	"2009"	"Black or African American"	"2054-5"	1638	245085	668.3	919.3
+	"Marion County, IN"	"18097"	"2009"	"2009"	"White"	"2106-3"	4971	550528	903.0	793.3
+	"Marion County, IN"	"18097"	"2010"	"2010"	"Black or African American"	"2054-5"	1565	248459	629.9	872.8
+	"Marion County, IN"	"18097"	"2010"	"2010"	"White"	"2106-3"	5090	547310	930.0	806.1
+	"Marion County, IN"	"18097"	"2011"	"2011"	"Black or African American"	"2054-5"	1692	249198	679.0	915.6
+	"Marion County, IN"	"18097"	"2011"	"2011"	"White"	"2106-3"	4994	550868	906.6	781.4
+	"Marion County, IN"	"18097"	"2012"	"2012"	"Black or African American"	"2054-5"	1716	255481	671.7	910.0
+	"Marion County, IN"	"18097"	"2012"	"2012"	"White"	"2106-3"	5226	549006	951.9	810.8
+	"Marion County, IN"	"18097"	"2013"	"2013"	"Black or African American"	"2054-5"	1717	259904	660.6	883.0
+	"Marion County, IN"	"18097"	"2013"	"2013"	"White"	"2106-3"	5070	551041	920.1	778.3
+	"Marion County, IN"	"18097"	"2014"	"2014"	"Black or African American"	"2054-5"	1814	263708	687.9	906.6
+	"Marion County, IN"	"18097"	"2014"	"2014"	"White"	"2106-3"	5153	550022	936.9	782.8
+	"Marion County, IN"	"18097"	"2015"	"2015"	"Black or African American"	"2054-5"	1832	266942	686.3	896.7
+	"Marion County, IN"	"18097"	"2015"	"2015"	"White"	"2106-3"	5213	547428	952.3	790.6
+	"Marion County, IN"	"18097"	"2016"	"2016"	"Black or African American"	"2054-5"	1923	272323	706.1	912.0
+	"Marion County, IN"	"18097"	"2016"	"2016"	"White"	"2106-3"	5218	539202	967.7	790.3
+	"Marion County, IN"	"18097"	"2017"	"2017"	"Black or African American"	"2054-5"	1976	276675	714.2	908.6
+	"Marion County, IN"	"18097"	"2017"	"2017"	"White"	"2106-3"	5338	537153	993.8	784.6
+	"Marion County, IN"	"18097"	"2018"	"2018"	"Black or African American"	"2054-5"	1882	280665	670.6	826.6
+	"Marion County, IN"	"18097"	"2018"	"2018"	"White"	"2106-3"	5222	533161	979.4	759.0
+	"Jefferson County, KY"	"21111"	"2000"	"2000"	"Black or African American"	"2054-5"	1077	133117	809.1	1097.6
+	"Jefferson County, KY"	"21111"	"2000"	"2000"	"White"	"2106-3"	5593	535942	1043.6	902.9
+	"Jefferson County, KY"	"21111"	"2001"	"2001"	"Black or African American"	"2054-5"	1111	135452	820.2	1130.2
+	"Jefferson County, KY"	"21111"	"2001"	"2001"	"White"	"2106-3"	5524	534828	1032.9	886.9
+	"Jefferson County, KY"	"21111"	"2002"	"2002"	"Black or African American"	"2054-5"	1138	137739	826.2	1150.5
+	"Jefferson County, KY"	"21111"	"2002"	"2002"	"White"	"2106-3"	5650	532782	1060.5	901.0
+	"Jefferson County, KY"	"21111"	"2003"	"2003"	"Black or African American"	"2054-5"	1138	139850	813.7	1138.7
+	"Jefferson County, KY"	"21111"	"2003"	"2003"	"White"	"2106-3"	5448	532009	1024.0	860.7
+	"Jefferson County, KY"	"21111"	"2004"	"2004"	"Black or African American"	"2054-5"	1083	142868	758.0	1053.6
+	"Jefferson County, KY"	"21111"	"2004"	"2004"	"White"	"2106-3"	5190	529279	980.6	816.1
+	"Jefferson County, KY"	"21111"	"2005"	"2005"	"Black or African American"	"2054-5"	1074	145070	740.3	1024.7
+	"Jefferson County, KY"	"21111"	"2005"	"2005"	"White"	"2106-3"	5241	527587	993.4	806.9
+	"Jefferson County, KY"	"21111"	"2006"	"2006"	"Black or African American"	"2054-5"	1141	147261	774.8	1055.6
+	"Jefferson County, KY"	"21111"	"2006"	"2006"	"White"	"2106-3"	5196	527640	984.8	788.4
+	"Jefferson County, KY"	"21111"	"2007"	"2007"	"Black or African American"	"2054-5"	1115	150503	740.8	1000.8
+	"Jefferson County, KY"	"21111"	"2007"	"2007"	"White"	"2106-3"	5300	528998	1001.9	788.1
+	"Jefferson County, KY"	"21111"	"2008"	"2008"	"Black or African American"	"2054-5"	1061	153185	692.6	923.1
+	"Jefferson County, KY"	"21111"	"2008"	"2008"	"White"	"2106-3"	5299	530546	998.8	779.1
+	"Jefferson County, KY"	"21111"	"2009"	"2009"	"Black or African American"	"2054-5"	1160	156249	742.4	972.9
+	"Jefferson County, KY"	"21111"	"2009"	"2009"	"White"	"2106-3"	5070	530395	955.9	737.9
+	"Jefferson County, KY"	"21111"	"2010"	"2010"	"Black or African American"	"2054-5"	1131	158386	714.1	937.8
+	"Jefferson County, KY"	"21111"	"2010"	"2010"	"White"	"2106-3"	5384	530572	1014.8	774.7
+	"Jefferson County, KY"	"21111"	"2011"	"2011"	"Black or African American"	"2054-5"	1141	159333	716.1	913.2
+	"Jefferson County, KY"	"21111"	"2011"	"2011"	"White"	"2106-3"	5463	533914	1023.2	770.5
+	"Jefferson County, KY"	"21111"	"2012"	"2012"	"Black or African American"	"2054-5"	1115	162252	687.2	893.6
+	"Jefferson County, KY"	"21111"	"2012"	"2012"	"White"	"2106-3"	5575	533338	1045.3	780.7
+	"Jefferson County, KY"	"21111"	"2013"	"2013"	"Black or African American"	"2054-5"	1132	164746	687.1	857.9
+	"Jefferson County, KY"	"21111"	"2013"	"2013"	"White"	"2106-3"	5510	535264	1029.4	758.5
+	"Jefferson County, KY"	"21111"	"2014"	"2014"	"Black or African American"	"2054-5"	1183	166658	709.8	875.0
+	"Jefferson County, KY"	"21111"	"2014"	"2014"	"White"	"2106-3"	5630	534798	1052.7	767.1
+	"Jefferson County, KY"	"21111"	"2015"	"2015"	"Black or African American"	"2054-5"	1279	168323	759.8	926.9
+	"Jefferson County, KY"	"21111"	"2015"	"2015"	"White"	"2106-3"	5777	534554	1080.7	775.4
+	"Jefferson County, KY"	"21111"	"2016"	"2016"	"Black or African American"	"2054-5"	1300	170589	762.1	910.3
+	"Jefferson County, KY"	"21111"	"2016"	"2016"	"White"	"2106-3"	5916	531622	1112.8	789.2
+	"Jefferson County, KY"	"21111"	"2017"	"2017"	"Black or African American"	"2054-5"	1268	173612	730.4	856.3
+	"Jefferson County, KY"	"21111"	"2017"	"2017"	"White"	"2106-3"	5823	530705	1097.2	765.7
+	"Jefferson County, KY"	"21111"	"2018"	"2018"	"Black or African American"	"2054-5"	1291	174856	738.3	858.0
+	"Jefferson County, KY"	"21111"	"2018"	"2018"	"White"	"2106-3"	5946	525158	1132.2	774.2
+	"Kent County, MI"	"26081"	"2000"	"2000"	"Black or African American"	"2054-5"	254	53230	477.2	931.8
+	"Kent County, MI"	"26081"	"2000"	"2000"	"White"	"2106-3"	3471	466355	744.3	768.2
+	"Kent County, MI"	"26081"	"2001"	"2001"	"Black or African American"	"2054-5"	273	54721	498.9	962.7
+	"Kent County, MI"	"26081"	"2001"	"2001"	"White"	"2106-3"	3373	467706	721.2	734.1
+	"Kent County, MI"	"26081"	"2002"	"2002"	"Black or African American"	"2054-5"	302	55591	543.3	1016.4
+	"Kent County, MI"	"26081"	"2002"	"2002"	"White"	"2106-3"	3353	467883	716.6	722.0
+	"Kent County, MI"	"26081"	"2003"	"2003"	"Black or African American"	"2054-5"	295	56566	521.5	1018.6
+	"Kent County, MI"	"26081"	"2003"	"2003"	"White"	"2106-3"	3334	467584	713.0	703.0
+	"Kent County, MI"	"26081"	"2004"	"2004"	"Black or African American"	"2054-5"	321	57512	558.1	1069.9
+	"Kent County, MI"	"26081"	"2004"	"2004"	"White"	"2106-3"	3456	466148	741.4	720.3
+	"Kent County, MI"	"26081"	"2005"	"2005"	"Black or African American"	"2054-5"	319	58193	548.2	1038.8
+	"Kent County, MI"	"26081"	"2005"	"2005"	"White"	"2106-3"	3531	465891	757.9	728.3
+	"Kent County, MI"	"26081"	"2006"	"2006"	"Black or African American"	"2054-5"	303	59310	510.9	1012.0
+	"Kent County, MI"	"26081"	"2006"	"2006"	"White"	"2106-3"	3302	465801	708.9	663.4
+	"Kent County, MI"	"26081"	"2007"	"2007"	"Black or African American"	"2054-5"	325	60367	538.4	990.0
+	"Kent County, MI"	"26081"	"2007"	"2007"	"White"	"2106-3"	3249	465867	697.4	641.1
+	"Kent County, MI"	"26081"	"2008"	"2008"	"Black or African American"	"2054-5"	281	61017	460.5	832.2
+	"Kent County, MI"	"26081"	"2008"	"2008"	"White"	"2106-3"	3508	464843	754.7	675.9
+	"Kent County, MI"	"26081"	"2009"	"2009"	"Black or African American"	"2054-5"	296	61393	482.1	830.3
+	"Kent County, MI"	"26081"	"2009"	"2009"	"White"	"2106-3"	3384	465023	727.7	636.1
+	"Kent County, MI"	"26081"	"2010"	"2010"	"Black or African American"	"2054-5"	301	61858	486.6	841.8
+	"Kent County, MI"	"26081"	"2010"	"2010"	"White"	"2106-3"	3474	464367	748.1	645.6
+	"Kent County, MI"	"26081"	"2011"	"2011"	"Black or African American"	"2054-5"	362	63189	572.9	967.5
+	"Kent County, MI"	"26081"	"2011"	"2011"	"White"	"2106-3"	3581	466826	767.1	648.7
+	"Kent County, MI"	"26081"	"2012"	"2012"	"Black or African American"	"2054-5"	321	64280	499.4	819.5
+	"Kent County, MI"	"26081"	"2012"	"2012"	"White"	"2106-3"	3501	470397	744.3	625.1
+	"Kent County, MI"	"26081"	"2013"	"2013"	"Black or African American"	"2054-5"	353	65191	541.5	851.8
+	"Kent County, MI"	"26081"	"2013"	"2013"	"White"	"2106-3"	3576	474730	753.3	627.7
+	"Kent County, MI"	"26081"	"2014"	"2014"	"Black or African American"	"2054-5"	341	66364	513.8	799.8
+	"Kent County, MI"	"26081"	"2014"	"2014"	"White"	"2106-3"	3762	478188	786.7	638.9
+	"Kent County, MI"	"26081"	"2015"	"2015"	"Black or African American"	"2054-5"	352	67588	520.8	816.9
+	"Kent County, MI"	"26081"	"2015"	"2015"	"White"	"2106-3"	3797	481491	788.6	637.0
+	"Kent County, MI"	"26081"	"2016"	"2016"	"Black or African American"	"2054-5"	368	68207	539.5	845.5
+	"Kent County, MI"	"26081"	"2016"	"2016"	"White"	"2106-3"	3856	483953	796.8	640.3
+	"Kent County, MI"	"26081"	"2017"	"2017"	"Black or African American"	"2054-5"	366	69318	528.0	818.4
+	"Kent County, MI"	"26081"	"2017"	"2017"	"White"	"2106-3"	3811	486295	783.7	621.2
+	"Kent County, MI"	"26081"	"2018"	"2018"	"Black or African American"	"2054-5"	412	70215	586.8	898.9
+	"Kent County, MI"	"26081"	"2018"	"2018"	"White"	"2106-3"	3938	487647	807.6	630.9
+	"Jackson County, MO"	"29095"	"2000"	"2000"	"Black or African American"	"2054-5"	1204	155464	774.5	1107.4
+	"Jackson County, MO"	"29095"	"2000"	"2000"	"White"	"2106-3"	4296	449931	954.8	816.1
+	"Jackson County, MO"	"29095"	"2001"	"2001"	"Black or African American"	"2054-5"	1177	156908	750.1	1069.1
+	"Jackson County, MO"	"29095"	"2001"	"2001"	"White"	"2106-3"	4349	448558	969.6	830.2
+	"Jackson County, MO"	"29095"	"2002"	"2002"	"Black or African American"	"2054-5"	1210	157686	767.3	1071.5
+	"Jackson County, MO"	"29095"	"2002"	"2002"	"White"	"2106-3"	4186	446918	936.6	797.6
+	"Jackson County, MO"	"29095"	"2003"	"2003"	"Black or African American"	"2054-5"	1222	158604	770.5	1068.9
+	"Jackson County, MO"	"29095"	"2003"	"2003"	"White"	"2106-3"	4174	443727	940.7	790.0
+	"Jackson County, MO"	"29095"	"2004"	"2004"	"Black or African American"	"2054-5"	1189	159763	744.2	1034.0
+	"Jackson County, MO"	"29095"	"2004"	"2004"	"White"	"2106-3"	4135	439622	940.6	788.9
+	"Jackson County, MO"	"29095"	"2005"	"2005"	"Black or African American"	"2054-5"	1241	160404	773.7	1047.9
+	"Jackson County, MO"	"29095"	"2005"	"2005"	"White"	"2106-3"	4170	436848	954.6	790.3
+	"Jackson County, MO"	"29095"	"2006"	"2006"	"Black or African American"	"2054-5"	1210	162114	746.4	996.5
+	"Jackson County, MO"	"29095"	"2006"	"2006"	"White"	"2106-3"	4283	434500	985.7	806.9
+	"Jackson County, MO"	"29095"	"2007"	"2007"	"Black or African American"	"2054-5"	1247	162958	765.2	997.4
+	"Jackson County, MO"	"29095"	"2007"	"2007"	"White"	"2106-3"	4005	433530	923.8	748.8
+	"Jackson County, MO"	"29095"	"2008"	"2008"	"Black or African American"	"2054-5"	1123	163612	686.4	872.4
+	"Jackson County, MO"	"29095"	"2008"	"2008"	"White"	"2106-3"	4328	432835	999.9	800.1
+	"Jackson County, MO"	"29095"	"2009"	"2009"	"Black or African American"	"2054-5"	1130	164881	685.3	872.1
+	"Jackson County, MO"	"29095"	"2009"	"2009"	"White"	"2106-3"	4129	434311	950.7	762.4
+	"Jackson County, MO"	"29095"	"2010"	"2010"	"Black or African American"	"2054-5"	1163	166059	700.4	872.7
+	"Jackson County, MO"	"29095"	"2010"	"2010"	"White"	"2106-3"	4078	434146	939.3	748.2
+	"Jackson County, MO"	"29095"	"2011"	"2011"	"Black or African American"	"2054-5"	1150	165999	692.8	834.1
+	"Jackson County, MO"	"29095"	"2011"	"2011"	"White"	"2106-3"	4164	435739	955.6	747.3
+	"Jackson County, MO"	"29095"	"2012"	"2012"	"Black or African American"	"2054-5"	1203	166252	723.6	860.8
+	"Jackson County, MO"	"29095"	"2012"	"2012"	"White"	"2106-3"	4126	435481	947.5	734.4
+	"Jackson County, MO"	"29095"	"2013"	"2013"	"Black or African American"	"2054-5"	1227	166119	738.6	866.5
+	"Jackson County, MO"	"29095"	"2013"	"2013"	"White"	"2106-3"	4208	436710	963.6	740.3
+	"Jackson County, MO"	"29095"	"2014"	"2014"	"Black or African American"	"2054-5"	1277	166851	765.4	875.4
+	"Jackson County, MO"	"29095"	"2014"	"2014"	"White"	"2106-3"	4125	437180	943.5	717.1
+	"Jackson County, MO"	"29095"	"2015"	"2015"	"Black or African American"	"2054-5"	1344	168149	799.3	898.2
+	"Jackson County, MO"	"29095"	"2015"	"2015"	"White"	"2106-3"	4160	438516	948.7	717.7
+	"Jackson County, MO"	"29095"	"2016"	"2016"	"Black or African American"	"2054-5"	1307	169437	771.4	852.4
+	"Jackson County, MO"	"29095"	"2016"	"2016"	"White"	"2106-3"	4035	440882	915.2	685.2
+	"Jackson County, MO"	"29095"	"2017"	"2017"	"Black or African American"	"2054-5"	1351	170433	792.7	862.2
+	"Jackson County, MO"	"29095"	"2017"	"2017"	"White"	"2106-3"	4198	444202	945.1	698.9
+	"Jackson County, MO"	"29095"	"2018"	"2018"	"Black or African American"	"2054-5"	1318	171036	770.6	812.2
+	"Jackson County, MO"	"29095"	"2018"	"2018"	"White"	"2106-3"	4092	444732	920.1	673.4
+	"St. Louis County, MO"	"29189"	"2000"	"2000"	"Black or African American"	"2054-5"	1271	196206	647.8	1105.4
+	"St. Louis County, MO"	"29189"	"2000"	"2000"	"White"	"2106-3"	7820	778630	1004.3	771.0
+	"St. Louis County, MO"	"29189"	"2001"	"2001"	"Black or African American"	"2054-5"	1254	202181	620.2	1040.0
+	"St. Louis County, MO"	"29189"	"2001"	"2001"	"White"	"2106-3"	7800	769914	1013.1	766.1
+	"St. Louis County, MO"	"29189"	"2002"	"2002"	"Black or African American"	"2054-5"	1383	207218	667.4	1104.3
+	"St. Louis County, MO"	"29189"	"2002"	"2002"	"White"	"2106-3"	7892	760353	1037.9	772.0
+	"St. Louis County, MO"	"29189"	"2003"	"2003"	"Black or African American"	"2054-5"	1359	211472	642.6	1035.1
+	"St. Louis County, MO"	"29189"	"2003"	"2003"	"White"	"2106-3"	7527	750865	1002.4	731.0
+	"St. Louis County, MO"	"29189"	"2004"	"2004"	"Black or African American"	"2054-5"	1427	215906	660.9	1065.5
+	"St. Louis County, MO"	"29189"	"2004"	"2004"	"White"	"2106-3"	7313	740063	988.2	707.3
+	"St. Louis County, MO"	"29189"	"2005"	"2005"	"Black or African American"	"2054-5"	1406	220576	637.4	1009.0
+	"St. Louis County, MO"	"29189"	"2005"	"2005"	"White"	"2106-3"	7137	729344	978.6	689.9
+	"St. Louis County, MO"	"29189"	"2006"	"2006"	"Black or African American"	"2054-5"	1506	225480	667.9	1036.4
+	"St. Louis County, MO"	"29189"	"2006"	"2006"	"White"	"2106-3"	7154	719778	993.9	683.0
+	"St. Louis County, MO"	"29189"	"2007"	"2007"	"Black or African American"	"2054-5"	1501	229294	654.6	986.6
+	"St. Louis County, MO"	"29189"	"2007"	"2007"	"White"	"2106-3"	6860	711059	964.8	646.3
+	"St. Louis County, MO"	"29189"	"2008"	"2008"	"Black or African American"	"2054-5"	1526	232252	657.0	957.5
+	"St. Louis County, MO"	"29189"	"2008"	"2008"	"White"	"2106-3"	7329	704735	1040.0	683.1
+	"St. Louis County, MO"	"29189"	"2009"	"2009"	"Black or African American"	"2054-5"	1449	235335	615.7	846.9
+	"St. Louis County, MO"	"29189"	"2009"	"2009"	"White"	"2106-3"	7007	699833	1001.2	652.0
+	"St. Louis County, MO"	"29189"	"2010"	"2010"	"Black or African American"	"2054-5"	1554	237817	653.4	871.4
+	"St. Louis County, MO"	"29189"	"2010"	"2010"	"White"	"2106-3"	7019	696139	1008.3	645.8
+	"St. Louis County, MO"	"29189"	"2011"	"2011"	"Black or African American"	"2054-5"	1580	237543	665.1	861.9
+	"St. Louis County, MO"	"29189"	"2011"	"2011"	"White"	"2106-3"	6864	694114	988.9	628.5
+	"St. Louis County, MO"	"29189"	"2012"	"2012"	"Black or African American"	"2054-5"	1637	240579	680.4	851.3
+	"St. Louis County, MO"	"29189"	"2012"	"2012"	"White"	"2106-3"	6997	690726	1013.0	633.0
+	"St. Louis County, MO"	"29189"	"2013"	"2013"	"Black or African American"	"2054-5"	1771	241847	732.3	884.8
+	"St. Louis County, MO"	"29189"	"2013"	"2013"	"White"	"2106-3"	6970	689204	1011.3	616.7
+	"St. Louis County, MO"	"29189"	"2014"	"2014"	"Black or African American"	"2054-5"	1781	243509	731.4	864.4
+	"St. Louis County, MO"	"29189"	"2014"	"2014"	"White"	"2106-3"	6926	685277	1010.7	609.6
+	"St. Louis County, MO"	"29189"	"2015"	"2015"	"Black or African American"	"2054-5"	1841	245819	748.9	858.4
+	"St. Louis County, MO"	"29189"	"2015"	"2015"	"White"	"2106-3"	7196	681851	1055.4	629.3
+	"St. Louis County, MO"	"29189"	"2016"	"2016"	"Black or African American"	"2054-5"	1896	248845	761.9	855.3
+	"St. Louis County, MO"	"29189"	"2016"	"2016"	"White"	"2106-3"	7104	673981	1054.0	613.6
+	"St. Louis County, MO"	"29189"	"2017"	"2017"	"Black or African American"	"2054-5"	2027	250702	808.5	902.9
+	"St. Louis County, MO"	"29189"	"2017"	"2017"	"White"	"2106-3"	7132	667852	1067.9	617.1
+	"St. Louis County, MO"	"29189"	"2018"	"2018"	"Black or African American"	"2054-5"	2226	252984	879.9	957.9
+	"St. Louis County, MO"	"29189"	"2018"	"2018"	"White"	"2106-3"	7450	663456	1122.9	640.5
+	"St. Louis city, MO"	"29510"	"2000"	"2000"	"Black or African American"	"2054-5"	1837	180069	1020.2	1159.1
+	"St. Louis city, MO"	"29510"	"2000"	"2000"	"White"	"2106-3"	2017	152304	1324.3	951.7
+	"St. Louis city, MO"	"29510"	"2001"	"2001"	"Black or African American"	"2054-5"	1860	177791	1046.2	1188.7
+	"St. Louis city, MO"	"29510"	"2001"	"2001"	"White"	"2106-3"	1917	148708	1289.1	945.8
+	"St. Louis city, MO"	"29510"	"2002"	"2002"	"Black or African American"	"2054-5"	1807	175483	1029.7	1159.2
+	"St. Louis city, MO"	"29510"	"2002"	"2002"	"White"	"2106-3"	1997	145555	1372.0	1016.4
+	"St. Louis city, MO"	"29510"	"2003"	"2003"	"Black or African American"	"2054-5"	1870	173789	1076.0	1214.9
+	"St. Louis city, MO"	"29510"	"2003"	"2003"	"White"	"2106-3"	1771	143231	1236.5	948.7
+	"St. Louis city, MO"	"29510"	"2004"	"2004"	"Black or African American"	"2054-5"	1713	171835	996.9	1122.4
+	"St. Louis city, MO"	"29510"	"2004"	"2004"	"White"	"2106-3"	1692	140584	1203.6	950.4
+	"St. Louis city, MO"	"29510"	"2005"	"2005"	"Black or African American"	"2054-5"	1665	168378	988.8	1095.6
+	"St. Louis city, MO"	"29510"	"2005"	"2005"	"White"	"2106-3"	1560	137404	1135.3	898.5
+	"St. Louis city, MO"	"29510"	"2006"	"2006"	"Black or African American"	"2054-5"	1646	165390	995.2	1097.7
+	"St. Louis city, MO"	"29510"	"2006"	"2006"	"White"	"2106-3"	1538	134912	1140.0	930.7
+	"St. Louis city, MO"	"29510"	"2007"	"2007"	"Black or African American"	"2054-5"	1573	162916	965.5	1054.8
+	"St. Louis city, MO"	"29510"	"2007"	"2007"	"White"	"2106-3"	1369	134552	1017.5	847.8
+	"St. Louis city, MO"	"29510"	"2008"	"2008"	"Black or African American"	"2054-5"	1492	161671	922.9	1000.3
+	"St. Louis city, MO"	"29510"	"2008"	"2008"	"White"	"2106-3"	1475	135068	1092.0	931.2
+	"St. Louis city, MO"	"29510"	"2009"	"2009"	"Black or African American"	"2054-5"	1359	160643	846.0	929.2
+	"St. Louis city, MO"	"29510"	"2009"	"2009"	"White"	"2106-3"	1375	136261	1009.1	882.1
+	"St. Louis city, MO"	"29510"	"2010"	"2010"	"Black or African American"	"2054-5"	1438	159882	899.4	981.3
+	"St. Louis city, MO"	"29510"	"2010"	"2010"	"White"	"2106-3"	1292	136912	943.7	838.7
+	"St. Louis city, MO"	"29510"	"2011"	"2011"	"Black or African American"	"2054-5"	1394	155814	894.7	950.1
+	"St. Louis city, MO"	"29510"	"2011"	"2011"	"White"	"2106-3"	1249	139750	893.7	828.4
+	"St. Louis city, MO"	"29510"	"2012"	"2012"	"Black or African American"	"2054-5"	1397	156654	891.8	934.4
+	"St. Louis city, MO"	"29510"	"2012"	"2012"	"White"	"2106-3"	1209	138521	872.8	788.7
+	"St. Louis city, MO"	"29510"	"2013"	"2013"	"Black or African American"	"2054-5"	1321	154356	855.8	878.1
+	"St. Louis city, MO"	"29510"	"2013"	"2013"	"White"	"2106-3"	1199	140515	853.3	786.6
+	"St. Louis city, MO"	"29510"	"2014"	"2014"	"Black or African American"	"2054-5"	1444	152933	944.2	963.5
+	"St. Louis city, MO"	"29510"	"2014"	"2014"	"White"	"2106-3"	1125	140516	800.6	749.2
+	"St. Louis city, MO"	"29510"	"2015"	"2015"	"Black or African American"	"2054-5"	1380	149978	920.1	922.5
+	"St. Louis city, MO"	"29510"	"2015"	"2015"	"White"	"2106-3"	1156	141168	818.9	772.2
+	"St. Louis city, MO"	"29510"	"2016"	"2016"	"Black or African American"	"2054-5"	1370	148885	920.2	916.9
+	"St. Louis city, MO"	"29510"	"2016"	"2016"	"White"	"2106-3"	1104	137904	800.6	737.9
+	"St. Louis city, MO"	"29510"	"2017"	"2017"	"Black or African American"	"2054-5"	1430	145723	981.3	914.7
+	"St. Louis city, MO"	"29510"	"2017"	"2017"	"White"	"2106-3"	1151	137883	834.8	738.5
+	"St. Louis city, MO"	"29510"	"2018"	"2018"	"Black or African American"	"2054-5"	1424	141430	1006.9	917.2
+	"St. Louis city, MO"	"29510"	"2018"	"2018"	"White"	"2106-3"	1056	136310	774.7	670.0
+	"Douglas County, NE"	"31055"	"2000"	"2000"	"Black or African American"	"2054-5"	391	55358	706.3	1138.2
+	"Douglas County, NE"	"31055"	"2000"	"2000"	"White"	"2106-3"	2858	365763	781.4	780.7
+	"Douglas County, NE"	"31055"	"2001"	"2001"	"Black or African American"	"2054-5"	381	56094	679.2	1091.8
+	"Douglas County, NE"	"31055"	"2001"	"2001"	"White"	"2106-3"	2952	365674	807.3	801.4
+	"Douglas County, NE"	"31055"	"2002"	"2002"	"Black or African American"	"2054-5"	398	56618	703.0	1103.6
+	"Douglas County, NE"	"31055"	"2002"	"2002"	"White"	"2106-3"	2943	365252	805.7	796.4
+	"Douglas County, NE"	"31055"	"2003"	"2003"	"Black or African American"	"2054-5"	410	57379	714.5	1137.6
+	"Douglas County, NE"	"31055"	"2003"	"2003"	"White"	"2106-3"	2892	365830	790.5	772.1
+	"Douglas County, NE"	"31055"	"2004"	"2004"	"Black or African American"	"2054-5"	401	58399	686.7	1091.3
+	"Douglas County, NE"	"31055"	"2004"	"2004"	"White"	"2106-3"	2789	367138	759.7	737.7
+	"Douglas County, NE"	"31055"	"2005"	"2005"	"Black or African American"	"2054-5"	379	59040	641.9	1015.5
+	"Douglas County, NE"	"31055"	"2005"	"2005"	"White"	"2106-3"	2818	369328	763.0	733.5
+	"Douglas County, NE"	"31055"	"2006"	"2006"	"Black or African American"	"2054-5"	377	60147	626.8	986.8
+	"Douglas County, NE"	"31055"	"2006"	"2006"	"White"	"2106-3"	2872	370624	774.9	732.3
+	"Douglas County, NE"	"31055"	"2007"	"2007"	"Black or African American"	"2054-5"	424	61053	694.5	1090.5
+	"Douglas County, NE"	"31055"	"2007"	"2007"	"White"	"2106-3"	2820	371693	758.7	703.8
+	"Douglas County, NE"	"31055"	"2008"	"2008"	"Black or African American"	"2054-5"	384	61991	619.4	951.1
+	"Douglas County, NE"	"31055"	"2008"	"2008"	"White"	"2106-3"	3005	373188	805.2	741.8
+	"Douglas County, NE"	"31055"	"2009"	"2009"	"Black or African American"	"2054-5"	395	63016	626.8	1016.6
+	"Douglas County, NE"	"31055"	"2009"	"2009"	"White"	"2106-3"	2721	375985	723.7	656.5
+	"Douglas County, NE"	"31055"	"2010"	"2010"	"Black or African American"	"2054-5"	403	63852	631.1	983.4
+	"Douglas County, NE"	"31055"	"2010"	"2010"	"White"	"2106-3"	2873	377276	761.5	684.7
+	"Douglas County, NE"	"31055"	"2011"	"2011"	"Black or African American"	"2054-5"	395	63816	619.0	921.0
+	"Douglas County, NE"	"31055"	"2011"	"2011"	"White"	"2106-3"	3046	382112	797.1	713.0
+	"Douglas County, NE"	"31055"	"2012"	"2012"	"Black or African American"	"2054-5"	436	64778	673.1	1026.8
+	"Douglas County, NE"	"31055"	"2012"	"2012"	"White"	"2106-3"	2981	384731	774.8	683.7
+	"Douglas County, NE"	"31055"	"2013"	"2013"	"Black or African American"	"2054-5"	418	64872	644.3	954.6
+	"Douglas County, NE"	"31055"	"2013"	"2013"	"White"	"2106-3"	3101	388612	798.0	706.7
+	"Douglas County, NE"	"31055"	"2014"	"2014"	"Black or African American"	"2054-5"	401	65581	611.5	900.7
+	"Douglas County, NE"	"31055"	"2014"	"2014"	"White"	"2106-3"	3144	390527	805.1	700.5
+	"Douglas County, NE"	"31055"	"2015"	"2015"	"Black or African American"	"2054-5"	443	66174	669.4	981.5
+	"Douglas County, NE"	"31055"	"2015"	"2015"	"White"	"2106-3"	3302	392692	840.9	729.3
+	"Douglas County, NE"	"31055"	"2016"	"2016"	"Black or African American"	"2054-5"	474	66256	715.4	1004.6
+	"Douglas County, NE"	"31055"	"2016"	"2016"	"White"	"2106-3"	3025	394242	767.3	649.7
+	"Douglas County, NE"	"31055"	"2017"	"2017"	"Black or African American"	"2054-5"	474	67271	704.6	970.3
+	"Douglas County, NE"	"31055"	"2017"	"2017"	"White"	"2106-3"	3240	396192	817.8	682.0
+	"Douglas County, NE"	"31055"	"2018"	"2018"	"Black or African American"	"2054-5"	498	68079	731.5	999.7
+	"Douglas County, NE"	"31055"	"2018"	"2018"	"White"	"2106-3"	3267	397773	821.3	671.4
+	"Guilford County, NC"	"37081"	"2000"	"2000"	"Black or African American"	"2054-5"	783	124501	628.9	1008.5
+	"Guilford County, NC"	"37081"	"2000"	"2000"	"White"	"2106-3"	2487	267410	930.0	801.2
+	"Guilford County, NC"	"37081"	"2001"	"2001"	"Black or African American"	"2054-5"	785	128675	610.1	955.8
+	"Guilford County, NC"	"37081"	"2001"	"2001"	"White"	"2106-3"	2323	267667	867.9	741.0
+	"Guilford County, NC"	"37081"	"2002"	"2002"	"Black or African American"	"2054-5"	869	131045	663.1	1072.6
+	"Guilford County, NC"	"37081"	"2002"	"2002"	"White"	"2106-3"	2354	266379	883.7	740.6
+	"Guilford County, NC"	"37081"	"2003"	"2003"	"Black or African American"	"2054-5"	793	133681	593.2	942.9
+	"Guilford County, NC"	"37081"	"2003"	"2003"	"White"	"2106-3"	2457	265890	924.1	752.5
+	"Guilford County, NC"	"37081"	"2004"	"2004"	"Black or African American"	"2054-5"	838	136628	613.3	969.1
+	"Guilford County, NC"	"37081"	"2004"	"2004"	"White"	"2106-3"	2376	264669	897.7	719.4
+	"Guilford County, NC"	"37081"	"2005"	"2005"	"Black or African American"	"2054-5"	886	140849	629.0	986.5
+	"Guilford County, NC"	"37081"	"2005"	"2005"	"White"	"2106-3"	2440	265047	920.6	720.5
+	"Guilford County, NC"	"37081"	"2006"	"2006"	"Black or African American"	"2054-5"	854	145907	585.3	888.9
+	"Guilford County, NC"	"37081"	"2006"	"2006"	"White"	"2106-3"	2362	267309	883.6	678.7
+	"Guilford County, NC"	"37081"	"2007"	"2007"	"Black or African American"	"2054-5"	845	150477	561.5	858.2
+	"Guilford County, NC"	"37081"	"2007"	"2007"	"White"	"2106-3"	2434	268537	906.4	687.1
+	"Guilford County, NC"	"37081"	"2008"	"2008"	"Black or African American"	"2054-5"	879	155175	566.5	852.7
+	"Guilford County, NC"	"37081"	"2008"	"2008"	"White"	"2106-3"	2447	269744	907.2	670.8
+	"Guilford County, NC"	"37081"	"2009"	"2009"	"Black or African American"	"2054-5"	937	159070	589.0	854.9
+	"Guilford County, NC"	"37081"	"2009"	"2009"	"White"	"2106-3"	2530	269642	938.3	676.9
+	"Guilford County, NC"	"37081"	"2010"	"2010"	"Black or African American"	"2054-5"	903	161702	558.4	818.4
+	"Guilford County, NC"	"37081"	"2010"	"2010"	"White"	"2106-3"	2462	269267	914.3	657.9
+	"Guilford County, NC"	"37081"	"2011"	"2011"	"Black or African American"	"2054-5"	948	164276	577.1	845.1
+	"Guilford County, NC"	"37081"	"2011"	"2011"	"White"	"2106-3"	2603	271355	959.3	673.4
+	"Guilford County, NC"	"37081"	"2012"	"2012"	"Black or African American"	"2054-5"	972	168140	578.1	806.1
+	"Guilford County, NC"	"37081"	"2012"	"2012"	"White"	"2106-3"	2592	271051	956.3	656.0
+	"Guilford County, NC"	"37081"	"2013"	"2013"	"Black or African American"	"2054-5"	996	171319	581.4	797.0
+	"Guilford County, NC"	"37081"	"2013"	"2013"	"White"	"2106-3"	2605	271760	958.6	645.9
+	"Guilford County, NC"	"37081"	"2014"	"2014"	"Black or African American"	"2054-5"	1069	174419	612.9	822.8
+	"Guilford County, NC"	"37081"	"2014"	"2014"	"White"	"2106-3"	2722	271927	1001.0	657.9
+	"Guilford County, NC"	"37081"	"2015"	"2015"	"Black or African American"	"2054-5"	1100	177463	619.8	815.3
+	"Guilford County, NC"	"37081"	"2015"	"2015"	"White"	"2106-3"	2720	271760	1000.9	646.3
+	"Guilford County, NC"	"37081"	"2016"	"2016"	"Black or African American"	"2054-5"	1151	180527	637.6	842.6
+	"Guilford County, NC"	"37081"	"2016"	"2016"	"White"	"2106-3"	2716	270879	1002.7	638.8
+	"Guilford County, NC"	"37081"	"2017"	"2017"	"Black or African American"	"2054-5"	1200	183493	654.0	812.1
+	"Guilford County, NC"	"37081"	"2017"	"2017"	"White"	"2106-3"	2846	270510	1052.1	664.4
+	"Guilford County, NC"	"37081"	"2018"	"2018"	"Black or African American"	"2054-5"	1174	187742	625.3	781.9
+	"Guilford County, NC"	"37081"	"2018"	"2018"	"White"	"2106-3"	2830	270457	1046.4	652.2
+	"Mecklenburg County, NC"	"37119"	"2000"	"2000"	"Black or African American"	"2054-5"	1261	195133	646.2	1190.9
+	"Mecklenburg County, NC"	"37119"	"2000"	"2000"	"White"	"2106-3"	2923	429625	680.4	767.5
+	"Mecklenburg County, NC"	"37119"	"2001"	"2001"	"Black or African American"	"2054-5"	1246	204371	609.7	1113.9
+	"Mecklenburg County, NC"	"37119"	"2001"	"2001"	"White"	"2106-3"	2819	436414	645.9	715.1
+	"Mecklenburg County, NC"	"37119"	"2002"	"2002"	"Black or African American"	"2054-5"	1263	212106	595.5	1115.8
+	"Mecklenburg County, NC"	"37119"	"2002"	"2002"	"White"	"2106-3"	2925	437983	667.8	723.0
+	"Mecklenburg County, NC"	"37119"	"2003"	"2003"	"Black or African American"	"2054-5"	1284	219010	586.3	1094.7
+	"Mecklenburg County, NC"	"37119"	"2003"	"2003"	"White"	"2106-3"	3022	441165	685.0	733.9
+	"Mecklenburg County, NC"	"37119"	"2004"	"2004"	"Black or African American"	"2054-5"	1269	226998	559.0	1024.2
+	"Mecklenburg County, NC"	"37119"	"2004"	"2004"	"White"	"2106-3"	2939	443944	662.0	696.5
+	"Mecklenburg County, NC"	"37119"	"2005"	"2005"	"Black or African American"	"2054-5"	1328	237152	560.0	1041.1
+	"Mecklenburg County, NC"	"37119"	"2005"	"2005"	"White"	"2106-3"	2961	450612	657.1	684.6
+	"Mecklenburg County, NC"	"37119"	"2006"	"2006"	"Black or African American"	"2054-5"	1353	249667	541.9	966.9
+	"Mecklenburg County, NC"	"37119"	"2006"	"2006"	"White"	"2106-3"	2947	458990	642.1	654.8
+	"Mecklenburg County, NC"	"37119"	"2007"	"2007"	"Black or African American"	"2054-5"	1406	260741	539.2	955.0
+	"Mecklenburg County, NC"	"37119"	"2007"	"2007"	"White"	"2106-3"	3056	466051	655.7	659.7
+	"Mecklenburg County, NC"	"37119"	"2008"	"2008"	"Black or African American"	"2054-5"	1441	270085	533.5	949.4
+	"Mecklenburg County, NC"	"37119"	"2008"	"2008"	"White"	"2106-3"	3030	471522	642.6	634.3
+	"Mecklenburg County, NC"	"37119"	"2009"	"2009"	"Black or African American"	"2054-5"	1477	280106	527.3	901.5
+	"Mecklenburg County, NC"	"37119"	"2009"	"2009"	"White"	"2106-3"	3072	474255	647.8	627.9
+	"Mecklenburg County, NC"	"37119"	"2010"	"2010"	"Black or African American"	"2054-5"	1468	285447	514.3	877.4
+	"Mecklenburg County, NC"	"37119"	"2010"	"2010"	"White"	"2106-3"	3069	473804	647.7	615.8
+	"Mecklenburg County, NC"	"37119"	"2011"	"2011"	"Black or African American"	"2054-5"	1436	292666	490.7	816.5
+	"Mecklenburg County, NC"	"37119"	"2011"	"2011"	"White"	"2106-3"	3154	483978	651.7	605.1
+	"Mecklenburg County, NC"	"37119"	"2012"	"2012"	"Black or African American"	"2054-5"	1530	302616	505.6	818.6
+	"Mecklenburg County, NC"	"37119"	"2012"	"2012"	"White"	"2106-3"	3272	490322	667.3	607.5
+	"Mecklenburg County, NC"	"37119"	"2013"	"2013"	"Black or African American"	"2054-5"	1598	312935	510.6	805.0
+	"Mecklenburg County, NC"	"37119"	"2013"	"2013"	"White"	"2106-3"	3292	496589	662.9	589.6
+	"Mecklenburg County, NC"	"37119"	"2014"	"2014"	"Black or African American"	"2054-5"	1696	320735	528.8	806.6
+	"Mecklenburg County, NC"	"37119"	"2014"	"2014"	"White"	"2106-3"	3293	502510	655.3	575.8
+	"Mecklenburg County, NC"	"37119"	"2015"	"2015"	"Black or African American"	"2054-5"	1749	328534	532.4	795.8
+	"Mecklenburg County, NC"	"37119"	"2015"	"2015"	"White"	"2106-3"	3463	508817	680.6	590.1
+	"Mecklenburg County, NC"	"37119"	"2016"	"2016"	"Black or African American"	"2054-5"	1811	338513	535.0	779.4
+	"Mecklenburg County, NC"	"37119"	"2016"	"2016"	"White"	"2106-3"	3554	512144	693.9	586.3
+	"Mecklenburg County, NC"	"37119"	"2017"	"2017"	"Black or African American"	"2054-5"	1835	346390	529.7	754.5
+	"Mecklenburg County, NC"	"37119"	"2017"	"2017"	"White"	"2106-3"	3447	515369	668.8	566.0
+	"Mecklenburg County, NC"	"37119"	"2018"	"2018"	"Black or African American"	"2054-5"	1904	352680	539.9	747.2
+	"Mecklenburg County, NC"	"37119"	"2018"	"2018"	"White"	"2106-3"	3609	517637	697.2	576.4
+	"Wake County, NC"	"37183"	"2000"	"2000"	"Black or African American"	"2054-5"	732	125158	584.9	1041.0
+	"Wake County, NC"	"37183"	"2000"	"2000"	"White"	"2106-3"	2215	444105	498.8	730.0
+	"Wake County, NC"	"37183"	"2001"	"2001"	"Black or African American"	"2054-5"	792	131338	603.0	1082.7
+	"Wake County, NC"	"37183"	"2001"	"2001"	"White"	"2106-3"	2268	458981	494.1	706.6
+	"Wake County, NC"	"37183"	"2002"	"2002"	"Black or African American"	"2054-5"	670	135818	493.3	883.4
+	"Wake County, NC"	"37183"	"2002"	"2002"	"White"	"2106-3"	2362	467553	505.2	712.6
+	"Wake County, NC"	"37183"	"2003"	"2003"	"Black or African American"	"2054-5"	759	141132	537.8	959.6
+	"Wake County, NC"	"37183"	"2003"	"2003"	"White"	"2106-3"	2480	475115	522.0	715.1
+	"Wake County, NC"	"37183"	"2004"	"2004"	"Black or African American"	"2054-5"	804	146873	547.4	958.2
+	"Wake County, NC"	"37183"	"2004"	"2004"	"White"	"2106-3"	2348	483073	486.1	647.0
+	"Wake County, NC"	"37183"	"2005"	"2005"	"Black or African American"	"2054-5"	818	153779	531.9	938.7
+	"Wake County, NC"	"37183"	"2005"	"2005"	"White"	"2106-3"	2483	497478	499.1	646.8
+	"Wake County, NC"	"37183"	"2006"	"2006"	"Black or African American"	"2054-5"	792	162338	487.9	831.9
+	"Wake County, NC"	"37183"	"2006"	"2006"	"White"	"2106-3"	2525	516787	488.6	600.9
+	"Wake County, NC"	"37183"	"2007"	"2007"	"Black or African American"	"2054-5"	872	170233	512.2	866.3
+	"Wake County, NC"	"37183"	"2007"	"2007"	"White"	"2106-3"	2731	535674	509.8	617.6
+	"Wake County, NC"	"37183"	"2008"	"2008"	"Black or African American"	"2054-5"	833	177497	469.3	807.3
+	"Wake County, NC"	"37183"	"2008"	"2008"	"White"	"2106-3"	2825	552310	511.5	608.6
+	"Wake County, NC"	"37183"	"2009"	"2009"	"Black or African American"	"2054-5"	881	184556	477.4	804.0
+	"Wake County, NC"	"37183"	"2009"	"2009"	"White"	"2106-3"	2834	563326	503.1	585.2
+	"Wake County, NC"	"37183"	"2010"	"2010"	"Black or African American"	"2054-5"	912	188969	482.6	809.9
+	"Wake County, NC"	"37183"	"2010"	"2010"	"White"	"2106-3"	2922	569822	512.8	583.1
+	"Wake County, NC"	"37183"	"2011"	"2011"	"Black or African American"	"2054-5"	940	195753	480.2	777.4
+	"Wake County, NC"	"37183"	"2011"	"2011"	"White"	"2106-3"	3013	584760	515.3	567.8
+	"Wake County, NC"	"37183"	"2012"	"2012"	"Black or African American"	"2054-5"	942	201698	467.0	748.8
+	"Wake County, NC"	"37183"	"2012"	"2012"	"White"	"2106-3"	3338	595230	560.8	604.6
+	"Wake County, NC"	"37183"	"2013"	"2013"	"Black or African American"	"2054-5"	982	206506	475.5	748.0
+	"Wake County, NC"	"37183"	"2013"	"2013"	"White"	"2106-3"	3338	606611	550.3	573.6
+	"Wake County, NC"	"37183"	"2014"	"2014"	"Black or African American"	"2054-5"	1069	210672	507.4	778.4
+	"Wake County, NC"	"37183"	"2014"	"2014"	"White"	"2106-3"	3412	619154	551.1	562.7
+	"Wake County, NC"	"37183"	"2015"	"2015"	"Black or African American"	"2054-5"	1073	215402	498.1	754.0
+	"Wake County, NC"	"37183"	"2015"	"2015"	"White"	"2106-3"	3539	631180	560.7	567.3
+	"Wake County, NC"	"37183"	"2016"	"2016"	"Black or African American"	"2054-5"	1162	219009	530.6	767.7
+	"Wake County, NC"	"37183"	"2016"	"2016"	"White"	"2106-3"	3641	644366	565.1	556.3
+	"Wake County, NC"	"37183"	"2017"	"2017"	"Black or African American"	"2054-5"	1176	222757	527.9	729.8
+	"Wake County, NC"	"37183"	"2017"	"2017"	"White"	"2106-3"	3780	656232	576.0	548.3
+	"Wake County, NC"	"37183"	"2018"	"2018"	"Black or African American"	"2054-5"	1175	226016	519.9	713.0
+	"Wake County, NC"	"37183"	"2018"	"2018"	"White"	"2106-3"	3929	665139	590.7	550.6
+	"Franklin County, OH"	"39049"	"2000"	"2000"	"Black or African American"	"2054-5"	1374	199141	690.0	1145.0
+	"Franklin County, OH"	"39049"	"2000"	"2000"	"White"	"2106-3"	6212	806481	770.3	882.8
+	"Franklin County, OH"	"39049"	"2001"	"2001"	"Black or African American"	"2054-5"	1345	207218	649.1	1070.7
+	"Franklin County, OH"	"39049"	"2001"	"2001"	"White"	"2106-3"	6215	807111	770.0	877.4
+	"Franklin County, OH"	"39049"	"2002"	"2002"	"Black or African American"	"2054-5"	1443	213826	674.8	1126.0
+	"Franklin County, OH"	"39049"	"2002"	"2002"	"White"	"2106-3"	6261	802098	780.6	875.7
+	"Franklin County, OH"	"39049"	"2003"	"2003"	"Black or African American"	"2054-5"	1431	219835	650.9	1064.2
+	"Franklin County, OH"	"39049"	"2003"	"2003"	"White"	"2106-3"	6382	797947	799.8	878.6
+	"Franklin County, OH"	"39049"	"2004"	"2004"	"Black or African American"	"2054-5"	1459	225325	647.5	1057.6
+	"Franklin County, OH"	"39049"	"2004"	"2004"	"White"	"2106-3"	6107	792855	770.3	835.9
+	"Franklin County, OH"	"39049"	"2005"	"2005"	"Black or African American"	"2054-5"	1457	230352	632.5	1001.0
+	"Franklin County, OH"	"39049"	"2005"	"2005"	"White"	"2106-3"	6269	789109	794.4	849.5
+	"Franklin County, OH"	"39049"	"2006"	"2006"	"Black or African American"	"2054-5"	1443	236236	610.8	953.9
+	"Franklin County, OH"	"39049"	"2006"	"2006"	"White"	"2106-3"	6100	788864	773.3	812.5
+	"Franklin County, OH"	"39049"	"2007"	"2007"	"Black or African American"	"2054-5"	1473	241928	608.9	953.7
+	"Franklin County, OH"	"39049"	"2007"	"2007"	"White"	"2106-3"	5962	790076	754.6	777.2
+	"Franklin County, OH"	"39049"	"2008"	"2008"	"Black or African American"	"2054-5"	1481	247964	597.3	915.7
+	"Franklin County, OH"	"39049"	"2008"	"2008"	"White"	"2106-3"	6217	793100	783.9	793.0
+	"Franklin County, OH"	"39049"	"2009"	"2009"	"Black or African American"	"2054-5"	1599	253782	630.1	960.1
+	"Franklin County, OH"	"39049"	"2009"	"2009"	"White"	"2106-3"	6176	796950	775.0	778.6
+	"Franklin County, OH"	"39049"	"2010"	"2010"	"Black or African American"	"2054-5"	1475	257303	573.3	867.7
+	"Franklin County, OH"	"39049"	"2010"	"2010"	"White"	"2106-3"	6151	797843	771.0	770.1
+	"Franklin County, OH"	"39049"	"2011"	"2011"	"Black or African American"	"2054-5"	1515	260629	581.3	857.2
+	"Franklin County, OH"	"39049"	"2011"	"2011"	"White"	"2106-3"	6215	806175	770.9	761.2
+	"Franklin County, OH"	"39049"	"2012"	"2012"	"Black or African American"	"2054-5"	1545	267775	577.0	846.5
+	"Franklin County, OH"	"39049"	"2012"	"2012"	"White"	"2106-3"	6365	811655	784.2	762.5
+	"Franklin County, OH"	"39049"	"2013"	"2013"	"Black or African American"	"2054-5"	1620	273428	592.5	865.9
+	"Franklin County, OH"	"39049"	"2013"	"2013"	"White"	"2106-3"	6394	818946	780.8	748.5
+	"Franklin County, OH"	"39049"	"2014"	"2014"	"Black or African American"	"2054-5"	1659	281186	590.0	848.6
+	"Franklin County, OH"	"39049"	"2014"	"2014"	"White"	"2106-3"	6376	824168	773.6	734.9
+	"Franklin County, OH"	"39049"	"2015"	"2015"	"Black or African American"	"2054-5"	1723	289334	595.5	850.1
+	"Franklin County, OH"	"39049"	"2015"	"2015"	"White"	"2106-3"	6880	830355	828.6	781.5
+	"Franklin County, OH"	"39049"	"2016"	"2016"	"Black or African American"	"2054-5"	1766	297349	593.9	830.4
+	"Franklin County, OH"	"39049"	"2016"	"2016"	"White"	"2106-3"	6667	828355	804.8	750.7
+	"Franklin County, OH"	"39049"	"2017"	"2017"	"Black or African American"	"2054-5"	1820	308144	590.6	814.2
+	"Franklin County, OH"	"39049"	"2017"	"2017"	"White"	"2106-3"	6875	836074	822.3	752.5
+	"Franklin County, OH"	"39049"	"2018"	"2018"	"Black or African American"	"2054-5"	1920	316701	606.3	830.6
+	"Franklin County, OH"	"39049"	"2018"	"2018"	"White"	"2106-3"	6920	836798	827.0	744.7
+	"Hamilton County, OH"	"39061"	"2000"	"2000"	"Black or African American"	"2054-5"	1721	201565	853.8	1133.1
+	"Hamilton County, OH"	"39061"	"2000"	"2000"	"White"	"2106-3"	6160	617524	997.5	828.0
+	"Hamilton County, OH"	"39061"	"2001"	"2001"	"Black or African American"	"2054-5"	1642	203139	808.3	1077.7
+	"Hamilton County, OH"	"39061"	"2001"	"2001"	"White"	"2106-3"	6149	609382	1009.1	834.8
+	"Hamilton County, OH"	"39061"	"2002"	"2002"	"Black or African American"	"2054-5"	1720	204124	842.6	1119.3
+	"Hamilton County, OH"	"39061"	"2002"	"2002"	"White"	"2106-3"	6252	598953	1043.8	855.8
+	"Hamilton County, OH"	"39061"	"2003"	"2003"	"Black or African American"	"2054-5"	1659	204713	810.4	1063.1
+	"Hamilton County, OH"	"39061"	"2003"	"2003"	"White"	"2106-3"	5918	589940	1003.2	808.7
+	"Hamilton County, OH"	"39061"	"2004"	"2004"	"Black or African American"	"2054-5"	1777	205222	865.9	1137.0
+	"Hamilton County, OH"	"39061"	"2004"	"2004"	"White"	"2106-3"	5631	580389	970.2	773.9
+	"Hamilton County, OH"	"39061"	"2005"	"2005"	"Black or African American"	"2054-5"	1760	205866	854.9	1111.3
+	"Hamilton County, OH"	"39061"	"2005"	"2005"	"White"	"2106-3"	5694	571611	996.1	788.7
+	"Hamilton County, OH"	"39061"	"2006"	"2006"	"Black or African American"	"2054-5"	1636	207081	790.0	1017.3
+	"Hamilton County, OH"	"39061"	"2006"	"2006"	"White"	"2106-3"	5967	563355	1059.2	824.4
+	"Hamilton County, OH"	"39061"	"2007"	"2007"	"Black or African American"	"2054-5"	1624	208109	780.4	984.7
+	"Hamilton County, OH"	"39061"	"2007"	"2007"	"White"	"2106-3"	5565	557635	998.0	768.3
+	"Hamilton County, OH"	"39061"	"2008"	"2008"	"Black or African American"	"2054-5"	1633	209157	780.8	974.9
+	"Hamilton County, OH"	"39061"	"2008"	"2008"	"White"	"2106-3"	5605	553021	1013.5	772.1
+	"Hamilton County, OH"	"39061"	"2009"	"2009"	"Black or African American"	"2054-5"	1654	210910	784.2	970.7
+	"Hamilton County, OH"	"39061"	"2009"	"2009"	"White"	"2106-3"	5432	551904	984.2	745.9
+	"Hamilton County, OH"	"39061"	"2010"	"2010"	"Black or African American"	"2054-5"	1613	211924	761.1	933.2
+	"Hamilton County, OH"	"39061"	"2010"	"2010"	"White"	"2106-3"	5364	549849	975.5	733.6
+	"Hamilton County, OH"	"39061"	"2011"	"2011"	"Black or African American"	"2054-5"	1641	210988	777.8	937.1
+	"Hamilton County, OH"	"39061"	"2011"	"2011"	"White"	"2106-3"	5518	547701	1007.5	752.5
+	"Hamilton County, OH"	"39061"	"2012"	"2012"	"Black or African American"	"2054-5"	1592	212387	749.6	880.4
+	"Hamilton County, OH"	"39061"	"2012"	"2012"	"White"	"2106-3"	5314	546723	972.0	719.4
+	"Hamilton County, OH"	"39061"	"2013"	"2013"	"Black or African American"	"2054-5"	1630	214107	761.3	878.7
+	"Hamilton County, OH"	"39061"	"2013"	"2013"	"White"	"2106-3"	5378	546297	984.4	721.2
+	"Hamilton County, OH"	"39061"	"2014"	"2014"	"Black or African American"	"2054-5"	1719	215477	797.8	908.2
+	"Hamilton County, OH"	"39061"	"2014"	"2014"	"White"	"2106-3"	5549	545335	1017.5	740.7
+	"Hamilton County, OH"	"39061"	"2015"	"2015"	"Black or African American"	"2054-5"	1762	216689	813.1	915.1
+	"Hamilton County, OH"	"39061"	"2015"	"2015"	"White"	"2106-3"	5541	543284	1019.9	741.2
+	"Hamilton County, OH"	"39061"	"2016"	"2016"	"Black or African American"	"2054-5"	1778	219030	811.8	897.5
+	"Hamilton County, OH"	"39061"	"2016"	"2016"	"White"	"2106-3"	5324	540691	984.7	706.8
+	"Hamilton County, OH"	"39061"	"2017"	"2017"	"Black or African American"	"2054-5"	1836	221201	830.0	901.8
+	"Hamilton County, OH"	"39061"	"2017"	"2017"	"White"	"2106-3"	5535	540037	1024.9	729.2
+	"Hamilton County, OH"	"39061"	"2018"	"2018"	"Black or African American"	"2054-5"	1815	222508	815.7	874.4
+	"Hamilton County, OH"	"39061"	"2018"	"2018"	"White"	"2106-3"	5446	538786	1010.8	721.2
+	"Montgomery County, OH"	"39113"	"2000"	"2000"	"Black or African American"	"2054-5"	923	113576	812.7	1036.2
+	"Montgomery County, OH"	"39113"	"2000"	"2000"	"White"	"2106-3"	4273	428560	997.1	872.7
+	"Montgomery County, OH"	"39113"	"2001"	"2001"	"Black or African American"	"2054-5"	936	114254	819.2	1025.1
+	"Montgomery County, OH"	"39113"	"2001"	"2001"	"White"	"2106-3"	4209	423711	993.4	853.9
+	"Montgomery County, OH"	"39113"	"2002"	"2002"	"Black or African American"	"2054-5"	953	114774	830.3	1024.9
+	"Montgomery County, OH"	"39113"	"2002"	"2002"	"White"	"2106-3"	4187	420109	996.6	841.1
+	"Montgomery County, OH"	"39113"	"2003"	"2003"	"Black or African American"	"2054-5"	954	115347	827.1	998.7
+	"Montgomery County, OH"	"39113"	"2003"	"2003"	"White"	"2106-3"	4157	417130	996.6	824.8
+	"Montgomery County, OH"	"39113"	"2004"	"2004"	"Black or African American"	"2054-5"	943	115603	815.7	980.3
+	"Montgomery County, OH"	"39113"	"2004"	"2004"	"White"	"2106-3"	3921	413958	947.2	768.4
+	"Montgomery County, OH"	"39113"	"2005"	"2005"	"Black or African American"	"2054-5"	954	116106	821.7	965.6
+	"Montgomery County, OH"	"39113"	"2005"	"2005"	"White"	"2106-3"	3940	410023	960.9	760.9
+	"Montgomery County, OH"	"39113"	"2006"	"2006"	"Black or African American"	"2054-5"	977	115991	842.3	961.9
+	"Montgomery County, OH"	"39113"	"2006"	"2006"	"White"	"2106-3"	3887	406220	956.9	745.8
+	"Montgomery County, OH"	"39113"	"2007"	"2007"	"Black or African American"	"2054-5"	936	116313	804.7	917.5
+	"Montgomery County, OH"	"39113"	"2007"	"2007"	"White"	"2106-3"	3863	402127	960.6	734.9
+	"Montgomery County, OH"	"39113"	"2008"	"2008"	"Black or African American"	"2054-5"	998	116378	857.6	950.7
+	"Montgomery County, OH"	"39113"	"2008"	"2008"	"White"	"2106-3"	4194	398505	1052.4	782.5
+	"Montgomery County, OH"	"39113"	"2009"	"2009"	"Black or African American"	"2054-5"	941	116000	811.2	882.1
+	"Montgomery County, OH"	"39113"	"2009"	"2009"	"White"	"2106-3"	3968	395738	1002.7	738.3
+	"Montgomery County, OH"	"39113"	"2010"	"2010"	"Black or African American"	"2054-5"	942	116419	809.1	869.5
+	"Montgomery County, OH"	"39113"	"2010"	"2010"	"White"	"2106-3"	4121	394467	1044.7	748.6
+	"Montgomery County, OH"	"39113"	"2011"	"2011"	"Black or African American"	"2054-5"	959	116377	824.0	841.5
+	"Montgomery County, OH"	"39113"	"2011"	"2011"	"White"	"2106-3"	4142	396297	1045.2	723.6
+	"Montgomery County, OH"	"39113"	"2012"	"2012"	"Black or African American"	"2054-5"	955	116418	820.3	841.8
+	"Montgomery County, OH"	"39113"	"2012"	"2012"	"White"	"2106-3"	4131	392199	1053.3	739.1
+	"Montgomery County, OH"	"39113"	"2013"	"2013"	"Black or African American"	"2054-5"	1032	116465	886.1	902.0
+	"Montgomery County, OH"	"39113"	"2013"	"2013"	"White"	"2106-3"	4175	392838	1062.8	731.7
+	"Montgomery County, OH"	"39113"	"2014"	"2014"	"Black or African American"	"2054-5"	1054	116684	903.3	898.1
+	"Montgomery County, OH"	"39113"	"2014"	"2014"	"White"	"2106-3"	4201	388868	1080.3	731.8
+	"Montgomery County, OH"	"39113"	"2015"	"2015"	"Black or African American"	"2054-5"	1056	116858	903.7	889.9
+	"Montgomery County, OH"	"39113"	"2015"	"2015"	"White"	"2106-3"	4342	387054	1121.8	753.9
+	"Montgomery County, OH"	"39113"	"2016"	"2016"	"Black or African American"	"2054-5"	1103	117455	939.1	902.3
+	"Montgomery County, OH"	"39113"	"2016"	"2016"	"White"	"2106-3"	4323	384420	1124.6	745.9
+	"Montgomery County, OH"	"39113"	"2017"	"2017"	"Black or African American"	"2054-5"	1098	118125	929.5	892.3
+	"Montgomery County, OH"	"39113"	"2017"	"2017"	"White"	"2106-3"	4441	382670	1160.5	770.0
+	"Montgomery County, OH"	"39113"	"2018"	"2018"	"Black or African American"	"2054-5"	1122	118530	946.6	904.5
+	"Montgomery County, OH"	"39113"	"2018"	"2018"	"White"	"2106-3"	4555	381847	1192.9	778.7
+	"Oklahoma County, OK"	"40109"	"2000"	"2000"	"Black or African American"	"2054-5"	720	103133	698.1	1142.8
+	"Oklahoma County, OK"	"40109"	"2000"	"2000"	"White"	"2106-3"	4967	455735	1089.9	929.8
+	"Oklahoma County, OK"	"40109"	"2001"	"2001"	"Black or African American"	"2054-5"	718	104309	688.3	1131.7
+	"Oklahoma County, OK"	"40109"	"2001"	"2001"	"White"	"2106-3"	4993	453215	1101.7	933.4
+	"Oklahoma County, OK"	"40109"	"2002"	"2002"	"Black or African American"	"2054-5"	758	105879	715.9	1161.7
+	"Oklahoma County, OK"	"40109"	"2002"	"2002"	"White"	"2106-3"	4986	451843	1103.5	930.2
+	"Oklahoma County, OK"	"40109"	"2003"	"2003"	"Black or African American"	"2054-5"	737	107042	688.5	1104.1
+	"Oklahoma County, OK"	"40109"	"2003"	"2003"	"White"	"2106-3"	4968	449026	1106.4	923.6
+	"Oklahoma County, OK"	"40109"	"2004"	"2004"	"Black or African American"	"2054-5"	764	108369	705.0	1137.9
+	"Oklahoma County, OK"	"40109"	"2004"	"2004"	"White"	"2106-3"	4602	445868	1032.1	853.0
+	"Oklahoma County, OK"	"40109"	"2005"	"2005"	"Black or African American"	"2054-5"	733	109803	667.6	1055.0
+	"Oklahoma County, OK"	"40109"	"2005"	"2005"	"White"	"2106-3"	4878	444394	1097.7	892.2
+	"Oklahoma County, OK"	"40109"	"2006"	"2006"	"Black or African American"	"2054-5"	772	111349	693.3	1067.6
+	"Oklahoma County, OK"	"40109"	"2006"	"2006"	"White"	"2106-3"	4611	444148	1038.2	827.1
+	"Oklahoma County, OK"	"40109"	"2007"	"2007"	"Black or African American"	"2054-5"	806	112943	713.6	1110.0
+	"Oklahoma County, OK"	"40109"	"2007"	"2007"	"White"	"2106-3"	4671	442681	1055.2	826.6
+	"Oklahoma County, OK"	"40109"	"2008"	"2008"	"Black or African American"	"2054-5"	763	114260	667.8	983.9
+	"Oklahoma County, OK"	"40109"	"2008"	"2008"	"White"	"2106-3"	4862	441696	1100.8	855.8
+	"Oklahoma County, OK"	"40109"	"2009"	"2009"	"Black or African American"	"2054-5"	784	116882	670.8	977.9
+	"Oklahoma County, OK"	"40109"	"2009"	"2009"	"White"	"2106-3"	4626	442163	1046.2	802.3
+	"Oklahoma County, OK"	"40109"	"2010"	"2010"	"Black or African American"	"2054-5"	822	118592	693.1	1009.2
+	"Oklahoma County, OK"	"40109"	"2010"	"2010"	"White"	"2106-3"	4832	441721	1093.9	837.2
+	"Oklahoma County, OK"	"40109"	"2011"	"2011"	"Black or African American"	"2054-5"	785	119546	656.7	921.4
+	"Oklahoma County, OK"	"40109"	"2011"	"2011"	"White"	"2106-3"	4933	447695	1101.9	832.1
+	"Oklahoma County, OK"	"40109"	"2012"	"2012"	"Black or African American"	"2054-5"	798	122415	651.9	962.9
+	"Oklahoma County, OK"	"40109"	"2012"	"2012"	"White"	"2106-3"	4698	450280	1043.4	792.3
+	"Oklahoma County, OK"	"40109"	"2013"	"2013"	"Black or African American"	"2054-5"	864	124827	692.2	951.0
+	"Oklahoma County, OK"	"40109"	"2013"	"2013"	"White"	"2106-3"	5034	456725	1102.2	838.8
+	"Oklahoma County, OK"	"40109"	"2014"	"2014"	"Black or African American"	"2054-5"	893	126560	705.6	956.7
+	"Oklahoma County, OK"	"40109"	"2014"	"2014"	"White"	"2106-3"	5024	459551	1093.2	829.5
+	"Oklahoma County, OK"	"40109"	"2015"	"2015"	"Black or African American"	"2054-5"	908	128662	705.7	952.8
+	"Oklahoma County, OK"	"40109"	"2015"	"2015"	"White"	"2106-3"	5005	461816	1083.8	813.2
+	"Oklahoma County, OK"	"40109"	"2016"	"2016"	"Black or African American"	"2054-5"	853	130645	652.9	860.9
+	"Oklahoma County, OK"	"40109"	"2016"	"2016"	"White"	"2106-3"	4919	461055	1066.9	793.2
+	"Oklahoma County, OK"	"40109"	"2017"	"2017"	"Black or African American"	"2054-5"	949	131605	721.1	940.7
+	"Oklahoma County, OK"	"40109"	"2017"	"2017"	"White"	"2106-3"	5132	459014	1118.0	828.1
+	"Oklahoma County, OK"	"40109"	"2018"	"2018"	"Black or African American"	"2054-5"	950	132582	716.5	916.1
+	"Oklahoma County, OK"	"40109"	"2018"	"2018"	"White"	"2106-3"	5071	459614	1103.3	800.9
+	"Tulsa County, OK"	"40143"	"2000"	"2000"	"Black or African American"	"2054-5"	471	64528	729.9	1233.5
+	"Tulsa County, OK"	"40143"	"2000"	"2000"	"White"	"2106-3"	4164	422387	985.8	900.6
+	"Tulsa County, OK"	"40143"	"2001"	"2001"	"Black or African American"	"2054-5"	451	64773	696.3	1177.0
+	"Tulsa County, OK"	"40143"	"2001"	"2001"	"White"	"2106-3"	4223	420731	1003.7	911.1
+	"Tulsa County, OK"	"40143"	"2002"	"2002"	"Black or African American"	"2054-5"	466	65098	715.8	1226.2
+	"Tulsa County, OK"	"40143"	"2002"	"2002"	"White"	"2106-3"	4226	419311	1007.8	909.8
+	"Tulsa County, OK"	"40143"	"2003"	"2003"	"Black or African American"	"2054-5"	491	65247	752.5	1294.2
+	"Tulsa County, OK"	"40143"	"2003"	"2003"	"White"	"2106-3"	4220	415029	1016.8	900.1
+	"Tulsa County, OK"	"40143"	"2004"	"2004"	"Black or African American"	"2054-5"	450	65215	690.0	1230.5
+	"Tulsa County, OK"	"40143"	"2004"	"2004"	"White"	"2106-3"	3907	410150	952.6	823.7
+	"Tulsa County, OK"	"40143"	"2005"	"2005"	"Black or African American"	"2054-5"	472	65379	721.9	1224.9
+	"Tulsa County, OK"	"40143"	"2005"	"2005"	"White"	"2106-3"	4318	408037	1058.2	899.5
+	"Tulsa County, OK"	"40143"	"2006"	"2006"	"Black or African American"	"2054-5"	507	66422	763.3	1264.7
+	"Tulsa County, OK"	"40143"	"2006"	"2006"	"White"	"2106-3"	4111	408185	1007.1	839.7
+	"Tulsa County, OK"	"40143"	"2007"	"2007"	"Black or African American"	"2054-5"	468	67292	695.5	1135.1
+	"Tulsa County, OK"	"40143"	"2007"	"2007"	"White"	"2106-3"	4156	408494	1017.4	832.5
+	"Tulsa County, OK"	"40143"	"2008"	"2008"	"Black or African American"	"2054-5"	447	67860	658.7	1060.4
+	"Tulsa County, OK"	"40143"	"2008"	"2008"	"White"	"2106-3"	4338	409214	1060.1	856.9
+	"Tulsa County, OK"	"40143"	"2009"	"2009"	"Black or African American"	"2054-5"	435	69405	626.8	997.9
+	"Tulsa County, OK"	"40143"	"2009"	"2009"	"White"	"2106-3"	3988	410434	971.7	773.5
+	"Tulsa County, OK"	"40143"	"2010"	"2010"	"Black or African American"	"2054-5"	463	70399	657.7	1053.1
+	"Tulsa County, OK"	"40143"	"2010"	"2010"	"White"	"2106-3"	4036	410964	982.1	769.2
+	"Tulsa County, OK"	"40143"	"2011"	"2011"	"Black or African American"	"2054-5"	487	70794	687.9	1100.3
+	"Tulsa County, OK"	"40143"	"2011"	"2011"	"White"	"2106-3"	4101	414273	989.9	758.6
+	"Tulsa County, OK"	"40143"	"2012"	"2012"	"Black or African American"	"2054-5"	476	71486	665.9	1010.3
+	"Tulsa County, OK"	"40143"	"2012"	"2012"	"White"	"2106-3"	4145	414464	1000.1	767.6
+	"Tulsa County, OK"	"40143"	"2013"	"2013"	"Black or African American"	"2054-5"	521	72117	722.4	1106.7
+	"Tulsa County, OK"	"40143"	"2013"	"2013"	"White"	"2106-3"	4306	418209	1029.6	782.5
+	"Tulsa County, OK"	"40143"	"2014"	"2014"	"Black or African American"	"2054-5"	517	73214	706.1	1051.7
+	"Tulsa County, OK"	"40143"	"2014"	"2014"	"White"	"2106-3"	4248	419989	1011.5	759.2
+	"Tulsa County, OK"	"40143"	"2015"	"2015"	"Black or African American"	"2054-5"	521	74471	699.6	1022.9
+	"Tulsa County, OK"	"40143"	"2015"	"2015"	"White"	"2106-3"	4253	423081	1005.2	750.9
+	"Tulsa County, OK"	"40143"	"2016"	"2016"	"Black or African American"	"2054-5"	525	75007	699.9	1010.9
+	"Tulsa County, OK"	"40143"	"2016"	"2016"	"White"	"2106-3"	4295	422529	1016.5	749.7
+	"Tulsa County, OK"	"40143"	"2017"	"2017"	"Black or African American"	"2054-5"	533	75486	706.1	1000.4
+	"Tulsa County, OK"	"40143"	"2017"	"2017"	"White"	"2106-3"	4500	420601	1069.9	767.0
+	"Tulsa County, OK"	"40143"	"2018"	"2018"	"Black or African American"	"2054-5"	548	75791	723.0	1040.6
+	"Tulsa County, OK"	"40143"	"2018"	"2018"	"White"	"2106-3"	4499	419438	1072.6	751.6
+	"Greenville County, SC"	"45045"	"2000"	"2000"	"Black or African American"	"2054-5"	552	69950	789.1	1139.3
+	"Greenville County, SC"	"45045"	"2000"	"2000"	"White"	"2106-3"	2516	289056	870.4	835.6
+	"Greenville County, SC"	"45045"	"2001"	"2001"	"Black or African American"	"2054-5"	562	71122	790.2	1142.0
+	"Greenville County, SC"	"45045"	"2001"	"2001"	"White"	"2106-3"	2466	291668	845.5	804.4
+	"Greenville County, SC"	"45045"	"2002"	"2002"	"Black or African American"	"2054-5"	552	71654	770.4	1123.0
+	"Greenville County, SC"	"45045"	"2002"	"2002"	"White"	"2106-3"	2528	293223	862.1	810.2
+	"Greenville County, SC"	"45045"	"2003"	"2003"	"Black or African American"	"2054-5"	553	72313	764.7	1102.1
+	"Greenville County, SC"	"45045"	"2003"	"2003"	"White"	"2106-3"	2531	294349	859.9	792.7
+	"Greenville County, SC"	"45045"	"2004"	"2004"	"Black or African American"	"2054-5"	507	73382	690.9	982.7
+	"Greenville County, SC"	"45045"	"2004"	"2004"	"White"	"2106-3"	2387	295943	806.6	729.7
+	"Greenville County, SC"	"45045"	"2005"	"2005"	"Black or African American"	"2054-5"	503	74591	674.3	946.7
+	"Greenville County, SC"	"45045"	"2005"	"2005"	"White"	"2106-3"	2504	298598	838.6	746.8
+	"Greenville County, SC"	"45045"	"2006"	"2006"	"Black or African American"	"2054-5"	522	76253	684.6	942.5
+	"Greenville County, SC"	"45045"	"2006"	"2006"	"White"	"2106-3"	2526	304042	830.8	721.7
+	"Greenville County, SC"	"45045"	"2007"	"2007"	"Black or African American"	"2054-5"	583	78209	745.4	1041.9
+	"Greenville County, SC"	"45045"	"2007"	"2007"	"White"	"2106-3"	2616	310062	843.7	724.9
+	"Greenville County, SC"	"45045"	"2008"	"2008"	"Black or African American"	"2054-5"	562	80015	702.4	1011.8
+	"Greenville County, SC"	"45045"	"2008"	"2008"	"White"	"2106-3"	2660	315732	842.5	717.5
+	"Greenville County, SC"	"45045"	"2009"	"2009"	"Black or African American"	"2054-5"	490	81484	601.3	848.2
+	"Greenville County, SC"	"45045"	"2009"	"2009"	"White"	"2106-3"	2640	319538	826.2	694.5
+	"Greenville County, SC"	"45045"	"2010"	"2010"	"Black or African American"	"2054-5"	515	82807	621.9	863.3
+	"Greenville County, SC"	"45045"	"2010"	"2010"	"White"	"2106-3"	2799	321195	871.4	719.0
+	"Greenville County, SC"	"45045"	"2011"	"2011"	"Black or African American"	"2054-5"	621	85147	729.3	999.6
+	"Greenville County, SC"	"45045"	"2011"	"2011"	"White"	"2106-3"	2794	326312	856.2	694.9
+	"Greenville County, SC"	"45045"	"2012"	"2012"	"Black or African American"	"2054-5"	568	86430	657.2	879.2
+	"Greenville County, SC"	"45045"	"2012"	"2012"	"White"	"2106-3"	2881	329748	873.7	696.7
+	"Greenville County, SC"	"45045"	"2013"	"2013"	"Black or African American"	"2054-5"	554	87673	631.9	828.7
+	"Greenville County, SC"	"45045"	"2013"	"2013"	"White"	"2106-3"	2940	333375	881.9	691.7
+	"Greenville County, SC"	"45045"	"2014"	"2014"	"Black or African American"	"2054-5"	548	89416	612.9	791.1
+	"Greenville County, SC"	"45045"	"2014"	"2014"	"White"	"2106-3"	3026	338479	894.0	696.1
+	"Greenville County, SC"	"45045"	"2015"	"2015"	"Black or African American"	"2054-5"	628	91329	687.6	861.9
+	"Greenville County, SC"	"45045"	"2015"	"2015"	"White"	"2106-3"	3170	344076	921.3	706.4
+	"Greenville County, SC"	"45045"	"2016"	"2016"	"Black or African American"	"2054-5"	649	92731	699.9	862.1
+	"Greenville County, SC"	"45045"	"2016"	"2016"	"White"	"2106-3"	3255	348078	935.1	706.9
+	"Greenville County, SC"	"45045"	"2017"	"2017"	"Black or African American"	"2054-5"	623	93967	663.0	796.3
+	"Greenville County, SC"	"45045"	"2017"	"2017"	"White"	"2106-3"	3293	351912	935.7	703.8
+	"Greenville County, SC"	"45045"	"2018"	"2018"	"Black or African American"	"2054-5"	651	95220	683.7	802.7
+	"Greenville County, SC"	"45045"	"2018"	"2018"	"White"	"2106-3"	3299	355877	927.0	683.9
+	"Davidson County, TN"	"47037"	"2000"	"2000"	"Black or African American"	"2054-5"	1120	149939	747.0	1158.3
+	"Davidson County, TN"	"47037"	"2000"	"2000"	"White"	"2106-3"	3443	377327	912.5	839.7
+	"Davidson County, TN"	"47037"	"2001"	"2001"	"Black or African American"	"2054-5"	1103	152672	722.5	1148.4
+	"Davidson County, TN"	"47037"	"2001"	"2001"	"White"	"2106-3"	3527	375263	939.9	853.9
+	"Davidson County, TN"	"47037"	"2002"	"2002"	"Black or African American"	"2054-5"	1130	154359	732.1	1173.7
+	"Davidson County, TN"	"47037"	"2002"	"2002"	"White"	"2106-3"	3586	370070	969.0	875.7
+	"Davidson County, TN"	"47037"	"2003"	"2003"	"Black or African American"	"2054-5"	1176	156598	751.0	1181.7
+	"Davidson County, TN"	"47037"	"2003"	"2003"	"White"	"2106-3"	3535	367093	963.0	863.2
+	"Davidson County, TN"	"47037"	"2004"	"2004"	"Black or African American"	"2054-5"	1064	159446	667.3	1050.9
+	"Davidson County, TN"	"47037"	"2004"	"2004"	"White"	"2106-3"	3291	365514	900.4	799.1
+	"Davidson County, TN"	"47037"	"2005"	"2005"	"Black or African American"	"2054-5"	1088	162826	668.2	1036.7
+	"Davidson County, TN"	"47037"	"2005"	"2005"	"White"	"2106-3"	3285	364336	901.6	791.1
+	"Davidson County, TN"	"47037"	"2006"	"2006"	"Black or African American"	"2054-5"	1142	166781	684.7	1079.6
+	"Davidson County, TN"	"47037"	"2006"	"2006"	"White"	"2106-3"	3418	363521	940.2	817.2
+	"Davidson County, TN"	"47037"	"2007"	"2007"	"Black or African American"	"2054-5"	1088	169323	642.6	1010.7
+	"Davidson County, TN"	"47037"	"2007"	"2007"	"White"	"2106-3"	3391	362907	934.4	807.4
+	"Davidson County, TN"	"47037"	"2008"	"2008"	"Black or African American"	"2054-5"	1123	171965	653.0	1041.5
+	"Davidson County, TN"	"47037"	"2008"	"2008"	"White"	"2106-3"	3434	363831	943.8	812.8
+	"Davidson County, TN"	"47037"	"2009"	"2009"	"Black or African American"	"2054-5"	1148	174745	657.0	993.9
+	"Davidson County, TN"	"47037"	"2009"	"2009"	"White"	"2106-3"	3212	365685	878.4	754.1
+	"Davidson County, TN"	"47037"	"2010"	"2010"	"Black or African American"	"2054-5"	1094	176851	618.6	940.7
+	"Davidson County, TN"	"47037"	"2010"	"2010"	"White"	"2106-3"	3329	366275	908.9	781.8
+	"Davidson County, TN"	"47037"	"2011"	"2011"	"Black or African American"	"2054-5"	1103	178004	619.6	909.4
+	"Davidson County, TN"	"47037"	"2011"	"2011"	"White"	"2106-3"	3236	371430	871.2	744.4
+	"Davidson County, TN"	"47037"	"2012"	"2012"	"Black or African American"	"2054-5"	1102	183498	600.6	876.9
+	"Davidson County, TN"	"47037"	"2012"	"2012"	"White"	"2106-3"	3290	376624	873.6	746.2
+	"Davidson County, TN"	"47037"	"2013"	"2013"	"Black or African American"	"2054-5"	1161	186142	623.7	889.3
+	"Davidson County, TN"	"47037"	"2013"	"2013"	"White"	"2106-3"	3275	382586	856.0	727.8
+	"Davidson County, TN"	"47037"	"2014"	"2014"	"Black or African American"	"2054-5"	1177	188844	623.3	869.6
+	"Davidson County, TN"	"47037"	"2014"	"2014"	"White"	"2106-3"	3319	387250	857.1	730.9
+	"Davidson County, TN"	"47037"	"2015"	"2015"	"Black or African American"	"2054-5"	1197	191447	625.2	868.3
+	"Davidson County, TN"	"47037"	"2015"	"2015"	"White"	"2106-3"	3331	392436	848.8	724.3
+	"Davidson County, TN"	"47037"	"2016"	"2016"	"Black or African American"	"2054-5"	1209	193204	625.8	845.5
+	"Davidson County, TN"	"47037"	"2016"	"2016"	"White"	"2106-3"	3402	393381	864.8	740.0
+	"Davidson County, TN"	"47037"	"2017"	"2017"	"Black or African American"	"2054-5"	1277	194032	658.1	864.4
+	"Davidson County, TN"	"47037"	"2017"	"2017"	"White"	"2106-3"	3374	396197	851.6	717.8
+	"Davidson County, TN"	"47037"	"2018"	"2018"	"Black or African American"	"2054-5"	1273	193104	659.2	839.9
+	"Davidson County, TN"	"47037"	"2018"	"2018"	"White"	"2106-3"	3395	396552	856.1	714.2
+	"Knox County, TN"	"47093"	"2000"	"2000"	"Black or African American"	"2054-5"	327	33728	969.5	1300.0
+	"Knox County, TN"	"47093"	"2000"	"2000"	"White"	"2106-3"	3036	337059	900.7	869.8
+	"Knox County, TN"	"47093"	"2001"	"2001"	"Black or African American"	"2054-5"	305	33963	898.0	1225.7
+	"Knox County, TN"	"47093"	"2001"	"2001"	"White"	"2106-3"	3017	339423	888.9	854.3
+	"Knox County, TN"	"47093"	"2002"	"2002"	"Black or African American"	"2054-5"	296	34410	860.2	1181.1
+	"Knox County, TN"	"47093"	"2002"	"2002"	"White"	"2106-3"	3086	341432	903.8	861.6
+	"Knox County, TN"	"47093"	"2003"	"2003"	"Black or African American"	"2054-5"	294	34977	840.6	1143.1
+	"Knox County, TN"	"47093"	"2003"	"2003"	"White"	"2106-3"	3073	344371	892.4	849.1
+	"Knox County, TN"	"47093"	"2004"	"2004"	"Black or African American"	"2054-5"	269	35486	758.0	1031.5
+	"Knox County, TN"	"47093"	"2004"	"2004"	"White"	"2106-3"	2969	346533	856.8	809.2
+	"Knox County, TN"	"47093"	"2005"	"2005"	"Black or African American"	"2054-5"	287	36080	795.5	1078.3
+	"Knox County, TN"	"47093"	"2005"	"2005"	"White"	"2106-3"	3007	350460	858.0	800.2
+	"Knox County, TN"	"47093"	"2006"	"2006"	"Black or African American"	"2054-5"	282	37126	759.6	1034.1
+	"Knox County, TN"	"47093"	"2006"	"2006"	"White"	"2106-3"	2927	355319	823.8	753.2
+	"Knox County, TN"	"47093"	"2007"	"2007"	"Black or African American"	"2054-5"	297	37963	782.3	1064.2
+	"Knox County, TN"	"47093"	"2007"	"2007"	"White"	"2106-3"	3034	360084	842.6	761.4
+	"Knox County, TN"	"47093"	"2008"	"2008"	"Black or African American"	"2054-5"	270	38749	696.8	946.2
+	"Knox County, TN"	"47093"	"2008"	"2008"	"White"	"2106-3"	3237	363962	889.4	795.1
+	"Knox County, TN"	"47093"	"2009"	"2009"	"Black or African American"	"2054-5"	277	39322	704.4	922.3
+	"Knox County, TN"	"47093"	"2009"	"2009"	"White"	"2106-3"	3224	366112	880.6	777.3
+	"Knox County, TN"	"47093"	"2010"	"2010"	"Black or African American"	"2054-5"	297	39780	746.6	996.9
+	"Knox County, TN"	"47093"	"2010"	"2010"	"White"	"2106-3"	3281	367304	893.3	777.2
+	"Knox County, TN"	"47093"	"2011"	"2011"	"Black or African American"	"2054-5"	288	40803	705.8	912.8
+	"Knox County, TN"	"47093"	"2011"	"2011"	"White"	"2106-3"	3359	369689	908.6	778.2
+	"Knox County, TN"	"47093"	"2012"	"2012"	"Black or African American"	"2054-5"	299	41411	722.0	920.9
+	"Knox County, TN"	"47093"	"2012"	"2012"	"White"	"2106-3"	3425	372278	920.0	778.8
+	"Knox County, TN"	"47093"	"2013"	"2013"	"Black or African American"	"2054-5"	261	41542	628.3	816.1
+	"Knox County, TN"	"47093"	"2013"	"2013"	"White"	"2106-3"	3371	375135	898.6	748.2
+	"Knox County, TN"	"47093"	"2014"	"2014"	"Black or African American"	"2054-5"	324	41965	772.1	943.2
+	"Knox County, TN"	"47093"	"2014"	"2014"	"White"	"2106-3"	3723	377506	986.2	817.0
+	"Knox County, TN"	"47093"	"2015"	"2015"	"Black or African American"	"2054-5"	333	42323	786.8	948.3
+	"Knox County, TN"	"47093"	"2015"	"2015"	"White"	"2106-3"	3562	378707	940.6	767.2
+	"Knox County, TN"	"47093"	"2016"	"2016"	"Black or African American"	"2054-5"	359	42419	846.3	1008.6
+	"Knox County, TN"	"47093"	"2016"	"2016"	"White"	"2106-3"	3532	383038	922.1	743.3
+	"Knox County, TN"	"47093"	"2017"	"2017"	"Black or African American"	"2054-5"	334	42977	777.2	965.0
+	"Knox County, TN"	"47093"	"2017"	"2017"	"White"	"2106-3"	3674	386258	951.2	758.2
+	"Knox County, TN"	"47093"	"2018"	"2018"	"Black or African American"	"2054-5"	375	43197	868.1	1072.1
+	"Knox County, TN"	"47093"	"2018"	"2018"	"White"	"2106-3"	3770	388552	970.3	767.2
+	"Shelby County, TN"	"47157"	"2000"	"2000"	"Black or African American"	"2054-5"	3530	437348	807.1	1273.5
+	"Shelby County, TN"	"47157"	"2000"	"2000"	"White"	"2106-3"	4032	419152	961.9	894.1
+	"Shelby County, TN"	"47157"	"2001"	"2001"	"Black or African American"	"2054-5"	3417	444586	768.6	1205.5
+	"Shelby County, TN"	"47157"	"2001"	"2001"	"White"	"2106-3"	3785	410489	922.1	838.2
+	"Shelby County, TN"	"47157"	"2002"	"2002"	"Black or African American"	"2054-5"	3514	450806	779.5	1231.0
+	"Shelby County, TN"	"47157"	"2002"	"2002"	"White"	"2106-3"	3770	404060	933.0	836.3
+	"Shelby County, TN"	"47157"	"2003"	"2003"	"Black or African American"	"2054-5"	3570	457071	781.1	1238.6
+	"Shelby County, TN"	"47157"	"2003"	"2003"	"White"	"2106-3"	3600	398476	903.4	795.4
+	"Shelby County, TN"	"47157"	"2004"	"2004"	"Black or African American"	"2054-5"	3342	462554	722.5	1139.0
+	"Shelby County, TN"	"47157"	"2004"	"2004"	"White"	"2106-3"	3581	391894	913.8	787.3
+	"Shelby County, TN"	"47157"	"2005"	"2005"	"Black or African American"	"2054-5"	3544	467077	758.8	1185.0
+	"Shelby County, TN"	"47157"	"2005"	"2005"	"White"	"2106-3"	3591	386749	928.5	783.8
+	"Shelby County, TN"	"47157"	"2006"	"2006"	"Black or African American"	"2054-5"	3466	473792	731.5	1114.4
+	"Shelby County, TN"	"47157"	"2006"	"2006"	"White"	"2106-3"	3314	382133	867.2	718.0
+	"Shelby County, TN"	"47157"	"2007"	"2007"	"Black or African American"	"2054-5"	3374	476565	708.0	1072.9
+	"Shelby County, TN"	"47157"	"2007"	"2007"	"White"	"2106-3"	3479	376193	924.8	751.8
+	"Shelby County, TN"	"47157"	"2008"	"2008"	"Black or African American"	"2054-5"	3372	479006	704.0	1040.6
+	"Shelby County, TN"	"47157"	"2008"	"2008"	"White"	"2106-3"	3412	370531	920.8	728.1
+	"Shelby County, TN"	"47157"	"2009"	"2009"	"Black or African American"	"2054-5"	3401	482599	704.7	1013.1
+	"Shelby County, TN"	"47157"	"2009"	"2009"	"White"	"2106-3"	3337	365435	913.2	709.1
+	"Shelby County, TN"	"47157"	"2010"	"2010"	"Black or African American"	"2054-5"	3403	486929	698.9	996.7
+	"Shelby County, TN"	"47157"	"2010"	"2010"	"White"	"2106-3"	3404	363507	936.4	725.3
+	"Shelby County, TN"	"47157"	"2011"	"2011"	"Black or African American"	"2054-5"	3368	489455	688.1	952.7
+	"Shelby County, TN"	"47157"	"2011"	"2011"	"White"	"2106-3"	3376	365390	923.9	695.0
+	"Shelby County, TN"	"47157"	"2012"	"2012"	"Black or African American"	"2054-5"	3485	497506	700.5	945.6
+	"Shelby County, TN"	"47157"	"2012"	"2012"	"White"	"2106-3"	3457	360943	957.8	710.5
+	"Shelby County, TN"	"47157"	"2013"	"2013"	"Black or African American"	"2054-5"	3628	499540	726.3	956.6
+	"Shelby County, TN"	"47157"	"2013"	"2013"	"White"	"2106-3"	3486	357652	974.7	710.7
+	"Shelby County, TN"	"47157"	"2014"	"2014"	"Black or African American"	"2054-5"	3597	501325	717.5	924.0
+	"Shelby County, TN"	"47157"	"2014"	"2014"	"White"	"2106-3"	3442	353940	972.5	699.9
+	"Shelby County, TN"	"47157"	"2015"	"2015"	"Black or African American"	"2054-5"	3693	502430	735.0	918.0
+	"Shelby County, TN"	"47157"	"2015"	"2015"	"White"	"2106-3"	3626	350521	1034.5	728.9
+	"Shelby County, TN"	"47157"	"2016"	"2016"	"Black or African American"	"2054-5"	3728	506893	735.5	902.4
+	"Shelby County, TN"	"47157"	"2016"	"2016"	"White"	"2106-3"	3404	342797	993.0	680.2
+	"Shelby County, TN"	"47157"	"2017"	"2017"	"Black or African American"	"2054-5"	3795	508329	746.6	897.4
+	"Shelby County, TN"	"47157"	"2017"	"2017"	"White"	"2106-3"	3504	340827	1028.1	690.8
+	"Shelby County, TN"	"47157"	"2018"	"2018"	"Black or African American"	"2054-5"	3923	508359	771.7	886.4
+	"Shelby County, TN"	"47157"	"2018"	"2018"	"White"	"2106-3"	3583	337877	1060.4	705.4
+	"Richmond city, VA"	"51760"	"2000"	"2000"	"Black or African American"	"2054-5"	1232	114000	1080.7	1266.2
+	"Richmond city, VA"	"51760"	"2000"	"2000"	"White"	"2106-3"	1016	75382	1347.8	931.9
+	"Richmond city, VA"	"51760"	"2001"	"2001"	"Black or African American"	"2054-5"	1164	113012	1030.0	1202.5
+	"Richmond city, VA"	"51760"	"2001"	"2001"	"White"	"2106-3"	904	75004	1205.3	875.9
+	"Richmond city, VA"	"51760"	"2002"	"2002"	"Black or African American"	"2054-5"	1156	111994	1032.2	1198.3
+	"Richmond city, VA"	"51760"	"2002"	"2002"	"White"	"2106-3"	928	75065	1236.3	895.7
+	"Richmond city, VA"	"51760"	"2003"	"2003"	"Black or African American"	"2054-5"	1251	111234	1124.7	1305.5
+	"Richmond city, VA"	"51760"	"2003"	"2003"	"White"	"2106-3"	871	74873	1163.3	864.0
+	"Richmond city, VA"	"51760"	"2004"	"2004"	"Black or African American"	"2054-5"	1123	110140	1019.6	1188.9
+	"Richmond city, VA"	"51760"	"2004"	"2004"	"White"	"2106-3"	750	74608	1005.3	760.8
+	"Richmond city, VA"	"51760"	"2005"	"2005"	"Black or African American"	"2054-5"	1206	109382	1102.6	1277.7
+	"Richmond city, VA"	"51760"	"2005"	"2005"	"White"	"2106-3"	729	74930	972.9	741.9
+	"Richmond city, VA"	"51760"	"2006"	"2006"	"Black or African American"	"2054-5"	1095	108143	1012.5	1140.9
+	"Richmond city, VA"	"51760"	"2006"	"2006"	"White"	"2106-3"	740	76076	972.7	757.4
+	"Richmond city, VA"	"51760"	"2007"	"2007"	"Black or African American"	"2054-5"	1080	107239	1007.1	1108.3
+	"Richmond city, VA"	"51760"	"2007"	"2007"	"White"	"2106-3"	754	77466	973.3	765.6
+	"Richmond city, VA"	"51760"	"2008"	"2008"	"Black or African American"	"2054-5"	1085	106449	1019.3	1096.6
+	"Richmond city, VA"	"51760"	"2008"	"2008"	"White"	"2106-3"	677	79127	855.6	698.5
+	"Richmond city, VA"	"51760"	"2009"	"2009"	"Black or African American"	"2054-5"	1062	105383	1007.8	1054.4
+	"Richmond city, VA"	"51760"	"2009"	"2009"	"White"	"2106-3"	662	80549	821.9	694.4
+	"Richmond city, VA"	"51760"	"2010"	"2010"	"Black or African American"	"2054-5"	970	104472	928.5	974.1
+	"Richmond city, VA"	"51760"	"2010"	"2010"	"White"	"2106-3"	756	81071	932.5	773.7
+	"Richmond city, VA"	"51760"	"2011"	"2011"	"Black or African American"	"2054-5"	963	103722	928.4	959.9
+	"Richmond city, VA"	"51760"	"2011"	"2011"	"White"	"2106-3"	647	82777	781.6	664.5
+	"Richmond city, VA"	"51760"	"2012"	"2012"	"Black or African American"	"2054-5"	1032	106195	971.8	996.5
+	"Richmond city, VA"	"51760"	"2012"	"2012"	"White"	"2106-3"	626	84574	740.2	622.6
+	"Richmond city, VA"	"51760"	"2013"	"2013"	"Black or African American"	"2054-5"	1041	107305	970.1	973.5
+	"Richmond city, VA"	"51760"	"2013"	"2013"	"White"	"2106-3"	658	86950	756.8	648.2
+	"Richmond city, VA"	"51760"	"2014"	"2014"	"Black or African American"	"2054-5"	1051	108360	969.9	978.3
+	"Richmond city, VA"	"51760"	"2014"	"2014"	"White"	"2106-3"	582	88743	655.8	589.5
+	"Richmond city, VA"	"51760"	"2015"	"2015"	"Black or African American"	"2054-5"	995	108907	913.6	925.2
+	"Richmond city, VA"	"51760"	"2015"	"2015"	"White"	"2106-3"	515	90581	568.6	496.5
+	"Richmond city, VA"	"51760"	"2016"	"2016"	"Black or African American"	"2054-5"	986	110322	893.7	902.4
+	"Richmond city, VA"	"51760"	"2016"	"2016"	"White"	"2106-3"	577	91935	627.6	566.4
+	"Richmond city, VA"	"51760"	"2017"	"2017"	"Black or African American"	"2054-5"	986	111002	888.3	864.6
+	"Richmond city, VA"	"51760"	"2017"	"2017"	"White"	"2106-3"	590	94322	625.5	534.9
+	"Richmond city, VA"	"51760"	"2018"	"2018"	"Black or African American"	"2054-5"	1014	109507	926.0	862.9
+	"Richmond city, VA"	"51760"	"2018"	"2018"	"White"	"2106-3"	537	96526	556.3	476.3
+"---"
+"Dataset: Underlying Cause of Death, 1999-2018"
+"Query Parameters:"
+"Hispanic Origin: Not Hispanic or Latino"
+"Injury Mechanism & All Other Leading Causes: Non-Injury: Intestinal infections; Non-Injury: Tuberculosis; Non-Injury: Whooping"
+"cough; Non-Injury: Scarlet fever and erysipelas; Non-Injury: Meningococcal infection; Non-Injury: Septicemia; Non-Injury:"
+"Syphilis; Non-Injury: Acute poliomyelitis; Non-Injury: Arthropod-borne viral encephalitis; Non-Injury: Measles; Non-Injury:"
+"Viral hepatitis; Non-Injury: Human immunodeficiency virus (HIV) disease; Non-Injury: Malaria; Non-Injury: Other and unspecified"
+"infectious and parasitic diseases and their sequelae; Non-Injury: Malignant neoplasms (Cancers); Non-Injury: In situ neoplasms,"
+"benign neoplasms and neoplasms of uncertain or unknown behavior; Non-Injury: Anemias; Non-Injury: Diabetes mellitus; Non-Injury:"
+"Nutritional Deficiencies; Non-Injury: Meningitis; Non-Injury: Parkinsons disease; Non-Injury: Alzheimers disease; Non-Injury:"
+"Diseases of Heart; Non-Injury: Essential (primary) hypertension and hypertensive renal disease; Non-Injury: Cerebrovascular"
+"diseases, including stroke; Non-Injury: Atherosclerosis; Non-Injury: Other diseases of the circulatory system; Non-Injury: Other"
+"disorders of circulatory system; Non-Injury: Influenza & Pneumonia; Non-Injury: Other acute lower respiratory infections;"
+"Non-Injury: Chronic lower respiratory diseases; Non-Injury: Pneumoconioses and chemical effects; Non-Injury: Pneumonitis due to"
+"solids and liquids; Non-Injury: Other diseases of respiratory system; Non-Injury: Peptic ulcer; Non-Injury: Diseases of"
+"appendix; Non-Injury: Hernia; Non-Injury: Chronic liver disease and cirrhosis; Non-Injury: Cholelithiasis and other disorders of"
+"gallbladder; Non-Injury: Nephritis, nephrotic syndrome and nephrosis; Non-Injury: Infections of kidney; Non-Injury: Hyperplasia"
+"of prostate; Non-Injury: Inflammatory diseases of female pelvic organs; Non-Injury: Pregnancy with abortive outcome; Non-Injury:"
+"Other complications of pregnancy, childbirth and the puerperium; Non-Injury: Certain conditions originating in the perinatal"
+"period; Non-Injury: Congenital malformations, deformations and chromosomal abnormalities; Non-Injury: Symptoms, signs and"
+"abnormal clinical and laboratory findings, not elsewhere classified; Non-Injury: All other diseases (Residual); Non-Injury:"
+"Complications of medical and surgical care"
+"Race: Black or African American; White"
+"States: Jefferson County, AL (01073); Duval County, FL (12031); Marion County, IN (18097); Jefferson County, KY (21111); Kent"
+"County, MI (26081); Jackson County, MO (29095); St. Louis County, MO (29189); St. Louis city, MO (29510); Douglas County, NE"
+"(31055); Guilford County, NC (37081); Mecklenburg County, NC (37119); Wake County, NC (37183); Franklin County, OH (39049);"
+"Hamilton County, OH (39061); Montgomery County, OH (39113); Oklahoma County, OK (40109); Tulsa County, OK (40143); Greenville"
+"County, SC (45045); Davidson County, TN (47037); Knox County, TN (47093); Shelby County, TN (47157); Richmond city, VA (51760)"
+"Year/Month: 2000; 2001; 2002; 2003; 2004; 2005; 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017; 2018"
+"Group By: County; Year; Race"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Standard Population: 2000 U.S. Std. Population"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Dec 15, 2020 12:16:24 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2018 on CDC WONDER Online Database, released in 2020. Data are from the Multiple Cause of Death Files, 1999-2018, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Dec 15, 2020 12:16:24 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Deaths and population estimates are reported separately for St. Louis City (FIPS code 29510) and county (FIPS code 29189)."
+"3. The populations used to calculate standard age-adjusted rates are documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2000 Standard Population."
+"4. The method used to calculate age-adjusted rates is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Age-Adjusted Rates."
+"5. Deaths for persons of unknown age are included in counts and crude rates, but are not included in age-adjusted rates."
+"6. Deaths of persons with Hispanic origin ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among"
+"Hispanic Origin groups, so are not included in the Hispanic Origin specific counts and rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"7. Information included on the death certificate about the race and Hispanic ethnicity of the decedent is reported by the"
+"funeral director as provided by an informant, often the surviving next of kin, or, in the absence of an informant, on the basis"
+"of observation. Race and ethnicity information from the census is by self-report. To the extent that race and Hispanic origin"
+"are inconsistent between these two data sources, death rates will be biased. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Racial Differences."
+"8. The population figures for year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018"
+"postcensal series released by NCHS on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for"
+"year 2016 are bridged-race estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS"
+"on June 26, 2017. The population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2015 postcensal series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The"
+"population figures for year 2013 are bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal"
+"series released by NCHS on June 26, 2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2012 postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18,"
+"2012. Population figures for 2010 are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race"
+"estimates of the July 1 resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on"
+"October 26, 2012. Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999"
+"intercensal series of July 1 estimates. Population figures for the infant age groups are the number of live births."
+"<br/><b>Note:</b> Rates and population figures for years 2001 - 2009 differ slightly from previously published reports, due to"
+"use of the population estimates which were available at the time of release."
+"9. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."
+"10. Beginning with the 2018 data, changes have been implemented that affect the counts for ICD-10 cause of death codes O00-O99"
+"compared to previous practice. In addition, data for the cause of death codes O00-O99 for 2003 through 2017 reflect differences"
+"in information available to individual states and probable errors. Caution should be used in interpreting these data. More"
+"information can be found at: https://www.cdc.gov/nchs/maternal-mortality/."

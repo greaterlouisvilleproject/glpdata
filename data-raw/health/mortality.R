@@ -7,7 +7,7 @@ library(glptools)
 
 source("data-raw/helpers/process_mortality.R")
 
-path <- "data-raw/health/mortality/"
+path <- "data-raw/health/mortality/mortality2/"
 
 # Total
 mort_total <- wonder_time(path %p% "total")
@@ -47,9 +47,11 @@ mort_race <- bind_rows(mort_bw, mort_h) %>%
 
 mortality_county <- bind_rows(mort_total, mort_sex, mort_race)
 
-mortality_county %<>% organize()
+mortality_county %<>%
+  mutate(var_type = "estimate") %>%
+  organize()
 
-update_sysdata(mortality_county)
+usethis::use_data(mortality_county)
 
 rm(mort_total, mort_sex, mort_bw, mort_h, mort_race, process_mortality, path)
 

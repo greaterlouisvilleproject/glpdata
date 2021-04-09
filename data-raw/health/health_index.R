@@ -1,21 +1,24 @@
-library(tidyr)
-library(readr)
-library(dplyr)
-library(stringr)
-library(magrittr)
 library(glptools)
+glp_load_packages()
 
 source("data-raw/helpers/process_health_index.R")
 
 path <- "data-raw/health/"
 
-load("R/sysdata.rda")
+load("data/natality_county.Rda")
+load("data/mortality_county.Rda")
+load("data/brfss_msa_1yr.Rda")
 
-if (!exists("natality_county"))   source(path %p% "natality.R")
-if (!exists("mortality_county"))  source(path %p% "mortality.R")
-if (!exists("brfss_msa_1yr"))     source(path %p% "brfss.R")
+natality_county %<>% filter(var_type == "percent") %>% select(-var_type)
+brfss_msa_1yr   %<>% filter(var_type == "estimate") %>% select(-var_type)
 
 health_index_county <- process_health_index(natality_county, mortality_county, brfss_msa_1yr)
+
+health_index_county2 <- health_index_county %>%
+  filter(year == 2017, race == "total", sex == "total") %>%
+  ranking_data(health_index)
+
+test <- ranking_data(health_index_county, health_index, years = 2005:2019)
 
 update_sysdata(health_index_county)
 
