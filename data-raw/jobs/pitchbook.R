@@ -37,28 +37,62 @@ VC %<>%
     name = `Company Name`,
     zip = `Company Post Code`,
     year = `Deal Date` %>% as.character() %>% str_sub(1, 4) %>% as.numeric(),
-    amount = `Deal Size`) %>%
+    amount = `Deal Size`)
+
+process_pitchbook <- function (df) {
+
+  geog <- df_type(df)
+
+  df %>%
+    filter(!is.na(!!geog)) %>%
+    group_by(!!geog, year) %>%
+    summarise(
+      deals = n(),
+      deals_amount = n() - sum(is.na(amount)),              # includes deals with only listed amount
+      total_dollars = sum(amount, na.rm = TRUE) * 1000000,
+      avg_deal = total_dollars / deals_amount,
+      median_deal = median(amount, na.rm = TRUE) * 1000000) %>%
+    ungroup() %>%
+    COLA(total_dollars:median_deal, rpp = F) %>%
+    per_capita_adj(deals, total_dollars, keep_vars = T) %>%
+    mutate(
+      deals_per_100000 = deals_pp * 100000) %>%
+    transmute(
+      MSA, year,
+      sex = "total", race = "total",
+      deals, deals_per_100000,
+      total_dollars, total_dollars_pp,
+      avg_deal, median_deal)
+
+
+}
+
+pitchbook_msa_1yr <- VC  %>%
   left_join(MSA_zip, by = "zip") %>%
   group_by(MSA, year) %>%
   summarise(
     deals = n(),
-    deals_amount = n() - sum(is.na(amount)),
+    deals_amount = n() - sum(is.na(amount)),              # includes deals with only listed amount
     total_dollars = sum(amount, na.rm = TRUE) * 1000000,
     avg_deal = total_dollars / deals_amount,
     median_deal = median(amount, na.rm = TRUE) * 1000000) %>%
   ungroup() %>%
   filter(!is.na(MSA)) %>%
   COLA(total_dollars:median_deal, rpp = F) %>%
-  left_join(pop_df, by = "MSA") %>%
+  per_capita_adj(deals, total_dollars, keep_vars = T) %>%
   mutate(
-    deals_per_100000 = deals / population * 100000,
-    total_dollars_pc = total_dollars / population) %>%
+    deals_per_100000 = deals_pp * 100000) %>%
   transmute(
     MSA, year,
     sex = "total", race = "total",
     deals, deals_per_100000,
-    total_dollars, total_dollars_pc,
+    total_dollars, total_dollars_pp,
     avg_deal, median_deal)
+
+pitchbook_zip <- VC %>%
+  filter(zip %in% FIPS_zip$zip[FIPS_zip$FIPS == "21111"]) %>%
+  group_by(zip, year) %>%
+
 
 pitchbook_msa_1yr <- VC
 
