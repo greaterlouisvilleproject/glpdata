@@ -141,9 +141,9 @@ write_feather(acs_micro_repwts, path %p% "acs_micro_repwts.feather")
 write_feather(acs_micro_FIPS_repwts, path %p% "acs_micro_FIPS_repwts.feather")
 
 ```{r join_repwts}
-acs_micro                <- read_feather(path %p% "acs_micro.feather")
-acs_replicates_person    <- read_feather(path %p% "acs_repwts/person_repwts.feather")
-acs_replicates_household <- read_feather(path %p% "acs_repwts/household_repwts.feather")
+acs_micro                <- read_feather("acs_micro.feather")
+acs_replicates_person    <- read_feather("acs_repwts/person_repwts.feather")
+acs_replicates_household <- read_feather("acs_repwts/household_repwts.feather")
 
 # Join person and household weights to acs_micro
 acs_micro_repwts <- left_join(acs_micro, acs_replicates_person, by = c("year", "SERIAL", "PERNUM")) %>%
@@ -152,7 +152,12 @@ acs_micro_repwts <- left_join(acs_micro, acs_replicates_person, by = c("year", "
 acs_micro_FIPS_repwts <- acs_micro_repwts %>% 
   pull_peers(geog = "FIPS")
 
-write_feather(acs_micro_repwts, path %p% "acs_micro_repwts.feather")
-write_feather(acs_micro_FIPS_repwts, path %p% "acs_micro_FIPS_repwts.feather")
+rm(acs_replicates_person)
+rm(acs_replicates_household)
+gc()
+
+# arrow::write_feather never writes the whole file and just crashes...hmmm.
+feather::write_feather(acs_micro_repwts, "acs_micro_repwts.feather")
+feather::write_feather(acs_micro_FIPS_repwts, "acs_micro_FIPS_repwts.feather")
 ```
 
