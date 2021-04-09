@@ -13,7 +13,7 @@ library(labelled)
 Read in ACS microdata from acs_micro.csv, clean it, and write it to a feather file
 
 MR:
-I was a bit confused about the function "process_acs" because I renamed it to "clean_acs_micro" to make its purpose clear and to keep it from being confused with "process_census". It is located in glptools/R/microdata. I wonder if it should actually just exist here, since this is the nly place it's really used?
+I was a bit confused about the function "process_acs" so I renamed it to "clean_acs_micro" to make its purpose clear and to keep it from being confused with "process_census". It is located in glptools/R/microdata. I wonder if it should actually just exist here, since this is the only place it's really used?
 
 After you download the IPUMS extract, you can unzip it and rename it to acs_micro.csv to run the code below. You can rename the old file to hang onto it just in case, or you can delete it.
 
