@@ -33,17 +33,47 @@ for(i in 1:10) {
 
 ```{r acs_micro_variables}
 # Read American Community Survey in chunks
-acs_micro1 <- read_csv("acs_micro.csv", n_max = 5000000)
-acs_micro2 <- read_csv("acs_micro.csv", col_names = names(acs_micro1), skip = 5000000)
 
-# Bind rows and clean the data frame
-acs_micro <- bind_rows(acs_micro1, acs_micro2)
-rm(acs_micro1, acs_micro2)
+#make list of col_type double b/c NA throws off base r guessing 
+#this needs to be changed based on the # of columns in your dataframe, you can run these lines:
+#acs_micro_test <- read_csv("acs_micro.csv", n_max = 1)
+#specs(acs_micro_test)
+#to see if your columns specs are right and know how many columns there are 
+types <- list("d", "d")
+types <- rep(types, 28)
+
+#ok here we're actually reading the data
+acs_micro1 <- read_csv("acs_micro.csv", n_max = 2000000, col_types = types)
+acs_micro2 <- read_csv("acs_micro.csv", col_names = names(acs_micro1), skip = 2000000,
+                       n_max = 2000000,col_types = types)
+acs_micro3 <- read_csv("acs_micro.csv", col_names = names(acs_micro1), skip = 4000000, n_max = 2000000, col_types = types)
+acs_micro4 <- read_csv("acs_micro.csv", col_names = names(acs_micro1), skip = 6000000,  col_types = types)
+acs <- list(acs_micro1, acs_micro2, acs_micro3, acs_micro4)
 gc()
 
-acs_micro %<>% clean_acs_micro(gq = FALSE)
+#make loop because my computer can't handle all of it at once
+for(x in acs) {
 
-write_feather(acs_micro, "acs_micro.feather")
+ temp <- x
+ temp %<>% clean_acs_micro(gq = FALSE)
+ final_df <- assign_row_join(final_df, temp)
+ rm(temp)
+ gc()
+ 
+}
+
+rm(acs, acs_micro1, acs_micro2, acs_micro3, acs_micro4,x)
+gc()
+
+#Do this insead if your computer is a stud
+# Bind rows and clean the data frame
+#acs_micro <- bind_rows(acs_micro1, acs_micro2, acs_micro3)
+#rm(acs_micro1, acs_micro2, acs_micro3)
+#gc()
+
+#acs_micro %<>% clean_acs_micro(gq = FALSE)
+
+write_feather(final_df, "acs_micro.feather")
 ```
 
 This part reads in the replicate weights and chops them down to only the observations in acs_micro.
@@ -136,8 +166,8 @@ write_feather(acs_micro_FIPS_repwts, path %p% "acs_micro_FIPS_repwts.feather")
 
 ```{r join_repwts}
 acs_micro                <- read_feather("acs_micro.feather")
-acs_replicates_person    <- read_feather("acs_repwts/person_repwts.feather")
-acs_replicates_household <- read_feather("acs_repwts/household_repwts.feather")
+acs_replicates_person    <- read_feather("person_repwts.feather")
+acs_replicates_household <- read_feather("household_repwts.feather")
 
 # Join person and household weights to acs_micro
 acs_micro_repwts <- left_join(acs_micro, acs_replicates_person, by = c("year", "SERIAL", "PERNUM")) %>%
