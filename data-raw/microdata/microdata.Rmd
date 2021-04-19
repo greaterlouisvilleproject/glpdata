@@ -180,9 +180,15 @@ rm(acs_replicates_person)
 rm(acs_replicates_household)
 gc()
 
+#Now save the data just for Louisville 
+
+acs_micro_Lou_repwts <- pull_Lou(acs, geog="MSA")
+
 # arrow::write_feather never writes the whole file and just crashes...hmmm.
 feather::write_feather(acs_micro_repwts, "acs_micro_repwts.feather")
 feather::write_feather(acs_micro_FIPS_repwts, "acs_micro_FIPS_repwts.feather")
+feather::write_feather(acs_micro_Lou_repwts, "acs_micro_Lou_repwts.feather")
+
 ```
 
 Current Population Survey
