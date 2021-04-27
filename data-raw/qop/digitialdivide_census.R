@@ -47,13 +47,16 @@ raceinternetcomp_individual <- build_census_var_df("acs5", "B28009")
 
 age <- get_census(ageinternetcomp_individual, "tract")
 
-test <- age %>% filter(tract == "21111000200")
+test <- age_nototal %>% filter(tract == "21111000200")
 test2 <- test %>% filter(age_group == "under_18")
 test2 <- test2 %>% filter(var_type == "estimate")
-test2 <- test2 %>% filter(year =="2015")
+test2 <- test %>% filter(year =="2015")
 
 #clear out totals
-totals <- c("B28005_002E", "B28005_008E", "B28005_014E")
+totals <- c("B28005_001E","B28005_001M","B28005_002E",
+            "B28005_008E", "B28005_014E","B28005_002M",
+            "B28005_008M", "B28005_014M",
+            "B28005_009E", "B28005_015E", "B28005_003E", "B28005_009M", "B28005_015M", "B28005_003M")
 
 age_nototal <- age %>%
   subset(variable %not_in% totals)
@@ -61,13 +64,12 @@ age_nototal <- age %>%
 
 #make categorical variable
 
-age_nototal  %<>% mutate
-(compinternet = if_else(str_detect(label,"broadband Internet subscription"), T, F))
+age_nototal  %<>% mutate(compinternet = if_else(str_detect(label,"broadband Internet subscription"), T, F))
 
 #^ for some reason str_detect is failing this way
 #ok try it a different way
 
-age_nototal$compinternet <- if_else(str_detect(age_nototal$label,"broadband Internet subscription"), T, F)
+#age_nototal$compinternet <- if_else(str_detect(age_nototal$label,"broadband Internet subscription"), T, F)
 
 #process census
 clean_age <- age_nototal %>%

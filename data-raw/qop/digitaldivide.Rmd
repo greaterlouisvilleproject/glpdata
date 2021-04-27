@@ -1,11 +1,88 @@
-#make the county and msa documents for internet access
+---
+title: "Digital Divide"
+author: "Meg Raisle"
+date: "4/27/2021"
+output: html_document
+---
 
+```{r setup, include=FALSE, error=TRUE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo=TRUE)
 library(glptools)
 glp_load_packages()
+library(arrow)
+library(labelled)
+```
 
-#read data
+## This document reads in and processes both Census and IPUMUS Microdata to pull variables related to digital divide
+### This includes information on internet access (normal, highspeed, etc) and device access. These questions have been included in the ACS since 2013.
+
+### First we're going to work with Census Data 
+This calls in all of the relevant variables. A bit of context about each table is included below, also. 
+```{r Census_ACS_Variables, eval=FALSE}
+#B28002 - internet access at household level
+#this details what type of internet subscription people have, if they have internet
+#access without a subscription, or if they have no internet access.
+#this corresponds with CINETHH, CIHISPEED, and CIDIAL in IPUMS
+internet_household   <- build_census_var_df("acs5", "B28002")
+
+#B28001 - computer in household
+compdevice_household   <- build_census_var_df("acs5", "B28001")
+
+#B28003 - computer and internet access at houeshold level
+#Details if they have internet subscription (and what type) or not with a computer
+#or if they have no computer
+compinternet_household   <- build_census_var_df("acs5", "B28003")
+
+#b28004 - internet presence and type by income
+incomeinternet_household <- build_census_var_df("acs5", "B28004")
+
+#b28005 - age by computer and internet - individual
+ageinternetcomp_individual <- build_census_var_df("acs5", "B28005")
+
+#b28006 - computer and internet by education
+eduinternetcomp_individual <- build_census_var_df("acs5", "B28006")
+
+#b28009 - computer and internet by race
+raceinternetcomp_individual <- build_census_var_df("acs5", "B28009")
+```
+
+Next we're going to work with the age table - pull down the data, remove total columns, and process it to make map files :
+
+```{r Process_Census, eval=FALSE}
+
+age <- get_census(ageinternetcomp_individual, "tract")
+
+#clear out totals
+totals <- c("B28005_001E","B28005_001M","B28005_002E",
+            "B28005_008E", "B28005_014E","B28005_002M",
+            "B28005_008M", "B28005_014M",
+            "B28005_009E", "B28005_015E", "B28005_003E", "B28005_009M", "B28005_015M", "B28005_003M")
+
+age_nototal <- age %>%
+  subset(variable %not_in% totals)
+
+#make categorical variable
+age_nototal  %<>% mutate(compinternet = if_else(str_detect(label,"broadband Internet subscription"), T, F))
+
+#process census
+clean_age <- age_nototal %>%
+  process_census(cat_var = "compinternet",
+                 output_name = "access", age_groups = c("under_18", "18_64", "65_plus"))
+
+#process map
+map_age <- clean_age%>%
+  process_map(access_under_18, access_18_64, access_65_plus,return_name = "access_by_age") %>%
+  list2env(.GlobalEnv)
+```
+
+### Now we're going to work with the IPUMS Microdata
+The data we're calling in here has already been run through microdata.rmd
+```{r Microdata_variables, eval=FALSE}
+
+#read data - change this to wherever this is stored locally on your computer
 acs_micro <- feather::read_feather("/Users/mraisle/Documents/OneDrive - University of North Carolina at Chapel Hill/glpdata/data-raw/microdata/acs_micro_repwts.feather")
 
+#make logical variables for the metrics we care about
 #the method i took here is a bit long winded .  . . case_when worked best to get the binary
 #that I wanted for some variables but T,F was how I wanted it evaluated for survey_by_demog, hence this approach
 acs_micro_internet <- acs_micro %>%
@@ -58,6 +135,11 @@ acs_micro_internet$comp_tab %<>%
 acs_micro_internet$hspd_int %<>%
   as.logical(acs_micro_internet$hspd_int)
 
+```
+
+Now we're going to process this using survey by demographic, make dataframes for county and MSA level, and merge all the variables back into one dataframe for saving. 
+
+```{r Microdata_Processing, eval=FALSE}
 
 #internet access
 internetaccess_county  <- survey_by_demog(acs_micro_internet, "int_acc")
@@ -99,11 +181,11 @@ digitalaccess_MSA5yr %<>% inner_join(comptabsmrt_MSA5yr,
 digitalaccess_MSA5yr %<>% inner_join(internetanddevice_MSA5yr,
                                      by = MSACols)
 
-usethis::use_data(digitalaccess_county, digitalaccess_MSA5yr, overwrite = TRUE)
+```
 
+Finally, we're going to save all of these files to glpdata
 
-#data frames to look at/test
-look <- acs_micro_internet %>% filter(FIPS == "37119")
-look %<>%
-  select(int_acc, internet_and_device, comp_tab_smrt, everything())
-acs_micro_2012 <- acs_micro_internet %>% filter(year == 2012)
+``` {r Saving_Data, eval=FALSE}
+#need to rename the map files to make more clear
+usethis::use_data(digitalaccess_county, digitalaccess_MSA5yr, access_by_age_muw, access_by_age_nh, access_by_age_tract, overwrite = TRUE)
+```
