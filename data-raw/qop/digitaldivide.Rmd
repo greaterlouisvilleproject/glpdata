@@ -169,6 +169,9 @@ digitalaccess_county %<>% inner_join(comptabsmrt_county,
 digitalaccess_county %<>% inner_join(internetanddevice_county,
                                      by = mergeCols)
 
+percentdigitalaccess_county <- digitalaccess_county %>% 
+  filter(var_type=="percent") %>% mutate(
+  var_type = NULL)
 #merge all MSA together:
 MSACols <- c("MSA","year","sex","race","var_type")
 
@@ -187,5 +190,6 @@ Finally, we're going to save all of these files to glpdata
 
 ``` {r Saving_Data, eval=FALSE}
 #need to rename the map files to make more clear
-usethis::use_data(digitalaccess_county, digitalaccess_MSA5yr, access_by_age_muw, access_by_age_nh, access_by_age_tract, overwrite = TRUE)
+usethis::use_data(digitalaccess_county, percentdigitalaccess_county, digitalaccess_MSA5yr, access_by_age_muw, access_by_age_nh, access_by_age_tract, overwrite = TRUE)
+
 ```
