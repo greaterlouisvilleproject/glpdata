@@ -104,6 +104,8 @@ usethis::use_data(digitalaccess_county, digitalaccess_MSA5yr, overwrite = TRUE)
 
 #data frames to look at/test
 look <- acs_micro_internet %>% filter(FIPS == "37119")
+look2 <- acs_micro_internet2 %>% filter(FIPS == "37119")
+look <- acs_micro_internet %>% filter(year == "2018")
 look %<>%
   select(int_acc, internet_and_device, comp_tab_smrt, everything())
 acs_micro_2012 <- acs_micro_internet %>% filter(year == 2012)

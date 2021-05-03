@@ -87,17 +87,30 @@ acs_micro <- feather::read_feather("/Users/mraisle/Documents/OneDrive - Universi
 #that I wanted for some variables but T,F was how I wanted it evaluated for survey_by_demog, hence this approach
 acs_micro_internet <- acs_micro %>%
   filter(year > 2012) %>%
+  filter(PERNUM == 1) %>% #only measure each household once
   mutate(
     MSA = as.character(MSA),
-    int_acc = if_else(CINETHH == 1 | CINETHH == 2, T, F),
-    int_acc = replace(int_acc, CINETHH == 0, NA),
-
+    int_acc = case_when(
+      CINETHH == 0 ~ NA_real_,
+      CINETHH == 1 | CINETHH == 2 ~ 1,
+      CINETHH == 3 ~ 0),
     hspd_int = case_when(
-        CINETHH == 0 ~ NA_real_,
-        CINETHH == 3 & CIHISPEED == 0 ~ 0, #seems like it's marked NA if the household doesn't have internet access. We want it to be no High Speed access
-        CIHISPEED > 9 & CIHISPEED < 20 ~ 1,
-        CIHISPEED == 20 ~ 0
+      CINETHH == 0 ~ NA_real_,
+      CINETHH == 3 & CIHISPEED == 0 ~ 0, #seems like it's marked NA if the household doesn't have internet access. We want it to be no High Speed access
+      CIHISPEED > 9 & CIHISPEED < 20 ~ 1,
+      CIHISPEED == 20 ~ 0
       ),
+    #internet but not highspeed - this one doesn't work - wrong order 
+    #regular_internet = case_when(
+     #  int_acc == T ~ 1,
+       #CINETHH == 3 & CIHISPEED == 0 ~ 0,
+      # CIHISPEED > 9 & CIHISPEED < 20 ~ 0,
+   # ),
+    #^this one is clearly not working so let's try a different configuration
+    regular_internet = case_when(
+      hspd_int == 0 & int_acc == 1 ~ 1,
+      hspd_int == 1 ~ 0), 
+    
     computer = if_else(CILAPTOP == 1, T, F),
     computer = replace(computer, CILAPTOP == 0, NA),
 
@@ -118,14 +131,73 @@ acs_micro_internet <- acs_micro %>%
       computer == 1 | tablet == 1 | smrtphone == 1 ~ 1,
       computer == 0 & tablet == 0 & smrtphone == 0 ~ 0,
       TRUE ~ NA_real_),
-    #this is seeing if someone has a computer or tablet and high speed internet
+    #this is seeing if someone has a computer or tablet and high speed internet (This is #1)
     internet_and_device = case_when(
       comp_tab == 1 & hspd_int == 1 ~ 1,
       comp_tab == 0 | hspd_int == 0 ~ 0,
       TRUE ~ NA_real_),
+    #seeing if someone has a computer or tablet and non-highspeed internet (#2)
+    nohiinternet_and_device2 = case_when(
+      comp_tab == 1 & regular_internet == 1 ~ 1,
+      comp_tab == 0 | regular_internet == 0 ~ 0,
+      TRUE ~ NA_real_),
+    #device but no internet or smartphone (#3)
+    only_device3 = case_when(
+      comp_tab == 1 & int_acc == F & smrtphone == F ~ 1,
+      comp_tab == 0 | int_acc == T | smrtphone == T ~ 0,
+      TRUE ~ NA_real_),
+    #have smartphone and internet but no device (#4)
+    smrt_and_internet4 = case_when(
+      comp_tab == 0 & int_acc == T & smrtphone == T ~ 1,
+      comp_tab == 1 | int_acc == F | smrtphone == F ~ 0,
+      TRUE ~ NA_real_),
+     #internet and no device or phone (#5)
+    only_internet5 = case_when(
+      int_acc == T & comp_tab_smrt== 0 ~ 1,
+      int_acc == F | comp_tab_smrt == 1 ~ 0,
+      TRUE ~ NA_real_),
+    #no device or internet but yes smartphone (#6)
+     only_smartphone6 = case_when(
+      int_acc == F & comp_tab== 0 & smrtphone == T ~ 1,
+      int_acc == T | comp_tab == 1 | smrtphone == F ~ 0,
+      TRUE ~ NA_real_),
+    #you got nothing - no device, no internet, no phone (#7)
+    nothing7 = case_when(
+      int_acc == F & comp_tab_smrt == 0 ~ 1,
+      int_acc == T | comp_tab_smrt == 1 ~ 0,
+      TRUE ~ NA_real_),
+    #no internet but you have a device and a phone (#8)
+    device_smrt_only8 = case_when(
+      int_acc == F & comp_tab== 1 & smrtphone == T ~ 1,
+      int_acc == T | comp_tab == 0 | smrtphone == F ~ 0,
+      TRUE ~ NA_real_),
+    total = internet_and_device + nohiinternet_and_device2 + only_device3 + smrt_and_internet4 +
+    only_internet5 + only_smartphone6 + nothing7 + device_smrt_only8
   )
 
-#convert necessary ones to true false
+#check to make sure all the calculations turned up right by running:
+#unique(acs_micro_internet$total) . . .the only values should be 1 or NA
+#You can then remove the total column if you want, it is no longer necessary 
+acs_micro_internet %<>% mutate(total=NULL)
+
+#make column that has name of the group in actual cell 
+acs_micro_internet %<>% mutate(
+access_type = case_when(
+      internet_and_device == 1 ~ "internet_and_device1",
+      nohiinternet_and_device2 == 1 ~ "nohiinternet_and_device2",
+      only_device3 == 1 ~ "only_device3",
+      smrt_and_internet4 == 1 ~ "smrt_and_internet4",
+      only_internet5 == 1 ~ "only_internet5",
+      only_smartphone6 == 1 ~ "only_smartphone6",
+      nothing7 == 1 ~ "nothing7",
+      device_smrt_only8 == 1 ~ "device_smrt_only8",
+      TRUE ~ NA_character_))
+
+
+#convert necessary ones to true false - clean this up later - having trouble making a for loop work for this 
+#add internet access here 
+acs_micro_internet$int_acc %<>%
+  as.logical(acs_micro_internet$int_acc)
 acs_micro_internet$internet_and_device %<>%
   as.logical(acs_micro_internet$internet_and_device)
 acs_micro_internet$comp_tab_smrt %<>%
@@ -134,55 +206,81 @@ acs_micro_internet$comp_tab %<>%
   as.logical(acs_micro_internet$comp_tab)
 acs_micro_internet$hspd_int %<>%
   as.logical(acs_micro_internet$hspd_int)
+acs_micro_internet$regular_internet %<>%
+  as.logical(acs_micro_internet$regular_internet)
+acs_micro_internet$nohiinternet_and_device2 %<>%
+  as.logical(acs_micro_internet$nohiinternet_and_device2)
+acs_micro_internet$only_device3 %<>%
+  as.logical(acs_micro_internet$only_device3)
+acs_micro_internet$smrt_and_internet4 %<>%
+  as.logical(acs_micro_internet$smrt_and_internet4)
+acs_micro_internet$only_internet5 %<>%
+  as.logical(acs_micro_internet$only_internet5)
+acs_micro_internet$only_smartphone6 %<>%
+  as.logical(acs_micro_internet$only_smartphone6)
+acs_micro_internet$nothing7 %<>%
+  as.logical(acs_micro_internet$nothing7)
+acs_micro_internet$device_smrt_only8 %<>%
+  as.logical(acs_micro_internet$device_smrt_only8)
+
+rm(acs_micro)
+
+
 
 ```
 
 Now we're going to process this using survey by demographic, make dataframes for county and MSA level, and merge all the variables back into one dataframe for saving. 
 
 ```{r Microdata_Processing, eval=FALSE}
+#need to remember to make NA everything 2013-2015 that include tablet or smartphone
+#make vector of variables
+variables <- list("int_acc","hspd_int", "regular_internet","comp_tab", "comp_tab_smrt",
+                  "internet_and_device","nohiinternet_and_device2",
+                  "only_device3","smrt_and_internet4","only_internet5","only_smartphone6",
+                  "nothing7","device_smrt_only8")
 
-#internet access
-internetaccess_county  <- survey_by_demog(acs_micro_internet, "int_acc")
-internetaccess_MSA5yr  <- survey_by_demog(acs_micro_internet, "int_acc",geog = "MSA")
-#high speed internet access
-hispdaccess_county  <- survey_by_demog(acs_micro_internet, "hspd_int")
-hispdaccess_MSA5yr  <- survey_by_demog(acs_micro_internet, "hspd_int",geog = "MSA")
-#computer or tablet access
-comptab_county  <- survey_by_demog(acs_micro_internet, "comp_tab")
-comptab_MSA5yr  <- survey_by_demog(acs_micro_internet, "comp_tab",geog = "MSA")
-#computer, smartphone, or tablet access
-comptabsmrt_county  <- survey_by_demog(acs_micro_internet, "comp_tab_smrt")
-comptabsmrt_MSA5yr  <- survey_by_demog(acs_micro_internet, "comp_tab_smrt",geog = "MSA")
-#internet_and_device
-internetanddevice_county  <- survey_by_demog(acs_micro_internet, "internet_and_device")
-internetanddevice_MSA5yr  <- survey_by_demog(acs_micro_internet, "internet_and_device", geog = "MSA")
+#variables2 <- list("int_acc","hspd_int", "regular_internet","comp_tab", "comp_tab_smrt",
+                  "access_type")
+                 
+#make county dataframe with all the variables 
+for(x in variables) {
+  df <- survey_by_demog(acs_micro_internet, x)
+  digitalaccess_county <- assign_col_join(digitalaccess_county, df)
+  rm(df)
+}
 
-#merge all county together:
-mergeCols <- c("FIPS","year","sex","race","var_type")
-
-digitalaccess_county <- inner_join(internetaccess_county, hispdaccess_county,
-                           by = mergeCols)
-digitalaccess_county %<>% inner_join(comptab_county,
-                                   by = mergeCols)
-digitalaccess_county %<>% inner_join(comptabsmrt_county,
-                                     by = mergeCols)
-digitalaccess_county %<>% inner_join(internetanddevice_county,
-                                     by = mergeCols)
+#what needs to be null for 2013-2016
+smrt_and_internet4, only_smartphone6, device_smrt_only8, nothing
 
 percentdigitalaccess_county <- digitalaccess_county %>% 
   filter(var_type=="percent") %>% mutate(
   var_type = NULL)
-#merge all MSA together:
-MSACols <- c("MSA","year","sex","race","var_type")
 
-digitalaccess_MSA5yr <- inner_join(internetaccess_MSA5yr, hispdaccess_MSA5yr,
-                                   by = MSACols)
-digitalaccess_MSA5yr %<>% inner_join(comptab_MSA5yr,
-                                     by = MSACols)
-digitalaccess_MSA5yr %<>% inner_join(comptabsmrt_MSA5yr,
-                                     by = MSACols)
-digitalaccess_MSA5yr %<>% inner_join(internetanddevice_MSA5yr,
-                                     by = MSACols)
+#now make dataframe that makes column per category
+
+digitalaccess_groupings_county <- survey_by_demog(acs_micro_internet, "access_type")
+
+#compare
+test <- digitalaccess_county %>% filter(year > 2015)
+test2 <- test %>% select(FIPS, year, sex, race, var_type,only_device3)
+test2 %<>% rename(CaseA_onlydevice = only_device3)
+testaccess <- digitalaccess_groupings_county %>% select(FIPS, year, sex, race, var_type,only_device3)
+testaccess %<>% rename(CaseB_onlydevice = only_device3)
+
+error <- assign_col_join(test2, testaccess)
+
+#filter down to correct years and make total column to check (this works, so omitting it for now but can always go back and check)
+digitalaccess_groupings_county %<>%
+  filter(year > 2015) #%>%
+ # mutate(total = internet_and_device1 + nohiinternet_and_device2 + only_device3 + smrt_and_internet4 +
+   # only_internet5 + only_smartphone6 + nothing7 + device_smrt_only8)
+
+#make MSA dataframe with all the variables 
+for(x in variables) {
+  df <- survey_by_demog(acs_micro_internet, x, geog="MSA")
+  digitalaccess_MSA5yr <- assign_col_join(digitalaccess_MSA5yr, df)
+  rm(df)
+}
 
 ```
 
