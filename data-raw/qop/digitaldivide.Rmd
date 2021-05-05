@@ -96,7 +96,7 @@ acs_micro_internet <- acs_micro %>%
       CINETHH == 3 ~ 0),
     hspd_int = case_when(
       CINETHH == 0 ~ NA_real_,
-      CINETHH == 3 & CIHISPEED == 0 ~ 0, #seems like it's marked NA if the household doesn't have internet access. We want it to be no High Speed access
+      CINETHH == 3 | CIHISPEED == 0 ~ 0, #seems like it's marked NA if the household doesn't have internet access. We want it to be no High Speed access
       CIHISPEED > 9 & CIHISPEED < 20 ~ 1,
       CIHISPEED == 20 ~ 0
       ),
@@ -108,8 +108,9 @@ acs_micro_internet <- acs_micro %>%
    # ),
     #^this one is clearly not working so let's try a different configuration
     regular_internet = case_when(
-      hspd_int == 0 & int_acc == 1 ~ 1,
-      hspd_int == 1 ~ 0), 
+      (hspd_int == 0 | is.na(hspd_int)) & int_acc == 1 ~ 1,
+      hspd_int == 1 ~ 0,
+      int_acc == 0 ~ 0), 
     
     computer = if_else(CILAPTOP == 1, T, F),
     computer = replace(computer, CILAPTOP == 0, NA),
@@ -234,52 +235,42 @@ Now we're going to process this using survey by demographic, make dataframes for
 ```{r Microdata_Processing, eval=FALSE}
 #need to remember to make NA everything 2013-2015 that include tablet or smartphone
 #make vector of variables
-variables <- list("int_acc","hspd_int", "regular_internet","comp_tab", "comp_tab_smrt",
-                  "internet_and_device","nohiinternet_and_device2",
-                  "only_device3","smrt_and_internet4","only_internet5","only_smartphone6",
-                  "nothing7","device_smrt_only8")
 
-#variables2 <- list("int_acc","hspd_int", "regular_internet","comp_tab", "comp_tab_smrt",
-                  "access_type")
+variables <- list("int_acc","hspd_int", "regular_internet","comp_tab", "comp_tab_smrt","access_type")
                  
 #make county dataframe with all the variables 
 for(x in variables) {
-  df <- survey_by_demog(acs_micro_internet, x)
+  df <- survey_by_demog(acs_micro_internet, x, weight_var = "HHWT")
   digitalaccess_county <- assign_col_join(digitalaccess_county, df)
   rm(df)
 }
 
-#what needs to be null for 2013-2016
-smrt_and_internet4, only_smartphone6, device_smrt_only8, nothing
+#make the categories that related to smartphones null for all years < 2015 for county
 
+variables2016 <-  list("device_smrt_only8","nothing7","only_device3","only_internet5",
+                       "only_smartphone6","smrt_and_internet4")
+for(x in variables2016) {
+  digitalaccess_county[[x]] <- ifelse(digitalaccess_county$year > 2015,
+                                      digitalaccess_county[[x]], NA)
+}
+
+#make percent only dataframe - easier to work with graphs this way
 percentdigitalaccess_county <- digitalaccess_county %>% 
   filter(var_type=="percent") %>% mutate(
   var_type = NULL)
 
-#now make dataframe that makes column per category
-
-digitalaccess_groupings_county <- survey_by_demog(acs_micro_internet, "access_type")
-
-#compare
-test <- digitalaccess_county %>% filter(year > 2015)
-test2 <- test %>% select(FIPS, year, sex, race, var_type,only_device3)
-test2 %<>% rename(CaseA_onlydevice = only_device3)
-testaccess <- digitalaccess_groupings_county %>% select(FIPS, year, sex, race, var_type,only_device3)
-testaccess %<>% rename(CaseB_onlydevice = only_device3)
-
-error <- assign_col_join(test2, testaccess)
-
-#filter down to correct years and make total column to check (this works, so omitting it for now but can always go back and check)
-digitalaccess_groupings_county %<>%
-  filter(year > 2015) #%>%
- # mutate(total = internet_and_device1 + nohiinternet_and_device2 + only_device3 + smrt_and_internet4 +
-   # only_internet5 + only_smartphone6 + nothing7 + device_smrt_only8)
-
 #make MSA dataframe with all the variables 
 for(x in variables) {
-  df <- survey_by_demog(acs_micro_internet, x, geog="MSA")
+  df <- survey_by_demog(acs_micro_internet, x, geog="MSA", weight_var = "HHWT")
   digitalaccess_MSA5yr <- assign_col_join(digitalaccess_MSA5yr, df)
   rm(df)
+}
+
+#make the categories that related to smartphones null for all years < 2015 for MSA
+
+for(x in variables2016) {
+  digitalaccess_MSA5yr[[x]] <- ifelse(digitalaccess_MSA5yr$year > 2015,
+                                      digitalaccess_MSA5yr[[x]], NA)
 }
 
 ```
@@ -289,5 +280,8 @@ Finally, we're going to save all of these files to glpdata
 ``` {r Saving_Data, eval=FALSE}
 #need to rename the map files to make more clear
 usethis::use_data(digitalaccess_county, percentdigitalaccess_county, digitalaccess_MSA5yr, access_by_age_muw, access_by_age_nh, access_by_age_tract, overwrite = TRUE)
+
+usethis::use_data(digitalaccess_county, percentdigitalaccess_county, digitalaccess_MSA5yr,
+                  overwrite = TRUE)
 
 ```
