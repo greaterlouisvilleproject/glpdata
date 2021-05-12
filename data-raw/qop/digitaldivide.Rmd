@@ -67,12 +67,14 @@ age_nototal  %<>% mutate(compinternet = if_else(str_detect(label,"broadband Inte
 #process census
 clean_age <- age_nototal %>%
   process_census(cat_var = "compinternet",
-                 output_name = "access", age_groups = c("under_18", "18_64", "65_plus"))
+                 output_name = "digitalaccess", age_groups = c("under_18", "18_64", "65_plus"),age_group_wide = TRUE) #< one option 
 
 #process map
-map_age <- clean_age%>%
-  process_map(access_under_18, access_18_64, access_65_plus,return_name = "access_by_age") %>%
+map_age <- clean_age %>%
+  process_map("under_18", "18_64","65_plus",return_name = "digitalaccess_by_age", 
+              maps=c("tract", "nh", "muw")) %>%
   list2env(.GlobalEnv)
+rm(map_age)
 ```
 
 ### Now we're going to work with the IPUMS Microdata
@@ -279,9 +281,6 @@ Finally, we're going to save all of these files to glpdata
 
 ``` {r Saving_Data, eval=FALSE}
 #need to rename the map files to make more clear
-usethis::use_data(digitalaccess_county, percentdigitalaccess_county, digitalaccess_MSA5yr, access_by_age_muw, access_by_age_nh, access_by_age_tract, overwrite = TRUE)
-
-usethis::use_data(digitalaccess_county, percentdigitalaccess_county, digitalaccess_MSA5yr,
-                  overwrite = TRUE)
+usethis::use_data(digitalaccess_county, percentdigitalaccess_county, digitalaccess_MSA5yr, digitalaccess_by_age_muw, digitalaccess_by_age_nh, digitalaccess_by_age_tract, overwrite = TRUE)
 
 ```
