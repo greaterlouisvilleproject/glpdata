@@ -122,22 +122,29 @@ acs_micro_internet <- acs_micro %>%
 
     smrtphone = if_else(CISMRTPHN == 1, T, F),
     smrtphone = replace(smrtphone, CISMRTPHN == 0, NA),
-
-    #ok so below is if someone has a computer or tablet at home
-    comp_tab = case_when(
+   
+   comp_tab = case_when(
       computer == 1 | tablet == 1 ~ 1,
       computer == 0 & tablet == 0 ~ 0,
+      computer == 0 & is.na(tablet) ~ 0,
       TRUE ~ NA_real_
     ),
     #ok so below is if someone has a computer,tablet, or smartphone
     comp_tab_smrt = case_when(
       computer == 1 | tablet == 1 | smrtphone == 1 ~ 1,
       computer == 0 & tablet == 0 & smrtphone == 0 ~ 0,
-      TRUE ~ NA_real_),
+      computer == 0 & is.na(tablet) & is.na(smrtphone) ~ 0,
+      TRUE ~ NA_real_
+      ),
     #this is seeing if someone has a computer or tablet and high speed internet (This is #1)
-    internet_and_device = case_when(
+    internet_and_device1 = case_when(
       comp_tab == 1 & hspd_int == 1 ~ 1,
       comp_tab == 0 | hspd_int == 0 ~ 0,
+      TRUE ~ NA_real_),
+   #internet and computer 
+   internet_and_computer = case_when(
+      computer == 1 & hspd_int == 1 ~ 1,
+      computer == 0 | hspd_int == 0 ~ 0,
       TRUE ~ NA_real_),
     #seeing if someone has a computer or tablet and non-highspeed internet (#2)
     nohiinternet_and_device2 = case_when(
@@ -146,13 +153,13 @@ acs_micro_internet <- acs_micro %>%
       TRUE ~ NA_real_),
     #device but no internet or smartphone (#3)
     only_device3 = case_when(
-      comp_tab == 1 & int_acc == F & smrtphone == F ~ 1,
+      comp_tab == 1 & int_acc == F & (smrtphone == F |is.na(smrtphone))  ~ 1,
       comp_tab == 0 | int_acc == T | smrtphone == T ~ 0,
       TRUE ~ NA_real_),
     #have smartphone and internet but no device (#4)
     smrt_and_internet4 = case_when(
       comp_tab == 0 & int_acc == T & smrtphone == T ~ 1,
-      comp_tab == 1 | int_acc == F | smrtphone == F ~ 0,
+      comp_tab == 1 | int_acc == F | (smrtphone == F |is.na(smrtphone)) ~ 0,
       TRUE ~ NA_real_),
      #internet and no device or phone (#5)
     only_internet5 = case_when(
@@ -162,7 +169,7 @@ acs_micro_internet <- acs_micro %>%
     #no device or internet but yes smartphone (#6)
      only_smartphone6 = case_when(
       int_acc == F & comp_tab== 0 & smrtphone == T ~ 1,
-      int_acc == T | comp_tab == 1 | smrtphone == F ~ 0,
+      int_acc == T | comp_tab == 1 | (smrtphone == F |is.na(smrtphone)) ~ 0,
       TRUE ~ NA_real_),
     #you got nothing - no device, no internet, no phone (#7)
     nothing7 = case_when(
@@ -172,9 +179,9 @@ acs_micro_internet <- acs_micro %>%
     #no internet but you have a device and a phone (#8)
     device_smrt_only8 = case_when(
       int_acc == F & comp_tab== 1 & smrtphone == T ~ 1,
-      int_acc == T | comp_tab == 0 | smrtphone == F ~ 0,
+      int_acc == T | comp_tab == 0 | (smrtphone == F |is.na(smrtphone)) ~ 0,
       TRUE ~ NA_real_),
-    total = internet_and_device + nohiinternet_and_device2 + only_device3 + smrt_and_internet4 +
+    total = internet_and_device1 + nohiinternet_and_device2 + only_device3 + smrt_and_internet4 +
     only_internet5 + only_smartphone6 + nothing7 + device_smrt_only8
   )
 
@@ -184,25 +191,25 @@ acs_micro_internet <- acs_micro %>%
 acs_micro_internet %<>% mutate(total=NULL)
 
 #make column that has name of the group in actual cell 
-acs_micro_internet %<>% mutate(
-access_type = case_when(
-      internet_and_device == 1 ~ "internet_and_device1",
-      nohiinternet_and_device2 == 1 ~ "nohiinternet_and_device2",
-      only_device3 == 1 ~ "only_device3",
-      smrt_and_internet4 == 1 ~ "smrt_and_internet4",
-      only_internet5 == 1 ~ "only_internet5",
-      only_smartphone6 == 1 ~ "only_smartphone6",
-      nothing7 == 1 ~ "nothing7",
-      device_smrt_only8 == 1 ~ "device_smrt_only8",
-      TRUE ~ NA_character_))
+#acs_micro_internet %<>% mutate(
+#access_type = case_when(
+   #   internet_and_device == 1 ~ "internet_and_device1",
+     # nohiinternet_and_device2 == 1 ~ "nohiinternet_and_device2",
+     # only_device3 == 1 ~ "only_device3",
+      #smrt_and_internet4 == 1 ~ "smrt_and_internet4",
+      #only_internet5 == 1 ~ "only_internet5",
+     # only_smartphone6 == 1 ~ "only_smartphone6",
+     # nothing7 == 1 ~ "nothing7",
+     # device_smrt_only8 == 1 ~ "device_smrt_only8",
+     # TRUE ~ NA_character_))
 
 
 #convert necessary ones to true false - clean this up later - having trouble making a for loop work for this 
 #add internet access here 
 acs_micro_internet$int_acc %<>%
   as.logical(acs_micro_internet$int_acc)
-acs_micro_internet$internet_and_device %<>%
-  as.logical(acs_micro_internet$internet_and_device)
+acs_micro_internet$internet_and_device1 %<>%
+  as.logical(acs_micro_internet$internet_and_device1)
 acs_micro_internet$comp_tab_smrt %<>%
   as.logical(acs_micro_internet$comp_tab_smrt)
 acs_micro_internet$comp_tab %<>%
@@ -225,9 +232,11 @@ acs_micro_internet$nothing7 %<>%
   as.logical(acs_micro_internet$nothing7)
 acs_micro_internet$device_smrt_only8 %<>%
   as.logical(acs_micro_internet$device_smrt_only8)
+acs_micro_internet$internet_and_computer %<>%
+  as.logical(acs_micro_internet$internet_and_computer)
+
 
 rm(acs_micro)
-
 
 
 ```
@@ -238,8 +247,9 @@ Now we're going to process this using survey by demographic, make dataframes for
 #need to remember to make NA everything 2013-2015 that include tablet or smartphone
 #make vector of variables
 
-variables <- list("int_acc","hspd_int", "regular_internet","comp_tab", "comp_tab_smrt","access_type")
-                 
+variables <- list("int_acc","hspd_int", "regular_internet","comp_tab", "comp_tab_smrt",
+                  "internet_and_device1", "internet_and_computer","nohiinternet_and_device2", "only_device3", "smrt_and_internet4","only_internet5","only_smartphone6","nothing7","device_smrt_only8")
+
 #make county dataframe with all the variables 
 for(x in variables) {
   df <- survey_by_demog(acs_micro_internet, x, weight_var = "HHWT")
@@ -249,12 +259,12 @@ for(x in variables) {
 
 #make the categories that related to smartphones null for all years < 2015 for county
 
-variables2016 <-  list("device_smrt_only8","nothing7","only_device3","only_internet5",
-                       "only_smartphone6","smrt_and_internet4")
-for(x in variables2016) {
-  digitalaccess_county[[x]] <- ifelse(digitalaccess_county$year > 2015,
-                                      digitalaccess_county[[x]], NA)
-}
+#variables2016 <-  list("device_smrt_only8","nothing7","only_device3","only_internet5",
+                     #  "only_smartphone6","smrt_and_internet4")
+#for(x in variables2016) {
+ # digitalaccess_county[[x]] <- ifelse(digitalaccess_county$year > 2015,
+    #                                  digitalaccess_county[[x]], NA)
+#}
 
 #make percent only dataframe - easier to work with graphs this way
 percentdigitalaccess_county <- digitalaccess_county %>% 
@@ -270,10 +280,10 @@ for(x in variables) {
 
 #make the categories that related to smartphones null for all years < 2015 for MSA
 
-for(x in variables2016) {
-  digitalaccess_MSA5yr[[x]] <- ifelse(digitalaccess_MSA5yr$year > 2015,
-                                      digitalaccess_MSA5yr[[x]], NA)
-}
+#for(x in variables2016) {
+  #digitalaccess_MSA5yr[[x]] <- ifelse(digitalaccess_MSA5yr$year > 2015,
+                                   #   digitalaccess_MSA5yr[[x]], NA)
+#}
 
 ```
 
