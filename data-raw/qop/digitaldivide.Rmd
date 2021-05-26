@@ -33,6 +33,12 @@ compdevice_household   <- build_census_var_df("acs5", "B28001")
 #or if they have no computer
 compinternet_household   <- build_census_var_df("acs5", "B28003")
 
+#B28008 - computer and internet access at individual level
+#Details if they have internet subscription (and what type) or not with a computer
+#or if they have no computer
+compinternet_individual   <- build_census_var_df("acs5", "B28008")
+
+
 #b28004 - internet presence and type by income
 incomeinternet_household <- build_census_var_df("acs5", "B28004")
 
@@ -49,7 +55,57 @@ raceinternetcomp_individual <- build_census_var_df("acs5", "B28009")
 Next we're going to work with the age table - pull down the data, remove total columns, and process it to make map files :
 
 ```{r Process_Census, eval=FALSE}
+#Overall Digital Access (no disagg) ----
+access_house <- get_census(compinternet_household, "tract")
+access_indiv <- get_census(compinternet_individual, "tract")
 
+# Individual digitial access ----
+#make column that will work for process census
+#B28008_005 is that row that describes "having a computer with a fixed broadband internet subscription, this excludes folks that have a computer and only dial up or cellular data. 
+#005 covers both 006 and 007 (is cumulative of those) 008 is dial up/cellular data
+var_individ <- access_indiv %>%
+  mutate(
+    digitalaccess = case_when(
+      variable == "B28008_001E"  ~ "total",
+       variable == "B28008_001M"  ~ "total",
+      variable == "B28008_005E" ~ "hasaccess",
+      variable == "B28008_005M" ~ "hasaccess"
+    )
+  )
+
+#process census
+clean_individ <- var_individ %>%
+  process_census(cat_var = "digitalaccess",
+                 output_name = "digitalaccess")
+
+#process map
+map_access <- clean_individ %>%
+  process_map("hasaccess",return_name = "digitalaccess_nodisagg", 
+              maps=c("tract", "nh", "muw")) %>%
+  list2env(.GlobalEnv)
+rm(map_access)
+
+#Household digital access comparison ----
+#the %s here are going to be slightly higher because there is no differentiation between types of broadband like there is in individual. This makes me feel more confident about individual, will run this by Harrison though. Here's the process for household just in case it's wanted 
+#B28003_004E is the "computer with a broadband internet subscription". There are no subcategories #the only options w/ a computer a dial-up, broadband, or without internet. Another arguemnt could be made that this is better because it is household and the ipums data is also household?
+#looking at the totals for the whole data (here:https://data.census.gov/cedsci/table?q=B28&d=ACS%201-Year%20Estimates%20Detailed%20Tables&tid=ACSDT1Y2019.B28008)
+#The % comes out to 86% for household and 77% for individual - i feel individual is a better descriptor of what is going on and peoples experiences 
+var_house <- access_house %>%
+  mutate(
+    digitalaccess = case_when(
+      variable == "B28003_001E"  ~ "total",
+       variable == "B28003_001M"  ~ "total",
+      variable == "B28003_004E" ~ "hasaccess",
+      variable == "B28003_004M" ~ "hasaccess"
+    )
+  )
+
+#process census
+clean_house <- var_house %>%
+  process_census(cat_var = "digitalaccess",
+                 output_name = "digitalaccess")
+
+#By Age ----
 age <- get_census(ageinternetcomp_individual, "tract")
 
 #clear out totals
@@ -75,6 +131,7 @@ map_age <- clean_age %>%
               maps=c("tract", "nh", "muw")) %>%
   list2env(.GlobalEnv)
 rm(map_age)
+
 ```
 
 ### Now we're going to work with the IPUMS Microdata
@@ -98,7 +155,7 @@ acs_micro_internet <- acs_micro %>%
       CINETHH == 3 ~ 0),
     hspd_int = case_when(
       CINETHH == 0 ~ NA_real_,
-      CINETHH == 3 | CIHISPEED == 0 ~ 0, #seems like it's marked NA if the household doesn't have internet access. We want it to be no High Speed access
+      CINETHH == 3 | CIHISPEED == 0 ~ 0, #doing or doesn't remove columns, and does? something like that 
       CIHISPEED > 9 & CIHISPEED < 20 ~ 1,
       CIHISPEED == 20 ~ 0
       ),
@@ -291,6 +348,7 @@ Finally, we're going to save all of these files to glpdata
 
 ``` {r Saving_Data, eval=FALSE}
 #need to rename the map files to make more clear
-usethis::use_data(digitalaccess_county, percentdigitalaccess_county, digitalaccess_MSA5yr, digitalaccess_by_age_muw, digitalaccess_by_age_nh, digitalaccess_by_age_tract, overwrite = TRUE)
+usethis::use_data(digitalaccess_county, percentdigitalaccess_county, digitalaccess_MSA5yr, digitalaccess_by_age_muw, digitalaccess_by_age_nh, digitalaccess_by_age_tract, digitalaccess_nodisagg_muw,digitalaccess_nodisagg_nh,
+                  digitalaccess_nodisagg_tract, overwrite = TRUE)
 
 ```
