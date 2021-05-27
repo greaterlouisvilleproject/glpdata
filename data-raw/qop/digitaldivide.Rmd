@@ -40,7 +40,8 @@ compinternet_individual   <- build_census_var_df("acs5", "B28008")
 
 
 #b28004 - internet presence and type by income
-incomeinternet_household <- build_census_var_df("acs5", "B28004")
+#use acs 1 for FIPS, acs 5 for tracts 
+incomeinternet_household <- build_census_var_df("acs1", "B28004")
 
 #b28005 - age by computer and internet - individual
 ageinternetcomp_individual <- build_census_var_df("acs5", "B28005")
@@ -412,5 +413,4 @@ Finally, we're going to save all of these files to glpdata
 #need to rename the map files to make more clear
 usethis::use_data(digitalaccess_county, percentdigitalaccess_county, digitalaccess_MSA5yr, digitalaccess_by_age_muw, digitalaccess_by_age_nh, digitalaccess_by_age_tract, digitalaccess_nodisagg_muw,digitalaccess_nodisagg_nh,
                   digitalaccess_nodisagg_tract, income_internet, overwrite = TRUE)
-
 ```
