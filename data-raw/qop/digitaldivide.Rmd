@@ -33,8 +33,15 @@ compdevice_household   <- build_census_var_df("acs5", "B28001")
 #or if they have no computer
 compinternet_household   <- build_census_var_df("acs5", "B28003")
 
+#B28008 - computer and internet access at individual level
+#Details if they have internet subscription (and what type) or not with a computer
+#or if they have no computer
+compinternet_individual   <- build_census_var_df("acs5", "B28008")
+
+
 #b28004 - internet presence and type by income
-incomeinternet_household <- build_census_var_df("acs5", "B28004")
+#use acs 1 for FIPS, acs 5 for tracts 
+incomeinternet_household <- build_census_var_df("acs1", "B28004")
 
 #b28005 - age by computer and internet - individual
 ageinternetcomp_individual <- build_census_var_df("acs5", "B28005")
@@ -50,6 +57,63 @@ Next we're going to work with the age table - pull down the data, remove total c
 
 ```{r Process_Census, eval=FALSE}
 
+#Overall Digital Access (no disagg) (individual and household) ----
+access_house <- get_census(compinternet_household, "tract")
+access_indiv <- get_census(compinternet_individual, "tract")
+
+# Individual digital access ----
+#make column that will work for process census
+#B28008_005 is that row that describes "having a computer with a fixed broadband internet subscription, this excludes folks that have a computer and only dial up or cellular data. 
+#005 covers both 006 and 007 (is cumulative of those) 008 is dial up/cellular data
+var_individ <- access_indiv %>%
+  mutate(
+    digitalaccess = case_when(
+      variable == "B28008_001E"  ~ "total",
+       variable == "B28008_001M"  ~ "total",
+      variable == "B28008_005E" ~ "hasaccess",
+      variable == "B28008_005M" ~ "hasaccess"
+    )
+  )
+
+#process census
+clean_individ <- var_individ %>%
+  process_census(cat_var = "digitalaccess",
+                 output_name = "digitalaccess")
+
+#process map
+map_access <- clean_individ %>%
+  process_map("hasaccess",return_name = "digitalaccess_nodisagg", 
+              maps=c("tract", "nh", "muw")) %>%
+  list2env(.GlobalEnv)
+rm(map_access)
+
+#Household digital access comparison ----
+#the %s here are going to be slightly higher because there is no differentiation between types of broadband like there is in individual. This makes me feel more confident about individual, will run this by Harrison though. Here's the process for household just in case it's wanted 
+#B28003_004E is the "computer with a broadband internet subscription". There are no subcategories #the only options w/ a computer a dial-up, broadband, or without internet. Another arguemnt could be made that this is better because it is household and the ipums data is also household?
+#looking at the totals for the whole data (here:https://data.census.gov/cedsci/table?q=B28&d=ACS%201-Year%20Estimates%20Detailed%20Tables&tid=ACSDT1Y2019.B28008)
+#The % comes out to 86% for household and 77% for individual - i feel individual is a better descriptor of what is going on and peoples experiences 
+var_house <- access_house %>%
+  mutate(
+    digitalaccess = case_when(
+      variable == "B28003_001E"  ~ "total",
+       variable == "B28003_001M"  ~ "total",
+      variable == "B28003_004E" ~ "hasaccess",
+      variable == "B28003_004M" ~ "hasaccess"
+    )
+  )
+
+#process census
+clean_house <- var_house %>%
+  process_census(cat_var = "digitalaccess",
+                 output_name = "digitalaccess")
+
+#process map
+map_access_house <- clean_house %>%
+  process_map("hasaccess",return_name = "digitalaccess_house", 
+              maps=c("tract", "nh", "muw")) %>%
+  list2env(.GlobalEnv)
+
+#By Age ----
 age <- get_census(ageinternetcomp_individual, "tract")
 
 #clear out totals
@@ -67,12 +131,70 @@ age_nototal  %<>% mutate(compinternet = if_else(str_detect(label,"broadband Inte
 #process census
 clean_age <- age_nototal %>%
   process_census(cat_var = "compinternet",
-                 output_name = "access", age_groups = c("under_18", "18_64", "65_plus"))
+                 output_name = "digitalaccess", age_groups = c("under_18", "18_64", "65_plus"),age_group_wide = TRUE) #< one option 
 
 #process map
-map_age <- clean_age%>%
-  process_map(access_under_18, access_18_64, access_65_plus,return_name = "access_by_age") %>%
+map_age <- clean_age %>%
+  process_map("under_18", "18_64","65_plus",return_name = "digitalaccess_by_age", 
+              maps=c("tract", "nh", "muw")) %>%
   list2env(.GlobalEnv)
+rm(map_age)
+
+#By Income ----
+#by income we only have internet access not internet and computer access 
+income <- get_census(incomeinternet_household, "FIPS")
+
+#create variable column for each income class
+income_access <- income %>%
+  mutate(
+    less10 = case_when(
+      variable == "B28004_002E" ~"total",
+      variable == "B28004_002M" ~"total",
+      variable == "B28004_004E" ~"less10",
+      variable == "B28004_004M" ~"less10"
+    ),
+    "10_19" =case_when(
+      variable == "B28004_006E" ~"total",
+      variable == "B28004_006M" ~"total",
+      variable == "B28004_008E" ~"10_19",
+      variable == "B28004_008M" ~"10_19"
+    ),
+    "20_34" =case_when(
+      variable == "B28004_010E" ~"total",
+      variable == "B28004_010M" ~"total",
+      variable == "B28004_012E" ~"20_34",
+      variable == "B28004_012M" ~"20_34"
+    ),
+    "35_49" =case_when(
+      variable == "B28004_014E" ~"total",
+      variable == "B28004_014M" ~"total",
+      variable == "B28004_016E" ~"35_49",
+      variable == "B28004_016M" ~"35_49"
+    ),
+    "50_74" =case_when(
+      variable == "B28004_018E" ~"total",
+      variable == "B28004_018M" ~"total",
+      variable == "B28004_020E" ~"50_74",
+      variable == "B28004_020M" ~"50_74"
+    ),
+    plus_75 =case_when(
+      variable == "B28004_022E" ~"total",
+      variable == "B28004_022M" ~"total",
+      variable == "B28004_024E" ~"plus_75",
+      variable == "B28004_024M" ~"plus_75"
+    )
+  )
+
+#for loop to process_census
+variables <- list("less10","10_19","20_34", "35_49","50_74","plus_75")
+
+for(x in variables) {
+  df <- income_access %>% process_census(cat_var=x)
+  income_internet <- assign_col_join(income_internet,df)
+  rm(df)
+}
+
+
 ```
 
 ### Now we're going to work with the IPUMS Microdata
@@ -96,7 +218,7 @@ acs_micro_internet <- acs_micro %>%
       CINETHH == 3 ~ 0),
     hspd_int = case_when(
       CINETHH == 0 ~ NA_real_,
-      CINETHH == 3 & CIHISPEED == 0 ~ 0, #seems like it's marked NA if the household doesn't have internet access. We want it to be no High Speed access
+      CINETHH == 3 | CIHISPEED == 0 ~ 0, #doing or doesn't remove columns, and does? something like that 
       CIHISPEED > 9 & CIHISPEED < 20 ~ 1,
       CIHISPEED == 20 ~ 0
       ),
@@ -108,8 +230,9 @@ acs_micro_internet <- acs_micro %>%
    # ),
     #^this one is clearly not working so let's try a different configuration
     regular_internet = case_when(
-      hspd_int == 0 & int_acc == 1 ~ 1,
-      hspd_int == 1 ~ 0), 
+      (hspd_int == 0 | is.na(hspd_int)) & int_acc == 1 ~ 1,
+      hspd_int == 1 ~ 0,
+      int_acc == 0 ~ 0), 
     
     computer = if_else(CILAPTOP == 1, T, F),
     computer = replace(computer, CILAPTOP == 0, NA),
@@ -119,22 +242,29 @@ acs_micro_internet <- acs_micro %>%
 
     smrtphone = if_else(CISMRTPHN == 1, T, F),
     smrtphone = replace(smrtphone, CISMRTPHN == 0, NA),
-
-    #ok so below is if someone has a computer or tablet at home
-    comp_tab = case_when(
+   
+   comp_tab = case_when(
       computer == 1 | tablet == 1 ~ 1,
       computer == 0 & tablet == 0 ~ 0,
+      computer == 0 & is.na(tablet) ~ 0,
       TRUE ~ NA_real_
     ),
     #ok so below is if someone has a computer,tablet, or smartphone
     comp_tab_smrt = case_when(
       computer == 1 | tablet == 1 | smrtphone == 1 ~ 1,
       computer == 0 & tablet == 0 & smrtphone == 0 ~ 0,
-      TRUE ~ NA_real_),
+      computer == 0 & is.na(tablet) & is.na(smrtphone) ~ 0,
+      TRUE ~ NA_real_
+      ),
     #this is seeing if someone has a computer or tablet and high speed internet (This is #1)
-    internet_and_device = case_when(
+    internet_and_device1 = case_when(
       comp_tab == 1 & hspd_int == 1 ~ 1,
       comp_tab == 0 | hspd_int == 0 ~ 0,
+      TRUE ~ NA_real_),
+   #internet and computer 
+   internet_and_computer = case_when(
+      computer == 1 & hspd_int == 1 ~ 1,
+      computer == 0 | hspd_int == 0 ~ 0,
       TRUE ~ NA_real_),
     #seeing if someone has a computer or tablet and non-highspeed internet (#2)
     nohiinternet_and_device2 = case_when(
@@ -143,13 +273,13 @@ acs_micro_internet <- acs_micro %>%
       TRUE ~ NA_real_),
     #device but no internet or smartphone (#3)
     only_device3 = case_when(
-      comp_tab == 1 & int_acc == F & smrtphone == F ~ 1,
+      comp_tab == 1 & int_acc == F & (smrtphone == F |is.na(smrtphone))  ~ 1,
       comp_tab == 0 | int_acc == T | smrtphone == T ~ 0,
       TRUE ~ NA_real_),
     #have smartphone and internet but no device (#4)
     smrt_and_internet4 = case_when(
       comp_tab == 0 & int_acc == T & smrtphone == T ~ 1,
-      comp_tab == 1 | int_acc == F | smrtphone == F ~ 0,
+      comp_tab == 1 | int_acc == F | (smrtphone == F |is.na(smrtphone)) ~ 0,
       TRUE ~ NA_real_),
      #internet and no device or phone (#5)
     only_internet5 = case_when(
@@ -159,7 +289,7 @@ acs_micro_internet <- acs_micro %>%
     #no device or internet but yes smartphone (#6)
      only_smartphone6 = case_when(
       int_acc == F & comp_tab== 0 & smrtphone == T ~ 1,
-      int_acc == T | comp_tab == 1 | smrtphone == F ~ 0,
+      int_acc == T | comp_tab == 1 | (smrtphone == F |is.na(smrtphone)) ~ 0,
       TRUE ~ NA_real_),
     #you got nothing - no device, no internet, no phone (#7)
     nothing7 = case_when(
@@ -169,9 +299,9 @@ acs_micro_internet <- acs_micro %>%
     #no internet but you have a device and a phone (#8)
     device_smrt_only8 = case_when(
       int_acc == F & comp_tab== 1 & smrtphone == T ~ 1,
-      int_acc == T | comp_tab == 0 | smrtphone == F ~ 0,
+      int_acc == T | comp_tab == 0 | (smrtphone == F |is.na(smrtphone)) ~ 0,
       TRUE ~ NA_real_),
-    total = internet_and_device + nohiinternet_and_device2 + only_device3 + smrt_and_internet4 +
+    total = internet_and_device1 + nohiinternet_and_device2 + only_device3 + smrt_and_internet4 +
     only_internet5 + only_smartphone6 + nothing7 + device_smrt_only8
   )
 
@@ -181,25 +311,25 @@ acs_micro_internet <- acs_micro %>%
 acs_micro_internet %<>% mutate(total=NULL)
 
 #make column that has name of the group in actual cell 
-acs_micro_internet %<>% mutate(
-access_type = case_when(
-      internet_and_device == 1 ~ "internet_and_device1",
-      nohiinternet_and_device2 == 1 ~ "nohiinternet_and_device2",
-      only_device3 == 1 ~ "only_device3",
-      smrt_and_internet4 == 1 ~ "smrt_and_internet4",
-      only_internet5 == 1 ~ "only_internet5",
-      only_smartphone6 == 1 ~ "only_smartphone6",
-      nothing7 == 1 ~ "nothing7",
-      device_smrt_only8 == 1 ~ "device_smrt_only8",
-      TRUE ~ NA_character_))
+#acs_micro_internet %<>% mutate(
+#access_type = case_when(
+   #   internet_and_device == 1 ~ "internet_and_device1",
+     # nohiinternet_and_device2 == 1 ~ "nohiinternet_and_device2",
+     # only_device3 == 1 ~ "only_device3",
+      #smrt_and_internet4 == 1 ~ "smrt_and_internet4",
+      #only_internet5 == 1 ~ "only_internet5",
+     # only_smartphone6 == 1 ~ "only_smartphone6",
+     # nothing7 == 1 ~ "nothing7",
+     # device_smrt_only8 == 1 ~ "device_smrt_only8",
+     # TRUE ~ NA_character_))
 
 
 #convert necessary ones to true false - clean this up later - having trouble making a for loop work for this 
 #add internet access here 
 acs_micro_internet$int_acc %<>%
   as.logical(acs_micro_internet$int_acc)
-acs_micro_internet$internet_and_device %<>%
-  as.logical(acs_micro_internet$internet_and_device)
+acs_micro_internet$internet_and_device1 %<>%
+  as.logical(acs_micro_internet$internet_and_device1)
 acs_micro_internet$comp_tab_smrt %<>%
   as.logical(acs_micro_internet$comp_tab_smrt)
 acs_micro_internet$comp_tab %<>%
@@ -222,9 +352,11 @@ acs_micro_internet$nothing7 %<>%
   as.logical(acs_micro_internet$nothing7)
 acs_micro_internet$device_smrt_only8 %<>%
   as.logical(acs_micro_internet$device_smrt_only8)
+acs_micro_internet$internet_and_computer %<>%
+  as.logical(acs_micro_internet$internet_and_computer)
+
 
 rm(acs_micro)
-
 
 
 ```
@@ -234,53 +366,44 @@ Now we're going to process this using survey by demographic, make dataframes for
 ```{r Microdata_Processing, eval=FALSE}
 #need to remember to make NA everything 2013-2015 that include tablet or smartphone
 #make vector of variables
-variables <- list("int_acc","hspd_int", "regular_internet","comp_tab", "comp_tab_smrt",
-                  "internet_and_device","nohiinternet_and_device2",
-                  "only_device3","smrt_and_internet4","only_internet5","only_smartphone6",
-                  "nothing7","device_smrt_only8")
 
-#variables2 <- list("int_acc","hspd_int", "regular_internet","comp_tab", "comp_tab_smrt",
-                  "access_type")
-                 
+variables <- list("int_acc","hspd_int", "regular_internet","comp_tab", "comp_tab_smrt",
+                  "internet_and_device1", "internet_and_computer","nohiinternet_and_device2", "only_device3", "smrt_and_internet4","only_internet5","only_smartphone6","nothing7","device_smrt_only8")
+
 #make county dataframe with all the variables 
 for(x in variables) {
-  df <- survey_by_demog(acs_micro_internet, x)
+  df <- survey_by_demog(acs_micro_internet, x, weight_var = "HHWT")
   digitalaccess_county <- assign_col_join(digitalaccess_county, df)
   rm(df)
 }
 
-#what needs to be null for 2013-2016
-smrt_and_internet4, only_smartphone6, device_smrt_only8, nothing
+#make the categories that related to smartphones null for all years < 2015 for county
 
+#variables2016 <-  list("device_smrt_only8","nothing7","only_device3","only_internet5",
+                     #  "only_smartphone6","smrt_and_internet4")
+#for(x in variables2016) {
+ # digitalaccess_county[[x]] <- ifelse(digitalaccess_county$year > 2015,
+    #                                  digitalaccess_county[[x]], NA)
+#}
+
+#make percent only dataframe - easier to work with graphs this way
 percentdigitalaccess_county <- digitalaccess_county %>% 
   filter(var_type=="percent") %>% mutate(
   var_type = NULL)
 
-#now make dataframe that makes column per category
-
-digitalaccess_groupings_county <- survey_by_demog(acs_micro_internet, "access_type")
-
-#compare
-test <- digitalaccess_county %>% filter(year > 2015)
-test2 <- test %>% select(FIPS, year, sex, race, var_type,only_device3)
-test2 %<>% rename(CaseA_onlydevice = only_device3)
-testaccess <- digitalaccess_groupings_county %>% select(FIPS, year, sex, race, var_type,only_device3)
-testaccess %<>% rename(CaseB_onlydevice = only_device3)
-
-error <- assign_col_join(test2, testaccess)
-
-#filter down to correct years and make total column to check (this works, so omitting it for now but can always go back and check)
-digitalaccess_groupings_county %<>%
-  filter(year > 2015) #%>%
- # mutate(total = internet_and_device1 + nohiinternet_and_device2 + only_device3 + smrt_and_internet4 +
-   # only_internet5 + only_smartphone6 + nothing7 + device_smrt_only8)
-
 #make MSA dataframe with all the variables 
 for(x in variables) {
-  df <- survey_by_demog(acs_micro_internet, x, geog="MSA")
+  df <- survey_by_demog(acs_micro_internet, x, geog="MSA", weight_var = "HHWT")
   digitalaccess_MSA5yr <- assign_col_join(digitalaccess_MSA5yr, df)
   rm(df)
 }
+
+#make the categories that related to smartphones null for all years < 2015 for MSA
+
+#for(x in variables2016) {
+  #digitalaccess_MSA5yr[[x]] <- ifelse(digitalaccess_MSA5yr$year > 2015,
+                                   #   digitalaccess_MSA5yr[[x]], NA)
+#}
 
 ```
 
@@ -288,6 +411,6 @@ Finally, we're going to save all of these files to glpdata
 
 ``` {r Saving_Data, eval=FALSE}
 #need to rename the map files to make more clear
-usethis::use_data(digitalaccess_county, percentdigitalaccess_county, digitalaccess_MSA5yr, access_by_age_muw, access_by_age_nh, access_by_age_tract, overwrite = TRUE)
-
+usethis::use_data(digitalaccess_county, percentdigitalaccess_county, digitalaccess_MSA5yr, digitalaccess_by_age_muw, digitalaccess_by_age_nh, digitalaccess_by_age_tract, digitalaccess_nodisagg_muw,digitalaccess_nodisagg_nh,
+                  digitalaccess_nodisagg_tract, income_internet, overwrite = TRUE)
 ```
