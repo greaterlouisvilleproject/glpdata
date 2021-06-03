@@ -61,3 +61,4 @@ data-raw/microdata/acs_micro_old.csv
 data-raw/microdata/cps_micro.csv
 
 junk/
+inst/doc

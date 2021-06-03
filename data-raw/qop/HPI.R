@@ -41,13 +41,30 @@ HPI_zip %<>%
     year >= 2000) %>%
   group_by(zip) %>%
   mutate(
-    HPI_2015 = if_else(year <= 2015, NA_real_,
-                       HPI / HPI[year == 2015] * 100 - 100),
-    HPI_2018 = if_else(year <= 2018, NA_real_,
-                       HPI / HPI[year == 2018] * 100 - 100)) %>%
-  select(zip, year, HPI, HPI_2015, HPI_2018) %>%
+    HPI5 = (HPI - lag(HPI, 5)) / lag(HPI, 5) * 100,
+    HPI1 = (HPI - lag(HPI, 1)) / lag(HPI, 1) * 100) %>%
+  select(zip, year, HPI, HPI5, HPI1) %>%
   ungroup()
 
-usethis::use_data(HPI_county, HPI_msa_1yr, HPI_zip, overwrite = TRUE)
+HPI_tract <- read_csv(path %p% "HPI_AT_BDL_tract.csv")
+
+HPI_tract %<>%
+  filter(
+    tract %in% tract10_tract_00$tract10,
+    str_sub(tract, 1, 5) == "21111",
+    year >= 2000) %>%
+  transmute(
+    tract,
+    year,
+    HPI  = as.numeric(hpi)) %>%
+  complete(tract, year) %>%
+  group_by(tract) %>%
+  mutate(
+    HPI_2000 = HPI / HPI[year == 2000] * 100,
+    HPI_2010 = HPI / HPI[year == 2010] * 100,
+    HPI5 = (HPI - lag(HPI, 5)) / lag(HPI, 5) * 100,
+    HPI1 = (HPI - lag(HPI, 1)) / lag(HPI, 1) * 100)
+
+usethis::use_data(HPI_county, HPI_msa_1yr, HPI_zip, HPI_tract, overwrite = TRUE)
 
 rm(path)
