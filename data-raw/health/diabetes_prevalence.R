@@ -29,5 +29,6 @@ diabetes_df_female <- glptools::any_time(paste0(path, 'female'), starting_year=2
 
 #Combine all of the data
 diabetes_prevalence_county <- rbind(diabetes_df_total, diabetes_df_male, diabetes_df_female)
+diabetes_prevalence_county$diabetes_prevalence <- as.numeric(diabetes_prevalence_county$diabetes_prevalence)
 
 usethis::use_data(diabetes_prevalence_county, overwrite = TRUE)
