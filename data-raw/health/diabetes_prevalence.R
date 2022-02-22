@@ -31,4 +31,7 @@ diabetes_df_female <- glptools::any_time(paste0(path, 'female'), starting_year=2
 diabetes_prevalence_county <- rbind(diabetes_df_total, diabetes_df_male, diabetes_df_female)
 diabetes_prevalence_county$diabetes_prevalence <- as.numeric(diabetes_prevalence_county$diabetes_prevalence)
 
+#Replace "All" in the race and sex columns with "total" to be able to use GLP graphic functions later
+diabetes_prevalence_county <- diabetes_prevalence_county %>% mutate(race=replace(race, race=='All', 'total'), sex=replace(sex, sex=='All', 'total'))
+
 usethis::use_data(diabetes_prevalence_county, overwrite = TRUE)
