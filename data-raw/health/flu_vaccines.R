@@ -65,5 +65,7 @@ flu_county <- rbind(flu_df_total, flu_df_male, flu_df_female, flu_df_black, flu_
 
 #Replace "All" in the race and sex columns with "total" to be able to use GLP graphic functions later
 flu_county <- flu_county %>% mutate(race=replace(race, race=='All', 'total'), sex=replace(sex, sex=='All', 'total'))
+flu_county$race <- tolower(flu_county$race)
+flu_county$sex <- tolower(flu_county$sex)
 
 usethis::use_data(flu_county, overwrite = TRUE)

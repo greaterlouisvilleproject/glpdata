@@ -33,5 +33,8 @@ diabetes_prevalence_county$diabetes_prevalence <- as.numeric(diabetes_prevalence
 
 #Replace "All" in the race and sex columns with "total" to be able to use GLP graphic functions later
 diabetes_prevalence_county <- diabetes_prevalence_county %>% mutate(race=replace(race, race=='All', 'total'), sex=replace(sex, sex=='All', 'total'))
+diabetes_prevalence_county$race <- tolower(diabetes_prevalence_county$race)
+diabetes_prevalence_county$sex <- tolower(diabetes_prevalence_county$sex)
 
 usethis::use_data(diabetes_prevalence_county, overwrite = TRUE)
+

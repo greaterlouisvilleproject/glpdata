@@ -53,5 +53,7 @@ mammography_county <- rbind(mammography_df_total, mammography_df_black, mammogra
 
 #Replace "All" in the race and sex columns with "total" to be able to use GLP graphic functions later
 mammography_county <- mammography_county %>% mutate(race=replace(race, race=='All', 'total'), sex=replace(sex, sex=='All', 'total'))
+mammography_county$race <- tolower(mammography_county$race)
+mammography_county$sex <- tolower(mammography_county$sex)
 
 usethis::use_data(mammography_county, overwrite = TRUE)
