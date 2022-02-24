@@ -26,10 +26,14 @@ health_insurance_map %<>%
 health_insurance_county %<>% process_census(cat_var = "insured", output_name = "health_insurance")
 health_insurance_map    %<>% process_census(cat_var = "insured", output_name = "health_insurance")
 
+uninsured_county <- health_insurance_county %>%
+  filter(var_type=='percent') %>%
+  mutate(uninsured= (100-health_insurance))
+
 process_map(health_insurance_map, health_insurance, return_name = "health_insurance") %>%
   list2env(.GlobalEnv)
 
 usethis::use_data(health_insurance_county, health_insurance_tract,
-                  health_insurance_nh, health_insurance_muw, overwrite = TRUE)
+                  health_insurance_nh, health_insurance_muw, uninsured_county, overwrite = TRUE)
 
 rm(health_insurance_vars_1yr, health_insurance_vars_5yr, health_insurance_map)
