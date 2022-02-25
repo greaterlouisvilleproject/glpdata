@@ -1,0 +1,171 @@
+"Notes"	"County"	"County Code"	"Year"	"Year Code"	Births
+	"Jefferson County, AL"	"01073"	"2016"	"2016"	118
+	"Jefferson County, AL"	"01073"	"2017"	"2017"	119
+	"Jefferson County, AL"	"01073"	"2018"	"2018"	100
+	"Jefferson County, AL"	"01073"	"2019"	"2019"	68
+	"Jefferson County, AL"	"01073"	"2020"	"2020"	Suppressed
+	"Duval County, FL"	"12031"	"2016"	"2016"	216
+	"Duval County, FL"	"12031"	"2017"	"2017"	199
+	"Duval County, FL"	"12031"	"2018"	"2018"	176
+	"Duval County, FL"	"12031"	"2019"	"2019"	159
+	"Duval County, FL"	"12031"	"2020"	"2020"	Suppressed
+	"Marion County, IN"	"18097"	"2016"	"2016"	300
+	"Marion County, IN"	"18097"	"2017"	"2017"	284
+	"Marion County, IN"	"18097"	"2018"	"2018"	233
+	"Marion County, IN"	"18097"	"2019"	"2019"	241
+	"Marion County, IN"	"18097"	"2020"	"2020"	Suppressed
+	"Jefferson County, KY"	"21111"	"2016"	"2016"	255
+	"Jefferson County, KY"	"21111"	"2017"	"2017"	170
+	"Jefferson County, KY"	"21111"	"2018"	"2018"	168
+	"Jefferson County, KY"	"21111"	"2019"	"2019"	152
+	"Jefferson County, KY"	"21111"	"2020"	"2020"	Suppressed
+	"Kent County, MI"	"26081"	"2016"	"2016"	143
+	"Kent County, MI"	"26081"	"2017"	"2017"	123
+	"Kent County, MI"	"26081"	"2018"	"2018"	118
+	"Kent County, MI"	"26081"	"2019"	"2019"	95
+	"Kent County, MI"	"26081"	"2020"	"2020"	Suppressed
+	"Jackson County, MO"	"29095"	"2016"	"2016"	228
+	"Jackson County, MO"	"29095"	"2017"	"2017"	200
+	"Jackson County, MO"	"29095"	"2018"	"2018"	185
+	"Jackson County, MO"	"29095"	"2019"	"2019"	156
+	"Jackson County, MO"	"29095"	"2020"	"2020"	Suppressed
+	"St. Louis County, MO"	"29189"	"2016"	"2016"	114
+	"St. Louis County, MO"	"29189"	"2017"	"2017"	98
+	"St. Louis County, MO"	"29189"	"2018"	"2018"	94
+	"St. Louis County, MO"	"29189"	"2019"	"2019"	66
+	"St. Louis County, MO"	"29189"	"2020"	"2020"	Suppressed
+	"St. Louis city, MO"	"29510"	"2016"	"2016"	18
+	"St. Louis city, MO"	"29510"	"2017"	"2017"	30
+	"St. Louis city, MO"	"29510"	"2018"	"2018"	23
+	"St. Louis city, MO"	"29510"	"2019"	"2019"	20
+	"St. Louis city, MO"	"29510"	"2020"	"2020"	Suppressed
+	"Douglas County, NE"	"31055"	"2016"	"2016"	104
+	"Douglas County, NE"	"31055"	"2017"	"2017"	80
+	"Douglas County, NE"	"31055"	"2018"	"2018"	82
+	"Douglas County, NE"	"31055"	"2019"	"2019"	71
+	"Douglas County, NE"	"31055"	"2020"	"2020"	Suppressed
+	"Guilford County, NC"	"37081"	"2016"	"2016"	60
+	"Guilford County, NC"	"37081"	"2017"	"2017"	59
+	"Guilford County, NC"	"37081"	"2018"	"2018"	64
+	"Guilford County, NC"	"37081"	"2019"	"2019"	47
+	"Guilford County, NC"	"37081"	"2020"	"2020"	Suppressed
+	"Mecklenburg County, NC"	"37119"	"2016"	"2016"	59
+	"Mecklenburg County, NC"	"37119"	"2017"	"2017"	53
+	"Mecklenburg County, NC"	"37119"	"2018"	"2018"	44
+	"Mecklenburg County, NC"	"37119"	"2019"	"2019"	41
+	"Mecklenburg County, NC"	"37119"	"2020"	"2020"	Suppressed
+	"Wake County, NC"	"37183"	"2016"	"2016"	81
+	"Wake County, NC"	"37183"	"2017"	"2017"	54
+	"Wake County, NC"	"37183"	"2018"	"2018"	41
+	"Wake County, NC"	"37183"	"2019"	"2019"	45
+	"Wake County, NC"	"37183"	"2020"	"2020"	Suppressed
+	"Franklin County, OH"	"39049"	"2016"	"2016"	315
+	"Franklin County, OH"	"39049"	"2017"	"2017"	319
+	"Franklin County, OH"	"39049"	"2018"	"2018"	265
+	"Franklin County, OH"	"39049"	"2019"	"2019"	215
+	"Franklin County, OH"	"39049"	"2020"	"2020"	Suppressed
+	"Hamilton County, OH"	"39061"	"2016"	"2016"	170
+	"Hamilton County, OH"	"39061"	"2017"	"2017"	159
+	"Hamilton County, OH"	"39061"	"2018"	"2018"	159
+	"Hamilton County, OH"	"39061"	"2019"	"2019"	135
+	"Hamilton County, OH"	"39061"	"2020"	"2020"	Suppressed
+	"Montgomery County, OH"	"39113"	"2016"	"2016"	223
+	"Montgomery County, OH"	"39113"	"2017"	"2017"	180
+	"Montgomery County, OH"	"39113"	"2018"	"2018"	200
+	"Montgomery County, OH"	"39113"	"2019"	"2019"	188
+	"Montgomery County, OH"	"39113"	"2020"	"2020"	Suppressed
+	"Oklahoma County, OK"	"40109"	"2016"	"2016"	257
+	"Oklahoma County, OK"	"40109"	"2017"	"2017"	223
+	"Oklahoma County, OK"	"40109"	"2018"	"2018"	207
+	"Oklahoma County, OK"	"40109"	"2019"	"2019"	229
+	"Oklahoma County, OK"	"40109"	"2020"	"2020"	Suppressed
+	"Tulsa County, OK"	"40143"	"2016"	"2016"	237
+	"Tulsa County, OK"	"40143"	"2017"	"2017"	184
+	"Tulsa County, OK"	"40143"	"2018"	"2018"	166
+	"Tulsa County, OK"	"40143"	"2019"	"2019"	181
+	"Tulsa County, OK"	"40143"	"2020"	"2020"	Suppressed
+	"Greenville County, SC"	"45045"	"2016"	"2016"	135
+	"Greenville County, SC"	"45045"	"2017"	"2017"	121
+	"Greenville County, SC"	"45045"	"2018"	"2018"	119
+	"Greenville County, SC"	"45045"	"2019"	"2019"	122
+	"Greenville County, SC"	"45045"	"2020"	"2020"	Suppressed
+	"Davidson County, TN"	"47037"	"2016"	"2016"	126
+	"Davidson County, TN"	"47037"	"2017"	"2017"	102
+	"Davidson County, TN"	"47037"	"2018"	"2018"	106
+	"Davidson County, TN"	"47037"	"2019"	"2019"	80
+	"Davidson County, TN"	"47037"	"2020"	"2020"	Suppressed
+	"Knox County, TN"	"47093"	"2016"	"2016"	184
+	"Knox County, TN"	"47093"	"2017"	"2017"	165
+	"Knox County, TN"	"47093"	"2018"	"2018"	144
+	"Knox County, TN"	"47093"	"2019"	"2019"	144
+	"Knox County, TN"	"47093"	"2020"	"2020"	Suppressed
+	"Shelby County, TN"	"47157"	"2016"	"2016"	95
+	"Shelby County, TN"	"47157"	"2017"	"2017"	68
+	"Shelby County, TN"	"47157"	"2018"	"2018"	86
+	"Shelby County, TN"	"47157"	"2019"	"2019"	64
+	"Shelby County, TN"	"47157"	"2020"	"2020"	Suppressed
+	"Richmond city, VA"	"51760"	"2016"	"2016"	15
+	"Richmond city, VA"	"51760"	"2017"	"2017"	14
+	"Richmond city, VA"	"51760"	"2018"	"2018"	14
+	"Richmond city, VA"	"51760"	"2019"	"2019"	16
+	"Richmond city, VA"	"51760"	"2020"	"2020"	Suppressed
+"---"
+"Dataset: Natality, 2007-2020"
+"Query Parameters:"
+"Age of Mother 9: 15-19 years"
+"Mother's Bridged Race: White"
+"Mother's Hispanic Origin: Not Hispanic or Latino"
+"Mother's Single Race: White"
+"States: Jefferson County, AL (01073); Duval County, FL (12031); Marion County, IN (18097); Jefferson County, KY (21111); Kent"
+"County, MI (26081); Jackson County, MO (29095); St. Louis County, MO (29189); St. Louis city, MO (29510); Douglas County, NE"
+"(31055); Guilford County, NC (37081); Mecklenburg County, NC (37119); Wake County, NC (37183); Franklin County, OH (39049);"
+"Hamilton County, OH (39061); Montgomery County, OH (39113); Oklahoma County, OK (40109); Tulsa County, OK (40143); Greenville"
+"County, SC (45045); Davidson County, TN (47037); Knox County, TN (47093); Shelby County, TN (47157); Richmond city, VA (51760)"
+"Year: 2016; 2017; 2018; 2019; 2020"
+"Group By: County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 1,000"
+"Population Option: No populations shown because rates were not selected."
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/Natality.html for more information."
+"---"
+"Query Date: Feb 25, 2022 12:17:48 PM"
+"---"
+"Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention"
+"(CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics, Natality public-use data 2007-2020, on CDC"
+"WONDER Online Database, October 2021. Accessed at http://wonder.cdc.gov/natality-current.html on Feb 25, 2022 12:17:48 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. 'Suppressed' appears when the data do not meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/Natality.html#Assurance of Confidentiality."
+"2. Each birth record represents one liveborn infant."
+"3. County-level data are shown only for counties with populations of 100,000 persons or more. Within each state, data for all"
+"counties with fewer than 100,000 persons are combined together under the label ""Unidentified Counties""."
+"4. <p> As a result of population changes the following counties do not have data available for all years.<br/> Before 2014 the"
+"data for the following counties was recoded to the ""Unidentified Counties"" category within the state of the county because"
+"they did not meet minimum population standards. Houston County, AL (01069); Navajo County, AZ (04017); Faulkner County, AR"
+"(05045); Saline County, AR (05125); Bartow County, GA (13015); Carroll County, GA (13045); Columbia County, GA (13073); Coweta"
+"County, GA (13077); Douglas County, GA (13097); Fayette County, GA (13113); Forsyth County, GA (13117); Lowndes County, GA"
+"(13185); Paulding County, GA (13223); Whitfield County, GA (13313); Bonneville County, ID (16019); DeKalb County, IL (17037);"
+"Kendall County, IL (17093); Clark County, IN (18019); Douglas County, KS (20045); Boone County, KY (21015); Hardin County, KY"
+"(21093); Warren County, KY (21227); Ascension Parish, LA (22005); Bossier Parish, LA (22015); Livingston Parish, LA (22063);"
+"Cecil County, MD (24015); St. Mary's County, MD (24037); Scott County, MN (27139); Wright County, MN (27171); Franklin County,"
+"MO (29071); Missoula County, MT (30063); Sandoval County, NM (35043); Tompkins County, NY (36109); Brunswick County, NC (37019);"
+"Craven County, NC (37049); Harnett County, NC (37085); Henderson County, NC (37089); Miami County, OH (39109); Canadian County,"
+"OK (40017); Adams County, PA (42001); Dorchester County, SC (45035); Pennington County, SD (46103); Wilson County, TN (47189);"
+"Comal County, TX (48091); Guadalupe County, TX (48187); Hays County, TX (48209); Kaufman County, TX (48257); Parker County, TX"
+"(48367); Cache County, UT (49005); Washington County, UT (49053); Spotsylvania County, VA (51177); Stafford County, VA (51179);"
+"Cowlitz County, WA (53015); Berkeley County, WV (54003); Fond du Lac County, WI (55039); Walworth County, WI (55127). </p> <p>"
+"After 2013 the data for the following counties was recoded to the ""Unidentified Counties"" category within the state of the"
+"county because they did not meet minimum population standards. Cape May County, NJ (34009); Portsmouth city, VA (51740). </p>"
+"5. Single Race categories are not available for births before year 2016. Maternal single race data for years before 2016 are"
+"recoded to the Single Race category ""Not Available"". More information:"
+"http://wonder.cdc.gov/wonder/help/Natality.html#About-Single-Race."
+"6. Beginning with 2020, bridged race is no longer included in the national birth file"
+"7. The independent city of St. Louis, Missouri (FIPS code 29510) is reported separately from St. Louis County (FIPS code 29189)."
