@@ -9,7 +9,8 @@ smoking_county <- read.csv(paste0(path, 'smoking_total/PLACES_2021.csv')) %>%
   select(c('LocationID','Year','Data_Value')) %>%
   mutate(sex='total',race='total') %>%
   rename('FIPS'='LocationID', 'year'='Year', 'smoking_percentage'='Data_Value') %>%
-  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS")
+  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
+  stl_merge(smoking_percentage, simple=T)
 
 usethis::use_data(smoking_county, overwrite = TRUE)
 
