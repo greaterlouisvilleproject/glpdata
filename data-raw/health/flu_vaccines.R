@@ -73,8 +73,11 @@ flu_df_other <- glptools::any_time(paste0(path, 'other'), starting_year=2012, sk
 flu_county <- rbind(flu_df_total, flu_df_male, flu_df_female, flu_df_black, flu_df_white, flu_df_hispanic, flu_df_api, flu_df_aian, flu_df_other)
 
 #Replace "All" in the race and sex columns with "total" to be able to use GLP graphic functions later
-flu_county <- flu_county %>% mutate(race=replace(race, race=='All', 'total'), sex=replace(sex, sex=='All', 'total'))
 flu_county$race <- tolower(flu_county$race)
 flu_county$sex <- tolower(flu_county$sex)
+flu_county <- flu_county %>% mutate(race=replace(race, race=='all', 'total'),
+                                    race=replace(race, race=='asian/pacific islander', 'API'),
+                                    race=replace(race, race=='american indian/alaska native', 'AIAN'),
+                                    sex=replace(sex, sex=='all', 'total'))
 
 usethis::use_data(flu_county, overwrite = TRUE)
