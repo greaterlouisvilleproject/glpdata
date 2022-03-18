@@ -65,4 +65,8 @@ food_security_county_merge <- merge(food_security_overall_glp, food_security_chi
 food_security_county_merge_2 <- merge(food_security_county_merge, food_security_budget_shortfall_glp)
 food_security_county <- merge(food_security_county_merge_2, food_security_meal_cost_glp)
 
+#Transform to percents
+food_security_county <- food_security_county %>%
+  mutate(food_insecurity=food_insecurity*100, child_food_insecurity=child_food_insecurity*100)
+
 usethis::use_data(food_security_county, overwrite = TRUE)
