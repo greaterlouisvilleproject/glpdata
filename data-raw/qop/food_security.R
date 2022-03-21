@@ -69,4 +69,20 @@ food_security_county <- merge(food_security_county_merge_2, food_security_meal_c
 food_security_county <- food_security_county %>%
   mutate(food_insecurity=food_insecurity*100, child_food_insecurity=child_food_insecurity*100)
 
+#Now add in the projections from 2020 and 2021
+df_projections_2020 <- readxl::read_xlsx("data-raw/qop/food_security/MMG_projections/FANO Projections - March 2021 - Food Insecurity - v2.xlsx", sheet = ' County - 2020 Projections') %>%
+  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
+  select(c('FIPS', '[Revised Projections – March 2021]\r\n2020 Food Insecurity  %', '[Revised Projections – March 2021]\r\n2020 Child Food Insecurity  %')) %>%
+  rename('food_insecurity'='[Revised Projections – March 2021]\r\n2020 Food Insecurity  %', 'child_food_insecurity'='[Revised Projections – March 2021]\r\n2020 Child Food Insecurity  %') %>%
+  mutate(year=2020, food_insecurity=food_insecurity*100, child_food_insecurity=child_food_insecurity*100)
+
+df_projections_2021 <- readxl::read_xlsx("data-raw/qop/food_security/MMG_projections/FANO Projections - March 2021 - Food Insecurity - v2.xlsx", sheet = 'County - 2021 Projections') %>%
+  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
+  select(c('FIPS', '[Revised Projections – March 2021]\r\n2021 Food Insecurity  %', '[Revised Projections – March 2021]\r\n2021 Child Food Insecurity  %')) %>%
+  rename('food_insecurity'='[Revised Projections – March 2021]\r\n2021 Food Insecurity  %', 'child_food_insecurity'='[Revised Projections – March 2021]\r\n2021 Child Food Insecurity  %') %>%
+  mutate(year=2021, food_insecurity=food_insecurity*100, child_food_insecurity=child_food_insecurity*100)
+
+#Combine all of the data
+food_security_county <- dplyr::bind_rows(food_security_county, df_projections_2020, df_projections_2021)
+
 usethis::use_data(food_security_county, overwrite = TRUE)
