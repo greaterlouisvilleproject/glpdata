@@ -1,7 +1,7 @@
 suppressMessages(library(tidyverse))
 library(glptools)
 
-#Data about the number of grocery stores, convenience stores, fast food restaurants and farmers'
+#Data about the number of grocery stores, warehouse stores & supercenters, convenience stores, fast food restaurants and farmers'
 #markets per 100,000 people.
 
 #Documentation Notes:
@@ -64,6 +64,68 @@ df_grocery_stores_2007 <- readxl::read_xls("data-raw/qop/food_environment/2015 F
 
 grocery_store_county <- rbind(df_grocery_stores_2007, df_grocery_stores_2009, df_grocery_stores_2011,
                               df_grocery_stores_2012, df_grocery_stores_2014, df_grocery_stores_2016)
+
+
+#Documentation Notes:
+#The years of data come from different Excel sheets in the food_environment folder. (That is the
+#reason for the inconsistent ordering of the years)
+#SUPERCPTH16 = supercenters/warehouse stores per 1,000 people in 2016
+#SUPERCPTH11 = supercenters/warehouse stores per 1,000 people in 2011
+#SUPERCPTH14 = supercenters/warehouse stores per 1,000 people in 2014
+#SUPERCPTH09 = supercenters/warehouse stores per 1,000 people in 2009
+#SUPERCPTH12 = supercenters/warehouse stores per 1,000 people in 2012
+#SUPERCPTH07 = supercenters/warehouse stores per 1,000 people in 2007
+
+df_supercenters_2016 <- readxl::read_xls("data-raw/qop/food_environment/FoodEnvironmentAtlas.xls", sheet = 'STORES') %>%
+  select(c('FIPS', 'SUPERCPTH16')) %>%
+  rename('supercenters_per_1000'='SUPERCPTH16') %>%
+  mutate(supercenters_per_100000=100*supercenters_per_1000) %>%
+  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
+  stl_merge(supercenters_per_100000, simple=T) %>%
+  mutate(year=2016)
+
+df_supercenters_2011 <- readxl::read_xls("data-raw/qop/food_environment/FoodEnvironmentAtlas.xls", sheet = 'STORES') %>%
+  select(c('FIPS', 'SUPERCPTH11')) %>%
+  rename('supercenters_per_1000'='SUPERCPTH11') %>%
+  mutate(supercenters_per_100000=100*supercenters_per_1000) %>%
+  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
+  stl_merge(supercenters_per_100000, simple=T) %>%
+  mutate(year=2011)
+
+df_supercenters_2014 <- readxl::read_xls("data-raw/qop/food_environment/DataDownload.xls", sheet = 'STORES') %>%
+  select(c('FIPS', 'SUPERCPTH14')) %>%
+  rename('supercenters_per_1000'='SUPERCPTH14') %>%
+  mutate(supercenters_per_100000=100*supercenters_per_1000) %>%
+  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
+  stl_merge(supercenters_per_100000, simple=T) %>%
+  mutate(year=2014)
+
+df_supercenters_2009 <- readxl::read_xls("data-raw/qop/food_environment/DataDownload.xls", sheet = 'STORES') %>%
+  select(c('FIPS', 'SUPERCPTH09')) %>%
+  rename('supercenters_per_1000'='SUPERCPTH09') %>%
+  mutate(supercenters_per_100000=100*supercenters_per_1000) %>%
+  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
+  stl_merge(supercenters_per_100000, simple=T) %>%
+  mutate(year=2009)
+
+df_supercenters_2012 <- readxl::read_xls("data-raw/qop/food_environment/2015 Food Environment Atlas Data Download.xls", sheet = 'STORES') %>%
+  select(c('FIPS', 'SUPERCPTH12')) %>%
+  rename('supercenters_per_1000'='SUPERCPTH12') %>%
+  mutate(supercenters_per_100000=100*supercenters_per_1000) %>%
+  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
+  stl_merge(supercenters_per_100000, simple=T) %>%
+  mutate(year=2012)
+
+df_supercenters_2007 <- readxl::read_xls("data-raw/qop/food_environment/2015 Food Environment Atlas Data Download.xls", sheet = 'STORES') %>%
+  select(c('FIPS', 'SUPERCPTH07')) %>%
+  rename('supercenters_per_1000'='SUPERCPTH07') %>%
+  mutate(supercenters_per_100000=100*supercenters_per_1000) %>%
+  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
+  stl_merge(supercenters_per_100000, simple=T) %>%
+  mutate(year=2007)
+
+supercenter_county <- rbind(df_supercenters_2016, df_supercenters_2014, df_supercenters_2012, df_supercenters_2011,
+                            df_supercenters_2009, df_supercenters_2007)
 
 
 #Documentation Notes:
