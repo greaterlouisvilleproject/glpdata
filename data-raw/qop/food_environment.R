@@ -290,6 +290,7 @@ farmers_markets_county <- rbind(df_farmers_market_2009, df_farmers_market_2013,
                                 df_farmers_market_2016, df_farmers_market_2018)
 
 food_environment_county <- grocery_store_county  %>%
+  inner_join(supercenter_county, by=c('FIPS','year')) %>%
   inner_join(convenience_store_county, by=c('FIPS','year')) %>%
   inner_join(fast_food_county, by=c('FIPS','year')) %>%
   full_join(farmers_markets_county, by=c('FIPS','year'))
