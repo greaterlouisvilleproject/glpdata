@@ -11,25 +11,30 @@ diabetes_df_total <- diabetes_df_total %>%
   select(c('CountyFIPS','year','Percentage')) %>%
   mutate(sex='total',race='total') %>%
   rename('FIPS'='CountyFIPS','diabetes_prevalence'='Percentage') %>%
-  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS")
+  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
+  mutate(diabetes_prevalence=as.numeric(diabetes_prevalence)) %>%
+  stl_merge(diabetes_prevalence, simple=T)
 
 #Male
 diabetes_df_male <- glptools::any_time(paste0(path, 'male'), starting_year=2004, skip=0, col_types=NULL,read.csv) %>%
   select(c('CountyFIPS','year','Percentage')) %>%
   mutate(sex='male',race='total') %>%
   rename('FIPS'='CountyFIPS','diabetes_prevalence'='Percentage') %>%
-  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS")
+  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
+  mutate(diabetes_prevalence=as.numeric(diabetes_prevalence)) %>%
+  stl_merge(diabetes_prevalence, simple=T)
 
 #Female
 diabetes_df_female <- glptools::any_time(paste0(path, 'female'), starting_year=2004, skip=0, col_types=NULL,read.csv) %>%
   select(c('CountyFIPS','year','Percentage')) %>%
   mutate(sex='female',race='total') %>%
   rename('FIPS'='CountyFIPS','diabetes_prevalence'='Percentage') %>%
-  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS")
+  glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
+  mutate(diabetes_prevalence=as.numeric(diabetes_prevalence)) %>%
+  stl_merge(diabetes_prevalence, simple=T)
 
 #Combine all of the data
 diabetes_prevalence_county <- rbind(diabetes_df_total, diabetes_df_male, diabetes_df_female)
-diabetes_prevalence_county$diabetes_prevalence <- as.numeric(diabetes_prevalence_county$diabetes_prevalence)
 
 usethis::use_data(diabetes_prevalence_county, overwrite = TRUE)
 

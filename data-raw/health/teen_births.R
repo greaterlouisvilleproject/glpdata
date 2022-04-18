@@ -9,21 +9,24 @@ teen_births_total <- read.delim(paste0(path, 'teen_births_total.txt')) %>%
   na.omit() %>%
   rename('FIPS'='County.Code','year'='Year','teen_births'='Births') %>%
   glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
-  mutate(race='total')
+  mutate(race='total') %>%
+  stl_merge(teen_births, simple=T)
 
 teen_births_hispanic <- read.delim(paste0(path, 'teen_births_hispanic.txt')) %>%
   select(-c(Notes,County,Year.Code)) %>%
   na.omit() %>%
   rename('FIPS'='County.Code','year'='Year','teen_births'='Births') %>%
   glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
-  mutate(race='hispanic')
+  mutate(race='hispanic') %>%
+  stl_merge(teen_births, simple=T)
 
 teen_births_white_2007_2015 <- read.delim(paste0(path, 'teen_births_white_2007_2015.txt')) %>%
   select(-c(Notes,County,Year.Code)) %>%
   na.omit() %>%
   rename('FIPS'='County.Code','year'='Year','teen_births'='Births') %>%
   glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
-  mutate(race='white')
+  mutate(race='white') %>%
+  stl_merge(teen_births, simple=T)
 
 teen_births_white_2016_2020 <- read.delim(paste0(path, 'teen_births_white_2016_2020.txt')) %>%
   select(-c(Notes,County,Year.Code)) %>%
@@ -31,14 +34,17 @@ teen_births_white_2016_2020 <- read.delim(paste0(path, 'teen_births_white_2016_2
   rename('FIPS'='County.Code','year'='Year','teen_births'='Births') %>%
   glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
   mutate(race='white') %>%
-  filter(teen_births!='Suppressed')
+  filter(teen_births!='Suppressed') %>%
+  mutate(teen_births=as.numeric(teen_births)) %>%
+  stl_merge(teen_births, simple=T)
 
 teen_births_black_2007_2015 <- read.delim(paste0(path, 'teen_births_black_2007_2015.txt')) %>%
   select(-c(Notes,County,Year.Code)) %>%
   na.omit() %>%
   rename('FIPS'='County.Code','year'='Year','teen_births'='Births') %>%
   glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
-  mutate(race='black')
+  mutate(race='black') %>%
+  stl_merge(teen_births, simple=T)
 
 teen_births_black_2016_2020 <- read.delim(paste0(path, 'teen_births_black_2016_2020.txt')) %>%
   select(-c(Notes,County,Year.Code)) %>%
@@ -46,7 +52,9 @@ teen_births_black_2016_2020 <- read.delim(paste0(path, 'teen_births_black_2016_2
   rename('FIPS'='County.Code','year'='Year','teen_births'='Births') %>%
   glptools::pull_peers(add_info = FALSE, subset_to_peers = TRUE, geog="FIPS") %>%
   mutate(race='black') %>%
-  filter(teen_births!='Suppressed')
+  filter(teen_births!='Suppressed') %>%
+  mutate(teen_births=as.numeric(teen_births)) %>%
+  stl_merge(teen_births, simple=T)
 
 teen_births_county <- rbind(teen_births_total, teen_births_hispanic, teen_births_white_2007_2015, teen_births_white_2016_2020, teen_births_black_2007_2015, teen_births_black_2016_2020)
 
