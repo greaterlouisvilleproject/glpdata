@@ -158,7 +158,6 @@ dumbbell_df_female <- louisville_changes_women %>%
   head(n=5) %>%
   arrange(percent_increase_women)
 
-
 dumbbell_df_female$description <- factor(dumbbell_df_female$description, levels=as.character(dumbbell_df_female$description))
 
 install.packages('ggalt')
