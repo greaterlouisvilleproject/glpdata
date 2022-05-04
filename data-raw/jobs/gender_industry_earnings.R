@@ -48,18 +48,21 @@ earnings_gender_intermediate <- earnings_gender %>%
   spread(sex, jobs)
 
 percent_women_industry <- earnings_gender_intermediate %>%
-  select(-c(wages, male, total)) %>%
+  select(-c(male, total)) %>%
   na.omit()
 
 percent_men_industry <- earnings_gender_intermediate %>%
-  select(-c(wages, female, total)) %>%
+  select(-c(female, total)) %>%
   na.omit()
 
 percent_total_industry <- earnings_gender_intermediate %>%
-  select(-c(wages, female, male)) %>%
+  select(-c(female, male)) %>%
   na.omit()
 
-industry_county_intermediate <- merge(percent_women_industry, percent_men_industry)
+industry_county_intermediate <- percent_women_industry %>%
+  inner_join(percent_men_industry, by = c('FIPS','year', 'industry')) %>%
+  rename(wages_female=wages.x, wages_male=wages.y)
+
 industry_county <- merge(industry_county_intermediate, percent_total_industry)
 
 industry_county_gender <- industry_county %>%
@@ -190,4 +193,80 @@ dumbbell2 <- ggplot(dumbbell_df_male, aes(y=description, x=percent_female_2005, 
   geom_vline(xintercept = 50, color='black',linetype='dotted')
 
 dumbbell2
+
+#Now for an interactive bubble plot with percent female vs. wage and the size of the bubble
+#corresponding to the size of the industry
+
+louisville_bubble_data_2020 <- industry_county_gender %>%
+  filter(FIPS=='21111' & year==2020) %>%
+  filter(nchar(industry) == 2) %>%
+  filter(industry!='00') %>%
+  mutate(industry_share=(total/466768.125)*100) %>%
+  mutate(majority_female_2020 = case_when( #flag for majority female industries in 2020
+    percent_female > 50 ~ 1,
+    TRUE ~ 0)) %>%
+  mutate(majority_female_2020=as.factor(majority_female_2020))
+
+install.packages('hrbrthemes')
+library(hrbrthemes)
+library(plotly)
+library(glptools)
+library(glpdata)
+library(scales) #Needed to insert commas in the salary information in the hoverable text
+glp_load_packages(graphs = T)
+showtext_auto()
+font_add("Museo Sans", "MuseoSans_300.otf")
+font_add("Museo Sans 300 Italic", "MuseoSans_300_Italic.otf")
+
+bubble_plot <- ggplot(louisville_bubble_data_2020, aes(x=wages,
+                                                       y=percent_female,
+                                                       size = industry_share,
+                                                       text=paste0('</br><b>Industry:</b> ', label,
+                                                                   '</br><b>Share of Women:</b> ', round(percent_female, 2),'%',
+                                                                   '</br><b>Average Wages:</b> $', scales::comma(wages),
+                                                                   '</br><b>Share of Labor Force:</b> ', round(industry_share, 2),'%'),
+                                                       color=majority_female_2020)) +
+  geom_point() +
+  scale_size(range = c(1.4, 19)) +
+  theme_minimal() +
+  theme(legend.position="none") +
+  scale_color_manual(values=c('#45644c', '#01acbb')) + #Using GLP colors for male and female bubbles
+  scale_x_continuous(labels = scales::dollar_format(scale = .001, suffix = "K")) +
+  scale_y_continuous(labels = scales::number_format(suffix="%"), limits=c(0,90)) +
+  labs(title = "Louisville's Industries by Gender and Earnings, 2020",
+       x="Average Wages",
+       y="Share of Women")+
+  theme(text=element_text(family="Museo Sans"), plot.title=element_text(family="Museo Sans", size=18, face='bold'),
+        axis.text.x=element_text(family="Museo Sans"), axis.text.y=element_text(family="Museo Sans")) +
+  geom_hline(yintercept=50, linetype="dotted") +
+  annotate(
+    geom = "text", x = 90000, y = 52,
+    label = "<b>ᐃ Mostly Women", hjust = 0, vjust = 1, size = 3
+  ) +
+  annotate(
+    geom = "text", x = 89000, y = 48,
+    label = "<b>ᐁ Mostly Men", hjust = 0, vjust = 1, size = 3
+  ) +
+  annotate(
+    geom = "text", x = 40000, y = 60,
+    label = "<i>The size of each bubble\ncorresponds to that industry's\nshare of the labor force.</i>", hjust = 0, vjust = 1, size = 3.5
+  ) +
+  annotate(
+    geom = "text", x = 78000, y = 77,
+    label = "Louisville's highest-earning industry\n(finance and insurance) is mostly\nfemale (62%). So is its lowest-earning\nindustry (accomodation and food services)\nat 53% female.", hjust = 0, vjust = 1, size = 4
+  ) +
+  annotate(
+    geom = "text", x = 40000, y = 15,
+    label = "Construction has the lowest share\nof women (13.9%). The average salary\nis slighly above the average\nacross all industries.", hjust = 0, vjust = 1, size = 4
+  ) +
+  annotate(
+    geom = "text", x = 80000, y = 2,
+    label = "Source: U.S. Census Bureau Quarterly Workforce Indicators", hjust = 0, vjust = 1, size = 2.5
+  )
+
+bubble_final <- ggplotly(bubble_plot, tooltip = "text", width=740, height=620)
+
+bubble_final
+
+mean(louisville_bubble_data_2020$wages)
 
