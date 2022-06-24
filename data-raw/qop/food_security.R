@@ -27,6 +27,7 @@ mind_the_meal_gap <- function(folder, starting_year){
     df <- readxl::read_xlsx(file_path, sheet = sheet_name, skip = skip_num)
     # Create variables names based on the year
     food_insecure_var <- paste0(y, " Food Insecurity Rate")
+    food_insecure_total <- paste0("# of Food Insecure Persons in ", y)
     child_food_insecure_var <- paste0(y, " Child food insecurity rate")
     budget_shortfall_var <- paste0(y, " Weighted Annual Food Budget Shortfall")
     cost_per_meal_var <- paste0(y, " Cost Per Meal")
@@ -36,6 +37,7 @@ mind_the_meal_gap <- function(folder, starting_year){
         FIPS = str_pad(FIPS, 5, "left", "0"),
         year = y,
         food_insecurity = .data[[food_insecure_var]],
+        food_insecurity_total = .data[[food_insecure_total]],
         child_food_insecurity = .data[[child_food_insecure_var]],
         budget_shortfall = .data[[budget_shortfall_var]],
         meal_cost = .data[[cost_per_meal_var]])
@@ -107,3 +109,34 @@ food_security_county <- dplyr::bind_rows(food_security_county, df_projections_20
   drop_na(food_insecurity)
 
 usethis::use_data(food_security_county, overwrite = TRUE)
+
+#Method for weighting the budget shortfall based on the number of food insecure in an area
+standardizing_df <- food_security_df %>%
+  select(c('FIPS', 'year', 'food_insecurity_total')) %>%
+  pull_peers() %>%
+  stl_merge(food_insecurity_total, simple=T) %>%
+  mutate(multiplier = case_when(
+    (year == 2014 & food_insecurity_total >= 129530) ~ 1/(food_insecurity_total/129530),
+    (year == 2014 & food_insecurity_total < 129530) ~ 129530/food_insecurity_total,
+    (year == 2015 & food_insecurity_total >= 122030) ~ 1/(food_insecurity_total/122030),
+    (year == 2015 & food_insecurity_total < 122030) ~ 122030/food_insecurity_total,
+    (year == 2016 & food_insecurity_total >= 120100) ~ 1/(food_insecurity_total/120100),
+    (year == 2016 & food_insecurity_total < 120100) ~ 120100/food_insecurity_total,
+    (year == 2017 & food_insecurity_total >= 116790) ~ 1/(food_insecurity_total/116790),
+    (year == 2017 & food_insecurity_total < 116790) ~ 116790/food_insecurity_total,
+    (year == 2018 & food_insecurity_total >= 100450) ~ 1/(food_insecurity_total/100450),
+    (year == 2018 & food_insecurity_total < 100450) ~ 100450/food_insecurity_total,
+    (year == 2019 & food_insecurity_total >= 89690) ~ 1/(food_insecurity_total/89690),
+    TRUE ~ 89690/food_insecurity_total))
+
+#Now bring in the budget shortfall data:
+budget_shortfall_df <- food_security_df %>%
+  select(c('FIPS', 'year', 'budget_shortfall')) %>%
+  pull_peers() %>%
+  stl_merge(budget_shortfall, simple=T)
+
+standardized_budget_shortfall <- merge(standardizing_df, budget_shortfall_df) %>%
+  mutate(budget_shortfall_standardized = multiplier*budget_shortfall)
+
+usethis::use_data(standardized_budget_shortfall, overwrite = TRUE)
+
