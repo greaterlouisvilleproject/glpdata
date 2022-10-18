@@ -4,14 +4,15 @@ library(tidyverse)
 library(glpdata)
 library(glptools)
 
+
 var_df <- crossing(FIPS = unique(FIPS_df_two_stl$FIPS),
-                   year = 2005:2020,
-                   name = "timeseries/qwi/sa")
+                   year = 2005:2021,
+                   name = "timeseries/qwi/rh")
 
 get_fxn <- function(data) {
   getCensus(
     name = data$name,
-    vars = c("Emp", "EmpEnd", "EarnBeg", "industry", "sex"),
+    vars = c("Emp", "EmpEnd", "EarnBeg", "industry", "sex", "race", "ethnicity"),
     region = "county:" %p% str_sub(data$FIPS, 3, 5),
     regionin = "state:" %p% str_sub(data$FIPS, 1, 2),
     time = data$year,
@@ -30,6 +31,12 @@ earnings_gender = var_df %>%
   unnest(results) %>%
   ungroup()
 
+
+save(earnings_gender, file = "gender_industry_earnings/earnings_gender.RData")
+
+#Start here if api call is already up to date
+load("gender_industry_earnings/earnings_gender.RData")
+
 earnings_gender_intermediate <- earnings_gender %>%
   mutate(FIPS = state %p% county,
          year = as.numeric(str_sub(time, 1, 4)),
@@ -40,12 +47,53 @@ earnings_gender_intermediate <- earnings_gender %>%
          wages = EarnBeg * 12,
          sex = ifelse(sex == "0", "total", sex),
          sex = ifelse(sex == "1", "male", sex),
-         sex = ifelse(sex == "2", "female", sex)) %>%
+         sex = ifelse(sex == "2", "female", sex),
+
+         race_updated = case_when(
+           ethnicity == "A2" & race == "A0" ~ "hispanic",
+           ethnicity == "A1" & race == "A1" ~ "white",
+           ethnicity == "A1" & race == "A2" ~ "black",
+           ethnicity == "A1" & race == "A3" ~ "AIAN",
+           ethnicity == "A1" & race == "A4" ~ "asian",
+           ethnicity == "A1" & race == "A5" ~ "native_hawaiian_other_pi",
+           ethnicity == "A1" & race == "A7" ~ "two_or_more",
+           race == "A0" & ethnicity == "A0" ~ "total")) %>%
+  select(-race) %>%
+  rename(race = race_updated) %>%
   na.omit() %>%
-  group_by(FIPS,year, sex,industry) %>%
+  group_by(FIPS,year, sex,race, industry) %>%
   summarize(jobs=mean(Average_q_employment),
-            wages = mean(wages)) %>%
-  spread(sex, jobs)
+            wages = mean(wages))
+
+#need a jobs dataframe and wage dataframe and then merge back together...for the st. louis data
+#for jobs
+#create jobs data frame here
+earnings_jobs <- earnings_gender_intermediate %>%
+  mutate(FIPS = replace(FIPS, FIPS %in% c("29189", "29510"), "MERGED")) %>%
+  group_by(FIPS,year, sex,race,industry) %>%
+  summarize(jobs = sum(jobs), .groups = "drop")
+
+earnings_wages <- earnings_gender_intermediate %>%
+  mutate(FIPS = replace(FIPS, FIPS %in% c("29189", "29510"), "MERGED")) %>%
+  group_by(FIPS,year, sex,race,industry) %>%
+  summarize(wages = weighted.mean(wages, jobs), .groups = "drop")
+
+earnings_gender_county <- left_join(earnings_jobs, earnings_wages,
+                                    by = c("FIPS","year", "sex","industry", "race"))
+
+#earnings_gender_county %<>% COLA(wages, rpp = FALSE)
+
+industry_labels <- read.csv('gender_industry_earnings/label_industry.csv') #changed path
+
+industry_gender_earnings <- merge(earnings_gender_county, industry_labels)
+
+usethis::use_data(industry_gender_earnings, overwrite = TRUE)
+
+
+#left join earnings_jobs with earnings_wages to create final df to save
+#probably just need to save this dataframe...maybe before spread...spread is old pivot wider
+#need to merge(left join) labels
+#need to merge st louis
 
 percent_women_industry <- earnings_gender_intermediate %>%
   select(-c(male, total)) %>%
@@ -68,45 +116,53 @@ industry_county <- merge(industry_county_intermediate, percent_total_industry)
 industry_county_gender <- industry_county %>%
   mutate(percent_female=(female/total)*100)
 
-industry_labels <- read.csv('/Users/MatthewZdun/Downloads/label_industry.csv')
+industry_labels <- read.csv('gender_industry_earnings/label_industry.csv')
 
 industry_county_gender <- merge(industry_county_gender, industry_labels)
 
 #Now we want to see the industries that have seen the greatest increases in the share of women
 
-industry_county_gender_percent_change_2005 <- industry_county_gender %>%
+#industry_county_gender_percent_change_2005 <- industry_county_gender %>%
+industry_county_gender_percent_change_start_year <- industry_county_gender %>%
   spread(year,percent_female) %>%
-  select(-c('2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020')) %>%
+  select(-c("2006":"2021"))%>%
+  #select(-c('2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021')) %>%
   na.omit() %>%
   rename('percent_female_2005'='2005')
 
-industry_county_gender_percent_change_2020 <- industry_county_gender %>%
+#industry_county_gender_percent_change_2021 <- industry_county_gender %>%
+industry_county_gender_percent_change_end_year <- industry_county_gender %>%
   spread(year,percent_female) %>%
-  select(-c('2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019')) %>%
+  select(-c("2005":"2020"))%>%
+  #select(-c('2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020')) %>%
   na.omit() %>%
-  rename('percent_female_2020'='2020')
+  rename('percent_female_2021'='2021')
 
-industry_county_gender_percent_change <- merge(industry_county_gender_percent_change_2005, industry_county_gender_percent_change_2020, by=c('FIPS','industry')) %>%
-  select(c('FIPS','industry','label.x','percent_female_2005','percent_female_2020')) %>%
+#industry_county_gender_percent_change <- merge(industry_county_gender_percent_change_2005, industry_county_gender_percent_change_2021, by=c('FIPS','industry')) %>%
+industry_county_gender_percent_change <- merge(industry_county_gender_percent_change_start_year, industry_county_gender_percent_change_end_year, by=c('FIPS','industry')) %>%
+  select(c('FIPS','industry','label.x','percent_female_2005','percent_female_2021')) %>%
   rename('description'='label.x') %>%
-  mutate(percentage_point_increase_women=percent_female_2020-percent_female_2005)
+  mutate(percentage_point_increase_women=percent_female_2021-percent_female_2005)
 
 #Let's bring in average hourly wage data for the industries
-industry_gender_earnings <- read.csv('data-raw/jobs/gender_industry_earnings/industry_earnings.csv')
+industry_gender_earnings <- read.csv('gender_industry_earnings/industry_earnings.csv')
 
 industry_gender_earnings <- industry_county_gender_percent_change %>%
   left_join(industry_gender_earnings) %>%
-  mutate(majority_female_2020 = case_when( #flag for majority female industries in 2020
-    percent_female_2020 > 50 ~ 1,
+  mutate(majority_female_2021 = case_when( #flag for majority female industries in 2021
+    percent_female_2021 > 50 ~ 1,
     TRUE ~ 0)) %>%
   mutate(large_increase_female = case_when( #flag for industries that saw a large increase in the share of
-    #women between 2005 and 2020 (more than 5 percentage points)
+    #women between 2005 and 2021
      percentage_point_increase_women > 5 ~ 1,
     TRUE ~ 0))
 
+## add to glpdata
+
+
 #Average hourly earnings in the majority-female industries in Louisville and its peer cities
 average_hourly_earnings_female_industries <- industry_gender_earnings %>%
-  filter(majority_female_2020==1) %>%
+  filter(majority_female_2021==1) %>%
   group_by(FIPS) %>%
   na.omit() %>%
   summarize(mean(average_hr_earnings_feb_22)) %>%
@@ -114,7 +170,7 @@ average_hourly_earnings_female_industries <- industry_gender_earnings %>%
 
 #Average hourly earnings in the majority-male industries in Louisville and its peer cities
 average_hourly_earnings_male_industries <- industry_gender_earnings %>%
-  filter(majority_female_2020==0) %>%
+  filter(majority_female_2021==0) %>%
   group_by(FIPS) %>%
   na.omit() %>%
   summarize(mean(average_hr_earnings_feb_22)) %>%
@@ -141,7 +197,7 @@ gender_swing_industries_merged <- merge(average_hourly_earnings_female_swing_ind
 
 louisville_changes_women <- industry_county_gender_percent_change %>%
   filter(FIPS==21111) %>%
-  arrange(desc(percent_increase_women))
+  arrange(desc(percentage_point_increase_women))
 
 ##Some Visualizations
 install.packages('directlabels')
