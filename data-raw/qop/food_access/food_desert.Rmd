@@ -1,0 +1,1161 @@
+---
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+library(glptools)
+
+glp_load_packages()
+
+library(lubridate)
+library(sf)
+library(leaflet)
+library(viridis)
+```
+
+# Create data set
+
+## Read SNAP data
+
+Outputs:
+-snap_establishments: a data frame of SNAP retailers in Louisville and peer cities
+-snap_establishments_df: a data frame of large retailers that are used to calculate food deserts. This includes retailers slightly outside of counties as well.
+
+```{r read_snap}
+snap_establishments <- read_csv("Historical SNAP Retailer Locator Data as of 20211231.csv")
+
+# Clean data frame and convert opening and closing to dates.
+# We have location data for all stores that existed or opened starting in 2006.
+# We are missing location data for most older stores, so remove them from the data.
+
+snap_establishments %<>%
+  transmute(
+    ID = `Record ID`,
+    name = `Store Name`,
+    type = `Store Type`,
+    street = `Street Name`,
+    city = City,
+    county = County,
+    state_abbr = State,
+    zip = `Zip Code`,
+    lat = Latitude,
+    lon = Longitude,
+    open = mdy(`Authorization Date`),
+    close = mdy(`End Date`)) %>%
+  filter(is.na(close) | year(close) >= 2006)
+
+# Convert the data frame to a spatial object
+snap_establishments %<>% st_as_sf(coords = c("lon", "lat"), crs = 4326)
+
+# Since people can access food in other counties, let's create a "nearby" dataset to include food options within a mile of county borders.
+FIPS_map <- map_county_peers %>%
+  pull_peers(add_info = T) %>%
+  filter(current == 1) %>%
+  st_buffer(dist = 1609)
+
+FIPS_map_lou <- map_county_peers %>%
+  filter(FIPS == "21111") %>%
+  st_buffer(dist = 1609 * 5)
+
+# Chop down data to near counties
+snap_buffer = snap_establishments[FIPS_map,]
+snap_buffer_lou = snap_establishments[FIPS_map_lou,]
+
+# Add FIPS column to data frame. Format St. Louis city and county to match the FIPS_info first. Keep the data only for current peers.
+snap_establishments %<>%
+  mutate(
+    county = case_when(
+      county == "ST LOUIS" ~ "St. Louis County",
+      county == "ST LOUIS CITY" ~ "St. Louis City",
+      TRUE ~ str_to_title(county))) %>%
+  select(-city) %>%
+  left_join(FIPS_info, by = c("state_abbr", "county")) %>%
+  filter(!is.na(FIPS),
+         current == 1) %>%
+  select(ID, name, type, open, close, FIPS, geometry)
+
+# For the purposes of food deserts, we want to focus on large groceries, supermarkets, and superstores.
+snap_establishments_fd <- snap_establishments %>%
+  filter(type %in% c("Large Grocery Store", "Supermarket", "Super Store"))
+
+
+# Clean up the outside-of-county food options and add them to the food desert dataset.
+snap_nearby <- snap_buffer %>%
+  anti_join(st_drop_geometry(snap_establishments), by = c("ID", "open")) %>%
+  filter(type %in% c("Large Grocery Store", "Supermarket", "Super Store")) %>%
+  select(ID, name, type, open, close, geometry)
+
+snap_nearby$FIPS <- FIPS_map$FIPS[st_nearest_feature(snap_nearby, FIPS_map)]
+
+snap_nearby_lou <- snap_buffer_lou %>%
+  anti_join(st_drop_geometry(snap_establishments), by = c("ID", "open")) %>%
+  filter(type %in% c("Large Grocery Store", "Supermarket", "Super Store")) %>%
+  select(ID, name, type, open, close, geometry)
+
+snap_nearby_lou$FIPS <- "21111"
+
+snap_establishments_fd %<>%
+  bind_rows(snap_nearby)
+
+# Create Louisville-specific data set to run through hereR multiple times.
+snap_lou <- snap_establishments_fd %>%
+  filter(FIPS == "21111")
+
+snap_nearby_lou <- snap_nearby %>% filter(FIPS == "21111")
+
+snap_lou_all <- bind_rows(snap_lou, snap_nearby_lou)
+
+rm(FIPS_map, FIPS_map_lou, snap_nearby, snap_buffer, snap_buffer_lou)
+
+```
+
+# Geocode and save data
+
+Geocoding is done using the hereR package to generate isolines that show who can access grocery stores within a certain distance of their home.
+
+The peer data set is analyzed using a standard 1-mile radius, but we generate additional isolines for Louisville to show grocery stores within a 1/2 mile, 2 miles, 3 miles, 4 miles, and 5 miles.
+
+```{r geocode_lou, eval=FALSE}
+
+
+library(hereR)
+set_key("WoYNTJckWFwljeKbygY_G1L1uZ46k-DMJYWtlloRIXg")
+
+
+grocery_location <- data.frame(
+  ID = 1,
+  name = "Louisville Community Grocery",
+  type = "Large Grocery Store",
+  open = "2022-01-08",
+  close = NA_character_,
+  FIPS = "21111",
+  lat = "38.243894",
+  lon = "-85.747014") %>%
+  st_as_sf(coords = c("lon", "lat"), crs = 4326)
+
+# Community grocery
+lou_grocery <- 
+  isoline(grocery_location,
+          arrival = FALSE,
+          range = 1609,
+          range_type = "distance",
+          routing_mode = "short",
+          traffic = FALSE,
+          optimize = "quality",
+          aggregate = F,
+          url_only = F)
+
+save(lou_grocery, file = "community_grocery_isoline.RData")
+
+
+driving_dist_half <- isoline(snap_lou,
+                             arrival = FALSE,
+                             range = 805,
+                             range_type = "distance",
+                             routing_mode = "short",
+                             traffic = FALSE,
+                             optimize = "quality",
+                             aggregate = F,
+                             url_only = F)
+
+lou_half <- driving_dist_half %>%
+  transmute(
+    ID = snap_lou$ID,
+    open = snap_lou$open,
+    geometry)
+
+save(lou_half, file = "louisville_food_isolines_half_clean.RData")
+
+
+driving_dist_1    <- isoline(snap_lou,
+                             arrival = FALSE,
+                             range = 1609,
+                             range_type = "distance",
+                             routing_mode = "short",
+                             traffic = FALSE,
+                             optimize = "quality",
+                             aggregate = F,
+                             url_only = F)
+
+save(driving_dist_1, file = "louisville_food_isolines_1.RData")
+
+lou_1 <- driving_dist_1 %>%
+  transmute(
+    ID = snap_lou$ID,
+    open = snap_lou$open,
+    geometry)
+
+save(lou_1, file = "louisville_food_isolines_1_clean.RData")
+
+driving_dist_2    <- isoline(snap_lou,
+                             arrival = FALSE,
+                             range = 1609 * 2,
+                             range_type = "distance",
+                             routing_mode = "short",
+                             traffic = FALSE,
+                             optimize = "quality",
+                             aggregate = F,
+                             url_only = F)
+
+lou_2 <- driving_dist_2 %>%
+  transmute(
+    ID = snap_lou$ID,
+    open = snap_lou$open,
+    geometry)
+
+save(lou_2, file = "louisville_food_isolines_2_clean.RData")
+
+
+driving_dist_3    <- isoline(snap_lou,
+                             arrival = FALSE,
+                             range = 1609 * 3,
+                             range_type = "distance",
+                             routing_mode = "short",
+                             traffic = FALSE,
+                             optimize = "quality",
+                             aggregate = F,
+                             url_only = F)
+
+lou_3 <- driving_dist_3 %>%
+  transmute(
+    ID = snap_lou$ID,
+    open = snap_lou$open,
+    geometry)
+
+save(lou_3, file = "louisville_food_isolines_3_clean.RData")
+
+driving_dist_4    <- isoline(snap_lou,
+                             arrival = FALSE,
+                             range = 1609 * 4,
+                             range_type = "distance",
+                             routing_mode = "short",
+                             traffic = FALSE,
+                             optimize = "quality",
+                             aggregate = F,
+                             url_only = F)
+
+lou_4 <- driving_dist_4 %>%
+  transmute(
+    ID = snap_lou$ID,
+    open = snap_lou$open,
+    geometry)
+
+save(lou_4, file = "louisville_food_isolines_4_clean.RData")
+
+
+driving_dist_5    <- isoline(snap_lou,
+                             arrival = FALSE,
+                             range = 1609 * 5,
+                             range_type = "distance",
+                             routing_mode = "short",
+                             traffic = FALSE,
+                             optimize = "quality",
+                             aggregate = F,
+                             url_only = F)
+
+lou_5 <- driving_dist_5 %>%
+  transmute(
+    ID = snap_lou$ID,
+    open = snap_lou$open,
+    geometry)
+
+save(lou_5, file = "louisville_food_isolines_5_clean.RData")
+
+save(lou_half, lou_1, lou_2, lou_3, lou_4, lou_5,
+     file = "louisville_food_isolines.RData")
+
+snap_establishments_fd_peer <- snap_establishments_fd %>% filter(FIPS != "21111")
+
+start = 1
+end = 100
+  
+for(i in 1:30) {
+  
+  file_name = "peer_isolines_" %p% i %p% ".RData"
+  
+  print(i) 
+  print(start)
+  print(end)
+  print(file_name)
+  
+  temp    <- isoline(snap_establishments_fd_peer[start:end,],
+                     arrival = FALSE,
+                     range = 1609,
+                     range_type = "distance",
+                     routing_mode = "short",
+                     traffic = FALSE,
+                     optimize = "quality",
+                     aggregate = F,
+                     url_only = F)
+  
+  save(temp, file = file_name)
+  
+  start = start + 100
+  end = end + 100
+  
+  if(end >2900) end <- 2947
+}
+
+```
+
+## Load and clean data
+
+SNAP data - 
+
+Louisville data:
+--lou_half, lou_1, lou_2, lou_3, lou_4, lou_5
+--peer isolines
+
+Map data:
+
+
+
+```{r, eval=FALSE}
+
+# Load Louisville data
+
+load("louisville_food_isolines_1_clean2.RData")
+load("community_grocery_isoline.RData")
+
+lou_1 %<>%
+  left_join(st_drop_geometry(snap_establishments), by = c("ID", "open")) %>%
+  filter(!is.na(name))
+  
+
+file_names <- paste0("peer_isolines_", 1:30, ".RData")
+
+fxn <- function(file_name) {
+  load(file_name)
+  
+  temp
+}
+
+peer_isolines <- map_dfr(file_names, fxn)
+
+# Add grocery
+
+peer_isolines2 <- peer_isolines %>% bind_rows(lou_grocery)
+
+peer_snap_df <- snap_establishments_fd %>% 
+  filter(FIPS != "21111") %>%
+  st_drop_geometry()
+
+peer_isolines %<>%
+  bind_cols(peer_snap_df)
+
+FIPS_map <- glptools::map_county_peers %>%
+  pull_peers(add_info = T) %>%
+  filter(current == 1) %>%
+  group_by(city) %>%
+  summarize() %>%
+  left_join(FIPS_df_one_stl, by = "city") %>%
+  select(FIPS, geometry)
+
+lou_map <- FIPS_map %>%
+  filter(FIPS == "21111")
+
+
+peer_isolines %<>%
+  select(ID, open, name, type, close, FIPS, geometry) %>% 
+  bind_rows(lou_1)
+
+lou_grocery %<>%
+  mutate(open = lubridate::ymd("2020-01-01"), close = NA_Date_, FIPS = "21111", 
+         type = "Large Grocery Store")
+
+peer_isolines %<>% bind_rows(lou_grocery)
+
+
+library(rmapshaper)
+t <- ms_simplify(peer_isolines, keep = 0.05, keep_shapes = FALSE)
+
+t2=t %>% st_make_valid()
+
+t3=t2 %>%
+  #filter(is.na(close)) %>%
+  mutate(FIPS = if_else(FIPS %in% c("29189", "29510"), "MERGED", FIPS))
+
+t3 = sf::st_transform(t3, crs = 3857)
+t3 = sf::st_transform(t3, crs = 4326)
+
+t3 %<>% st_make_valid()
+  
+results_skeleton <- crossing(
+  FIPS = FIPS_map$FIPS,
+  year = 2011:2021)
+
+rm(final_df)
+
+for(f in 1:nrow(results_skeleton)) {
+  
+  print(f)
+  
+  this_FIPS <- results_skeleton[f, "FIPS"] %>% pull(FIPS)
+  this_year <- results_skeleton[f, "year"] %>% pull(year)
+  
+  t4 <- t3 %>%
+    filter(year(open) <= this_year,
+           year(close) > this_year | is.na(close),
+           FIPS == this_FIPS)
+  
+  # Merge FD info
+  t5=t4 %>%
+    st_union()
+  
+  t6 = t5 %>%
+    st_make_valid()
+  
+  # Get tract map
+  
+  tracts <- glptools::map_tract_all_10
+
+  tracts <- tracts %>% 
+    mutate(FIPS = if_else(FIPS %in% c("29189", "29510"), "MERGED", FIPS)) %>%
+    filter(FIPS == this_FIPS)
+  
+  # Intersect
+  
+  tract_df <- st_intersection(tracts, t6)
+  
+  tract_full_area <- tracts %>%
+    mutate(area = st_area(.)) %>%
+    st_drop_geometry()
+  
+  tract_df %<>%
+    mutate(non_fd_area = st_area(.)) %>%
+    st_drop_geometry()
+
+  output_df <- tract_full_area %>%
+    left_join(tract_df, by = c("FIPS", "tract")) %>%
+    transmute(
+      tract,
+      year = this_year,
+      pct_food_desert = as.numeric((area - non_fd_area) / area) %>%
+        replace_na(1))
+  
+  final_df <- assign_row_join(final_df, output_df)
+  
+}
+
+save(final_df, file = "final_df.RData")
+
+```
+
+# Graphs 
+
+## Louisville widget
+
+```{r, eval=FALSE}
+library(shiny)
+library(shinyWidgets)
+
+starting_data <- lou_1 %>%
+  left_join(st_drop_geometry(snap_establishments_fd), by = c("ID", "open")) %>%
+  filter(is.na(close), !is.na(type))
+
+pal <- leaflet::colorFactor(
+  palette = viridis(3),
+  domain = c("Super Store", "Supermarket", "Large Grocery Store"))
+
+starting_map <- leaflet(starting_data) %>%
+  addTiles() %>%
+  addPolygons(data = filter(map_county, FIPS == "21111"),
+            color = "black",
+            opacity = 1,
+            weight = 2,
+            fillOpacity = 0) %>%
+  addPolygons(
+    data = starting_data,
+    layerId = "fd_1",
+    color = ~pal(type),
+               opacity = 0.7,
+               weight = 2,                   
+               label = ~name,
+               labelOptions = labelOptions(style = 
+                list("font-weight" = "normal", 
+                     "font-family" = "Montserrat", 
+                     padding = "3px 8px"),
+                textsize = "15px",
+                direction = "auto")) %>%
+ addLegend(title = "Store Type", labels = c("Super Store", "Supermarket", "Large Grocery Store"), colors = viridis(3))
+
+# Define UI for application that draws a histogram
+ui <- flowLayout(
+  
+    # Sidebar with a slider input for number of bins
+  sliderTextInput(
+    inputId = "miles",
+    label = "Miles:", 
+    selected = 1,
+    grid = TRUE,
+    choices = c(0.5, 1, 2, 3, 4, 5)),
+      
+    # Show a plot of the generated distribution
+   leafletOutput("fd_map", "400px")
+)
+
+# Define server logic required to draw a histogram
+server <- function(input, output) {
+
+  fd_dataset <- reactive({
+    
+    if (input$miles == 0.5) this_fd <- lou_half
+    if (input$miles == 1) this_fd <- lou_1
+    if (input$miles == 2) this_fd <- lou_2
+    if (input$miles == 3) this_fd <- lou_3
+    if (input$miles == 4) this_fd <- lou_4
+    if (input$miles == 5) this_fd <- lou_5
+    
+   this_fd %<>%
+    left_join(st_drop_geometry(snap_establishments_fd), by = c("ID", "open")) %>%
+    filter(is.na(close), !is.na(type))
+    
+    this_fd
+  })
+  
+  output$fd_map <- renderLeaflet(starting_map)
+  
+  observeEvent(fd_dataset(), {
+    leafletProxy("fd_map") %>%
+      clearShapes() %>%
+      
+      # add shape color and white lines for all polygons
+      addPolygons(
+        data = fd_dataset(),
+        color = ~pal(type),
+               opacity = 0.7,
+               weight = 2,                   
+               label = ~name,
+               labelOptions = labelOptions(style = 
+                list("font-weight" = "normal", 
+                     "font-family" = "Montserrat", 
+                     padding = "3px 8px"),
+                textsize = "15px",
+                direction = "auto"))
+
+  })
+}
+
+# Run the application
+shinyApp(ui = ui, server = server)
+
+
+
+# knitr::include_app("https://yihui.shinyapps.io/miniUI/",
+#   height = "600px")
+
+starting_map
+
+```
+
+# Other data
+
+## Vehicle
+
+```{r}
+vehicle_variables   <- build_census_var_df("acs5", "B08201")
+
+vehicles_available <- get_census(vehicle_variables, "tract_all")
+
+vehicles_available %<>%
+  mutate(no_vehicle = case_when(
+    str_detect(variable, "B08201_002") ~ TRUE,
+    str_detect(variable, "_003|_004|_005|_006") ~ FALSE,
+    TRUE ~ NA))
+
+vehicles_map <- process_census(vehicles_available, cat_var = "no_vehicle", output_name = "no_vehicles_available")
+
+vehicles_map_20 <- vehicles_map %>%
+  filter(year == 2018) %>%
+  pivot_vartype_wider(no_vehicles_available) %>%
+  left_join(rename(tract20_tract10, pct_tract = percent), by = c("tract" = "tract20")) %>%
+  group_by(tract10, year, variable) %>%
+  summarize(
+    estimate = sum(estimate * pct_tract), 
+    population = sum(population * pct_tract),
+    percent = estimate / population * 100,
+    .groups = "drop") %>%
+  pivot_vartype_longer() %>%
+  transmute(
+    tract = tract10,
+    year,
+    sex = "total",
+    race = "total",
+    var_type,
+    no_vehicles_available)
+
+vehicles_map %<>%
+  filter(year != 2018) %>%
+  bind_rows(vehicles_map_20)
+```
+
+## Bus stops
+
+```{r}
+bus_stops <- sf::read_sf("Louisville_Metro_Area_KY__TARC_Bus_Stops")
+bus_routes <- sf::read_sf("Louisville_Metro_Area_KY_TARC_Bus_Routes_")
+
+#library(hereR)
+#set_key("-DMJYWtlloRIXg")
+
+# start = 1
+# end = 100
+#   
+# for(i in 1:39) {
+#   
+#   file_name = "bus_stop_isolines/bus_" %p% i %p% ".RData"
+#   
+#   print(i) 
+#   print(start)
+#   print(end)
+#   print(file_name)
+#   
+#   temp    <- isoline(bus_stops[start:end,],
+#                      arrival = FALSE,
+#                      range = 400,
+#                      range_type = "distance",
+#                      routing_mode = "short",
+#                      transport_mode = "pedestrian",
+#                      traffic = FALSE,
+#                      optimize = "quality",
+#                      aggregate = F,
+#                      url_only = F)
+#   
+#   save(temp, file = file_name)
+#   
+#   start = start + 100
+#   end = end + 100
+#   
+#   if(end > 3876) end <- 3876
+# }
+# 
+bus_files <- list.files("bus_stop_isolines")
+
+
+for(i in 1:length(bus_files)) {
+  load("bus_stop_isolines/" %p% bus_files[i])
+
+  bus_stop_isolines <- assign_row_join(bus_stop_isolines, temp)
+
+}
+
+save(bus_stop_isolines, file = "bus_stop_isolines.RData")
+
+# 
+# 
+# start = 1
+# end = 100
+# 
+# output_list <- list()
+# 
+# for(i in 1:39) {
+# 
+#   print(i)
+#   print(start)
+#   print(end)
+# 
+#   temp_union <- bus_stop_isolines[start:end,]
+# 
+#   temp_union %<>%
+#     st_union()
+# 
+#   if(i %not_in% c(15, 16, 21, 29, 31)) {
+# 
+# 
+#     temp_union %<>%
+#       rmapshaper::ms_simplify()
+#   }
+# 
+# 
+#   output_list <- c(output_list, temp_union)
+# 
+#   start = start + 100
+#   end = end + 100
+#   if(end > 3876) end <- 3876
+# 
+# }
+
+# 
+# t = flatten(output_list) %>% flatten() %>%
+#   map
+# 
+# t2=st_as_sf(as.data.frame(t[[1]]), coords = c("V1", "V2"), crs = 4326)
+# 
+#   
+# t %>% map(st_as_sf(meuse, coords = c("x", "y"), crs = 28992, agr = "constant"))
+#             
+#   
+#   st_as_sf(coords = c("long", "lat"), crs = 4326)
+# 
+# 
+# for(i in 1:length(output_list)) {
+#   
+#   
+# }
+# 
+# 
+# t=list(output_list, makeUniqueIDs = T) %>% 
+#   flatten() %>% 
+#   do.call(rbind, .)
+# 
+# data.frame(geometry = output_list)
+# 
+# st_as_sf(t)
+
+# bus_stop_isolines_union <- bus_stop_isolines %>%
+#   st_union()
+# 
+# bus_stop_isolines %<>%
+#   summarize()
+
+```
+
+## Poverty
+
+```{r}
+poverty_ratio_vars <- build_census_var_df("acs5", "C17002")
+
+poverty_ratio <- get_census(poverty_ratio_vars, "tract_all")
+
+poverty_ratio %<>%
+  mutate(pov_ratio = case_when(
+    str_detect(variable, "_002") ~ "p50",
+    str_detect(variable, "_003") ~ "p100",
+    str_detect(variable, "_004") ~ "p125",
+    str_detect(variable, "_005") ~ "p150",
+    str_detect(variable, "_006") ~ "p185",
+    str_detect(variable, "_007") ~ "p200",
+    str_detect(variable, "_008") ~ "p200_plus",
+    TRUE ~ NA_character_))
+
+poverty_map <- process_census(poverty_ratio, cat_var = "pov_ratio", output_name = "poverty_ratio")
+
+poverty_map_20 <- poverty_map %>%
+  filter(year == 2018) %>%
+  pivot_vartype_wider(p100:p50) %>%
+  left_join(rename(tract20_tract10, pct_tract = percent), by = c("tract" = "tract20")) %>%
+  group_by(tract10, year, variable) %>%
+  summarize(
+    estimate = sum(estimate * pct_tract), 
+    population = sum(population * pct_tract),
+    percent = estimate / population * 100,
+    .groups = "drop") %>%
+  pivot_vartype_longer() %>%
+  transmute(
+    tract = tract10,
+    year,
+    sex = "total",
+    race = "total",
+    var_type,
+    p50,
+    p100,
+    p125,
+    p150,
+    p185,
+    p200,
+    p200_plus)
+
+poverty_map %<>%
+  filter(year != 2018) %>%
+  bind_rows(poverty_map_20)
+```
+
+## SNAP
+
+```{r}
+snap_vars <- build_census_var_df("acs5", "B22001")
+
+snap_df <- get_census(snap_vars, "tract_all")
+
+snap_df %<>%
+  mutate(snap_hh = case_when(
+    str_detect(variable, "_002") ~ TRUE,
+    str_detect(variable, "_005") ~ FALSE,
+    TRUE ~ NA))
+
+snap_map <- process_census(snap_df, cat_var = "snap_hh", output_name = "snap")
+
+snap_map_20 <- snap_map %>%
+  filter(year == 2018) %>%
+  pivot_vartype_wider(snap) %>%
+  left_join(rename(tract20_tract10, pct_tract = percent), by = c("tract" = "tract20")) %>%
+  group_by(tract10, year, variable) %>%
+  summarize(
+    estimate = sum(estimate * pct_tract), 
+    population = sum(population * pct_tract),
+    percent = estimate / population * 100,
+    .groups = "drop") %>%
+  pivot_vartype_longer() %>%
+  transmute(
+    tract = tract10,
+    year,
+    sex = "total",
+    race = "total",
+    var_type,
+    snap)
+
+snap_map %<>%
+  filter(year != 2018) %>%
+  bind_rows(snap_map_20)
+```
+
+## Age
+
+```{r}
+age_vars <- build_census_var_df("acs5", "B01001")
+
+age_vars %<>%
+  filter(race == "total", age_group != "all")
+
+age_df <- get_census(age_vars, "tract_all")
+
+# Create a categorical variable for seniors and replace age groups with "all" to work with process census
+age_df %<>%
+  mutate(
+    senior = case_when(
+      age_low >= 65 ~ TRUE,
+      age_low < 65 ~ FALSE,
+      TRUE ~ NA),
+    age_group = "all") 
+
+age_map <- process_census(age_df, cat_var = "senior", output_name = "senior2")
+
+age_map %<>%
+  rename(senior = senior2)
+
+age_map_20 <- age_map %>%
+  filter(year == 2018) %>%
+  pivot_vartype_wider(senior) %>%
+  left_join(rename(tract20_tract10, pct_tract = percent), by = c("tract" = "tract20")) %>%
+  group_by(tract10, year, variable) %>%
+  summarize(
+    estimate = sum(estimate * pct_tract), 
+    population = sum(population * pct_tract),
+    percent = estimate / population * 100,
+    .groups = "drop") %>%
+  pivot_vartype_longer() %>%
+  transmute(
+    tract = tract10,
+    year,
+    sex = "total",
+    race = "total",
+    var_type,
+    senior)
+
+age_map %<>%
+  filter(year != 2018) %>%
+  bind_rows(age_map_20)
+```
+
+
+## Combine data
+
+```{r, eval=FALSE}
+save(vehicles_map, poverty_map, snap_map, age_map, file = "census_exports.RData")
+
+load("census_exports.RData")
+
+load("louisville_food_isolines.RData")
+load("food_desert_1mi.RData")
+load("final_df.RData")
+
+
+# Vehicles
+vehicle_fd <- vehicles_map %>%
+  mutate(FIPS = str_sub(tract, 1, 5)) %>%
+  filter(var_type %in% c("estimate", "population")) %>%
+  pivot_vartype_wider(no_vehicles_available) %>%
+  mutate(year = year + 2)
+
+vehicle_fd %<>%
+  filter(year %in% 2010:2020)
+
+vehicle_fd %<>%
+  left_join(final_df, by = c("tract", "year")) %>%
+  mutate(fd_pop = estimate * pct_food_desert) 
+
+vehicle_fd_county <- vehicle_fd %>%
+  group_by(FIPS, year) %>%
+  summarize(
+    food_desert = sum(fd_pop) / sum(population, na.rm = T) * 100, 
+    non_food_desert = sum(estimate - fd_pop) / sum(population, na.rm = T) * 100, 
+    pct_food_insecure = food_desert / (food_desert + non_food_desert) * 100, .groups = "drop") %>%
+  stl_merge(food_desert:pct_food_insecure, simple = T)
+  
+vehicle_fd_map  <- vehicle_fd %>%
+  transmute(tract, year, 
+            food_desert = fd_pop / population * 100,
+            non_food_desert = (estimate - fd_pop) / population * 100, 
+            pct_food_insecure = food_desert / (food_desert + non_food_desert) * 100)
+
+# Low income
+
+poverty_fd_est <- poverty_map %>%
+  mutate(FIPS = str_sub(tract, 1, 5)) %>%
+  filter(var_type %in% "estimate") %>%
+  transmute(FIPS, tract, year, var_type, low_income = p50+p100+p125+p150+p185+p200) %>%
+  mutate(year = year + 2)
+
+poverty_fd_pop <- poverty_map %>%
+  mutate(FIPS = str_sub(tract, 1, 5)) %>%
+  filter(var_type %in% "population") %>%
+  transmute(FIPS, tract, year, var_type, low_income = p50) %>%
+  mutate(year = year + 2)
+
+poverty_fd <- bind_rows(poverty_fd_est, poverty_fd_pop)
+
+poverty_fd %<>%
+  filter(year %in% 2010:2020)
+
+poverty_fd %<>%
+  pivot_vartype_wider(low_income) %>%
+  left_join(final_df, by = c("tract", "year")) %>%
+  mutate(fd_pop = estimate * pct_food_desert) 
+  
+poverty_fd_county <- poverty_fd %>%
+  group_by(FIPS, year) %>%
+  summarize(
+    food_desert = sum(fd_pop) / sum(population, na.rm = T) * 100, 
+    non_food_desert = sum(estimate - fd_pop) / sum(population, na.rm = T) * 100, 
+    pct_food_insecure = food_desert / (food_desert + non_food_desert) * 100, .groups = "drop") %>%
+  stl_merge(food_desert:pct_food_insecure, simple = T)
+  
+poverty_fd_map  <- poverty_fd %>%
+  transmute(tract, year, 
+            food_desert = fd_pop / population * 100,
+            non_food_desert = (estimate - fd_pop) / population * 100, 
+            pct_food_insecure = food_desert / (food_desert + non_food_desert) * 100)
+
+# SNAP
+
+snap_fd <- snap_map %>%
+  mutate(FIPS = str_sub(tract, 1, 5)) %>%
+  filter(var_type %in% c("estimate", "population")) %>%
+  pivot_vartype_wider(snap) %>%
+  mutate(year = year + 2)
+
+snap_fd %<>%
+  filter(year %in% 2010:2020)
+
+snap_fd %<>%
+  left_join(final_df, by = c("tract", "year")) %>%
+  mutate(fd_pop = estimate * pct_food_desert) 
+
+snap_fd_county <- snap_fd %>%
+  group_by(FIPS, year) %>%
+  summarize(
+    food_desert = sum(fd_pop) / sum(population, na.rm = T) * 100, 
+    non_food_desert = sum(estimate - fd_pop) / sum(population, na.rm = T) * 100, 
+    pct_food_insecure = food_desert / (food_desert + non_food_desert) * 100, .groups = "drop") %>%
+  stl_merge(food_desert:pct_food_insecure, simple = T)
+  
+snap_fd_map  <- snap_fd %>%
+  transmute(tract, year, 
+            food_desert = fd_pop / population * 100,
+            non_food_desert = (estimate - fd_pop) / population * 100, 
+            pct_food_insecure = food_desert / (food_desert + non_food_desert) * 100)
+
+
+# Senior
+age_fd <- age_map %>%
+  mutate(FIPS = str_sub(tract, 1, 5)) %>%
+  filter(var_type %in% c("estimate", "population")) %>%
+  pivot_vartype_wider(senior) %>%
+  mutate(year = year + 2) %>%
+  filter(sex == "total")
+
+age_fd %<>%
+  filter(year %in% 2010:2020)
+
+age_fd %<>%
+  left_join(final_df, by = c("tract", "year")) %>%
+  mutate(fd_pop = estimate * pct_food_desert) 
+
+age_fd_county <- age_fd %>%
+  group_by(FIPS, year) %>%
+  summarize(
+    food_desert = sum(fd_pop) / sum(population, na.rm = T) * 100, 
+    non_food_desert = sum(estimate - fd_pop) / sum(population, na.rm = T) * 100, 
+    pct_food_insecure = food_desert / (food_desert + non_food_desert) * 100, .groups = "drop") %>%
+  stl_merge(food_desert:pct_food_insecure, simple = T)
+  
+age_fd_map  <- age_fd %>%
+  transmute(tract, year, 
+            food_desert = fd_pop / population * 100,
+            non_food_desert = (estimate - fd_pop) / population * 100, 
+            pct_food_insecure = food_desert / (food_desert + non_food_desert) * 100)
+
+all_fd <- age_map %>%
+  mutate(FIPS = str_sub(tract, 1, 5)) %>%
+  filter(FIPS == "21111", var_type == "population", year == 2018) %>%
+  left_join(final_df, by = c("tract", "year")) %>%
+  summarize(
+    percent_fd = sum(senior * pct_food_desert, na.rm = T) / 
+      sum(senior, na.rm = T))
+
+save(poverty_fd_county, snap_fd_county, vehicle_fd_county, age_fd_county, poverty_fd_map, snap_fd_map, vehicle_fd_map, age_fd_map, file= "food desert exports.RData")
+```
+
+
+
+
+```{r, eval=FALSE}
+
+glp_load_packages(graphs = T)
+showtext_auto()
+font_add("Museo Sans", "../../../../MuseoSans_300.otf")
+font_add("Museo Sans 300 Italic", "../../../../MuseoSans_300_Italic.otf")
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, 
+                      dev.args=list(bg="transparent"), fig.width=30, fig.height=24)
+
+png("Vehicle Desert.png", 3000, 2000, res = 200)
+glptools::trend(
+  vehicle_fd_county,
+  food_desert,
+  plot_title = "Low Access and No Vehicle",
+  y_title = "Percent")
+dev.off()
+
+png("Poverty Desert.png", 3000, 2000, res = 200)
+glptools::trend(
+  poverty_fd_county,
+  food_desert,
+  plot_title = "Low Access and Poverty",
+  y_title = "Percent")
+dev.off()
+
+png("SNAP Desert.png", 3000, 2000, res = 200)
+glptools::trend(
+  snap_fd_county,
+  food_desert,
+  plot_title = "Low Access and SNAP",
+  y_title = "Percent")
+dev.off()
+
+png("Age Desert.png", 3000, 2000, res = 200)
+glptools::trend(
+  age_fd_county,
+  food_desert,
+  plot_title = "Senior and SNAP",
+  y_title = "Percent")
+dev.off()
+
+glptools::ranking(
+  snap_fd_county,
+  order = "Ascending",
+  food_desert,
+  plot_title = "Vehicle Desert",
+  y_title = "Percent")
+
+
+df <- glptools::ranking_data(
+  poverty_fd_county,
+  food_desert) %>%
+  pull_peers(add_info = T)
+
+write_csv(df, "temp.csv")
+
+save(poverty_fd_county, snap_fd_county, vehicle_fd_county, age_fd_county, poverty_fd_map, snap_fd_map, vehicle_fd_map, age_fd_map, file= "food desert exports.RData")
+
+load("food desert exports.RData")
+
+```
+
+```{r, eval=FALSE}
+vehicle_map_19 <- vehicles_map %>%
+  filter(var_type == "estimate", year == 2017)
+
+poverty_map_19 <- poverty_map %>%
+  filter(var_type == "estimate", year == 2017) 
+  
+
+jc_union = map_tract %>%
+  st_union()
+
+grocery_union = lou_1 %>%
+  st_union() %>%
+  st_make_valid()
+
+grocery_map = map_tract %>%
+  st_intersection(grocery_union)
+
+t1=grocery_map %>%
+  mutate(area_grocery = st_area(.))
+
+t2=map_tract %>%
+  mutate(area_total = st_area(.))
+
+
+t2 %<>%
+  st_drop_geometry() %>%
+  left_join(st_drop_geometry(t1)) %>%
+  mutate(covered = 1-as.numeric(area_grocery / area_total) %>%
+           replace_na(0)) %>%
+  select(tract, covered)
+
+poverty_map_19 %<>%
+  left_join(t2, by = "tract")
+
+
+pov_sum <- poverty_map_19 %>%
+  summarize(across(p100:p50, sum))
+
+pov_sum_fd <- poverty_map_19 %>%
+  summarize(across(p100:p50, ~sum(. * covered)))
+
+
+
+leaflet(grocery_map) %>%
+  addPolygons()
+```
+
+# Final maps
+
+```{r, eval=FALSE}
+load("louisville_food_isolines.RData")
+load("food_desert_1mi.RData")
+
+this_data <- lou_1 %>%
+  left_join(st_drop_geometry(snap_establishments), by = c("ID", "open")) %>%
+  filter(is.na(close))
+
+library(smoothr)
+
+pal <- leaflet::colorFactor(
+  palette = viridis(3),
+  domain = c("Large Grocery Store", "Super Store", "Supermarket"))
+
+
+lou_food_map <- this_data
+
+leaflet(this_data) %>%
+  addTiles("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}.png") %>%
+  addPolygons(color = ~pal(type),
+                   opacity = 0.7,
+                   weight = 2,                   
+                   label = ~name,
+                   labelOptions = labelOptions(style = 
+                    list("font-weight" = "normal", 
+                         "font-family" = "Montserrat", 
+                         padding = "3px 8px"),
+                    textsize = "15px",
+                    direction = "auto")) %>%
+    # addPolygons(data = filter(glptools::map_msa_lou, FIPS != "21111"),
+    #           color = "white",
+    #           opacity = 1,
+    #           weight = 0,
+    #           fillOpacity = 1) %>%
+  
+  addPolygons(data = filter(map_county, FIPS == "21111"),
+              color = "black",
+              opacity = 1,
+              weight = 2,
+              fillOpacity = 0) %>%
+ addLegend(title = "Store Type", labels = c("Large Grocery Store", "Super Store", "Supermarket"), colors = viridis(3))
+
+save(lou_food_map, file = "Louisville map.RData")
+
+
+```

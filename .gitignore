@@ -62,3 +62,23 @@ data-raw/microdata/cps_micro.csv
 
 junk/
 inst/doc
+
+data-raw/qop/food_access/bus_stop_isolines/
+
+data-raw/qop/food_access/Louisville_Metro_Area_KY__TARC_Bus_Stops/
+
+data-raw/qop/food_access/Louisville_Metro_Area_KY_TARC_Bus_Routes_/
+
+data-raw/qop/food_access/bus_stop_isolines.RData
+
+data-raw/qop/food_access/community_grocery_isoline.RData
+
+data-raw/qop/food_access/final_df.RData
+
+data-raw/microdata/usa_00095.csv
+
+data-raw/qop/food_access/Historical SNAP Retailer Locator Data as of 20211231.csv
+
+data-raw/qop/food_access/FoodAccessResearchAtlasData2019.xlsx
+
+.RData
