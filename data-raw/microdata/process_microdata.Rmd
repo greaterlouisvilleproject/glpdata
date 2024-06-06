@@ -7,74 +7,87 @@ output: html_document
 library(glptools)
 glp_load_packages()
 library(arrow)
-library(labelled)
+
+path <- "../../../glp_data_files/microdata/usa_00108.csv"
+data_path <- "../../../glp_data_files/microdata/acs_repwts/"
+
 ```
 
 Read in ACS microdata from acs_micro.csv, clean it, and write it to a feather file
 
-MR:
-I was a bit confused about the function "process_acs" so I renamed it to "clean_acs_micro" to make its purpose clear and to keep it from being confused with "process_census". It is located in glptools/R/microdata. I wonder if it should actually just exist here, since this is the only place it's really used?
+Uses these files:
+1. usa_00108.csv - variables for 2000-2021
+2. usa_00088.csv - repwt person for 2005-2009
+3. usa_00109.csv - repwt person for 2010-2017
+4. usa_00105.csv - repwt person for 2018-2022
+5. usa_00110.csv - repwt household for 2005-2009
+5. usa_00106.csv - repwt household for 2010-2017
+6. usa_00107.csv - repwt household for 2018-2022
 
-After you download the IPUMS extract, you can unzip it and rename it to acs_micro.csv to run the code below. You can rename the old file to hang onto it just in case, or you can delete it.
+```{r unzip_if_you_need}
 
-Depending on how much RAM you have, you might either A) run into issues reading acs_micro.csv in the first place or B) get an error that you can't allocate enough vector space when you run clean_acs_micro If that happens, then we can figure out how to do it piecewise or chunkwise in a way that works. (FYI: the function gc() instructs R to make sure it has cleared out any objects you removed from memory. Hopefully giving you a fighting chance at running clean_acs_micro).
+#setwd("../../../glp_data_files/microdata/acs_repwts")
 
-You could write a loop to read acs_micro.csv and run clean_acs_micro in more than two pieces like so: 
+#R.utils::gunzip("usa_00109.csv.gz")
 
-for(i in 1:10) {
-
- temp <- part of acs_micro.csv
- temp %<>% clean_acs_micro(gq = FALSE)
- final_df <- assign_row_join(final_df, temp)
- rm(temp)
- gc()
- 
-}
+```
 
 ```{r acs_micro_variables}
 # Read American Community Survey in chunks
 
-#make list of col_type double b/c NA throws off base r guessing 
-#this needs to be changed based on the # of columns in your dataframe, you can run these lines:
-#acs_micro_test <- read_csv("acs_micro.csv", n_max = 1)
-#specs(acs_micro_test)
-#to see if your columns specs are right and know how many columns there are 
-types <- list("d", "d")
-types <- rep(types, 28)
 
-#ok here we're actually reading the data
-acs_micro1 <- read_csv("acs_micro.csv", n_max = 2000000, col_types = types)
-acs_micro2 <- read_csv("acs_micro.csv", col_names = names(acs_micro1), skip = 2000000,
-                       n_max = 2000000,col_types = types)
-acs_micro3 <- read_csv("acs_micro.csv", col_names = names(acs_micro1), skip = 4000000, n_max = 2000000, col_types = types)
-acs_micro4 <- read_csv("acs_micro.csv", col_names = names(acs_micro1), skip = 6000000,  col_types = types)
-acs <- list(acs_micro1, acs_micro2, acs_micro3, acs_micro4)
-gc()
+# Make list of col_type double b/c NA throws off base r guessing 
+# This needs to be changed based on the # of columns in your dataframe, you can run these lines:
+# acs_micro_test <- read_csv(path, n_max = 1)
+# specs(acs_micro_test)
+# to see if your columns specs are right and know how many columns there are 
+types <- list("d")
+types <- rep(types, 61)
 
-#make loop because my computer can't handle all of it at once
-for(x in acs) {
+# Nrows as of 2022 = 26-28M
+# Create a for loop to read and clean the data 2M rows at a time
+# Final result as of 2022 is 5.9M rows
 
- temp <- x
- temp %<>% clean_acs_micro(gq = FALSE)
- final_df <- assign_row_join(final_df, temp)
- rm(temp)
- gc()
- 
+start_row <- 0
+continue <- TRUE
+
+while(continue) {
+  
+  print(scales::comma(start_row))
+  
+  # Read data
+  if(start_row == 0) {
+    temp_acs <- read_csv(path, n_max = 2000000, col_types = types)
+    
+    column_names <- names(temp_acs)
+  } else {
+    temp_acs <- read_csv(path, col_names = column_names, skip = start_row, n_max = 2000000, col_types = types)
+    
+    continue <- if_else(nrow(temp_acs) == 2000000, TRUE, FALSE)
+  }
+  
+  gc()
+  
+  # Clean data
+  temp_acs %<>% clean_acs_micro(gq = TRUE)
+  
+  # Join to output
+  
+  acs_micro <- assign_row_join(acs_micro, temp_acs)
+  rm(temp_acs)
+  gc()
+  
+  # Increase start row
+  
+  start_row = start_row + 2000000
+  
+  
 }
 
-rm(acs, acs_micro1, acs_micro2, acs_micro3, acs_micro4,x)
-gc()
+write_feather(acs_micro, "acs_micro.feather")
 
-#Do this insead if your computer is a stud
-# Bind rows and clean the data frame
-#acs_micro <- bind_rows(acs_micro1, acs_micro2, acs_micro3)
-#rm(acs_micro1, acs_micro2, acs_micro3)
-#gc()
-
-#acs_micro %<>% clean_acs_micro(gq = FALSE)
-
-write_feather(final_df, "acs_micro.feather")
 ```
+
 
 This part reads in the replicate weights and chops them down to only the observations in acs_micro.
 It saves the results to feather files to make them easier to read back into R.
@@ -86,67 +99,170 @@ acs_micro <- read_feather("acs_micro.feather")
 
 acs_micro %<>% select(year, SERIAL, PERNUM)
 
+gc()
 
-# Read all replicate weights, subset to responses in acs_micro, and write to feather files
-#   for easier processing
-rep1 <- chunked::read_csv_chunkwise("acs_repwts/usa_00084.csv", chunk_size = 1000000)
+# For each replicate weight file, use the chunked package to subset the file to only observations included in acs_micro.
+# Write each result to a feather file to be combined in the next chunk.
+
+# Person 2005 - 2009 
+rep1 <- chunked::read_csv_chunkwise(data_path %p% "usa_00088.csv", chunk_size = 1000000)
 rep1 %<>% semi_join(acs_micro, by = c("YEAR" = "year",
                                       "SERIAL",
                                       "PERNUM"))
 rep1 %<>% collect()
-write_feather(rep1, "acs_repwts/rep1.feather")
+write_feather(rep1, data_path %p% "rep1.feather")
 rm(rep1)
 gc()
 
-rep2 <- chunked::read_csv_chunkwise("acs_repwts/usa_00088.csv", chunk_size = 1000000)
+# Person 2010 - 2017
+rep2 <- chunked::read_csv_chunkwise(data_path %p% "usa_00109.csv", chunk_size = 1000000)
 rep2 %<>% semi_join(acs_micro, by = c("YEAR" = "year",
                                       "SERIAL",
                                       "PERNUM"))
 rep2 %<>% collect()
-write_feather(rep2,"acs_repwts/rep2.feather")
+write_feather(rep2, data_path %p% "rep2.feather")
 rm(rep2)
 gc()
 
-rep3 <- chunked::read_csv_chunkwise("acs_repwts/usa_00086.csv", chunk_size = 1000000)
+# Person 2018 - 2022
+rep3 <- chunked::read_csv_chunkwise(data_path %p% "usa_00105.csv", chunk_size = 1000000)
 rep3 %<>% semi_join(acs_micro, by = c("YEAR" = "year",
                                       "SERIAL",
                                       "PERNUM"))
 rep3 %<>% collect()
-write_feather(rep3, "acs_repwts/rep3.feather")
+write_feather(rep3, data_path %p% "rep3.feather")
 rm(rep3)
 gc()
 
-rep4 <- chunked::read_csv_chunkwise("acs_repwts/usa_00089.csv", chunk_size = 1000000)
+# Household 2005 - 2009
+rep4 <- chunked::read_csv_chunkwise(data_path %p% "usa_00110.csv", chunk_size = 1000000)
 rep4 %<>% semi_join(acs_micro, by = c("YEAR" = "year",
-                                      "SERIAL",
-                                      "PERNUM"))
-rep4 %<>% collect()
-write_feather(rep4, "acs_repwts/rep4.feather")
+                                      "SERIAL"))
+rep4 %<>% 
+  collect() %>%
+  distinct()
+write_feather(rep4, data_path %p% "rep4.feather")
 rm(rep4)
 gc()
+
+# Household 2010 - 2017
+rep5 <- chunked::read_csv_chunkwise(data_path %p% "usa_00106.csv", chunk_size = 1000000)
+rep5 %<>% semi_join(acs_micro, by = c("YEAR" = "year",
+                                      "SERIAL"))
+rep5 %<>% 
+  collect() %>%
+  distinct()
+write_feather(rep5, data_path %p% "rep5.feather")
+rm(rep5)
+gc()
+
+# Household 2018 - 2022
+rep6 <- chunked::read_csv_chunkwise(data_path %p% "usa_00107.csv", chunk_size = 1000000)
+rep6 %<>% semi_join(acs_micro, by = c("YEAR" = "year",
+                                      "SERIAL"))
+rep6 %<>% 
+  collect() %>%
+  distinct()
+write_feather(rep6, data_path %p% "rep6.feather")
+rm(rep6)
+gc()
+
 ```
 
 This section cleans and organizes the replicate weights saved to feather files above.
 It keeps only the necessary variables and outputs feather files that can be joined to acs_micro.
 This code only needs to be run when adding new observations to the replicate weights.
 ```{r process_repwts, eval=FALSE}
-rep1 <- read_feather("acs_repwts/rep1.feather")
-rep2 <- read_feather("acs_repwts/rep2.feather")
-rep3 <- read_feather("acs_repwts/rep3.feather")
-rep4 <- read_feather("acs_repwts/rep4.feather")
 
-acs_replicate_person <- bind_rows(rep1, rep2)
-acs_replicate_household <- bind_rows(rep3, rep4)
+## PERSON WEIGHTS
 
+# Read and combine the person-level replicate weights
+rep1 <- read_feather(data_path %p% "rep1.feather")
+rep2 <- read_feather(data_path %p% "rep2.feather")
+rep3 <- read_feather(data_path %p% "rep3.feather")
+
+acs_replicate_person <- bind_rows(rep1, rep2, rep3)
+
+rm(rep1, rep2, rep3)
+gc()
+
+# Inspect the weights to ensure they are correct
+
+test1 <- acs_replicate_person %>%
+  group_by(YEAR) %>%
+  reframe(repwt_n=n())
+
+test2 <- acs_micro %>%
+  filter(year > 2000) %>%
+  group_by(year) %>%
+  reframe(micro_n=n())
+
+test3 <- left_join(test1, test2, by = c("YEAR" = "year"))
+
+test3 %<>%
+  mutate(check = (repwt_n == micro_n))
+
+# Organize the data frame
+acs_replicate_person %<>% 
+  select(
+    -REPWTP, -SAMPLE, -CBSERIAL, -HHWT, -CLUSTER, -STRATA, -GQ, -PERWT) %>% 
+  select(
+    year = YEAR, 
+    SERIAL, 
+    PERNUM, 
+    everything())
+
+write_feather(acs_replicate_person, data_path %p% "person_repwts.feather")
+
+rm(acs_replicate_person)
+
+gc()
+
+## HOUSEHOLD WEIGHTS
+
+# Read and combine the household-level replicate weights
+
+rep4 <- read_feather(data_path %p% "rep4.feather")
+rep5 <- read_feather(data_path %p% "rep5.feather")
+rep6 <- read_feather(data_path %p% "rep6.feather")
+
+acs_replicate_household <- bind_rows(rep4, rep5, rep6)
+
+rm(rep4, rep5, rep6)
+gc()
+
+# Inspect the weights to ensure they are correct
+
+test1 <- acs_replicate_household %>%
+  group_by(YEAR) %>%
+  reframe(repwt_n=n())
+
+test2 <- acs_micro %>%
+  filter(
+    year > 2000,
+    PERNUM == 1) %>%
+  group_by(year) %>%
+  reframe(micro_n=n())
+
+test3 <- left_join(test1, test2, by = c("YEAR" = "year"))
+
+test3 %<>%
+  mutate(check = (repwt_n == micro_n))
+
+# Organize the data frame
 acs_replicate_household %<>%
-  select(-PERNUM) %>%
+  select(-REPWT, -SAMPLE, -CBSERIAL, -HHWT, -CLUSTER, -STRATA, -GQ) %>%
+  select(year = YEAR, SERIAL, everything()) %>%
   distinct()
 
-acs_replicate_person %<>% select(-REPWTP) %>% select(year = YEAR, SERIAL, PERNUM, everything())
-acs_replicate_household %<>% select(-REPWT) %>% select(year = YEAR, SERIAL, everything())
+write_feather(acs_replicate_household, data_path %p% "household_repwts.feather")
 
-write_feather(acs_replicate_person,    "acs_repwts/person_repwts.feather")
-write_feather(acs_replicate_household, "acs_repwts/household_repwts.feather")
+rm(acs_replicate_household)
+
+rm(test1, test2, test3)
+
+gc()
+
 ```
 
 This sections reads in the final acs_micro file and the acs_repwts file, joins them, and saves the output.
@@ -166,41 +282,34 @@ write_feather(acs_micro_FIPS_repwts, path %p% "acs_micro_FIPS_repwts.feather")
 
 ```{r join_repwts}
 acs_micro                <- read_feather("acs_micro.feather")
-acs_replicates_person    <- read_feather("person_repwts.feather")
-acs_replicates_household <- read_feather("household_repwts.feather")
+acs_replicates_person    <- read_feather(data_path %p% "person_repwts.feather")
+acs_replicates_household <- read_feather(data_path %p% "household_repwts.feather")
 
 # Join person and household weights to acs_micro
 acs_micro_repwts <- left_join(acs_micro, acs_replicates_person, by = c("year", "SERIAL", "PERNUM")) %>%
   left_join(acs_replicates_household, by = c("year", "SERIAL"))
 
+rm(acs_replicates_person, acs_replicates_household)
+gc()
+
+write_feather(acs_micro_repwts, "acs_micro_repwts.feather")
+
 acs_micro_FIPS_repwts <- acs_micro_repwts %>% 
   pull_peers(geog = "FIPS")
 
-rm(acs_replicates_person)
-rm(acs_replicates_household)
-gc()
-
-#Now save the data just for Louisville 
-
-acs_micro_Lou_repwts <- pull_Lou(acs, geog="MSA")
-
-# arrow::write_feather never writes the whole file and just crashes...hmmm.
-feather::write_feather(acs_micro_repwts, "acs_micro_repwts.feather")
-feather::write_feather(acs_micro_FIPS_repwts, "acs_micro_FIPS_repwts.feather")
-feather::write_feather(acs_micro_Lou_repwts, "acs_micro_Lou_repwts.feather")
-
+write_feather(acs_micro_FIPS_repwts, "acs_micro_FIPS_repwts.feather")
 ```
 
 Current Population Survey
 ```{r}
 cps_micro <- read_csv("cps_micro.csv") 
 cps_micro %<>% clean_cps_micro() 
-feather::write_feather(cps_micro, "cps_micro.feather") 
+arrow::write_feather(cps_micro, "cps_micro.feather") 
 ```
 
 SMART Behavioral Risk Factor Surveillance System 
 ```{r}
 brfss_micro <- brfss_time("brfss") 
-feather::write_feather(brfss_micro, "brfss_micro.feather") 
+arrow::write_feather(brfss_micro, "brfss_micro.feather") 
 ```
 
